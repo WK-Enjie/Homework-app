@@ -1,7 +1,8 @@
 // ==========================================
 // 1. GAME VARIABLES
 // ==========================================
-let questions = [];
+let allQuestions = []; // Stores all questions from file
+let gameQuestions = []; // Stores the selected 12
 let currentIdx = 0;
 let score = 0;
 let enemyHP = 100;
@@ -66,7 +67,6 @@ async function attemptLogin() {
     }
 
     try {
-        // NOTE: This requires a Local Server (localhost) to work
         const response = await fetch(`worksheets/${pin}.json`);
         
         if (!response.ok) {
@@ -76,14 +76,14 @@ async function attemptLogin() {
         const data = await response.json();
         
         if (Array.isArray(data) && data.length > 0) {
-            questions = data;
+            allQuestions = data;
             startGame();
         } else {
             throw new Error("File is empty or invalid JSON.");
         }
 
     } catch (err) {
-        showError("Error: " + err.message + ". Make sure you are running a local server.");
+        showError("Error: " + err.message);
     }
 }
 
@@ -93,11 +93,15 @@ function showError(msg) {
 }
 
 function startGame() {
-    // Switch Screens
+    // 1. Shuffle and Select Max 12 Questions
+    shuffleArray(allQuestions);
+    gameQuestions = allQuestions.slice(0, 12);
+
+    // 2. Switch Screens
     screens.login.classList.add('hidden');
     screens.battle.classList.remove('hidden');
 
-    // Reset Stats
+    // 3. Reset Stats
     currentIdx = 0;
     score = 0;
     enemyHP = 100;
@@ -107,24 +111,33 @@ function startGame() {
     updateBars();
     scoreDisplay.textContent = "0";
     
-    // Load First Question
+    // 4. Load First Question
     loadQuestion();
+}
+
+// Helper: Shuffle Array (Fisher-Yates)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
 
 // ==========================================
 // 5. QUESTION LOOP
 // ==========================================
 function loadQuestion() {
-    if (currentIdx >= questions.length) {
+    // Check Win Condition: Ran out of questions
+    if (currentIdx >= gameQuestions.length) {
         endGame("Victory");
         return;
     }
 
-    const q = questions[currentIdx];
+    const q = gameQuestions[currentIdx];
     
-    // Update Text (This fixes the "Loading..." bug)
+    // Update Text
     qText.textContent = q.question;
-    qProgress.textContent = `QUESTION ${currentIdx + 1} / ${questions.length}`;
+    qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
     
     // Reset Round UI
     comboDisplay.classList.add('hidden');
@@ -160,6 +173,11 @@ function loadQuestion() {
     });
 }
 
+function nextQuestion() {
+    currentIdx++;
+    loadQuestion();
+}
+
 function handleAnswer(btn, selected, correct) {
     clearInterval(timerInterval);
     disableButtons();
@@ -170,7 +188,6 @@ function handleAnswer(btn, selected, correct) {
         calculatePlayerAttack(timeTaken);
     } else {
         btn.classList.add('wrong');
-        // Highlight correct answer
         const btns = document.querySelectorAll('.opt-btn');
         btns.forEach(b => { 
             if(b.textContent === correct) b.classList.add('correct'); 
@@ -200,7 +217,8 @@ function calculatePlayerAttack(timeTaken) {
     combo++;
     if(combo > maxCombo) maxCombo = combo;
 
-    const baseDmg = 100 / questions.length;
+    // Damage calculated based on the number of selected questions (e.g., 100/12)
+    const baseDmg = 100 / gameQuestions.length;
     let speedMult = 1;
     let isCrit = false;
     
