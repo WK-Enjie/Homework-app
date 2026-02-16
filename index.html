@@ -14,11 +14,13 @@
     <div id="login-screen" class="screen active">
         <div class="login-box">
             <h1>🧨 CNY ARCADE 🧨</h1>
-            <p>Enter Mission Code</p>
+            <p>ENTER MISSION CODE</p>
+            
             <div class="input-area">
                 <input type="text" id="pin-input" placeholder="e.g. forces" maxlength="20">
-                <button id="start-btn" class="btn start-btn">START</button>
+                <button id="start-btn" class="btn start-btn">START BATTLE</button>
             </div>
+            
             <p id="error-msg" class="error hidden"></p>
         </div>
     </div>
@@ -30,7 +32,6 @@
         <div class="hud">
             <div class="player-hud">
                 <div class="name">HERO</div>
-                <!-- Player HP Bar -->
                 <div class="hp-bar-container player-bar">
                     <div id="player-hp-fill"></div>
                 </div>
@@ -41,7 +42,6 @@
 
             <div class="enemy-hud">
                 <div class="name">NIAN MONSTER</div>
-                <!-- Enemy HP Bar -->
                 <div class="hp-bar-container enemy-bar">
                     <div id="enemy-hp-fill"></div>
                 </div>
@@ -83,7 +83,7 @@
                 <div class="q-header">
                     <span id="q-progress">LOADING...</span>
                 </div>
-                <h2 id="q-text">...</h2>
+                <h2 id="q-text">Loading Question...</h2>
                 <div id="options-container" class="options-grid"></div>
             </div>
         </div>

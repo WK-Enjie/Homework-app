@@ -1,4 +1,6 @@
-// --- Game State ---
+// ==========================================
+// 1. GAME VARIABLES
+// ==========================================
 let questions = [];
 let currentIdx = 0;
 let score = 0;
@@ -7,12 +9,13 @@ let playerHP = 100;
 let combo = 0;
 let maxCombo = 0;
 
-// Timing
 let questionStartTime;
 let timerInterval;
 const TIME_LIMIT = 15000; // 15 seconds
 
-// DOM Elements
+// ==========================================
+// 2. DOM ELEMENTS
+// ==========================================
 const screens = {
     login: document.getElementById('login-screen'),
     battle: document.getElementById('battle-screen'),
@@ -23,49 +26,64 @@ const pinInput = document.getElementById('pin-input');
 const startBtn = document.getElementById('start-btn');
 const errorMsg = document.getElementById('error-msg');
 
-// UI Elements
-const playerSprite = document.getElementById('player-sprite');
-const nianSprite = document.getElementById('nian-sprite');
+// HUD
+const scoreDisplay = document.getElementById('score-display');
 const enemyHPFill = document.getElementById('enemy-hp-fill');
 const playerHPFill = document.getElementById('player-hp-fill');
 
-const fireball = document.getElementById('fireball'); // Player Projectile
-const darkOrb = document.getElementById('dark-orb'); // Enemy Projectile
+// Sprites
+const playerSprite = document.getElementById('player-sprite');
+const nianSprite = document.getElementById('nian-sprite');
+const fireball = document.getElementById('fireball'); 
+const darkOrb = document.getElementById('dark-orb'); 
 const explosion = document.getElementById('explosion');
 
+// Text FX
 const comboDisplay = document.getElementById('combo-display');
 const critDisplay = document.getElementById('crit-display');
 const missDisplay = document.getElementById('miss-display');
 
+// Control Panel
 const timerFill = document.getElementById('timer-fill');
-const scoreDisplay = document.getElementById('score-display');
 const qText = document.getElementById('q-text');
 const optionsContainer = document.getElementById('options-container');
 const qProgress = document.getElementById('q-progress');
 
-// --- Event Listeners ---
+// ==========================================
+// 3. LISTENERS
+// ==========================================
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') attemptLogin(); });
 
-// --- Core Logic ---
-
+// ==========================================
+// 4. LOGIN & SETUP
+// ==========================================
 async function attemptLogin() {
     const pin = pinInput.value.trim();
-    if (!pin) { showError("Please enter a Mission Code."); return; }
+    if (!pin) {
+        showError("Please enter a Mission Code.");
+        return;
+    }
 
     try {
+        // NOTE: This requires a Local Server (localhost) to work
         const response = await fetch(`worksheets/${pin}.json`);
-        if (!response.ok) throw new Error("Worksheet not found.");
+        
+        if (!response.ok) {
+            throw new Error("Code not found or server error.");
+        }
+        
         const data = await response.json();
         
         if (Array.isArray(data) && data.length > 0) {
             questions = data;
             startGame();
         } else {
-            throw new Error("Invalid JSON format.");
+            throw new Error("File is empty or invalid JSON.");
         }
+
     } catch (err) {
-        showError(`Error: ${err.message}`);
+        showError("Error: " + err.message + ". Make sure you are running a local server.");
     }
 }
 
@@ -75,9 +93,11 @@ function showError(msg) {
 }
 
 function startGame() {
+    // Switch Screens
     screens.login.classList.add('hidden');
     screens.battle.classList.remove('hidden');
-    
+
+    // Reset Stats
     currentIdx = 0;
     score = 0;
     enemyHP = 100;
@@ -86,9 +106,14 @@ function startGame() {
     
     updateBars();
     scoreDisplay.textContent = "0";
+    
+    // Load First Question
     loadQuestion();
 }
 
+// ==========================================
+// 5. QUESTION LOOP
+// ==========================================
 function loadQuestion() {
     if (currentIdx >= questions.length) {
         endGame("Victory");
@@ -96,6 +121,8 @@ function loadQuestion() {
     }
 
     const q = questions[currentIdx];
+    
+    // Update Text (This fixes the "Loading..." bug)
     qText.textContent = q.question;
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${questions.length}`;
     
@@ -104,7 +131,7 @@ function loadQuestion() {
     critDisplay.classList.add('hidden');
     missDisplay.classList.add('hidden');
     
-    // Timer Logic
+    // Start Timer
     clearInterval(timerInterval);
     questionStartTime = Date.now();
     timerFill.style.width = '100%';
@@ -118,11 +145,11 @@ function loadQuestion() {
         if(remainingPct < 30) timerFill.style.background = '#d50000';
         
         if (remainingPct <= 0) {
-            handleTimeout(); // Time ran out!
+            handleTimeout();
         }
     }, 100);
 
-    // Buttons
+    // Create Buttons
     optionsContainer.innerHTML = '';
     q.options.forEach(opt => {
         const btn = document.createElement('button');
@@ -143,24 +170,30 @@ function handleAnswer(btn, selected, correct) {
         calculatePlayerAttack(timeTaken);
     } else {
         btn.classList.add('wrong');
-        // Highlight correct
+        // Highlight correct answer
         const btns = document.querySelectorAll('.opt-btn');
-        btns.forEach(b => { if(b.textContent === correct) b.classList.add('correct'); });
+        btns.forEach(b => { 
+            if(b.textContent === correct) b.classList.add('correct'); 
+        });
         
-        triggerEnemyAttack(); // Wrong answer = Get Hit
+        triggerEnemyAttack();
     }
 }
 
 function handleTimeout() {
     clearInterval(timerInterval);
     disableButtons();
-    triggerEnemyAttack(); // Timeout = Get Hit
+    triggerEnemyAttack();
 }
 
 function disableButtons() {
     const btns = document.querySelectorAll('.opt-btn');
     btns.forEach(b => b.disabled = true);
 }
+
+// ==========================================
+// 6. COMBAT LOGIC
+// ==========================================
 
 // --- Player Attack ---
 function calculatePlayerAttack(timeTaken) {
@@ -215,12 +248,11 @@ function performPlayerAnimation(damage, isCrit) {
     }, 500);
 }
 
-// --- Enemy Attack (The Counter) ---
+// --- Enemy Attack ---
 function triggerEnemyAttack() {
-    combo = 0; // Break combo
-    missDisplay.classList.remove('hidden'); // Show "Missed!"
+    combo = 0;
+    missDisplay.classList.remove('hidden');
 
-    // 1. Launch Dark Orb
     darkOrb.classList.remove('hidden');
     darkOrb.classList.add('anim-shoot-left');
 
@@ -228,12 +260,10 @@ function triggerEnemyAttack() {
         darkOrb.classList.add('hidden');
         darkOrb.classList.remove('anim-shoot-left');
 
-        // 2. Hit Player
         showExplosion('left');
         playerSprite.classList.add('anim-player-hit');
         document.getElementById('game-container').classList.add('anim-shake-screen');
 
-        // 3. Take Damage (Fixed 25% for arcade difficulty)
         playerHP = Math.max(0, playerHP - 25);
         updateBars();
 
@@ -247,7 +277,6 @@ function triggerEnemyAttack() {
                 nextQuestion();
             }
         }, 1000);
-
     }, 500);
 }
 
@@ -261,15 +290,13 @@ function updateBars() {
     enemyHPFill.style.width = `${enemyHP}%`;
     playerHPFill.style.width = `${playerHP}%`;
     
-    // Critical health color
     if(playerHP < 30) playerHPFill.style.background = 'red';
+    else playerHPFill.style.background = 'var(--hp-blue)';
 }
 
-function nextQuestion() {
-    currentIdx++;
-    loadQuestion();
-}
-
+// ==========================================
+// 7. END GAME
+// ==========================================
 function endGame(result) {
     screens.battle.classList.add('hidden');
     screens.end.classList.remove('hidden');
@@ -278,15 +305,17 @@ function endGame(result) {
     const reason = document.getElementById('end-reason');
     document.getElementById('final-score').textContent = score;
 
-    if (result === "Victory" && enemyHP <= 5) {
-        title.textContent = "VICTORY!";
-        title.style.color = "var(--gold)";
-        reason.textContent = "The Nian has fled!";
-    } else if (result === "Defeat") {
+    if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";
         reason.textContent = "You were knocked out!";
-    } else {
+    } 
+    else if (enemyHP <= 5) {
+        title.textContent = "VICTORY!";
+        title.style.color = "var(--gold)";
+        reason.textContent = "The Nian has fled!";
+    } 
+    else {
         title.textContent = "GAME OVER";
         title.style.color = "#aaa";
         reason.textContent = "The Nian survived.";
