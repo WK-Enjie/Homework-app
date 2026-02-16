@@ -14,13 +14,11 @@
     <div id="login-screen" class="screen active">
         <div class="login-box">
             <h1>🧨 CNY ARCADE 🧨</h1>
-            <p>Enter the Mission Code to begin.</p>
-            
+            <p>Enter Mission Code</p>
             <div class="input-area">
                 <input type="text" id="pin-input" placeholder="e.g. forces" maxlength="20">
-                <button id="start-btn" class="btn start-btn">START BATTLE</button>
+                <button id="start-btn" class="btn start-btn">START</button>
             </div>
-            
             <p id="error-msg" class="error hidden"></p>
         </div>
     </div>
@@ -32,6 +30,10 @@
         <div class="hud">
             <div class="player-hud">
                 <div class="name">HERO</div>
+                <!-- Player HP Bar -->
+                <div class="hp-bar-container player-bar">
+                    <div id="player-hp-fill"></div>
+                </div>
                 <div class="score-box">SCORE: <span id="score-display">0</span></div>
             </div>
 
@@ -39,8 +41,9 @@
 
             <div class="enemy-hud">
                 <div class="name">NIAN MONSTER</div>
-                <div class="hp-bar-container">
-                    <div id="hp-bar-fill"></div>
+                <!-- Enemy HP Bar -->
+                <div class="hp-bar-container enemy-bar">
+                    <div id="enemy-hp-fill"></div>
                 </div>
             </div>
         </div>
@@ -50,10 +53,11 @@
             <!-- Combat Text -->
             <div id="combo-display" class="combo-text hidden">COMBO x2!</div>
             <div id="crit-display" class="crit-text hidden">CRITICAL HIT!</div>
+            <div id="miss-display" class="crit-text miss hidden">MISSED!</div>
             
             <!-- Characters -->
             <div class="fighter player">
-                <div class="avatar">👦</div>
+                <div id="player-sprite" class="avatar">👦</div>
                 <div class="shadow"></div>
             </div>
 
@@ -63,8 +67,9 @@
                 <div class="shadow"></div>
             </div>
 
-            <!-- FX -->
-            <div id="fireball" class="fireball hidden">🔥</div>
+            <!-- Projectiles -->
+            <div id="fireball" class="projectile hidden">🔥</div>
+            <div id="dark-orb" class="projectile hidden">⚫</div>
             <div id="explosion" class="explosion hidden">💥</div>
         </div>
 
@@ -88,11 +93,10 @@
     <div id="end-screen" class="screen hidden">
         <div class="victory-box">
             <h1 id="end-title">VICTORY!</h1>
+            <h3 id="end-reason"></h3>
             <div class="stats-grid">
                 <div class="stat-label">FINAL SCORE</div>
                 <div id="final-score" class="big-num">0</div>
-                <div class="stat-label">MAX COMBO</div>
-                <div id="final-combo" class="big-num">0</div>
             </div>
             <button onclick="location.reload()" class="btn start-btn">PLAY AGAIN</button>
         </div>

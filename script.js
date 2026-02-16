@@ -2,14 +2,15 @@
 let questions = [];
 let currentIdx = 0;
 let score = 0;
-let nianHP = 100;
+let enemyHP = 100;
+let playerHP = 100;
 let combo = 0;
 let maxCombo = 0;
 
 // Timing
 let questionStartTime;
 let timerInterval;
-const TIME_LIMIT = 15000; // 15 seconds per question
+const TIME_LIMIT = 15000; // 15 seconds
 
 // DOM Elements
 const screens = {
@@ -22,13 +23,20 @@ const pinInput = document.getElementById('pin-input');
 const startBtn = document.getElementById('start-btn');
 const errorMsg = document.getElementById('error-msg');
 
-// Game UI Elements
+// UI Elements
+const playerSprite = document.getElementById('player-sprite');
 const nianSprite = document.getElementById('nian-sprite');
-const hpFill = document.getElementById('hp-bar-fill');
-const fireball = document.getElementById('fireball');
+const enemyHPFill = document.getElementById('enemy-hp-fill');
+const playerHPFill = document.getElementById('player-hp-fill');
+
+const fireball = document.getElementById('fireball'); // Player Projectile
+const darkOrb = document.getElementById('dark-orb'); // Enemy Projectile
 const explosion = document.getElementById('explosion');
+
 const comboDisplay = document.getElementById('combo-display');
 const critDisplay = document.getElementById('crit-display');
+const missDisplay = document.getElementById('miss-display');
+
 const timerFill = document.getElementById('timer-fill');
 const scoreDisplay = document.getElementById('score-display');
 const qText = document.getElementById('q-text');
@@ -43,32 +51,21 @@ pinInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') attemptLog
 
 async function attemptLogin() {
     const pin = pinInput.value.trim();
-    if (!pin) {
-        showError("Please enter a Mission Code.");
-        return;
-    }
+    if (!pin) { showError("Please enter a Mission Code."); return; }
 
     try {
-        // Attempt to fetch the file based on the PIN
         const response = await fetch(`worksheets/${pin}.json`);
-        
-        if (!response.ok) {
-            if(response.status === 404) throw new Error("Worksheet not found.");
-            throw new Error("Network error.");
-        }
-
+        if (!response.ok) throw new Error("Worksheet not found.");
         const data = await response.json();
         
         if (Array.isArray(data) && data.length > 0) {
             questions = data;
             startGame();
         } else {
-            throw new Error("Invalid JSON format in file.");
+            throw new Error("Invalid JSON format.");
         }
-
     } catch (err) {
-        console.error(err);
-        showError(`Error: ${err.message} (Check the 'worksheets' folder)`);
+        showError(`Error: ${err.message}`);
     }
 }
 
@@ -81,22 +78,20 @@ function startGame() {
     screens.login.classList.add('hidden');
     screens.battle.classList.remove('hidden');
     
-    // Reset Game Stats
     currentIdx = 0;
     score = 0;
-    nianHP = 100;
+    enemyHP = 100;
+    playerHP = 100;
     combo = 0;
-    maxCombo = 0;
     
-    updateHP(100);
+    updateBars();
     scoreDisplay.textContent = "0";
     loadQuestion();
 }
 
 function loadQuestion() {
-    // Check for Win Condition
     if (currentIdx >= questions.length) {
-        endGame();
+        endGame("Victory");
         return;
     }
 
@@ -107,25 +102,27 @@ function loadQuestion() {
     // Reset Round UI
     comboDisplay.classList.add('hidden');
     critDisplay.classList.add('hidden');
+    missDisplay.classList.add('hidden');
     
-    // Setup Timer
+    // Timer Logic
     clearInterval(timerInterval);
     questionStartTime = Date.now();
     timerFill.style.width = '100%';
-    timerFill.style.background = '#00e676'; // Green
+    timerFill.style.background = '#00e676';
     
     timerInterval = setInterval(() => {
         const elapsed = Date.now() - questionStartTime;
         const remainingPct = Math.max(0, 100 - (elapsed / TIME_LIMIT * 100));
         timerFill.style.width = `${remainingPct}%`;
         
-        // Color changes based on urgency
-        if(remainingPct < 30) timerFill.style.background = '#d50000'; // Red
-        else if(remainingPct < 60) timerFill.style.background = '#ff9100'; // Orange
+        if(remainingPct < 30) timerFill.style.background = '#d50000';
         
+        if (remainingPct <= 0) {
+            handleTimeout(); // Time ran out!
+        }
     }, 100);
 
-    // Generate Buttons
+    // Buttons
     optionsContainer.innerHTML = '';
     q.options.forEach(opt => {
         const btn = document.createElement('button');
@@ -137,97 +134,135 @@ function loadQuestion() {
 }
 
 function handleAnswer(btn, selected, correct) {
-    // Stop Timer & Lock Buttons
     clearInterval(timerInterval);
-    const btns = document.querySelectorAll('.opt-btn');
-    btns.forEach(b => b.disabled = true);
+    disableButtons();
 
     if (selected === correct) {
         btn.classList.add('correct');
         const timeTaken = Date.now() - questionStartTime;
-        calculateAttack(timeTaken);
+        calculatePlayerAttack(timeTaken);
     } else {
         btn.classList.add('wrong');
-        // Show correct answer
+        // Highlight correct
+        const btns = document.querySelectorAll('.opt-btn');
         btns.forEach(b => { if(b.textContent === correct) b.classList.add('correct'); });
         
-        // Reset Combo
-        combo = 0;
-        setTimeout(nextQuestion, 1500);
+        triggerEnemyAttack(); // Wrong answer = Get Hit
     }
 }
 
-function calculateAttack(timeTaken) {
+function handleTimeout() {
+    clearInterval(timerInterval);
+    disableButtons();
+    triggerEnemyAttack(); // Timeout = Get Hit
+}
+
+function disableButtons() {
+    const btns = document.querySelectorAll('.opt-btn');
+    btns.forEach(b => b.disabled = true);
+}
+
+// --- Player Attack ---
+function calculatePlayerAttack(timeTaken) {
     combo++;
     if(combo > maxCombo) maxCombo = combo;
 
-    // Calculate Damage
     const baseDmg = 100 / questions.length;
     let speedMult = 1;
     let isCrit = false;
     
-    if (timeTaken < 3000) { // Fast Answer (<3s)
-        speedMult = 1.5;
-        isCrit = true;
-    } else if (timeTaken > 10000) { // Slow Answer (>10s)
-        speedMult = 0.8;
-    }
+    if (timeTaken < 3000) { speedMult = 1.5; isCrit = true; }
+    else if (timeTaken > 10000) { speedMult = 0.8; }
 
-    // Damage Formula
     const totalDmg = baseDmg * speedMult * (1 + (combo * 0.1));
     const points = Math.floor(100 * speedMult * (1 + (combo * 0.1)));
     
     score += points;
     scoreDisplay.textContent = score;
 
-    performAttackAnimation(totalDmg, isCrit);
+    performPlayerAnimation(totalDmg, isCrit);
 }
 
-function performAttackAnimation(damage, isCrit) {
-    // 1. Combo Text
+function performPlayerAnimation(damage, isCrit) {
     if (combo > 1) {
         comboDisplay.textContent = `COMBO x${combo}!`;
         comboDisplay.classList.remove('hidden');
     }
 
-    // 2. Fireball Launch
     fireball.classList.remove('hidden');
-    fireball.classList.add('anim-shoot');
+    fireball.classList.add('anim-shoot-right');
 
-    // 3. Impact Event (Timing matches CSS animation)
     setTimeout(() => {
         fireball.classList.add('hidden');
-        fireball.classList.remove('anim-shoot');
+        fireball.classList.remove('anim-shoot-right');
 
-        // Explosion Sprite
-        explosion.classList.remove('hidden');
-        setTimeout(() => explosion.classList.add('hidden'), 500);
-
-        // Nian Hit Reaction
-        nianSprite.classList.add('anim-hit');
+        showExplosion('right');
+        nianSprite.classList.add('anim-enemy-hit');
         
-        // Crit Shake
         if(isCrit) {
             critDisplay.classList.remove('hidden');
             document.getElementById('game-container').classList.add('anim-shake-screen');
         }
 
-        // Apply HP Damage
-        nianHP = Math.max(0, nianHP - damage);
-        updateHP(nianHP);
+        enemyHP = Math.max(0, enemyHP - damage);
+        updateBars();
 
-        // Cleanup & Next
         setTimeout(() => {
-            nianSprite.classList.remove('anim-hit');
+            nianSprite.classList.remove('anim-enemy-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
             nextQuestion();
+        }, 1000);
+    }, 500);
+}
+
+// --- Enemy Attack (The Counter) ---
+function triggerEnemyAttack() {
+    combo = 0; // Break combo
+    missDisplay.classList.remove('hidden'); // Show "Missed!"
+
+    // 1. Launch Dark Orb
+    darkOrb.classList.remove('hidden');
+    darkOrb.classList.add('anim-shoot-left');
+
+    setTimeout(() => {
+        darkOrb.classList.add('hidden');
+        darkOrb.classList.remove('anim-shoot-left');
+
+        // 2. Hit Player
+        showExplosion('left');
+        playerSprite.classList.add('anim-player-hit');
+        document.getElementById('game-container').classList.add('anim-shake-screen');
+
+        // 3. Take Damage (Fixed 25% for arcade difficulty)
+        playerHP = Math.max(0, playerHP - 25);
+        updateBars();
+
+        setTimeout(() => {
+            playerSprite.classList.remove('anim-player-hit');
+            document.getElementById('game-container').classList.remove('anim-shake-screen');
+            
+            if (playerHP <= 0) {
+                endGame("Defeat");
+            } else {
+                nextQuestion();
+            }
         }, 1000);
 
     }, 500);
 }
 
-function updateHP(val) {
-    hpFill.style.width = `${val}%`;
+function showExplosion(side) {
+    explosion.style.left = side === 'right' ? '80%' : '10%';
+    explosion.classList.remove('hidden');
+    setTimeout(() => explosion.classList.add('hidden'), 500);
+}
+
+function updateBars() {
+    enemyHPFill.style.width = `${enemyHP}%`;
+    playerHPFill.style.width = `${playerHP}%`;
+    
+    // Critical health color
+    if(playerHP < 30) playerHPFill.style.background = 'red';
 }
 
 function nextQuestion() {
@@ -235,21 +270,25 @@ function nextQuestion() {
     loadQuestion();
 }
 
-function endGame() {
+function endGame(result) {
     screens.battle.classList.add('hidden');
     screens.end.classList.remove('hidden');
     
     const title = document.getElementById('end-title');
+    const reason = document.getElementById('end-reason');
     document.getElementById('final-score').textContent = score;
-    document.getElementById('final-combo').textContent = maxCombo;
 
-    if (nianHP <= 5) { // Margin of error for floats
+    if (result === "Victory" && enemyHP <= 5) {
         title.textContent = "VICTORY!";
         title.style.color = "var(--gold)";
-        title.style.textShadow = "0 0 20px var(--red)";
+        reason.textContent = "The Nian has fled!";
+    } else if (result === "Defeat") {
+        title.textContent = "DEFEAT";
+        title.style.color = "red";
+        reason.textContent = "You were knocked out!";
     } else {
         title.textContent = "GAME OVER";
-        title.style.color = "#d50000";
-        title.style.textShadow = "none";
+        title.style.color = "#aaa";
+        reason.textContent = "The Nian survived.";
     }
 }
