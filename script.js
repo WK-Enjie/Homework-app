@@ -1,8 +1,8 @@
 // ==========================================
 // 1. GAME VARIABLES
 // ==========================================
-let allQuestions = []; // Stores all questions from file
-let gameQuestions = []; // Stores the selected 12
+let allQuestions = []; 
+let gameQuestions = []; 
 let currentIdx = 0;
 let score = 0;
 let enemyHP = 100;
@@ -27,24 +27,20 @@ const pinInput = document.getElementById('pin-input');
 const startBtn = document.getElementById('start-btn');
 const errorMsg = document.getElementById('error-msg');
 
-// HUD
 const scoreDisplay = document.getElementById('score-display');
 const enemyHPFill = document.getElementById('enemy-hp-fill');
 const playerHPFill = document.getElementById('player-hp-fill');
 
-// Sprites
 const playerSprite = document.getElementById('player-sprite');
 const nianSprite = document.getElementById('nian-sprite');
 const fireball = document.getElementById('fireball'); 
 const darkOrb = document.getElementById('dark-orb'); 
 const explosion = document.getElementById('explosion');
 
-// Text FX
 const comboDisplay = document.getElementById('combo-display');
 const critDisplay = document.getElementById('crit-display');
 const missDisplay = document.getElementById('miss-display');
 
-// Control Panel
 const timerFill = document.getElementById('timer-fill');
 const qText = document.getElementById('q-text');
 const optionsContainer = document.getElementById('options-container');
@@ -68,10 +64,7 @@ async function attemptLogin() {
 
     try {
         const response = await fetch(`worksheets/${pin}.json`);
-        
-        if (!response.ok) {
-            throw new Error("Code not found or server error.");
-        }
+        if (!response.ok) throw new Error("Code not found or server error.");
         
         const data = await response.json();
         
@@ -81,7 +74,6 @@ async function attemptLogin() {
         } else {
             throw new Error("File is empty or invalid JSON.");
         }
-
     } catch (err) {
         showError("Error: " + err.message);
     }
@@ -93,29 +85,27 @@ function showError(msg) {
 }
 
 function startGame() {
-    // 1. Shuffle and Select Max 12 Questions
+    // 1. Shuffle & Select 12
     shuffleArray(allQuestions);
     gameQuestions = allQuestions.slice(0, 12);
 
-    // 2. Switch Screens
-    screens.login.classList.add('hidden');
-    screens.battle.classList.remove('hidden');
-
-    // 3. Reset Stats
+    // 2. Reset Stats
     currentIdx = 0;
     score = 0;
     enemyHP = 100;
     playerHP = 100;
     combo = 0;
     
+    // 3. Update UI
     updateBars();
     scoreDisplay.textContent = "0";
-    
+    screens.login.classList.add('hidden');
+    screens.battle.classList.remove('hidden');
+
     // 4. Load First Question
     loadQuestion();
 }
 
-// Helper: Shuffle Array (Fisher-Yates)
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -124,10 +114,10 @@ function shuffleArray(array) {
 }
 
 // ==========================================
-// 5. QUESTION LOOP
+// 5. QUESTION LOGIC
 // ==========================================
 function loadQuestion() {
-    // Check Win Condition: Ran out of questions
+    // Check Win Condition
     if (currentIdx >= gameQuestions.length) {
         endGame("Victory");
         return;
@@ -135,16 +125,16 @@ function loadQuestion() {
 
     const q = gameQuestions[currentIdx];
     
-    // Update Text
+    // UI Updates
     qText.textContent = q.question;
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
     
-    // Reset Round UI
+    // Hide previous FX
     comboDisplay.classList.add('hidden');
     critDisplay.classList.add('hidden');
     missDisplay.classList.add('hidden');
     
-    // Start Timer
+    // Reset Timer
     clearInterval(timerInterval);
     questionStartTime = Date.now();
     timerFill.style.width = '100%';
@@ -162,7 +152,7 @@ function loadQuestion() {
         }
     }, 100);
 
-    // Create Buttons
+    // Generate Buttons
     optionsContainer.innerHTML = '';
     q.options.forEach(opt => {
         const btn = document.createElement('button');
@@ -171,11 +161,6 @@ function loadQuestion() {
         btn.onclick = () => handleAnswer(btn, opt, q.answer);
         optionsContainer.appendChild(btn);
     });
-}
-
-function nextQuestion() {
-    currentIdx++;
-    loadQuestion();
 }
 
 function handleAnswer(btn, selected, correct) {
@@ -188,10 +173,9 @@ function handleAnswer(btn, selected, correct) {
         calculatePlayerAttack(timeTaken);
     } else {
         btn.classList.add('wrong');
+        // Show correct answer
         const btns = document.querySelectorAll('.opt-btn');
-        btns.forEach(b => { 
-            if(b.textContent === correct) b.classList.add('correct'); 
-        });
+        btns.forEach(b => { if(b.textContent === correct) b.classList.add('correct'); });
         
         triggerEnemyAttack();
     }
@@ -209,15 +193,14 @@ function disableButtons() {
 }
 
 // ==========================================
-// 6. COMBAT LOGIC
+// 6. COMBAT & ANIMATION
 // ==========================================
 
-// --- Player Attack ---
+// --- PLAYER TURN ---
 function calculatePlayerAttack(timeTaken) {
     combo++;
     if(combo > maxCombo) maxCombo = combo;
 
-    // Damage calculated based on the number of selected questions (e.g., 100/12)
     const baseDmg = 100 / gameQuestions.length;
     let speedMult = 1;
     let isCrit = false;
@@ -231,10 +214,15 @@ function calculatePlayerAttack(timeTaken) {
     score += points;
     scoreDisplay.textContent = score;
 
-    performPlayerAnimation(totalDmg, isCrit);
+    // Trigger Visuals -> Then Trigger Next Question
+    performPlayerAnimation(totalDmg, isCrit, () => {
+        enemyHP = Math.max(0, enemyHP - totalDmg);
+        updateBars();
+        goToNextQuestion();
+    });
 }
 
-function performPlayerAnimation(damage, isCrit) {
+function performPlayerAnimation(damage, isCrit, callback) {
     if (combo > 1) {
         comboDisplay.textContent = `COMBO x${combo}!`;
         comboDisplay.classList.remove('hidden');
@@ -243,6 +231,7 @@ function performPlayerAnimation(damage, isCrit) {
     fireball.classList.remove('hidden');
     fireball.classList.add('anim-shoot-right');
 
+    // Impact Delay
     setTimeout(() => {
         fireball.classList.add('hidden');
         fireball.classList.remove('anim-shoot-right');
@@ -255,18 +244,17 @@ function performPlayerAnimation(damage, isCrit) {
             document.getElementById('game-container').classList.add('anim-shake-screen');
         }
 
-        enemyHP = Math.max(0, enemyHP - damage);
-        updateBars();
-
+        // Cleanup Delay
         setTimeout(() => {
             nianSprite.classList.remove('anim-enemy-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
-            nextQuestion();
+            if (callback) callback();
         }, 1000);
+
     }, 500);
 }
 
-// --- Enemy Attack ---
+// --- ENEMY TURN ---
 function triggerEnemyAttack() {
     combo = 0;
     missDisplay.classList.remove('hidden');
@@ -274,6 +262,7 @@ function triggerEnemyAttack() {
     darkOrb.classList.remove('hidden');
     darkOrb.classList.add('anim-shoot-left');
 
+    // Impact Delay
     setTimeout(() => {
         darkOrb.classList.add('hidden');
         darkOrb.classList.remove('anim-shoot-left');
@@ -285,6 +274,7 @@ function triggerEnemyAttack() {
         playerHP = Math.max(0, playerHP - 25);
         updateBars();
 
+        // Cleanup Delay
         setTimeout(() => {
             playerSprite.classList.remove('anim-player-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
@@ -292,10 +282,17 @@ function triggerEnemyAttack() {
             if (playerHP <= 0) {
                 endGame("Defeat");
             } else {
-                nextQuestion();
+                goToNextQuestion();
             }
         }, 1000);
+
     }, 500);
+}
+
+// --- SHARED UTILS ---
+function goToNextQuestion() {
+    currentIdx++;
+    loadQuestion();
 }
 
 function showExplosion(side) {
