@@ -3,84 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNY Battle: Defeat the Nian</title>
+    <title>CNY Battle Arcade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="particles-container"></div>
-
-<header>
-    <h1>🧨 CNY Battle: Defeat the Nian 👹</h1>
-</header>
-
-<div class="main-container" id="main-container">
+<div id="game-container">
     
     <!-- LOGIN SCREEN -->
     <div id="login-screen" class="screen active">
-        <div class="card">
-            <h2>Enter Game PIN</h2>
-            <div class="input-group">
-                <input type="text" id="pin-input" placeholder="e.g. forces" maxlength="15">
-                <button id="start-btn" class="btn primary">Start Battle</button>
+        <div class="login-box">
+            <h1>🧨 CNY ARCADE 🧨</h1>
+            <p>Enter the Mission Code to begin.</p>
+            
+            <div class="input-area">
+                <input type="text" id="pin-input" placeholder="e.g. forces" maxlength="20">
+                <button id="start-btn" class="btn start-btn">START BATTLE</button>
             </div>
-            <p id="error-msg" class="error hidden">Worksheet not found.</p>
+            
+            <p id="error-msg" class="error hidden"></p>
         </div>
     </div>
 
-    <!-- GAME SCREEN -->
-    <div id="game-screen" class="screen hidden">
+    <!-- BATTLE SCREEN -->
+    <div id="battle-screen" class="screen hidden">
         
-        <!-- BATTLE STAGE -->
-        <div class="battle-stage">
-            <!-- HUD -->
-            <div class="top-hud">
-                <div class="combo-box hidden" id="combo-box">
-                    COMBO <span id="combo-count">x0</span> 🔥
-                </div>
-                <div class="health-ui">
-                    <span class="label">NIAN HP</span>
-                    <div class="health-bar-bg">
-                        <div id="health-bar-fill"></div>
-                    </div>
-                </div>
+        <!-- HUD -->
+        <div class="hud">
+            <div class="player-hud">
+                <div class="name">HERO</div>
+                <div class="score-box">SCORE: <span id="score-display">0</span></div>
             </div>
 
-            <!-- Floating Damage Text Container -->
-            <div id="damage-text-container"></div>
+            <div class="vs-logo">VS</div>
 
-            <!-- Sprites -->
-            <div class="sprite player">🧒</div>
-            <div id="projectile" class="sprite projectile hidden">🧨</div>
-            <div id="nian" class="sprite nian">👹</div>
-        </div>
-
-        <!-- TIMER BAR -->
-        <div class="timer-container">
-            <div id="timer-bar"></div>
-        </div>
-
-        <!-- QUESTION AREA -->
-        <div class="question-area">
-            <div class="stats-row">
-                <span id="progress-indicator">Q 1/5</span>
-                <span id="score-indicator">Score: 0</span>
+            <div class="enemy-hud">
+                <div class="name">NIAN MONSTER</div>
+                <div class="hp-bar-container">
+                    <div id="hp-bar-fill"></div>
+                </div>
             </div>
-            <h3 id="question-text">Loading...</h3>
-            <div id="options-grid" class="options-grid"></div>
+        </div>
+
+        <!-- ARENA -->
+        <div class="arena">
+            <!-- Combat Text -->
+            <div id="combo-display" class="combo-text hidden">COMBO x2!</div>
+            <div id="crit-display" class="crit-text hidden">CRITICAL HIT!</div>
+            
+            <!-- Characters -->
+            <div class="fighter player">
+                <div class="avatar">👦</div>
+                <div class="shadow"></div>
+            </div>
+
+            <div class="fighter enemy">
+                <div id="nian-sprite" class="avatar">👹</div>
+                <div class="aura"></div>
+                <div class="shadow"></div>
+            </div>
+
+            <!-- FX -->
+            <div id="fireball" class="fireball hidden">🔥</div>
+            <div id="explosion" class="explosion hidden">💥</div>
+        </div>
+
+        <!-- CONTROL PANEL -->
+        <div class="control-panel">
+            <div class="timer-strip">
+                <div id="timer-fill"></div>
+            </div>
+            
+            <div class="question-box">
+                <div class="q-header">
+                    <span id="q-progress">LOADING...</span>
+                </div>
+                <h2 id="q-text">...</h2>
+                <div id="options-container" class="options-grid"></div>
+            </div>
         </div>
     </div>
 
     <!-- END SCREEN -->
     <div id="end-screen" class="screen hidden">
-        <div class="lanterns">🏮 🏮 🏮</div>
-        <h1 id="end-title">VICTORY!</h1>
-        <p id="end-message">The Nian has fled!</p>
-        <div class="final-stats">
-            <p>Final Score: <span id="final-score">0</span></p>
-            <p>Max Combo: <span id="max-combo">0</span></p>
+        <div class="victory-box">
+            <h1 id="end-title">VICTORY!</h1>
+            <div class="stats-grid">
+                <div class="stat-label">FINAL SCORE</div>
+                <div id="final-score" class="big-num">0</div>
+                <div class="stat-label">MAX COMBO</div>
+                <div id="final-combo" class="big-num">0</div>
+            </div>
+            <button onclick="location.reload()" class="btn start-btn">PLAY AGAIN</button>
         </div>
-        <button id="restart-btn" class="btn primary">Play Again</button>
     </div>
 
 </div>
