@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Which instrument is used to measure the size of a frictional force in the laboratory?",
+    "options": [
+      "Beam Balance",
+      "Extension spring balance",
+      "Electronic Scale",
+      "Measuring Tape"
+    ],
+    "answer": "Extension spring balance"
+  },
+  {
+    "question": "An object weighs 120N on Planet A where gravity is 12 N/kg. What is its weight on Planet B where gravity is 4 N/kg?",
+    "options": [
+      "10 N",
+      "30 N",
+      "40 N",
+      "360 N"
+    ],
+    "answer": "40 N"
+  },
+  {
+    "question": "A block slides down a rough slope. In which direction does the frictional force act?",
+    "options": [
+      "Down the slope (with the movement)",
+      "Up the slope (opposing the movement)",
+      "Perpendicular to the slope",
+      "Vertically downwards (gravity)"
+    ],
+    "answer": "Up the slope (opposing the movement)"
+  },
+  {
+    "question": "Why do tractors designed for soft, muddy ground have very wide tires?",
+    "options": [
+      "To increase the friction so it moves faster",
+      "To increase the pressure on the mud",
+      "To increase the surface area and reduce pressure",
+      "To decrease the weight of the tractor"
+    ],
+    "answer": "To increase the surface area and reduce pressure"
+  },
+  {
+    "question": "A 60kg student stands on one foot. The area of his foot is 0.03 m². (Take g = 10 N/kg). What is the pressure exerted?",
+    "options": [
+      "200 Pa",
+      "2,000 Pa",
+      "20,000 Pa",
+      "180 Pa"
+    ],
+    "answer": "20,000 Pa"
+  },
+  {
+    "question": "A solid cube has a weight of 500N. If you slice the cube in half and stack the two pieces vertically, how does the pressure on the floor change?",
+    "options": [
+      "The pressure remains the same",
+      "The pressure doubles",
+      "The pressure is halved",
+      "The pressure becomes zero"
+    ],
+    "answer": "The pressure doubles"
+  },
+  {
+    "question": "You are trying to loosen a very tight bolt with a wrench. Which action will make it easier to turn?",
+    "options": [
+      "Using a shorter wrench",
+      "Using a longer wrench",
+      "Applying force closer to the bolt",
+      "Greasing the handle of the wrench"
+    ],
+    "answer": "Using a longer wrench"
+  },
+  {
+    "question": "A skydiver opens his parachute. Why does he slow down?",
+    "options": [
+      "His weight decreases",
+      "The air resistance increases significantly due to larger surface area",
+      "The parachute blocks gravity",
+      "The air pressure decreases at high altitude"
+    ],
+    "answer": "The air resistance increases significantly due to larger surface area"
+  },
+  {
+    "question": "If you take a suction cup to the Moon (where there is no atmosphere), will it stick to a smooth vertical wall?",
+    "options": [
+      "Yes, because gravity is lower",
+      "Yes, because the wall is smooth",
+      "No, because there is no atmospheric pressure to push it against the wall",
+      "No, because the suction cup becomes weightless"
+    ],
+    "answer": "No, because there is no atmospheric pressure to push it against the wall"
+  },
+  {
+    "question": "Why do your ears often 'pop' when you travel up a high mountain?",
+    "options": [
+      "Atmospheric pressure decreases as you go higher",
+      "Atmospheric pressure increases as you go higher",
+      "Gravity becomes stronger at the top of the mountain",
+      "There is more friction in the air at high altitudes"
+    ],
+    "answer": "Atmospheric pressure decreases as you go higher"
+  },
+  {
+    "question": "Calculate the Weight of a 200g apple on Earth (g = 10 N/kg). (Note the unit is grams!)",
+    "options": [
+      "2 N",
+      "20 N",
+      "200 N",
+      "2000 N"
+    ],
+    "answer": "2 N"
+  },
+  {
+    "question": "Which statement correctly defines Weight?",
+    "options": [
+      "Weight is the amount of matter in an object",
+      "Weight is the amount of gravitational force acting on an object",
+      "Weight is constant throughout the universe",
+      "Weight is measured in Kilograms (kg)"
+    ],
+    "answer": "Weight is the amount of gravitational force acting on an object"
+  }
+]
