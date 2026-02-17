@@ -10,9 +10,11 @@ let playerHP = 100;
 let combo = 0;
 let maxCombo = 0;
 
+// Timing
 let questionStartTime;
 let timerInterval;
-const TIME_LIMIT = 15000; // 15 seconds
+let currentRoundTime = 15000; // Default, but changes per question
+const DEFAULT_TIME_SEC = 15; 
 
 // ==========================================
 // 2. DOM ELEMENTS
@@ -117,7 +119,6 @@ function shuffleArray(array) {
 // 5. QUESTION LOGIC
 // ==========================================
 function loadQuestion() {
-    // Check Win Condition
     if (currentIdx >= gameQuestions.length) {
         endGame("Victory");
         return;
@@ -125,24 +126,32 @@ function loadQuestion() {
 
     const q = gameQuestions[currentIdx];
     
+    // --- SET TIME LIMIT ---
+    // Use JSON time if exists, otherwise default to 15s
+    const seconds = q.time ? parseInt(q.time) : DEFAULT_TIME_SEC;
+    currentRoundTime = seconds * 1000;
+
     // UI Updates
     qText.textContent = q.question;
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
     
-    // Hide previous FX
+    // Hide FX
     comboDisplay.classList.add('hidden');
     critDisplay.classList.add('hidden');
     missDisplay.classList.add('hidden');
     
-    // Reset Timer
+    // Reset Timer Visuals
     clearInterval(timerInterval);
     questionStartTime = Date.now();
     timerFill.style.width = '100%';
     timerFill.style.background = '#00e676';
     
+    // Start Interval
     timerInterval = setInterval(() => {
         const elapsed = Date.now() - questionStartTime;
-        const remainingPct = Math.max(0, 100 - (elapsed / TIME_LIMIT * 100));
+        // Calculate percentage based on dynamic currentRoundTime
+        const remainingPct = Math.max(0, 100 - (elapsed / currentRoundTime * 100));
+        
         timerFill.style.width = `${remainingPct}%`;
         
         if(remainingPct < 30) timerFill.style.background = '#d50000';
@@ -173,10 +182,8 @@ function handleAnswer(btn, selected, correct) {
         calculatePlayerAttack(timeTaken);
     } else {
         btn.classList.add('wrong');
-        // Show correct answer
         const btns = document.querySelectorAll('.opt-btn');
         btns.forEach(b => { if(b.textContent === correct) b.classList.add('correct'); });
-        
         triggerEnemyAttack();
     }
 }
@@ -205,8 +212,19 @@ function calculatePlayerAttack(timeTaken) {
     let speedMult = 1;
     let isCrit = false;
     
-    if (timeTaken < 3000) { speedMult = 1.5; isCrit = true; }
-    else if (timeTaken > 10000) { speedMult = 0.8; }
+    // DYNAMIC CRIT LOGIC:
+    // Crit if answered within the first 25% of the allotted time
+    // Slow if took longer than 75% of the allotted time
+    const critThreshold = currentRoundTime * 0.25;
+    const slowThreshold = currentRoundTime * 0.75;
+
+    if (timeTaken < critThreshold) { 
+        speedMult = 1.5; 
+        isCrit = true; 
+    }
+    else if (timeTaken > slowThreshold) { 
+        speedMult = 0.8; 
+    }
 
     const totalDmg = baseDmg * speedMult * (1 + (combo * 0.1));
     const points = Math.floor(100 * speedMult * (1 + (combo * 0.1)));
@@ -214,7 +232,6 @@ function calculatePlayerAttack(timeTaken) {
     score += points;
     scoreDisplay.textContent = score;
 
-    // Trigger Visuals -> Then Trigger Next Question
     performPlayerAnimation(totalDmg, isCrit, () => {
         enemyHP = Math.max(0, enemyHP - totalDmg);
         updateBars();
@@ -231,7 +248,6 @@ function performPlayerAnimation(damage, isCrit, callback) {
     fireball.classList.remove('hidden');
     fireball.classList.add('anim-shoot-right');
 
-    // Impact Delay
     setTimeout(() => {
         fireball.classList.add('hidden');
         fireball.classList.remove('anim-shoot-right');
@@ -244,7 +260,6 @@ function performPlayerAnimation(damage, isCrit, callback) {
             document.getElementById('game-container').classList.add('anim-shake-screen');
         }
 
-        // Cleanup Delay
         setTimeout(() => {
             nianSprite.classList.remove('anim-enemy-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
@@ -262,7 +277,6 @@ function triggerEnemyAttack() {
     darkOrb.classList.remove('hidden');
     darkOrb.classList.add('anim-shoot-left');
 
-    // Impact Delay
     setTimeout(() => {
         darkOrb.classList.add('hidden');
         darkOrb.classList.remove('anim-shoot-left');
@@ -274,7 +288,6 @@ function triggerEnemyAttack() {
         playerHP = Math.max(0, playerHP - 25);
         updateBars();
 
-        // Cleanup Delay
         setTimeout(() => {
             playerSprite.classList.remove('anim-player-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
