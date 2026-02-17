@@ -1,0 +1,162 @@
+[
+  {
+    "question": "Mrs. Tan spent 20% of her money on a bag and 50% of the REMAINDER on a wallet. What percentage of her original money did she have left?",
+    "options": [
+      "40%",
+      "30%",
+      "50%",
+      "10%"
+    ],
+    "answer": "40%"
+  },
+  {
+    "question": "20% of Jack's savings is equal to 40% of Pony's savings. What is the ratio of Jack's savings to Pony's savings?",
+    "options": [
+      "1 : 2",
+      "2 : 1",
+      "1 : 4",
+      "2 : 4"
+    ],
+    "answer": "2 : 1"
+  },
+  {
+    "question": "A shirt was sold at $80 after a discount of 20%. What was the original price of the shirt?",
+    "options": [
+      "$100",
+      "$96",
+      "$64",
+      "$120"
+    ],
+    "answer": "$100"
+  },
+  {
+    "question": "Ken spent 2/5 of his savings while Gin spent 50% of her savings. In the end, they had the same amount of savings left. Find the ratio of Ken's savings to Gin's savings at first.",
+    "options": [
+      "5 : 6",
+      "6 : 5",
+      "1 : 2",
+      "2 : 1"
+    ],
+    "answer": "5 : 6"
+  },
+  {
+    "question": "John spent 1/4 of his salary on rent and 20% of the REMAINDER on food. He had $1200 left. What was his original salary?",
+    "options": [
+      "$2000",
+      "$2400",
+      "$1600",
+      "$3000"
+    ],
+    "answer": "$2000"
+  },
+  {
+    "question": "40% of the Red beads is equal to 2/3 of the Blue beads. What is the ratio of Red beads : Blue beads?",
+    "options": [
+      "5 : 3",
+      "3 : 5",
+      "2 : 3",
+      "8 : 6"
+    ],
+    "answer": "5 : 3"
+  },
+  {
+    "question": "During a sale, a bag is sold at a discount of 25%. If the discount amount is $15, what is the selling price (price after discount)?",
+    "options": [
+      "$45",
+      "$60",
+      "$40",
+      "$75"
+    ],
+    "answer": "$45"
+  },
+  {
+    "question": "Adam spent 80% of his money. Eve spent 3/4 of her money. They had the same amount of money left ($10 each). What is the ratio of Adam's original money to Eve's original money?",
+    "options": [
+      "5 : 4",
+      "4 : 5",
+      "1 : 1",
+      "8 : 7"
+    ],
+    "answer": "5 : 4"
+  },
+  {
+    "question": "A tank is 50% full. 20% of the water IN THE TANK is used to water plants. What percentage of the tank is filled now?",
+    "options": [
+      "40%",
+      "30%",
+      "10%",
+      "80%"
+    ],
+    "answer": "40%"
+  },
+  {
+    "question": "Tank X is 20% full. Tank Y is 3/5 full. Both tanks contain the same amount of water (60 liters). Which tank has a larger capacity?",
+    "options": [
+      "Tank X",
+      "Tank Y",
+      "Both are the same",
+      "Cannot be determined"
+    ],
+    "answer": "Tank X"
+  },
+  {
+    "question": "After spending 30% of his money, Peter had $140 left. How much did he SPEND?",
+    "options": [
+      "$60",
+      "$42",
+      "$200",
+      "$70"
+    ],
+    "answer": "$60"
+  },
+  {
+    "question": "The price of a watch increased by 10% to $110. What was the original price?",
+    "options": [
+      "$100",
+      "$99",
+      "$121",
+      "$90"
+    ],
+    "answer": "$100"
+  },
+  {
+    "question": "Mary had some flour. She used 40% of it for a cake and 1/3 of the REMAINDER for cookies. What fraction of the total flour was used for cookies?",
+    "options": [
+      "1/5",
+      "1/3",
+      "2/5",
+      "1/4"
+    ],
+    "answer": "1/5"
+  },
+  {
+    "question": "Ali spent 20% of his allowance on transport. He spent 40% of the REMAINING money on food. What ratio of his allowance did he spend on Transport : Food?",
+    "options": [
+      "5 : 8",
+      "1 : 2",
+      "2 : 4",
+      "1 : 4"
+    ],
+    "answer": "5 : 8"
+  },
+  {
+    "question": "Mr. Lee bought a TV for $800. He had to pay an additional 8% GST on the price. How much did he pay in total?",
+    "options": [
+      "$864",
+      "$808",
+      "$880",
+      "$64"
+    ],
+    "answer": "$864"
+  },
+  {
+    "question": "30% of Ali's money is equal to 10% of Bala's money. What is the ratio of Ali's money to Bala's money?",
+    "options": [
+      "1 : 3",
+      "3 : 1",
+      "3 : 10",
+      "1 : 1"
+    ],
+    "answer": "1 : 3"
+  }
+]
