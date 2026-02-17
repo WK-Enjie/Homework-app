@@ -17,7 +17,8 @@
       "40 N",
       "360 N"
     ],
-    "answer": "40 N"
+    "answer": "40 N",
+    "time": 30
   },
   {
     "question": "A block slides down a rough slope. In which direction does the frictional force act?",
@@ -47,7 +48,8 @@
       "20,000 Pa",
       "180 Pa"
     ],
-    "answer": "20,000 Pa"
+    "answer": "20,000 Pa",
+    "time": 30
   },
   {
     "question": "A solid cube has a weight of 500N. If you slice the cube in half and stack the two pieces vertically, how does the pressure on the floor change?",
@@ -107,7 +109,8 @@
       "200 N",
       "2000 N"
     ],
-    "answer": "2 N"
+    "answer": "2 N",
+    "time": 40
   },
   {
     "question": "Which statement correctly defines Weight?",
@@ -119,4 +122,5 @@
     ],
     "answer": "Weight is the amount of gravitational force acting on an object"
   }
+
 ]
