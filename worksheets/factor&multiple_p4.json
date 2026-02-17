@@ -7,7 +7,8 @@
       "46",
       "48"
     ],
-    "answer": "42"
+    "answer": "42",
+    "time": 30
   },
   {
     "question": "Bus A leaves the interchange every 10 minutes. Bus B leaves every 15 minutes. They both left at 9:00 AM. What time will they leave together again?",
@@ -27,7 +28,8 @@
       "6 cm",
       "4 cm"
     ],
-    "answer": "6 cm"
+    "answer": "6 cm",
+    "time": 45
   },
   {
     "question": "Which of the following numbers has an ODD number of factors?",
@@ -37,7 +39,8 @@
       "9",
       "15"
     ],
-    "answer": "9"
+    "answer": "9",
+    "time": 30
   },
   {
     "question": "The sum of the first two Common Multiples of 3 and 4 is:",
@@ -47,7 +50,8 @@
       "36",
       "7"
     ],
-    "answer": "36"
+    "answer": "36",
+    "time": 20
   },
   {
     "question": "I am a factor of 48 and a multiple of 4. The sum of my digits is 3. What number am I?",
@@ -57,7 +61,8 @@
       "48",
       "30"
     ],
-    "answer": "12"
+    "answer": "12",
+    "time": 30
   },
   {
     "question": "A bag of sweets can be shared equally among 3 friends, 4 friends, or 6 friends with NO leftovers. What is the smallest possible number of sweets in the bag?",
@@ -97,7 +102,8 @@
       "36",
       "10"
     ],
-    "answer": "12"
+    "answer": "12",
+    "time": 40
   },
   {
     "question": "Farmer John has fewer than 50 eggs. If he counts them in groups of 7, he has 1 left over. If he counts them in groups of 9, he has 1 left over. How many eggs does he have?",
