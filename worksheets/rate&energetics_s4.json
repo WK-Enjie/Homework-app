@@ -1,0 +1,262 @@
+[
+  {
+    "question": "A student investigates the reaction between marble chips and hydrochloric acid. Results: At 30 s, 25 cm³ CO₂ collected; at 60 s, 45 cm³ collected. What is the average rate of reaction between 30 s and 60 s?",
+    "options": [
+      "0.67 cm³/s",
+      "0.75 cm³/s",
+      "1.00 cm³/s",
+      "1.50 cm³/s"
+    ],
+    "answer": "0.67 cm³/s",
+    "time": 20
+  },
+  {
+    "question": "Results for sodium thiosulfate + hydrochloric acid: Concentration 0.1 mol/dm³ → time 120 s; 0.2 mol/dm³ → 60 s; 0.4 mol/dm³ → 30 s. Which conclusion is supported?",
+    "options": [
+      "Doubling the concentration doubles the time taken",
+      "Doubling the concentration halves the time taken",
+      "Concentration has no effect on the time taken",
+      "The reaction is fastest at the lowest concentration"
+    ],
+    "answer": "Doubling the concentration halves the time taken",
+    "time": 25
+  },
+  {
+    "question": "Magnesium ribbon + hydrochloric acid: At 20°C, magnesium disappears in 180 s; at 40°C, it disappears in 45 s. Why does the reaction at 40°C finish faster?",
+    "options": [
+      "The acid concentration is higher at 40°C",
+      "More particles have energy equal to or greater than the activation energy at 40°C",
+      "The magnesium ribbon is thinner at 40°C",
+      "The activation energy is lower at 40°C"
+    ],
+    "answer": "More particles have energy equal to or greater than the activation energy at 40°C",
+    "time": 25
+  },
+  {
+    "question": "Hydrogen peroxide decomposition: Without catalyst, 20 cm³ oxygen in 80 s; with manganese(IV) oxide catalyst, 70 cm³ oxygen in 80 s. Both reactions eventually produce 70 cm³ total. What does this show?",
+    "options": [
+      "The catalyst increases the final volume of oxygen produced",
+      "The catalyst increases the initial rate but the final volume is the same",
+      "The catalyst slows down the reaction but produces more oxygen",
+      "The catalyst has no effect on the rate or the final volume"
+    ],
+    "answer": "The catalyst increases the initial rate but the final volume is the same",
+    "time": 30
+  },
+  {
+    "question": "Calcium carbonate + hydrochloric acid: Powdered sample produces 50 cm³ CO₂ in 40 s; large chips produce 50 cm³ CO₂ in 120 s. Which feature shows the powder reacts faster?",
+    "options": [
+      "The powder produces more gas overall",
+      "The powder takes less time to produce the same volume of gas",
+      "The powder starts producing gas later",
+      "The powder reaction levels off at a lower volume"
+    ],
+    "answer": "The powder takes less time to produce the same volume of gas",
+    "time": 30
+  },
+  {
+    "question": "Reaction between two gases at different pressures: 1 atm → completes in 200 s; 2 atm → 100 s; 4 atm → 50 s. Why does increasing pressure increase the rate?",
+    "options": [
+      "Gas particles move faster at higher pressure",
+      "Gas particles are closer together, so collisions happen more frequently",
+      "The activation energy is lowered at higher pressure",
+      "The temperature increases automatically at higher pressure"
+    ],
+    "answer": "Gas particles are closer together, so collisions happen more frequently",
+    "time": 30
+  },
+  {
+    "question": "Marble chips + hydrochloric acid mass loss results after 60 s: Experiment A (chips) → 1.4 g loss; Experiment B (powder) → 2.5 g loss. Same mass of marble used. What explains the difference?",
+    "options": [
+      "Experiment B used a lower concentration of acid",
+      "Experiment B used powdered marble with larger surface area",
+      "Experiment B was carried out at a lower temperature",
+      "Experiment B used a smaller volume of acid"
+    ],
+    "answer": "Experiment B used powdered marble with larger surface area",
+    "time": 30
+  },
+  {
+    "question": "Magnesium + hydrochloric acid: At 1.0 mol/dm³ acid, reaction time is 120 s. What is the rate of reaction calculated as 1/time?",
+    "options": [
+      "0.0042 s⁻¹",
+      "0.0083 s⁻¹",
+      "0.0125 s⁻¹",
+      "0.0167 s⁻¹"
+    ],
+    "answer": "0.0083 s⁻¹",
+    "time": 30
+  },
+  {
+    "question": "Sodium thiosulfate + hydrochloric acid temperature results: 20°C → 100 s; 30°C → 50 s; 40°C → 25 s. Which pattern is observed?",
+    "options": [
+      "For every 10°C increase, the time taken approximately doubles",
+      "For every 10°C increase, the time taken approximately halves",
+      "Temperature has no consistent effect on the time taken",
+      "The reaction is fastest at the lowest temperature"
+    ],
+    "answer": "For every 10°C increase, the time taken approximately halves",
+    "time": 30
+  },
+  {
+    "question": "Zinc + hydrochloric acid hydrogen collection: Experiment X reaches 50 cm³ in 100 s; Experiment Y reaches 60 cm³ in 100 s. Same mass of zinc and acid volume used. Most likely difference?",
+    "options": [
+      "Experiment Y used a lower concentration of acid",
+      "Experiment Y was carried out at a higher temperature",
+      "Experiment Y used larger zinc pieces",
+      "Experiment Y used a smaller volume of acid"
+    ],
+    "answer": "Experiment Y was carried out at a higher temperature",
+    "time": 30
+  },
+  {
+    "question": "Calcium carbonate + hydrochloric acid: Volume of CO₂ increases steadily then stops increasing after 120 s at 80 cm³. What does the plateau indicate?",
+    "options": [
+      "The reaction has stopped because the temperature dropped",
+      "The reaction has stopped because one reactant has been used up",
+      "The catalyst has been used up",
+      "The gas syringe is full"
+    ],
+    "answer": "The reaction has stopped because one reactant has been used up"
+  },
+  {
+    "question": "Magnesium + sulfuric acid initial rates: 20°C → 0.5 cm³/s; 30°C → 1.0 cm³/s; 40°C → 2.0 cm³/s; 50°C → 4.0 cm³/s. Predict the initial rate at 60°C based on the pattern.",
+    "options": [
+      "5.0 cm³/s",
+      "6.0 cm³/s",
+      "8.0 cm³/s",
+      "10.0 cm³/s"
+    ],
+    "answer": "8.0 cm³/s",
+    "time": 30
+  },
+  {
+    "question": "An exothermic reaction is one where:",
+    "options": [
+      "Energy is absorbed from the surroundings, causing temperature to decrease",
+      "Energy is released to the surroundings, causing temperature to increase",
+      "No energy change occurs between reactants and products",
+      "The activation energy is zero"
+    ],
+    "answer": "Energy is released to the surroundings, causing temperature to increase"
+  },
+  {
+    "question": "The energy change for a reaction is given by ΔH. If ΔH = -150 kJ/mol, what does this indicate?",
+    "options": [
+      "The reaction is endothermic and absorbs 150 kJ per mole",
+      "The reaction is exothermic and releases 150 kJ per mole",
+      "The activation energy is 150 kJ/mol",
+      "The reaction requires a catalyst to proceed"
+    ],
+    "answer": "The reaction is exothermic and releases 150 kJ per mole",
+    "time": 30
+  },
+  {
+    "question": "Bond breaking is an endothermic process. Bond forming is an exothermic process. For the reaction H₂ + Cl₂ → 2HCl, which statement is correct?",
+    "options": [
+      "Energy is absorbed to break H-H and Cl-Cl bonds, and energy is released when H-Cl bonds form",
+      "Energy is released to break H-H and Cl-Cl bonds, and energy is absorbed when H-Cl bonds form",
+      "Only bond breaking occurs, so the reaction is endothermic",
+      "Only bond forming occurs, so the reaction is exothermic"
+    ],
+    "answer": "Energy is absorbed to break H-H and Cl-Cl bonds, and energy is released when H-Cl bonds form"
+  },
+  {
+    "question": "The combustion of methane: CH₄ + 2O₂ → CO₂ + 2H₂O has ΔH = -890 kJ/mol. If 8.0 g of methane is burned completely, how much energy is released? [Mr: CH₄ = 16]",
+    "options": [
+      "+222.5 kJ",
+      "+445 kJ",
+      "+890 kJ",
+      "+1780 kJ"
+    ],
+    "answer": "+445 kJ",
+    "time": 30
+  },
+  {
+    "question": "Hydrogen burns: 2H₂ + O₂ → 2H₂O with ΔH = -572 kJ for the equation as written. If 4.0 g of hydrogen is burned completely, how much energy is released? [Mr: H₂ = 2]",
+    "options": [
+      "+143 kJ",
+      "+286 kJ",
+      "+572 kJ",
+      "+1144 kJ"
+    ],
+    "answer": "+572 kJ",
+    "time": 30
+  },
+  {
+    "question": "The energy change for a reaction can be calculated using bond energies: ΔH = Σ(bond energies broken) - Σ(bond energies formed). For H₂ + Cl₂ → 2HCl, given: H-H = +436 kJ/mol, Cl-Cl = +242 kJ/mol, H-Cl = +431 kJ/mol. What is ΔH?",
+    "options": [
+      "-184 kJ/mol",
+      "+184 kJ/mol",
+      "-92 kJ/mol",
+      "+92 kJ/mol"
+    ],
+    "answer": "-184 kJ/mol",
+    "time": 30
+  },
+  {
+    "question": "In an energy profile diagram for an exothermic reaction, which statement is correct?",
+    "options": [
+      "Products are at a higher energy level than reactants",
+      "Products are at a lower energy level than reactants",
+      "Reactants and products are at the same energy level",
+      "The activation energy is negative"
+    ],
+    "answer": "Products are at a lower energy level than reactants"
+  },
+  {
+    "question": "The reaction N₂ + 3H₂ → 2NH₃ has ΔH = -92 kJ/mol. How much energy is released when 28 g of nitrogen reacts completely with excess hydrogen? [Mr: N₂ = 28]",
+    "options": [
+      "+23 kJ",
+      "+46 kJ",
+      "+92 kJ",
+      "+184 kJ"
+    ],
+    "answer": "+92 kJ",
+    "time": 30
+  },
+  {
+    "question": "Ethanol combustion: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O has ΔH = -1367 kJ/mol. What mass of ethanol must be burned to release +683.5 kJ of energy? [Mr: C₂H₅OH = 46]",
+    "options": [
+      "11.5 g",
+      "23.0 g",
+      "46.0 g",
+      "92.0 g"
+    ],
+    "answer": "23.0 g",
+    "time": 30
+  },
+  {
+    "question": "For the reaction 2H₂ + O₂ → 2H₂O, ΔH = -484 kJ for the equation as written. If 2.0 g of hydrogen reacts with excess oxygen, how much energy is released? [Mr: H₂ = 2]",
+    "options": [
+      "-121 kJ",
+      "-242 kJ",
+      "-484 kJ",
+      "-968 kJ"
+    ],
+    "answer": "-242 kJ",
+    "time": 30
+  },
+  {
+    "question": "An endothermic reaction has ΔH = +75 kJ/mol. Which energy profile diagram correctly represents this reaction?",
+    "options": [
+      "Products at lower energy than reactants, with a peak representing activation energy",
+      "Products at higher energy than reactants, with a peak representing activation energy",
+      "Products and reactants at the same energy level",
+      "No peak, just a straight line from reactants to products"
+    ],
+    "answer": "Products at higher energy than reactants, with a peak representing activation energy",
+    "time": 30
+  },
+  {
+    "question": "The combustion of carbon: C + O₂ → CO₂ has ΔH = -394 kJ/mol. What mass of carbon must be burned to release +788 kJ of energy? [Mr: C = 12]",
+    "options": [
+      "6.0 g",
+      "12.0 g",
+      "24.0 g",
+      "48.0 g"
+    ],
+    "answer": "24.0 g",
+    "time": 30
+  }
+]
