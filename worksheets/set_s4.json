@@ -1,0 +1,131 @@
+[
+  {
+    "question": "Given set A = {1, 2, 3, 4}, which statement is correct?",
+    "options": [
+      "5 ∈ A",
+      "2 ∈ A",
+      "3 ∉ A",
+      "1 ∉ A"
+    ],
+    "answer": "2 ∈ A"
+  },
+  {
+    "question": "Given set B = {a, b, c}, which statement about proper subsets is correct? (Note: A proper subset ⊂ must not be equal to the original set)",
+    "options": [
+      "{a, b, c} ⊂ B",
+      "{a, b} ⊂ B",
+      "{a, b, c, d} ⊂ B",
+      "∅ ⊄ B"
+    ],
+    "answer": "{a, b} ⊂ B",
+    "time": 30
+  },
+  {
+    "question": "Which of the following is the correct way to list the set of odd numbers less than 10?",
+    "options": [
+      "{1, 2, 3, 5, 7, 9}",
+      "{1, 3, 5, 7, 9}",
+      "{0, 1, 3, 5, 7, 9}",
+      "{2, 4, 6, 8}"
+    ],
+    "answer": "{1, 3, 5, 7, 9}"
+  },
+  {
+    "question": "If P = {2, 4, 6} and Q = {4, 6, 8}, what is P ∪ Q?",
+    "options": [
+      "{4, 6}",
+      "{2, 4, 6, 8}",
+      "{2, 8}",
+      "{2, 4, 4, 6, 6, 8}"
+    ],
+    "answer": "{2, 4, 6, 8}",
+    "time": 30
+  },
+  {
+    "question": "If P = {2, 4, 6} and Q = {4, 6, 8}, what is P ∩ Q?",
+    "options": [
+      "{4, 6}",
+      "{2, 4, 6, 8}",
+      "{2, 8}",
+      "{2, 4, 6}"
+    ],
+    "answer": "{4, 6}",
+    "time": 30
+  },
+  {
+    "question": "Given X = {1, 2, 3} and Y = {3, 4, 5}, find (X ∪ Y) ∩ {3, 4}.",
+    "options": [
+      "{3}",
+      "{3, 4}",
+      "{1, 2, 3, 4}",
+      "{4}"
+    ],
+    "answer": "{3, 4}",
+    "time": 30
+  },
+  {
+    "question": "Which notation correctly describes: 'x is an element of set M'?",
+    "options": [
+      "x ⊂ M",
+      "x ∈ M",
+      "M ∈ x",
+      "x ⊄ M"
+    ],
+    "answer": "x ∈ M"
+  },
+  {
+    "question": "Set R = {p, q, r, s}. How many elements are in R ∩ {q, s, t}?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "time": 30
+  },
+  {
+    "question": "Which statement is FALSE regarding proper subsets (⊂)?",
+    "options": [
+      "The empty set is a proper subset of any non-empty set",
+      "A set is never a proper subset of itself",
+      "If A ⊂ B, then A must have fewer elements than B (for finite sets)",
+      "A set is always a proper subset of itself"
+    ],
+    "answer": "A set is always a proper subset of itself",
+    "time": 30
+  },
+  {
+    "question": "In a Venn diagram, the region representing A ∩ B shows:",
+    "options": [
+      "Elements in A only",
+      "Elements in B only",
+      "Elements in both A and B",
+      "Elements in either A or B or both"
+    ],
+    "answer": "Elements in both A and B",
+    "time": 30
+  },
+  {
+    "question": "Which statement is always true for any set S?",
+    "options": [
+      "S is a proper subset of the empty set",
+      "The empty set is a subset of S",
+      "S is an element of S",
+      "The empty set is an element of S"
+    ],
+    "answer": "The empty set is a subset of S",
+    "time": 30
+  },
+  {
+    "question": "Given A = {1, 2, 3}, B = {2, 3, 4}, C = {3, 4, 5}. What is (A ∪ B) ∩ C?",
+    "options": [
+      "{3}",
+      "{3, 4}",
+      "{2, 3, 4}",
+      "{1, 2, 3, 4, 5}"
+    ],
+    "answer": "{3, 4}",
+    "time": 30
+  }
+]
