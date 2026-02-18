@@ -1,0 +1,122 @@
+[
+  {
+    "question": "A ray of light strikes a plane mirror at an angle of 25° to the mirror's surface. What is the angle of reflection?",
+    "options": [
+      "25°",
+      "65°",
+      "75°",
+      "115°"
+    ],
+    "answer": "65°"
+  },
+  {
+    "question": "A student stands 1.0 meter in front of a plane mirror. She then takes two steps backward, increasing her distance from the mirror by 1.0 meter. What is the new distance between her and her image?",
+    "options": [
+      "2.0 m",
+      "3.0 m",
+      "4.0 m",
+      "5.0 m"
+    ],
+    "answer": "4.0 m"
+  },
+  {
+    "question": "Light travels from water into a different liquid. The light bends away from the normal. What can be said about the refractive index of the liquid compared to that of water?",
+    "options": [
+      "It is the same as water.",
+      "It is greater than water.",
+      "It is less than water.",
+      "It is exactly 1.0."
+    ],
+    "answer": "It is less than water."
+  },
+  {
+    "question": "The speed of light in a vacuum is 3.0 × 10⁸ m/s. The speed of light in a piece of glass is 2.0 × 10⁸ m/s. What is the refractive index of this glass?",
+    "options": [
+      "0.67",
+      "1.33",
+      "1.50",
+      "6.00"
+    ],
+    "answer": "1.50"
+  },
+  {
+    "question": "A ray of light passes from air into a glass prism. The angle of incidence is 45° and the angle of refraction is 28°. What is the refractive index of the glass? (sin 45° = 0.71, sin 28° = 0.47)",
+    "options": [
+      "0.66",
+      "1.51",
+      "1.62",
+      "2.13"
+    ],
+    "answer": "1.51"
+  },
+  {
+    "question": "Which statement correctly explains why a ray of light bends when it enters a glass block from the air?",
+    "options": [
+      "The frequency of the light changes.",
+      "The wavelength of the light remains constant.",
+      "The speed of the light changes.",
+      "The amplitude of the light increases."
+    ],
+    "answer": "The speed of the light changes."
+  },
+  {
+    "question": "As light passes from a vacuum into a transparent material, its speed is reduced to one-third of its original value. What is the refractive index of the material?",
+    "options": [
+      "0.33",
+      "1.00",
+      "3.00",
+      "9.00"
+    ],
+    "answer": "3.00"
+  },
+  {
+    "question": "Which of the following correctly describes the image produced by a converging lens when the object is placed at a distance greater than the focal length?",
+    "options": [
+      "The image is always virtual.",
+      "The image is always upright.",
+      "The image is always real.",
+      "The image is always diminished."
+    ],
+    "answer": "The image is always real."
+  },
+  {
+    "question": "A simple magnifying glass produces an image that is upright and larger than the object. Where must the object be placed?",
+    "options": [
+      "Beyond 2F",
+      "At 2F",
+      "Between F and 2F",
+      "Between the lens and F"
+    ],
+    "answer": "Between the lens and F"
+  },
+  {
+    "question": "A camera uses a converging lens to take a picture of a distant building. Which statement correctly describes the image formed on the film?",
+    "options": [
+      "Virtual, upright, and diminished.",
+      "Real, inverted, and diminished.",
+      "Virtual, inverted, and diminished.",
+      "Real, upright, and magnified."
+    ],
+    "answer": "Real, inverted, and diminished."
+  },
+  {
+    "question": "What type of image is formed by a converging lens when the object is placed between the lens and its focal point?",
+    "options": [
+      "Real and inverted",
+      "Real and upright",
+      "Virtual and inverted",
+      "Virtual and upright"
+    ],
+    "answer": "Virtual and upright"
+  },
+  {
+    "question": "The speed of light in a vacuum is 3.0 × 10⁸ m/s. If the refractive index of water is 1.33, what is the speed of light in water?",
+    "options": [
+      "4.0 × 10⁸ m/s",
+      "3.0 × 10⁸ m/s",
+      "2.26 × 10⁸ m/s",
+      "1.50 × 10⁸ m/s"
+    ],
+    "answer": "2.26 × 10⁸ m/s"
+  }
+]
