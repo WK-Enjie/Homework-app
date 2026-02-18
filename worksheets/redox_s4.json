@@ -1,0 +1,164 @@
+[
+  {
+    "question": "Which statement correctly describes oxidation in terms of oxygen transfer?",
+    "options": [
+      "Loss of oxygen",
+      "Gain of oxygen",
+      "Loss of hydrogen",
+      "Gain of electrons"
+    ],
+    "answer": "Gain of oxygen"
+  },
+  {
+    "question": "In the reaction: CuO + H₂ → Cu + H₂O, which substance is reduced?",
+    "options": [
+      "CuO",
+      "H₂",
+      "Cu",
+      "H₂O"
+    ],
+    "answer": "CuO",
+    "time": 30
+  },
+  {
+    "question": "Which statement correctly describes reduction in terms of electron transfer?",
+    "options": [
+      "Loss of electrons",
+      "Gain of electrons",
+      "Increase in oxidation state",
+      "Gain of oxygen"
+    ],
+    "answer": "Gain of electrons"
+  },
+  {
+    "question": "What is the oxidation state of sulfur in SO₂?",
+    "options": [
+      "-4",
+      "+2",
+      "+4",
+      "+6"
+    ],
+    "answer": "+4",
+    "time": 30
+  },
+  {
+    "question": "In the reaction: Zn + Cu²⁺ → Zn²⁺ + Cu, which species is the oxidising agent?",
+    "options": [
+      "Zn",
+      "Cu²⁺",
+      "Zn²⁺",
+      "Cu"
+    ],
+    "answer": "Cu²⁺",
+    "time": 30
+  },
+  {
+    "question": "Which process represents oxidation in terms of hydrogen transfer?",
+    "options": [
+      "Gain of hydrogen",
+      "Loss of hydrogen",
+      "Gain of electrons",
+      "Decrease in oxidation state"
+    ],
+    "answer": "Loss of hydrogen"
+  },
+  {
+    "question": "What is the oxidation state of manganese in KMnO₄? (K = +1, O = -2)",
+    "options": [
+      "+4",
+      "+5",
+      "+6",
+      "+7"
+    ],
+    "answer": "+7",
+    "time": 30
+  },
+  {
+    "question": "In the reaction: 2Mg + O₂ → 2MgO, which statement is correct?",
+    "options": [
+      "Mg is reduced and O₂ is oxidised",
+      "Mg is oxidised and O₂ is reduced",
+      "Both Mg and O₂ are oxidised",
+      "Both Mg and O₂ are reduced"
+    ],
+    "answer": "Mg is oxidised and O₂ is reduced",
+    "time": 30
+  },
+  {
+    "question": "Which of the following reactions is NOT a redox reaction?",
+    "options": [
+      "Zn + 2HCl → ZnCl₂ + H₂",
+      "CaCO₃ → CaO + CO₂",
+      "2Na + Cl₂ → 2NaCl",
+      "Fe₂O₃ + 3CO → 2Fe + 3CO₂"
+    ],
+    "answer": "CaCO₃ → CaO + CO₂",
+    "time": 30
+  },
+  {
+    "question": "What is the change in oxidation state of iron in the reaction: Fe²⁺ → Fe³⁺ + e⁻?",
+    "options": [
+      "Decreases from +3 to +2",
+      "Increases from +2 to +3",
+      "Decreases from +2 to 0",
+      "Increases from 0 to +2"
+    ],
+    "answer": "Increases from +2 to +3",
+    "time": 30
+  },
+  {
+    "question": "In the reaction: Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂, which species is the reducing agent?",
+    "options": [
+      "Cl₂",
+      "Br⁻",
+      "Cl⁻",
+      "Br₂"
+    ],
+    "answer": "Br⁻",
+    "time": 30
+  },
+  {
+    "question": "Which statement about oxidation states is correct?",
+    "options": [
+      "The oxidation state of an element in its free state is always +1",
+      "The oxidation state of oxygen is always -2 in compounds",
+      "The sum of oxidation states in a neutral compound is zero",
+      "The oxidation state of hydrogen is always -1 in compounds"
+    ],
+    "answer": "The sum of oxidation states in a neutral compound is zero",
+    "time": 30
+  },
+  {
+    "question": "Which half-equation correctly represents a reduction process?",
+    "options": [
+      "Mg → Mg²⁺ + 2e⁻",
+      "Fe²⁺ → Fe³⁺ + e⁻",
+      "Cl₂ + 2e⁻ → 2Cl⁻",
+      "2O²⁻ → O₂ + 4e⁻"
+    ],
+    "answer": "Cl₂ + 2e⁻ → 2Cl⁻",
+    "time": 30
+  },
+  {
+    "question": "Consider the ionic equation: Mg + 2H⁺ → Mg²⁺ + H₂. Which statement is correct?",
+    "options": [
+      "H⁺ is oxidised because it loses electrons",
+      "Mg is reduced because it gains electrons",
+      "H⁺ is the oxidising agent because it gains electrons",
+      "Mg is the oxidising agent because it loses electrons"
+    ],
+    "answer": "H⁺ is the oxidising agent because it gains electrons",
+    "time": 30
+  },
+  {
+    "question": "Which of the following half-equations is balanced correctly for both atoms and charge?",
+    "options": [
+      "Fe³⁺ + e⁻ → Fe²⁺",
+      "Cu²⁺ + e⁻ → Cu",
+      "Ag → Ag⁺ + 2e⁻",
+      "2Cl⁻ → Cl₂ + e⁻"
+    ],
+    "answer": "Fe³⁺ + e⁻ → Fe²⁺",
+    "time": 30
+  }
+]
