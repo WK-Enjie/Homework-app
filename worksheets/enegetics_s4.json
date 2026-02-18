@@ -1,0 +1,134 @@
+[
+  {
+    "question": "Substance X has an energy level of -200 kJ/mol. Substance Y has an energy level of -350 kJ/mol. Which substance is more stable and why?",
+    "options": [
+      "Substance X, because it has higher energy",
+      "Substance Y, because it has lower energy",
+      "Substance X, because it is more reactive",
+      "Substance Y, because it has higher activation energy"
+    ],
+    "answer": "Substance Y, because it has lower energy",
+    "time": 30
+  },
+  {
+    "question": "In an energy profile diagram, reactants are at 100 kJ, products are at 40 kJ, and the peak of the curve is at 250 kJ. What are the activation energy (Ea) and enthalpy change (ΔH)?",
+    "options": [
+      "Ea = +150 kJ, ΔH = -60 kJ",
+      "Ea = +250 kJ, ΔH = -60 kJ",
+      "Ea = +150 kJ, ΔH = +60 kJ",
+      "Ea = +250 kJ, ΔH = +60 kJ"
+    ],
+    "answer": "Ea = +150 kJ, ΔH = -60 kJ",
+    "time": 30
+  },
+  {
+    "question": "Hydrogenation of ethene: C₂H₄ + H₂ → C₂H₆. Bond energies: C=C is +612 kJ/mol, H-H is +436 kJ/mol, C-C is +348 kJ/mol, C-H is +412 kJ/mol. What is ΔH for this reaction?",
+    "options": [
+      "-124 kJ/mol",
+      "+124 kJ/mol",
+      "-248 kJ/mol",
+      "+248 kJ/mol"
+    ],
+    "answer": "-124 kJ/mol",
+    "time": 30
+  },
+  {
+    "question": "Propane combustion: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O has ΔH = -2220 kJ/mol. If 11.0 g of propane is burned completely, how much energy is released? [Mr: C₃H₈ = 44]",
+    "options": [
+      "+277.5 kJ",
+      "+555 kJ",
+      "+1110 kJ",
+      "+2220 kJ"
+    ],
+    "answer": "+555 kJ",
+    "time": 50
+  },
+  {
+    "question": "Ethanol combustion releases +1367 kJ per mole. What mass of ethanol must be burned to release +341.75 kJ of energy? [Mr: C₂H₅OH = 46]",
+    "options": [
+      "5.75 g",
+      "11.5 g",
+      "23.0 g",
+      "46.0 g"
+    ],
+    "answer": "11.5 g",
+    "time": 50
+  },
+  {
+    "question": "For the reaction 2H₂ + O₂ → 2H₂O, ΔH = -572 kJ. What is the energy change per mole of water formed?",
+    "options": [
+      "-572 kJ/mol",
+      "-286 kJ/mol",
+      "+286 kJ/mol",
+      "+572 kJ/mol"
+    ],
+    "answer": "-286 kJ/mol",
+    "time": 30
+  },
+  {
+    "question": "A catalyst is added to an exothermic reaction. How does this affect the activation energy (Ea) and the enthalpy change (ΔH)?",
+    "options": [
+      "Ea decreases, ΔH decreases",
+      "Ea decreases, ΔH remains unchanged",
+      "Ea remains unchanged, ΔH decreases",
+      "Ea increases, ΔH remains unchanged"
+    ],
+    "answer": "Ea decreases, ΔH remains unchanged",
+    "time": 30
+  },
+  {
+    "question": "The bond energy of O=O is +498 kJ/mol and H-H is +436 kJ/mol. For 2H₂ + O₂ → 2H₂O, ΔH = -484 kJ. What is the bond energy of O-H?",
+    "options": [
+      "+231.5 kJ/mol",
+      "+463.5 kJ/mol",
+      "+927 kJ/mol",
+      "+1854 kJ/mol"
+    ],
+    "answer": "+463.5 kJ/mol",
+    "time": 60
+  },
+  {
+    "question": "Which of the following processes is endothermic?",
+    "options": [
+      "Combustion of methane",
+      "Dissolving ammonium nitrate in water (temperature decreases)",
+      "Adding concentrated acid to water (temperature increases)",
+      "Neutralisation of hydrochloric acid and sodium hydroxide"
+    ],
+    "answer": "Dissolving ammonium nitrate in water (temperature decreases)",
+    "time": 30
+  },
+  {
+    "question": "Magnesium burns: 2Mg + O₂ → 2MgO with ΔH = -1204 kJ for the equation as written. If 4.8 g of magnesium reacts completely with excess oxygen, how much energy is released? [Mr: Mg = 24]",
+    "options": [
+      "+120.4 kJ",
+      "+240.8 kJ",
+      "+602 kJ",
+      "+1204 kJ"
+    ],
+    "answer": "+120.4 kJ",
+    "time": 50
+  },
+  {
+    "question": "Reaction A has ΔH = -100 kJ/mol. Reaction B has ΔH = -200 kJ/mol. Which statement is correct?",
+    "options": [
+      "Reaction A releases more energy than Reaction B",
+      "Reaction B releases more energy than Reaction A",
+      "Reaction A is more endothermic than Reaction B",
+      "Both reactions absorb energy from the surroundings"
+    ],
+    "answer": "Reaction B releases more energy than Reaction A",
+    "time": 30
+  },
+  {
+    "question": "A student measures the temperature change when zinc reacts with copper(II) sulfate solution. The temperature increases by 15°C. What can be concluded about the reaction?",
+    "options": [
+      "It is endothermic with ΔH > 0",
+      "It is exothermic with ΔH < 0",
+      "It is endothermic with ΔH < 0",
+      "It is exothermic with ΔH > 0"
+    ],
+    "answer": "It is exothermic with ΔH < 0",
+    "time": 30
+  }
+]

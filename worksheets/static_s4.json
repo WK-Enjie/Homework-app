@@ -1,0 +1,134 @@
+[
+  {
+    "question": "A negatively charged plastic rod is brought near small pieces of neutral paper. The paper pieces jump towards the rod. Which force causes this motion?",
+    "options": [
+      "Gravitational force between the rod and paper",
+      "Magnetic force from the charged rod",
+      "Electrostatic force of attraction due to induced charge separation in the paper",
+      "Frictional force between the rod and air"
+    ],
+    "answer": "Electrostatic force of attraction due to induced charge separation in the paper",
+    "time": 30
+  },
+  {
+    "question": "In electrostatic spray painting, car parts are given a positive charge and paint droplets are given a negative charge. Why does this produce an even coating?",
+    "options": [
+      "The paint droplets repel each other and spread out evenly",
+      "The paint droplets are attracted to the positively charged car part, wrapping around its surface",
+      "Gravity pulls the paint evenly over the surface",
+      "The charged paint evaporates more slowly"
+    ],
+    "answer": "The paint droplets are attracted to the positively charged car part, wrapping around its surface",
+    "time": 30
+  },
+  {
+    "question": "Two balloons are rubbed on wool and become negatively charged. When hung close together, they move apart. What force causes this motion?",
+    "options": [
+      "Gravitational repulsion between the balloons",
+      "Electrostatic repulsion because like charges repel",
+      "Magnetic repulsion from the wool",
+      "Air pressure pushing them apart"
+    ],
+    "answer": "Electrostatic repulsion because like charges repel",
+    "time": 30
+  },
+  {
+    "question": "In a photocopier, a drum is given a positive electrostatic charge. Light shines on areas where no image is needed, removing the charge. Negatively charged toner powder is then applied. Why does the toner stick only to the image areas?",
+    "options": [
+      "The toner is attracted to the positively charged image areas but not to the neutral areas",
+      "The toner is heavier and falls only on the image areas",
+      "Heat melts the toner only on the image areas",
+      "The neutral areas repel all powder equally"
+    ],
+    "answer": "The toner is attracted to the positively charged image areas but not to the neutral areas",
+    "time": 30
+  },
+  {
+    "question": "A person walking on a nylon carpet builds up static charge. When they touch a metal door handle, they feel a small shock. What causes this sensation?",
+    "options": [
+      "Gravitational force pulling electrons from the hand",
+      "A sudden flow of electrons between the person and the handle due to electrostatic discharge",
+      "Magnetic attraction between the hand and the metal",
+      "Friction heating the skin on contact"
+    ],
+    "answer": "A sudden flow of electrons between the person and the handle due to electrostatic discharge",
+    "time": 30
+  },
+  {
+    "question": "Why do dust particles stick to a TV or computer screen shortly after it is turned off?",
+    "options": [
+      "The screen is warm and attracts dust by convection",
+      "The screen has a static charge that induces an opposite charge on dust particles, causing electrostatic attraction",
+      "Dust is magnetic and the screen produces a magnetic field",
+      "Air currents push dust onto the screen surface"
+    ],
+    "answer": "The screen has a static charge that induces an opposite charge on dust particles, causing electrostatic attraction",
+    "time": 30
+  },
+  {
+    "question": "In a factory, plastic sheets are pulled over rollers and become charged. Workers find the sheets stick together and are hard to separate. Which force is responsible for this problem?",
+    "options": [
+      "Gravitational force between the sheets",
+      "Electrostatic attraction between oppositely charged regions on the sheets",
+      "Magnetic force from the rollers",
+      "Air pressure pushing the sheets together"
+    ],
+    "answer": "Electrostatic attraction between oppositely charged regions on the sheets",
+    "time": 30
+  },
+  {
+    "question": "A lightning conductor is a thick copper strip fixed to the roof of a building and connected to the ground. How does it protect the building during a thunderstorm?",
+    "options": [
+      "It repels lightning by producing an opposite charge",
+      "It provides a low-resistance path for electrostatic discharge to flow safely to the ground, preventing damage",
+      "It absorbs the lightning energy and stores it",
+      "It creates a magnetic field that deflects the lightning"
+    ],
+    "answer": "It provides a low-resistance path for electrostatic discharge to flow safely to the ground, preventing damage",
+    "time": 30
+  },
+  {
+    "question": "When a comb is rubbed on dry hair, it can pick up small pieces of paper. If the same comb is then wetted, it no longer picks up paper. Why?",
+    "options": [
+      "Water makes the comb heavier so it cannot lift paper",
+      "Water is a conductor and allows the static charge to leak away, removing the electrostatic force",
+      "Water makes the paper too heavy to be lifted",
+      "Water creates a magnetic field that cancels the charge"
+    ],
+    "answer": "Water is a conductor and allows the static charge to leak away, removing the electrostatic force",
+    "time": 30
+  },
+  {
+    "question": "In an experiment, a charged rod is held near a stream of water from a tap. The water stream bends towards the rod. What explains this observation?",
+    "options": [
+      "The water is magnetic and is attracted to the rod",
+      "The charged rod induces a separation of charge in the water molecules, causing an electrostatic force of attraction",
+      "The rod heats the air and creates convection currents",
+      "Gravity pulls the water towards the rod"
+    ],
+    "answer": "The charged rod induces a separation of charge in the water molecules, causing an electrostatic force of attraction",
+    "time": 30
+  },
+  {
+    "question": "Why is it dangerous to use a mobile phone at a petrol station?",
+    "options": [
+      "The phone signal interferes with the fuel pump electronics",
+      "Static discharge from the phone or body could ignite fuel vapours via an electrostatic spark",
+      "The phone battery heats up and causes fuel to evaporate faster",
+      "The sound from the phone vibrates the fuel and causes spills"
+    ],
+    "answer": "Static discharge from the phone or body could ignite fuel vapours via an electrostatic spark",
+    "time": 30
+  },
+  {
+    "question": "A student rubs a glass rod with silk and brings it near a suspended charged sphere. The sphere is repelled. What can be concluded about the sphere's charge and the force acting?",
+    "options": [
+      "The sphere is negatively charged; electrostatic attraction is acting",
+      "The sphere is positively charged; electrostatic repulsion is acting",
+      "The sphere is neutral; gravitational force is acting",
+      "The sphere is positively charged; magnetic repulsion is acting"
+    ],
+    "answer": "The sphere is positively charged; electrostatic repulsion is acting",
+    "time": 30
+  }
+]
