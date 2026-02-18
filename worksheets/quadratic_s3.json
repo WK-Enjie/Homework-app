@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Solve the quadratic equation: x² + 5x + 6 = 0",
+    "options": [
+      "x = -2 or x = -3",
+      "x = 2 or x = 3",
+      "x = -1 or x = -6",
+      "x = 1 or x = 6"
+    ],
+    "answer": "x = -2 or x = -3"
+  },
+  {
+    "question": "Express x² - 10x + 15 in the form (x - a)² + b.",
+    "options": [
+      "(x - 5)² - 10",
+      "(x - 5)² + 10",
+      "(x + 5)² - 10",
+      "(x - 5)² - 25"
+    ],
+    "answer": "(x - 5)² - 10"
+  },
+  {
+    "question": "State the coordinates of the minimum point for the graph y = (x + 4)² - 7.",
+    "options": [
+      "(-4, -7)",
+      "(4, -7)",
+      "(-4, 7)",
+      "(4, 7)"
+    ],
+    "answer": "(-4, -7)"
+  },
+  {
+    "question": "Find the coordinates of the turning point for the graph y = x² + 8x + 10.",
+    "options": [
+      "(-4, -6)",
+      "(4, 6)",
+      "(-4, 10)",
+      "(4, -6)"
+    ],
+    "answer": "(-4, -6)"
+  },
+  {
+    "question": "Solve the equation x² - 6x + 4 = 0 by completing the square.",
+    "options": [
+      "x = 3 + √5 or x = 3 - √5",
+      "x = -3 + √5 or x = -3 - √5",
+      "x = 3 + √13 or x = 3 - √13",
+      "x = 6 + √5 or x = 6 - √5"
+    ],
+    "answer": "x = 3 + √5 or x = 3 - √5"
+  },
+  {
+    "question": "The graph y = x² - 4x + c has a minimum value of -1. Find the value of c.",
+    "options": [
+      "c = 3",
+      "c = -3",
+      "c = 5",
+      "c = -5"
+    ],
+    "answer": "c = 3"
+  },
+  {
+    "question": "The graph y = (x - 2)² + k passes through the point (0, 5). Find the value of k.",
+    "options": [
+      "k = 1",
+      "k = 9",
+      "k = -1",
+      "k = 5"
+    ],
+    "answer": "k = 1"
+  },
+  {
+    "question": "A quadratic graph has equation y = x² + 2. Will it intersect the horizontal line y = 1?",
+    "options": [
+      "No, it will not intersect",
+      "Yes, at two points",
+      "Yes, at one point",
+      "It touches the line at exactly one point"
+    ],
+    "answer": "No, it will not intersect"
+  },
+  {
+    "question": "A quadratic graph has equation y = x² - 2x - 3. Will it intersect the horizontal line y = -4?",
+    "options": [
+      "Yes, at two points",
+      "Yes, at one point",
+      "No, it will not intersect",
+      "It touches the line at exactly one point"
+    ],
+    "answer": "It touches the line at exactly one point"
+  },
+  {
+    "question": "Solve: (x - 3)(x + 5) = 0",
+    "options": [
+      "x = 3 or x = -5",
+      "x = -3 or x = 5",
+      "x = 3 or x = 5",
+      "x = -3 or x = -5"
+    ],
+    "answer": "x = 3 or x = -5"
+  },
+  {
+    "question": "A quadratic graph has vertex (2, 3) and passes through (0, 7). Which equation represents this graph?",
+    "options": [
+      "y = (x - 2)² + 3",
+      "y = (x + 2)² + 3",
+      "y = (x - 2)² - 3",
+      "y = 2(x - 2)² + 3"
+    ],
+    "answer": "y = (x - 2)² + 3"
+  },
+  {
+    "question": "Solve for x: 2x² - 8x + 6 = 0",
+    "options": [
+      "x = 1 or x = 3",
+      "x = -1 or x = -3",
+      "x = 2 or x = 4",
+      "x = -2 or x = -4"
+    ],
+    "answer": "x = 1 or x = 3"
+  }
+]
