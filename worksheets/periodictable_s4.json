@@ -52,7 +52,7 @@
       "F⁻ < O²⁻ < Al³⁺ < Mg²⁺ < Na⁺"
     ],
     "answer": "Al³⁺ < Mg²⁺ < Na⁺ < F⁻ < O²⁻",
-    "time": 60
+    "time": 70
   },
   {
     "question": "Ionisation energy is the energy required to remove one electron from each atom in one mole of gaseous atoms. Which element has the highest ionisation energy?",
@@ -129,7 +129,8 @@
       "X has lower ionisation energy and lower electronegativity because it has fewer protons"
     ],
     "answer": "Y has a larger atomic radius, lower ionisation energy and lower electronegativity than X",
-    "time": 60
+    "time": 70
   }
 
 ]
+
