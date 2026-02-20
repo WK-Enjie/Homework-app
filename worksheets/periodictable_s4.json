@@ -7,7 +7,8 @@
       "Atomic radius increases because the atoms become heavier",
       "Atomic radius remains constant because the number of electron shells does not change"
     ],
-    "answer": "Atomic radius decreases because the charge of the nucleus increases while electrons are in the same shell"
+    "answer": "Atomic radius decreases because the charge of the nucleus increases while electrons are in the same shell",
+    "time": 50
   },
   {
     "question": "Why does atomic radius increase down Group 1 from lithium to cesium?",
@@ -17,7 +18,8 @@
       "Electrons are removed from the outer shell, reducing repulsion",
       "The attraction from the nucleus experienced by outer electrons increases"
     ],
-    "answer": "More electron shells are added, so the outer electrons are further from the nucleus"
+    "answer": "More electron shells are added, so the outer electrons are further from the nucleus",
+    "time": 50
   },
   {
     "question": "Which ion is smaller than its parent atom?",
@@ -27,7 +29,8 @@
       "Na⁺",
       "Br⁻"
     ],
-    "answer": "Na⁺"
+    "answer": "Na⁺",
+    "time": 40
   },
   {
     "question": "Which ion is larger than its parent atom?",
@@ -37,7 +40,8 @@
       "Cl⁻",
       "Li⁺"
     ],
-    "answer": "Cl⁻"
+    "answer": "Cl⁻",
+    "time": 40
   },
   {
     "question": "The ions O²⁻, F⁻, Na⁺, Mg²⁺ and Al³⁺ all have the same number of electrons. Which sequence shows them in order of increasing ionic radius?",
@@ -48,7 +52,7 @@
       "F⁻ < O²⁻ < Al³⁺ < Mg²⁺ < Na⁺"
     ],
     "answer": "Al³⁺ < Mg²⁺ < Na⁺ < F⁻ < O²⁻",
-    "time": 30
+    "time": 60
   },
   {
     "question": "Ionisation energy is the energy required to remove one electron from each atom in one mole of gaseous atoms. Which element has the highest ionisation energy?",
@@ -70,7 +74,7 @@
       "More electron shells are added, increasing the energy needed"
     ],
     "answer": "The charge of the nucleus increases while electrons are in the same shell, so the attraction is stronger",
-    "time": 30
+    "time": 60
   },
   {
     "question": "Ionisation energy is the energy required to remove one electron from each atom in one mole of gaseous atoms. Why does this energy decrease down Group 17 from fluorine to iodine?",
@@ -81,7 +85,7 @@
       "The attraction from the nucleus experienced by outer electrons increases significantly"
     ],
     "answer": "Outer electrons are in shells further from the nucleus, so the attraction is weaker",
-    "time": 30
+    "time": 60
   },
   {
     "question": "Electronegativity is a measure of how strongly an atom attracts electrons when it is bonded to another atom. Which element has the highest electronegativity?",
@@ -92,7 +96,7 @@
       "Argon"
     ],
     "answer": "Chlorine",
-    "time": 30
+    "time": 40
   },
   {
     "question": "Electronegativity is a measure of how strongly an atom attracts electrons when it is bonded to another atom. Why does electronegativity generally increase across Period 3 from sodium to chlorine?",
@@ -103,7 +107,7 @@
       "More electron shells are added, increasing the attraction for electrons"
     ],
     "answer": "The charge of the nucleus increases while electrons are in the same shell, so the attraction for bonding electrons is stronger",
-    "time": 30
+    "time": 60
   },
   {
     "question": "Electronegativity is a measure of how strongly an atom attracts electrons when it is bonded to another atom. Why does electronegativity decrease down Group 17 from fluorine to iodine?",
@@ -114,7 +118,7 @@
       "The attraction from the nucleus experienced by bonding electrons increases significantly"
     ],
     "answer": "Bonding electrons are in shells further from the nucleus, so the attraction is weaker",
-    "time": 30
+    "time": 60
   },
   {
     "question": "Element X is in Period 3, Group 16. Element Y is in Period 4, Group 16. Ionisation energy is the energy required to remove one electron from each atom in one mole of gaseous atoms. Electronegativity is a measure of how strongly an atom attracts electrons when bonded. Which statement correctly compares X and Y?",
@@ -125,6 +129,7 @@
       "X has lower ionisation energy and lower electronegativity because it has fewer protons"
     ],
     "answer": "Y has a larger atomic radius, lower ionisation energy and lower electronegativity than X",
-    "time": 30
+    "time": 60
   }
+
 ]
