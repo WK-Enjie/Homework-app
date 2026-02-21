@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Evaluate: (-3) × (5 - 8)²",
+    "options": ["27", "-27", "9", "-9"],
+    "answer": "-27"
+  },
+  {
+    "question": "Simplify: 20 ÷ (2 - 7) × (-3)",
+    "options": ["-12", "8", "-8", "12"],
+    "answer": "12"
+  },
+  {
+    "question": "Calculate: (-4)³ ÷ 8 + 5",
+    "options": ["13", "-13", "-3", "3"],
+    "answer": "3"
+  },
+  {
+    "question": "Find the value of: 6 × [4 - (3 - 8)]",
+    "options": ["-6", "6", "-54", "54"],
+    "answer": "54"
+  },
+  {
+    "question": "Solve: | -7 + 2 | × (-3) - 4",
+    "options": ["-19", "19", "11", "-11"],
+    "answer": "-19"
+  },
+  {
+    "question": "Evaluate: (-2) × (-3)² + 6 ÷ (-2)",
+    "options": ["15", "21", "-21", "-15"],
+    "answer": "-21"
+  },
+  {
+    "question": "Compute: 4 - 3 × (8 - 2 × 5)",
+    "options": ["-2", "10", "-10", "2"],
+    "answer": "10"
+  },
+  {
+    "question": "Simplify: (9 - 15)² ÷ (-2)²",
+    "options": ["3", "-9", "-3", "9"],
+    "answer": "9"
+  },
+  {
+    "question": "What is: (-5)² - 4 × (3 - 7)",
+    "options": ["9", "41", "-41", "-9"],
+    "answer": "41"
+  },
+  {
+    "question": "Calculate: 16 ÷ (-2)³ - | 5 - 9 |",
+    "options": ["2", "-6", "-2", "6"],
+    "answer": "-6"
+  },
+  {
+    "question": "Find the value of: -3 × [10 - (4 + 6 ÷ 2)]",
+    "options": ["-3", "9", "-9", "3"],
+    "answer": "-9"
+  },
+  {
+    "question": "Evaluate: (8 - 2 × 5)³",
+    "options": ["-2", "2", "8", "-8"],
+    "answer": "-8"
+  },
+  {
+    "question": "Simplify: 7 - (-4)² + 3 × (2 - 5)",
+    "options": ["4", "-4", "16", "-16"],
+    "answer": "-16"
+  },
+  {
+    "question": "Solve: 18 ÷ 3 × 2 - 4²",
+    "options": ["10", "4", "-4", "-10"],
+    "answer": "-4"
+  },
+  {
+    "question": "Compute: | -12 | ÷ (-3) × (5 - 7)",
+    "options": ["-2", "2", "8", "-8"],
+    "answer": "-8"
+  },
+  {
+    "question": "Calculate: (-4 + 6)⁴ - 3 × (-2)³",
+    "options": ["-8", "-40", "40", "8"],
+    "answer": "40"
+  },
+  {
+    "question": "What is the value of: 5 × (-2) + 6 ÷ (3 - 5)²",
+    "options": ["-9.5", "-10", "-8.5", "Invalid (Division by zero?)"],
+    "answer": "-8.5"
+  },
+  {
+    "question": "Simplify: -2² × (6 - 9) + 7",
+    "options": ["19", "-5", "5", "-19"],
+    "answer": "19"
+  },
+  {
+    "question": "Evaluate: (10 - 3 × 4) × (8 ÷ 2 - 7)",
+    "options": ["-2", "6", "2", "-6"],
+    "answer": "6"
+  },
+  {
+    "question": "Find the value of: 1 - 2 × [3 - 4 × (5 - 6)]",
+    "options": ["-15", "9", "15", "-9"],
+    "answer": "-9"
+  }
+]
