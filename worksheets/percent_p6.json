@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "type": "structured",
+    "question": "If Sarah increased her allowance by 50% and Linda decreased her allowance by 50%, both of them would have an equal amount of allowance. The difference in their original allowance was $60.",
+    "parts": [
+      "a) Who had more allowance originally?",
+      "b) Find Linda's original allowance."
+    ],
+    "answers": {
+      "a": "Linda",
+      "b": "$90"
+    },
+    "explanation": "1.5 * Sarah = 0.5 * Linda -> Linda = 3 * Sarah. Ratio S:L = 1:3. Difference = 2 units = $60 -> 1 unit = $30. Linda = 3 units = $90.",
+    "points": 10,
+    "time": 90
+  },
+  {
+    "id": 2,
+    "type": "structured",
+    "question": "50% of Sandy's sweets is equal to 50% of Freddy's sweets. 50% of Freddy's sweets is equal to 25% of Amy's sweets. Amy has 40 more sweets than Sandy.",
+    "parts": [
+      "a) Find the ratio of Sandy's to Freddy's to Amy's sweets.",
+      "b) How many sweets did they share altogether?"
+    ],
+    "answers": {
+      "a": "1 : 1 : 2",
+      "b": "160 sweets"
+    },
+    "explanation": "50% S = 50% F -> S = F. 50% F = 25% A -> 2F = A. Ratio S:F:A = 1:1:2. Difference (A-S) = 1 unit = 40. Total = 4 units = 160.",
+    "points": 10,
+    "time": 90
+  },
+  {
+    "id": 3,
+    "type": "structured",
+    "question": "A group of friends decided to compete on the amount of hours they spend on their homework. 20% of Grace's hours is equal to 30% of Henry's hours. 25% of Grace's hours is equal to 35% of Henry's and Jamie's hours. Given that Grace and Jamie spent a total of 48.4 hours on homework.",
+    "parts": [
+      "a) How many hours did Henry spend on homework?"
+    ],
+    "answers": {
+      "a": "30.8 hours"
+    },
+    "explanation": "0.2G = 0.3H -> G = 1.5H. 0.25G = 0.35(H+J) -> 5G = 7H + 7J. Sub G: 7.5H = 7H + 7J -> 0.5H = 7J -> H = 14J. G+J = 48.4 -> 1.5(14J) + J = 22J = 48.4 -> J = 2.2. Henry = 14 * 2.2 = 30.8.",
+    "points": 20,
+    "time": 300
+  },
+  {
+    "id": 4,
+    "type": "structured",
+    "question": "If Hazel increased her mass by 25% and Jimmy reduced his mass by 50%, both of them would have the same mass. The heavier person weighs 42 kg more than the lighter person.",
+    "parts": [
+      "a) Find the mass of the lighter person."
+    ],
+    "answers": {
+      "a": "28 kg"
+    },
+    "explanation": "1.25 * Hazel = 0.5 * Jimmy -> Jimmy = 2.5 * Hazel. Jimmy is heavier. Difference = 1.5 * Hazel = 42 kg. Hazel = 42 / 1.5 = 28 kg.",
+    "points": 10,
+    "time": 90
+  },
+  {
+    "id": 5,
+    "type": "structured",
+    "question": "A red dress cost $120 after a 20% discount. An orange dress cost $108 after a 10% discount.",
+    "parts": [
+      "a) What was the original price of the red dress?",
+      "b) What was the total original price of both dresses?"
+    ],
+    "answers": {
+      "a": "$150",
+      "b": "$270"
+    },
+    "explanation": "a) Red: 80% = $120 -> 100% = $150. b) Orange: 90% = $108 -> 100% = $120. Total = $150 + $120 = $270.",
+    "points": 10,
+    "time": 90
+  },
+  {
+    "id": 6,
+    "type": "structured",
+    "question": "One kilogram of grapes cost $0.50 MORE than one kilogram of cherries. Miss Lee received $1584 for selling some grapes and cherries. She sold equal amount of cherries as grapes. The total amount received from the sale of grapes was $48 more than the amount received from selling cherries.",
+    "parts": [
+      "a) How many kilograms of grapes did Miss Lee sell?",
+      "b) Find the cost of one kilogram of cherries."
+    ],
+    "answers": {
+      "a": "96 kg",
+      "b": "$8"
+    },
+    "explanation": "CORRECTED LOGIC: Grapes cost MORE to generate MORE revenue on equal weight. a) Qty = Revenue Diff / Price Diff = 48 / 0.50 = 96 kg. b) Total Rev = 1584. Cherry Rev = (1584 - 48) / 2 = 768. Price = 768 / 96 = $8.",
+    "points": 20,
+    "time": 300
+  },
+  {
+    "id": 7,
+    "type": "structured",
+    "question": "A silky shirt cost $48 after a 40% discount. A cotton shirt cost $48 after a 20% discount.",
+    "parts": [
+      "a) What was the original price of the cotton shirt?",
+      "b) How much more did the silky shirt cost originally than the cotton shirt?"
+    ],
+    "answers": {
+      "a": "$60",
+      "b": "$20"
+    },
+    "explanation": "a) Cotton: 80% = $48 -> 100% = $60. b) Silky: 60% = $48 -> 100% = $80. Difference = $80 - $60 = $20.",
+    "points": 10,
+    "time": 90
+  },
+  {
+    "id": 8,
+    "type": "structured",
+    "question": "One notebook was sold $2 less than one file. Miss Lee received $495 for selling some notebooks and files. She sold 25% as many notebooks as files. The total amount received from the sale of files was $345 more than the amount received from selling notebooks.",
+    "parts": [
+      "a) How many files did Miss Lee sell?",
+      "b) Find the cost of one notebook."
+    ],
+    "answers": {
+      "a": "60",
+      "b": "$5"
+    },
+    "explanation": "Let Files = 4u, Notes = 1u. Rev F + Rev N = 495. Rev F - Rev N = 345. -> 2 * Rev F = 840 -> Rev F = 420. Rev N = 75. Price F = 420/4u. Price N = 75/1u. Diff = 2. (105/u) - (75/u) = 2 -> 30/u = 2 -> u = 15. Files = 60. Price Note = 75/15 = $5.",
+    "points": 20,
+    "time": 300
+  }
+]
