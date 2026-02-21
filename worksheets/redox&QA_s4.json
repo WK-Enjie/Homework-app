@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "type": "structured",
+    "question": "In the reaction: Zn + CuSO₄ → ZnSO₄ + Cu, zinc loses electrons while copper ions gain electrons.",
+    "parts": [
+      "a) Which substance is oxidised?",
+      "b) Which substance is the oxidising agent?"
+    ],
+    "answers": {
+      "a": "Zinc (Zn)",
+      "b": "Copper(II) sulfate (CuSO₄) or Cu²⁺"
+    },
+    "explanation": "a) Zinc loses electrons (Zn → Zn²⁺ + 2e⁻), so it is oxidised. b) Copper(II) ions gain electrons (Cu²⁺ + 2e⁻ → Cu), causing oxidation of zinc, so Cu²⁺ is the oxidising agent.",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "type": "structured",
+    "question": "A student adds aqueous sodium hydroxide to a solution containing an unknown cation. A blue precipitate forms that is insoluble in excess NaOH.",
+    "parts": [
+      "a) Identify the cation present.",
+      "b) Write the ionic equation for the precipitate formation."
+    ],
+    "answers": {
+      "a": "Copper(II) ion (Cu²⁺)",
+      "b": "Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)"
+    },
+    "explanation": "a) Blue precipitate insoluble in excess NaOH is characteristic of Cu²⁺. b) Copper(II) ions react with hydroxide ions to form copper(II) hydroxide precipitate.",
+    "time": 60
+  },
+  {
+    "id": 3,
+    "type": "structured",
+    "question": "In the extraction of iron from hematite (Fe₂O₃) in the blast furnace, carbon monoxide removes oxygen from iron(III) oxide.",
+    "parts": [
+      "a) What happens to the oxidation state of iron?",
+      "b) Is carbon monoxide acting as an oxidising or reducing agent?"
+    ],
+    "answers": {
+      "a": "Decreases from +3 to 0",
+      "b": "Reducing agent"
+    },
+    "explanation": "a) Fe in Fe₂O₃ has oxidation state +3; elemental Fe has oxidation state 0. b) CO removes oxygen (causes reduction), so it is the reducing agent and gets oxidised to CO₂.",
+    "time": 60
+  },
+  {
+    "id": 4,
+    "type": "structured",
+    "question": "A colourless gas is produced when dilute hydrochloric acid is added to a white solid. The gas turns limewater milky.",
+    "parts": [
+      "a) Identify the gas produced.",
+      "b) What anion was present in the white solid?"
+    ],
+    "answers": {
+      "a": "Carbon dioxide (CO₂)",
+      "b": "Carbonate (CO₃²⁻)"
+    },
+    "explanation": "a) CO₂ turns limewater (Ca(OH)₂) milky due to formation of white CaCO₃ precipitate. b) Carbonates react with acids to produce CO₂ gas: CO₃²⁻ + 2H⁺ → H₂O + CO₂.",
+    "time": 60
+  },
+  {
+    "id": 5,
+    "type": "structured",
+    "question": "Magnesium ribbon burns in oxygen to form magnesium oxide: 2Mg + O₂ → 2MgO",
+    "parts": [
+      "a) What is the oxidation state of magnesium in MgO?",
+      "b) Explain why this is a redox reaction in terms of electron transfer."
+    ],
+    "answers": {
+      "a": "+2",
+      "b": "Mg loses 2 electrons (oxidised); O gains 2 electrons (reduced)"
+    },
+    "explanation": "a) In MgO, Mg has +2 charge. b) Mg → Mg²⁺ + 2e⁻ (oxidation); O₂ + 4e⁻ → 2O²⁻ (reduction). Both oxidation and reduction occur simultaneously.",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "type": "structured",
+    "question": "A green precipitate forms when aqueous ammonia is added to a solution containing Fe²⁺ ions. The precipitate turns reddish-brown on standing.",
+    "parts": [
+      "a) Name the green precipitate formed initially.",
+      "b) Explain why the colour changes to reddish-brown."
+    ],
+    "answers": {
+      "a": "Iron(II) hydroxide",
+      "b": "Fe²⁺ is oxidised by oxygen in air to Fe³⁺, forming iron(III) hydroxide"
+    },
+    "explanation": "a) Fe²⁺ + 2OH⁻ → Fe(OH)₂ (green). b) Air oxidises Fe(OH)₂ to Fe(OH)₃ (reddish-brown). This is a redox reaction where oxygen acts as the oxidising agent.",
+    "time": 120
+  },
+  {
+    "id": 7,
+    "type": "structured",
+    "question": "Solution X gives the following test results: (1) White precipitate with NaOH, soluble in excess (2) White precipitate with AgNO₃ (3) No gas with dilute HCl",
+    "parts": [
+      "a) Identify the cation in Solution X.",
+      "b) Identify the anion in Solution X."
+    ],
+    "answers": {
+      "a": "Zinc ion (Zn²⁺)",
+      "b": "Chloride ion (Cl⁻)"
+    },
+    "explanation": "a) White ppt with NaOH soluble in excess = Zn²⁺ or Al³⁺. b) White ppt with AgNO₃ = Cl⁻ (AgCl). No gas with HCl rules out carbonate. ZnCl₂ fits all observations.",
+    "time": 180
+  },
+  {
+    "id": 8,
+    "type": "structured",
+    "question": "In the reaction: 2FeCl₂ + Cl₂ → 2FeCl₃",
+    "parts": [
+      "a) What is the change in oxidation state of iron?",
+      "b) Which substance is the reducing agent? Explain."
+    ],
+    "answers": {
+      "a": "From +2 to +3",
+      "b": "FeCl₂ (Fe²⁺); it loses electrons and causes reduction of Cl₂"
+    },
+    "explanation": "a) Fe²⁺ → Fe³⁺ (oxidation state increases by 1). b) Fe²⁺ loses electrons (Fe²⁺ → Fe³⁺ + e⁻), causing Cl₂ to gain electrons. The substance that loses electrons is the reducing agent.",
+    "time": 120
+  },
+  {
+    "id": 9,
+    "type": "structured",
+    "question": "A student tests three metals P, Q, and R. P displaces Q from QSO₄ solution. R does not displace P from PSO₄ solution.",
+    "parts": [
+      "a) Arrange P, Q, R in order of decreasing reactivity.",
+      "b) Which metal is the strongest reducing agent?"
+    ],
+    "answers": {
+      "a": "R > P > Q",
+      "b": "R"
+    },
+    "explanation": "a) P displaces Q means P is more reactive than Q. R does not displace P means R is more reactive than P (R stays as metal). Order: R > P > Q. b) Most reactive metal (R) loses electrons most easily, making it the strongest reducing agent.",
+    "time": 120
+  },
+  {
+    "id": 10,
+    "type": "structured",
+    "question": "Raven is investigating rusting. She places iron nails in three test tubes: Tube A (dry air), Tube B (boiled water + oil layer), Tube C (water + air).",
+    "parts": [
+      "a) In which tube will the iron nail rust?",
+      "b) State the two conditions required for rusting based on this experiment."
+    ],
+    "answers": {
+      "a": "Tube C",
+      "b": "Water (moisture) and Oxygen (air)"
+    },
+    "explanation": "a) Tube A lacks water, Tube B lacks oxygen. Only Tube C has both. b) Rusting requires both water and oxygen to occur. Barrier methods (like oil or paint) prevent rusting by blocking these conditions.",
+    "time": 120
+  }
+]
