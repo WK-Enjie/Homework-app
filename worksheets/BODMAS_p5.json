@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Evaluate: (5 + 3) × 2",
+    "options": [
+      "16",
+      "11",
+      "13",
+      "10"
+    ],
+    "answer": "16",
+    "time": 30
+  },
+  {
+    "question": "Calculate: 12 ÷ (4 - 2)",
+    "options": [
+      "6",
+      "3",
+      "4",
+      "8"
+    ],
+    "answer": "6",
+    "time": 30
+  },
+  {
+    "question": "Find the value: 3 + 4 × 5",
+    "options": [
+      "35",
+      "23",
+      "20",
+      "17"
+    ],
+    "answer": "23",
+    "time": 30
+  },
+  {
+    "question": "Simplify: (10 - 6) ÷ 2",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "5"
+    ],
+    "answer": "2",
+    "time": 30
+  },
+  {
+    "question": "Evaluate: 8 × 2 + 3 × 4",
+    "options": [
+      "28",
+      "40",
+      "24",
+      "32"
+    ],
+    "answer": "28",
+    "time": 35
+  },
+  {
+    "question": "Calculate: (7 + 3) × (6 - 4)",
+    "options": [
+      "20",
+      "16",
+      "18",
+      "22"
+    ],
+    "answer": "20",
+    "time": 35
+  },
+  {
+    "question": "Find the value: 15 - 3 × 4",
+    "options": [
+      "48",
+      "3",
+      "12",
+      "7"
+    ],
+    "answer": "3",
+    "time": 30
+  },
+  {
+    "question": "Simplify: 20 ÷ 4 + 3 × 2",
+    "options": [
+      "11",
+      "14",
+      "8",
+      "10"
+    ],
+    "answer": "11",
+    "time": 35
+  },
+  {
+    "question": "Evaluate: (9 - 5) × (8 ÷ 2)",
+    "options": [
+      "16",
+      "12",
+      "20",
+      "18"
+    ],
+    "answer": "16",
+    "time": 35
+  },
+  {
+    "question": "Complete the pattern: 2, 6, 18, 54, ___",
+    "options": [
+      "108",
+      "162",
+      "216",
+      "72"
+    ],
+    "answer": "162",
+    "time": 30
+  },
+  {
+    "question": "Calculate: 50 - (12 + 8) × 2",
+    "options": [
+      "76",
+      "10",
+      "30",
+      "20"
+    ],
+    "answer": "10",
+    "time": 40
+  },
+  {
+    "question": "Find the value: (15 - 5) ÷ (3 + 2)",
+    "options": [
+      "5",
+      "2",
+      "10",
+      "4"
+    ],
+    "answer": "2",
+    "time": 35
+  },
+  {
+    "question": "Complete the pattern: 100, 80, 60, 40, ___",
+    "options": [
+      "30",
+      "20",
+      "10",
+      "0"
+    ],
+    "answer": "20",
+    "time": 30
+  },
+  {
+    "question": "Simplify: 6 × 3 + 12 ÷ 4",
+    "options": [
+      "21",
+      "18",
+      "24",
+      "15"
+    ],
+    "answer": "21",
+    "time": 35
+  },
+  {
+    "question": "Evaluate: [(8 + 2) × 3] - 10",
+    "options": [
+      "20",
+      "30",
+      "25",
+      "15"
+    ],
+    "answer": "20",
+    "time": 40
+  }
+]
