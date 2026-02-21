@@ -1,142 +1,222 @@
 [
   {
     "question": "What happens to most solid materials when they gain thermal energy?",
-    "options": ["They contract", "They expand", "They change color", "They become magnetic"],
+    "options": [
+      "They contract",
+      "They expand",
+      "They change color",
+      "They become magnetic"
+    ],
     "answer": "They expand",
-    "time": 30,
-    "explanation": "When solids gain thermal energy, their particles vibrate more vigorously and take up more space, causing the material to expand."
+    "time": 30
   },
   {
     "question": "Why are gaps left between sections of railway tracks?",
-    "options": ["To save metal", "To allow for expansion on hot days", "To make the train ride smoother", "To reduce noise"],
+    "options": [
+      "To save metal",
+      "To allow for expansion on hot days",
+      "To make the train ride smoother",
+      "To reduce noise"
+    ],
     "answer": "To allow for expansion on hot days",
-    "time": 30,
-    "explanation": "On hot days, the metal rails gain thermal energy and expand. Gaps prevent the rails from buckling or bending as they press against each other."
+    "time": 30
   },
   {
     "question": "A tight metal lid on a glass jar can be loosened by running it under hot water. Why does this work?",
-    "options": ["The glass expands more than the metal", "The metal expands more than the glass", "Both expand equally", "The water lubricates the lid"],
+    "options": [
+      "The glass expands more than the metal",
+      "The metal expands more than the glass",
+      "Both expand equally",
+      "The water lubricates the lid"
+    ],
     "answer": "The metal expands more than the glass",
-    "time": 30,
-    "explanation": "Metals generally expand more than glass when they gain the same amount of thermal energy. When heated, the metal lid expands more than the glass jar, making it easier to open."
+    "time": 30
   },
   {
     "question": "In a bimetallic strip, two different metals are joined together. When heated, the strip bends. Why?",
-    "options": ["One metal becomes heavier", "The metals expand at different rates", "The metals repel each other", "One metal melts"],
+    "options": [
+      "One metal becomes heavier",
+      "The metals expand at different rates",
+      "The metals repel each other",
+      "One metal melts"
+    ],
     "answer": "The metals expand at different rates",
-    "time": 30,
-    "explanation": "Different metals expand by different amounts when gaining the same thermal energy. The metal that expands more causes the strip to bend towards the metal that expands less."
+    "time": 30
   },
   {
     "question": "Which of the following is an application of a bimetallic strip?",
-    "options": ["Electric kettle", "Thermostat in an iron", "Light bulb", "Refrigerator door seal"],
+    "options": [
+      "Electric kettle",
+      "Thermostat in an iron",
+      "Light bulb",
+      "Refrigerator door seal"
+    ],
     "answer": "Thermostat in an iron",
-    "time": 30,
-    "explanation": "Bimetallic strips are commonly used in thermostats to make or break electrical circuits when they bend due to temperature changes, helping to regulate temperature."
+    "time": 30
   },
   {
     "question": "Telephone wires and power lines are hung with some slack (they sag) rather than being pulled tight. Why?",
-    "options": ["To look better", "To allow for contraction on cold days", "To prevent birds from sitting on them", "To reduce electrical resistance"],
+    "options": [
+      "To look better",
+      "To allow for contraction on cold days",
+      "To prevent birds from sitting on them",
+      "To reduce electrical resistance"
+    ],
     "answer": "To allow for contraction on cold days",
-    "time": 30,
-    "explanation": "In cold weather, the metal wires lose thermal energy and contract. If they were pulled too tight initially, they might snap when contracting."
+    "time": 30
   },
   {
     "question": "What happens to the volume of water when it is cooled from 4°C to 0°C?",
-    "options": ["It expands", "It contracts", "It remains the same", "It turns into steam"],
+    "options": [
+      "It expands",
+      "It contracts",
+      "It remains the same",
+      "It turns into steam"
+    ],
     "answer": "It expands",
-    "time": 30,
-    "explanation": "Water behaves unusually between 4°C and 0°C. It expands as it cools in this range, which is why ice is less dense than water and floats."
+    "time": 30
   },
   {
     "question": "Why do concrete roads have expansion joints filled with flexible material?",
-    "options": ["To make the road smoother", "To allow for expansion and contraction", "To drain water", "To reduce construction costs"],
+    "options": [
+      "To make the road smoother",
+      "To allow for expansion and contraction",
+      "To drain water",
+      "To reduce construction costs"
+    ],
     "answer": "To allow for expansion and contraction",
-    "time": 30,
-    "explanation": "Concrete expands in hot weather and contracts in cold weather. Expansion joints prevent cracking by allowing the concrete to move without stressing the structure."
+    "time": 30
   },
   {
     "question": "A steel bridge is often built with one end fixed and the other end resting on rollers. What is the purpose of the rollers?",
-    "options": ["To make it easier for vehicles to cross", "To allow the bridge to expand and contract freely", "To reduce the weight on the supports", "To prevent rust"],
+    "options": [
+      "To make it easier for vehicles to cross",
+      "To allow the bridge to expand and contract freely",
+      "To reduce the weight on the supports",
+      "To prevent rust"
+    ],
     "answer": "To allow the bridge to expand and contract freely",
-    "time": 30,
-    "explanation": "As the bridge gains or loses thermal energy, its length changes. Rollers allow the bridge to move freely without putting stress on the supports."
+    "time": 30
   },
   {
     "question": "Which of the following would be the best material for making a precise measuring instrument like a ruler that must not change size with temperature?",
-    "options": ["Aluminum", "Copper", "A special alloy that expands very little", "Plastic"],
+    "options": [
+      "Aluminum",
+      "Copper",
+      "A special alloy that expands very little",
+      "Plastic"
+    ],
     "answer": "A special alloy that expands very little",
-    "time": 30,
-    "explanation": "Some special alloys are designed to expand very little when they gain thermal energy, meaning their dimensions stay almost the same with temperature changes, making them ideal for precision instruments."
+    "time": 30
   },
   {
     "question": "Why might a glass tumbler crack when very hot water is poured into it?",
-    "options": ["The water chemically reacts with the glass", "The inside expands faster than the outside", "The glass melts", "Air bubbles in the glass explode"],
+    "options": [
+      "The water chemically reacts with the glass",
+      "The inside expands faster than the outside",
+      "The glass melts",
+      "Air bubbles in the glass explode"
+    ],
     "answer": "The inside expands faster than the outside",
-    "time": 30,
-    "explanation": "The inner surface of the glass gains thermal energy and expands quickly, while the outer surface remains cooler and expands less. This uneven expansion creates stress that can crack the glass."
+    "time": 30
   },
   {
     "question": "What type of glass is designed to resist cracking from sudden temperature changes?",
-    "options": ["Ordinary glass", "Oven-safe glass (like Pyrex)", "Stained glass", "Window glass"],
+    "options": [
+      "Ordinary glass",
+      "Oven-safe glass (like Pyrex)",
+      "Stained glass",
+      "Window glass"
+    ],
     "answer": "Oven-safe glass (like Pyrex)",
-    "time": 30,
-    "explanation": "Oven-safe glass is specially made to expand very little when heated. This makes it resistant to thermal shock and cracking when hot liquids are poured in."
+    "time": 30
   },
   {
     "question": "In a fire alarm, a bimetallic strip is used. When heated by the fire, it bends and completes an electrical circuit. Which way does it bend?",
-    "options": ["Towards the metal that expands more", "Towards the metal that expands less", "It depends on the shape", "It does not bend; it contracts"],
+    "options": [
+      "Towards the metal that expands more",
+      "Towards the metal that expands less",
+      "It depends on the shape",
+      "It does not bend; it contracts"
+    ],
     "answer": "Towards the metal that expands less",
-    "time": 30,
-    "explanation": "The metal that expands more becomes longer on that side, causing the strip to curve with the expanding metal on the outside of the curve, bending towards the metal that expands less."
+    "time": 30
   },
   {
     "question": "Why do dentists use filling materials that expand and contract at the same rate as teeth?",
-    "options": ["To match the color", "To prevent the filling from falling out or cracking the tooth", "To make it cheaper", "To make it last longer"],
+    "options": [
+      "To match the color",
+      "To prevent the filling from falling out or cracking the tooth",
+      "To make it cheaper",
+      "To make it last longer"
+    ],
     "answer": "To prevent the filling from falling out or cracking the tooth",
-    "time": 30,
-    "explanation": "If the filling expands or contracts at a different rate than the tooth when drinking hot or cold liquids, it could create gaps or put stress on the tooth, leading to damage."
+    "time": 30
   },
   {
     "question": "A metal hoop can be fitted tightly around a wooden wheel by first heating it. What happens when the hoop cools?",
-    "options": ["It expands and becomes loose", "It contracts and grips the wheel tightly", "It changes color", "It becomes brittle"],
+    "options": [
+      "It expands and becomes loose",
+      "It contracts and grips the wheel tightly",
+      "It changes color",
+      "It becomes brittle"
+    ],
     "answer": "It contracts and grips the wheel tightly",
-    "time": 30,
-    "explanation": "When heated, the metal hoop expands and is slipped over the wheel. As it cools, it loses thermal energy and contracts, creating a very tight, secure fit around the wheel."
+    "time": 30
   },
   {
     "question": "Which of the following statements about water is TRUE?",
-    "options": ["Water expands uniformly when cooled at all temperatures", "Water is heaviest at 0°C", "Water is heaviest at 4°C", "Ice is heavier than water"],
+    "options": [
+      "Water expands uniformly when cooled at all temperatures",
+      "Water is heaviest at 0°C",
+      "Water is heaviest at 4°C",
+      "Ice is heavier than water"
+    ],
     "answer": "Water is heaviest at 4°C",
-    "time": 30,
-    "explanation": "Water reaches its maximum density (is heaviest) at 4°C. Below this temperature, it expands until it freezes at 0°C, which is why ice floats on water."
+    "time": 30
   },
   {
     "question": "Why do pipelines carrying hot oil often have loops or bends in them?",
-    "options": ["To slow down the flow", "To allow for expansion and contraction", "To make them easier to paint", "To trap impurities"],
+    "options": [
+      "To slow down the flow",
+      "To allow for expansion and contraction",
+      "To make them easier to paint",
+      "To trap impurities"
+    ],
     "answer": "To allow for expansion and contraction",
-    "time": 30,
-    "explanation": "The loops act as expansion joints. When the pipe gains thermal energy from the hot oil and expands, the loops can flex and absorb the movement without causing stress or damage."
+    "time": 30
   },
   {
     "question": "What is the main reason overhead power lines are more likely to snap in winter than in summer?",
-    "options": ["They become brittle in the cold", "Ice adds weight to the lines", "They contract and become tighter, increasing tension", "More electricity flows in winter"],
+    "options": [
+      "They become brittle in the cold",
+      "Ice adds weight to the lines",
+      "They contract and become tighter, increasing tension",
+      "More electricity flows in winter"
+    ],
     "answer": "They contract and become tighter, increasing tension",
-    "time": 30,
-    "explanation": "In winter, the metal wires lose thermal energy and contract. This increases the tension (tightness) on the wires. If the tension becomes too great, they can snap."
+    "time": 30
   },
   {
     "question": "A bimetallic strip is straight at room temperature. When cooled significantly below room temperature, which way will it bend?",
-    "options": ["Towards the metal that expands more when heated", "Towards the metal that contracts more when cooled", "It will remain straight", "It will twist instead of bend"],
+    "options": [
+      "Towards the metal that expands more when heated",
+      "Towards the metal that contracts more when cooled",
+      "It will remain straight",
+      "It will twist instead of bend"
+    ],
     "answer": "Towards the metal that contracts more when cooled",
-    "time": 30,
-    "explanation": "When cooled, both metals contract. The metal that normally expands more when heated will also contract more when cooled. This causes the strip to bend with that metal on the inside of the curve."
+    "time": 30
   },
   {
     "question": "Why is it important to leave an expansion gap when laying long sections of flooring or tiling?",
-    "options": ["To allow for cleaning", "To let air circulate", "To allow the floor to expand without buckling", "To save materials"],
+    "options": [
+      "To allow for cleaning",
+      "To let air circulate",
+      "To allow the floor to expand without buckling",
+      "To save materials"
+    ],
     "answer": "To allow the floor to expand without buckling",
-    "time": 30,
-    "explanation": "Flooring materials expand when they gain thermal energy (and sometimes from moisture). Without a gap at the edges, the expanding floor would have nowhere to go and would buckle or lift up."
+    "time": 30
   }
 ]
