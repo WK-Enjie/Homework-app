@@ -4,7 +4,6 @@
     "options": ["Conduction", "Convection", "Radiation", "Evaporation"],
     "answer": "Convection",
     "time": 30,
-    "points": 8,
     "explanation": "Convection is the transfer of thermal energy through fluids (liquids and gases) by the movement of warmer, less dense regions rising and cooler, denser regions sinking."
   },
   {
@@ -12,7 +11,6 @@
     "options": ["Boiling water in a pot", "Feeling the warmth of the sun", "A metal spoon getting hot in hot soup", "Warm air rising from a radiator"],
     "answer": "A metal spoon getting hot in hot soup",
     "time": 30,
-    "points": 8,
     "explanation": "Conduction is the transfer of thermal energy through a solid material without the material itself moving. The thermal energy travels along the metal spoon from the hot soup to your hand."
   },
   {
@@ -20,7 +18,6 @@
     "options": ["For aesthetic appeal only", "Metal conducts thermal energy well for cooking; plastic/wood are poor conductors (insulators) for safe handling", "Metal is cheaper than plastic", "Plastic handles are glued on easily"],
     "answer": "Metal conducts thermal energy well for cooking; plastic/wood are poor conductors (insulators) for safe handling",
     "time": 30,
-    "points": 10,
     "explanation": "Metal is a good conductor, allowing thermal energy to transfer efficiently to the food. Plastic and wood are insulators, preventing thermal energy from conducting to the handle and burning your hand."
   },
   {
@@ -28,7 +25,6 @@
     "options": ["An egg frying in a pan", "Warmth from a campfire reaching your face", "Hot water rising to the top of a radiator", "Stirring hot chocolate with a metal spoon"],
     "answer": "Warmth from a campfire reaching your face",
     "time": 30,
-    "points": 8,
     "explanation": "Radiation transfers thermal energy via infrared waves and does not require a medium. You feel the campfire's warmth even though the air between you and the fire is cold."
   },
   {
@@ -36,7 +32,6 @@
     "options": ["It becomes denser and sinks", "It expands, becomes less dense, and rises", "It contracts and becomes heavier", "It changes into a solid"],
     "answer": "It expands, becomes less dense, and rises",
     "time": 30,
-    "points": 8,
     "explanation": "When a fluid gains thermal energy, its particles move faster and spread out, decreasing its density. The less dense fluid rises above the cooler, denser fluid."
   },
   {
@@ -44,7 +39,6 @@
     "options": ["Shiny white", "Dull black", "Shiny silver", "Transparent glass"],
     "answer": "Dull black",
     "time": 30,
-    "points": 10,
     "explanation": "Dull, dark, matte surfaces are excellent at both absorbing and emitting infrared radiation. Shiny surfaces are poor absorbers and emitters (they are good reflectors)."
   },
   {
@@ -52,7 +46,6 @@
     "options": ["To absorb more thermal energy in winter", "To look clean", "To reflect thermal radiation away from the room in hot climates", "To prevent convection currents"],
     "answer": "To reflect thermal radiation away from the room in hot climates",
     "time": 30,
-    "points": 10,
     "explanation": "White or light-colored, shiny surfaces are poor absorbers and good reflectors of thermal radiation. This helps keep the room cooler by reflecting thermal energy back downwards/outwards."
   },
   {
@@ -60,7 +53,6 @@
     "options": ["Conduction and Convection", "Radiation only", "Conduction only", "Convection only"],
     "answer": "Conduction and Convection",
     "time": 30,
-    "points": 12,
     "explanation": "A vacuum has no particles, so it prevents thermal energy transfer by conduction (particle collision) and convection (particle movement). Radiation is reduced by the silvered surfaces."
   },
   {
@@ -68,7 +60,6 @@
     "options": ["The end in the flame", "The middle of the rod", "The end held by the student", "All parts at the same time"],
     "answer": "The end in the flame",
     "time": 30,
-    "points": 8,
     "explanation": "Conduction transfers thermal energy from the hotter end (in the flame) to the colder end. The particles at the hot end vibrate faster and collide with neighboring particles, passing the energy along."
   },
   {
@@ -76,7 +67,6 @@
     "options": ["Wood and plastic", "Copper and iron", "Glass and air", "Rubber and wool"],
     "answer": "Copper and iron",
     "time": 30,
-    "points": 8,
     "explanation": "Metals like copper and iron are generally excellent thermal conductors due to the presence of free electrons that can quickly transfer kinetic energy."
   },
   {
@@ -84,7 +74,6 @@
     "options": ["The land cools faster than the sea, causing air over land to sink", "The sea cools faster than the land, causing air over sea to rise", "The moon pulls the warm air towards the land", "Radiation from the land warms the sea"],
     "answer": "The land cools faster than the sea, causing air over land to sink",
     "time": 30,
-    "points": 15,
     "explanation": "At night, land cools down quickly (by radiation). The air above it cools, becomes denser, and sinks (high pressure). The warmer air over the sea rises, creating a convection current that pulls the cool air from land to sea."
   },
   {
@@ -92,7 +81,6 @@
     "options": ["Glass", "Iron", "Copper", "All at the same time"],
     "answer": "Copper",
     "time": 30,
-    "points": 12,
     "explanation": "Copper is a much better thermal conductor than iron or glass. Thermal energy will travel fastest along the copper rod, causing the wax on it to melt first."
   },
   {
@@ -100,7 +88,6 @@
     "options": ["It prevents convection completely", "Glass lets sunlight in but traps infrared radiation", "Glass conducts thermal energy from the sun", "It reflects all light back to space"],
     "answer": "Glass lets sunlight in but traps infrared radiation",
     "time": 30,
-    "points": 12,
     "explanation": "Sunlight (short-wave radiation) passes through the glass and warms the interior. The warm objects inside emit infrared (long-wave) radiation, which cannot pass through the glass as easily, trapping the thermal energy."
   },
   {
@@ -108,7 +95,6 @@
     "options": ["Silvered surface on a kettle", "Double-glazed windows with a vacuum", "Loft insulation (fiberglass wool)", "A metal heat sink on a CPU"],
     "answer": "Double-glazed windows with a vacuum",
     "time": 30,
-    "points": 15,
     "explanation": "The vacuum (or even just the trapped air gap) between the glass panes prevents air particles from moving and transferring thermal energy by convection from the inside pane to the outside pane."
   },
   {
@@ -116,7 +102,6 @@
     "options": ["The tiles are actually at a lower temperature", "Tiles are better conductors and draw thermal energy away from your foot faster", "The carpet generates its own thermal energy", "Carpet is a better conductor"],
     "answer": "Tiles are better conductors and draw thermal energy away from your foot faster",
     "time": 30,
-    "points": 12,
     "explanation": "Both materials are at the same room temperature. Tiles are good conductors, so they rapidly transfer thermal energy away from your warm foot, making them feel cold. Carpet is an insulator, so less thermal energy is drawn from your foot."
   },
   {
@@ -124,7 +109,6 @@
     "options": ["Gas", "Liquid", "Solid", "Plasma"],
     "answer": "Solid",
     "time": 30,
-    "points": 8,
     "explanation": "Convection requires the physical movement of particles within the substance. In a solid, particles are fixed in position and cannot flow, so only conduction is possible."
   },
   {
@@ -132,7 +116,6 @@
     "options": ["To look more attractive", "To prevent rust", "To increase the rate of cooling by radiation", "To reduce weight"],
     "answer": "To increase the rate of cooling by radiation",
     "time": 30,
-    "points": 10,
     "explanation": "Dull, black surfaces are excellent emitters of thermal radiation. Painting the fins black helps them radiate away excess thermal energy more efficiently, cooling the device."
   },
   {
@@ -140,7 +123,6 @@
     "options": ["The shiny silver face", "The dull black face", "The white painted face", "All faces radiate equally"],
     "answer": "The dull black face",
     "time": 30,
-    "points": 10,
     "explanation": "The Leslie's Cube experiment demonstrates that a dull black surface is the best emitter of infrared radiation, so the thermal energy detector will show the highest reading when pointed at the black face."
   },
   {
@@ -148,7 +130,6 @@
     "options": ["Copper bottom of a pan", "Iron radiator", "Fiberglass in the attic", "Aluminum heat sink"],
     "answer": "Fiberglass in the attic",
     "time": 30,
-    "points": 8,
     "explanation": "Fiberglass traps air in small pockets. Air is a poor conductor. This prevents thermal energy loss from the house by conduction (and reduces convection), making it a good insulator."
   },
   {
@@ -156,7 +137,6 @@
     "options": ["Conduction through the glass", "Radiation from the water", "Convection currents in the air", "All three equally"],
     "answer": "Convection currents in the air",
     "time": 30,
-    "points": 10,
     "explanation": "The hot water transfers thermal energy to the air around the glass. This warm air rises (convection). The rising air current hits the paper fan blades, causing them to move."
   }
 ]
