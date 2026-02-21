@@ -1,100 +1,156 @@
 [
   {
     "question": "If Luna increased her allowance by 50% and Orion decreased his allowance by 50%, both would have equal allowance. The difference was $60. Who had more allowance originally?",
-    "options": ["Luna", "Orion", "Both equal", "Cannot determine"],
+    "options": [
+      "Luna",
+      "Orion",
+      "Both equal",
+      "Cannot determine"
+    ],
     "answer": "Orion",
-    "time": 60,
-    "explanation": "1.5 × Luna = 0.5 × Orion → Orion = 3 × Luna. Orion had more."
+    "time": 60
   },
   {
     "question": "If Luna increased her allowance by 50% and Orion decreased his allowance by 50%, both would have equal allowance. The difference was $60. Find Orion's original allowance.",
-    "options": ["$60", "$90", "$120", "$180"],
+    "options": [
+      "$60",
+      "$90",
+      "$120",
+      "$180"
+    ],
     "answer": "$90",
-    "time": 60,
-    "explanation": "Ratio L:O = 1:3. Difference = 2 units = $60 → 1 unit = $30. Orion = 3 units = $90."
+    "time": 60
   },
   {
     "question": "50% of Jasper's sweets = 50% of Finn's sweets. 50% of Finn's sweets = 25% of Willow's sweets. Find the ratio J:F:W.",
-    "options": ["1:1:2", "1:2:4", "2:2:1", "1:2:1"],
+    "options": [
+      "1:1:2",
+      "1:2:4",
+      "2:2:1",
+      "1:2:1"
+    ],
     "answer": "1:1:2",
-    "time": 60,
-    "explanation": "J = F. 2F = W. Ratio J:F:W = 1:1:2."
+    "time": 60
   },
   {
     "question": "50% of Jasper's sweets = 50% of Finn's sweets. 50% of Finn's sweets = 25% of Willow's sweets. Willow has 40 more sweets than Jasper. How many sweets altogether?",
-    "options": ["120", "140", "160", "180"],
+    "options": [
+      "120",
+      "140",
+      "160",
+      "180"
+    ],
     "answer": "160",
-    "time": 60,
-    "explanation": "Ratio 1:1:2. Difference (W-J) = 1 unit = 40. Total = 4 units = 160."
+    "time": 60
   },
   {
     "question": "20% of Aria's hours = 30% of Hugo's hours. Aria and Jazz spent 48.4 hours total. How many hours did Hugo spend?",
-    "options": ["28.8 hours", "30.8 hours", "32.8 hours", "34.8 hours"],
+    "options": [
+      "28.8 hours",
+      "30.8 hours",
+      "32.8 hours",
+      "34.8 hours"
+    ],
     "answer": "30.8 hours",
-    "time": 300,
-    "explanation": "A = 1.5H. H = 14J. A+J = 48.4 → 22J = 48.4 → J = 2.2. Hugo = 14 × 2.2 = 30.8."
+    "time": 300
   },
   {
     "question": "Ember increased mass by 25%, Stone reduced mass by 50%, both same mass. Heavier is 42 kg more. Find lighter person's mass.",
-    "options": ["24 kg", "28 kg", "32 kg", "36 kg"],
+    "options": [
+      "24 kg",
+      "28 kg",
+      "32 kg",
+      "36 kg"
+    ],
     "answer": "28 kg",
-    "time": 60,
-    "explanation": "Stone = 2.5 × Ember. Difference = 1.5 × Ember = 42 → Ember = 28 kg."
+    "time": 60
   },
   {
     "question": "Red dress cost $120 after 20% discount. What was original price?",
-    "options": ["$140", "$150", "$160", "$170"],
+    "options": [
+      "$140",
+      "$150",
+      "$160",
+      "$170"
+    ],
     "answer": "$150",
-    "time": 60,
-    "explanation": "80% = $120 → 100% = $150."
+    "time": 60
   },
   {
     "question": "Red dress $120 after 20% discount. Orange dress $108 after 10% discount. Total original price?",
-    "options": ["$250", "$260", "$270", "$280"],
+    "options": [
+      "$250",
+      "$260",
+      "$270",
+      "$280"
+    ],
     "answer": "$270",
-    "time": 60,
-    "explanation": "Red: $150. Orange: 90% = $108 → $120. Total = $150 + $120 = $270."
+    "time": 60
   },
   {
-    "question": "Grapes cost $0.50 MORE than cherries per kg. Equal kg sold. Grape revenue $48 more than cherry. Total revenue $1584. How many kg of grapes sold?",
-    "options": ["86 kg", "96 kg", "106 kg", "116 kg"],
+    "question": "Grapes cost $0.50 MORE per kg than cherries. Equal kg sold. Grape revenue $48 more. Total revenue $1584. How many kg of grapes sold?",
+    "options": [
+      "86 kg",
+      "96 kg",
+      "106 kg",
+      "116 kg"
+    ],
     "answer": "96 kg",
-    "time": 300,
-    "explanation": "Qty = Revenue Diff / Price Diff = 48 / 0.50 = 96 kg."
+    "time": 300
   },
   {
-    "question": "Grapes cost $0.50 MORE than cherries per kg. Equal kg sold. Grape revenue $48 more. Total revenue $1584. Find cost per kg of cherries.",
-    "options": ["$6", "$8", "$10", "$12"],
+    "question": "Grapes cost $0.50 MORE per kg than cherries. Equal kg sold. Grape revenue $48 more. Total revenue $1584. Find cost per kg of cherries.",
+    "options": [
+      "$6",
+      "$8",
+      "$10",
+      "$12"
+    ],
     "answer": "$8",
-    "time": 300,
-    "explanation": "Cherry Rev = (1584 - 48) / 2 = $768. Price = 768 / 96 = $8."
+    "time": 300
   },
   {
     "question": "Silky shirt $48 after 40% discount. Cotton shirt $48 after 20% discount. Original price of cotton shirt?",
-    "options": ["$56", "$60", "$64", "$68"],
+    "options": [
+      "$56",
+      "$60",
+      "$64",
+      "$68"
+    ],
     "answer": "$60",
-    "time": 60,
-    "explanation": "80% = $48 → 100% = $60."
+    "time": 60
   },
   {
     "question": "Silky shirt $48 after 40% discount. Cotton shirt $48 after 20% discount. How much more did silky cost originally?",
-    "options": ["$15", "$20", "$25", "$30"],
+    "options": [
+      "$15",
+      "$20",
+      "$25",
+      "$30"
+    ],
     "answer": "$20",
-    "time": 60,
-    "explanation": "Silky: 60% = $48 → $80. Cotton: $60. Difference = $20."
+    "time": 60
   },
   {
     "question": "Notebook sold $2 less than file. Files revenue $345 more than notebooks. Total revenue $495. Files sold 4× notebooks. How many files sold?",
-    "options": ["50", "60", "70", "80"],
+    "options": [
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
     "answer": "60",
-    "time": 300,
-    "explanation": "Rev F = 420, Rev N = 75. Files = 4u, Notes = 1u. (105/u) - (75/u) = 2 → u = 15. Files = 60."
+    "time": 300
   },
   {
     "question": "Notebook sold $2 less than file. Files revenue $345 more. Total $495. Files sold 4× notebooks. Cost of one notebook?",
-    "options": ["$4", "$5", "$6", "$7"],
+    "options": [
+      "$4",
+      "$5",
+      "$6",
+      "$7"
+    ],
     "answer": "$5",
-    "time": 300,
-    "explanation": "Price Note = 75 / 15 = $5."
+    "time": 300
   }
 ]
