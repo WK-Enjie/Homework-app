@@ -1,128 +1,222 @@
 [
   {
-    "question": "In Zn + CuSO₄ → ZnSO₄ + Cu, which substance is oxidised?",
-    "options": ["Zinc (Zn)", "Copper(II) sulfate", "Zinc sulfate", "Copper (Cu)"],
+    "question": "In the reaction: Zn + CuSO₄ → ZnSO₄ + Cu, which substance is oxidised?",
+    "options": [
+      "Zinc (Zn)",
+      "Copper(II) sulfate",
+      "Zinc sulfate",
+      "Copper (Cu)"
+    ],
     "answer": "Zinc (Zn)",
-    "time": 60,
-    "explanation": "Zinc loses electrons (Zn → Zn²⁺ + 2e⁻), so it is oxidised."
+    "time": 30
   },
   {
     "question": "In Zn + CuSO₄ → ZnSO₄ + Cu, which is the oxidising agent?",
-    "options": ["Zinc", "Copper(II) ions (Cu²⁺)", "Zinc ions", "Sulfate ions"],
+    "options": [
+      "Zinc",
+      "Copper(II) ions (Cu²⁺)",
+      "Zinc ions",
+      "Sulfate ions"
+    ],
     "answer": "Copper(II) ions (Cu²⁺)",
-    "time": 60,
-    "explanation": "Cu²⁺ gains electrons, causing oxidation of zinc, so it's the oxidising agent."
+    "time": 30
   },
   {
-    "question": "Blue precipitate with NaOH, insoluble in excess. Which cation?",
-    "options": ["Fe²⁺", "Cu²⁺", "Zn²⁺", "Al³⁺"],
+    "question": "A blue precipitate forms when NaOH is added to a solution, insoluble in excess. Which cation is present?",
+    "options": [
+      "Fe²⁺",
+      "Cu²⁺",
+      "Zn²⁺",
+      "Al³⁺"
+    ],
     "answer": "Cu²⁺",
-    "time": 60,
-    "explanation": "Blue precipitate insoluble in excess NaOH is characteristic of Cu²⁺."
+    "time": 30
   },
   {
-    "question": "In extraction of iron from Fe₂O₃, CO removes oxygen. What happens to iron's oxidation state?",
-    "options": ["Increases from 0 to +3", "Decreases from +3 to 0", "Stays at +3", "Decreases from +2 to 0"],
-    "answer": "Decreases from +3 to 0",
-    "time": 60,
-    "explanation": "Fe in Fe₂O₃ is +3; elemental Fe is 0. Reduction occurs."
+    "question": "In the extraction of iron: Fe₂O₃ + 3CO → 2Fe + 3CO₂, what happens to iron?",
+    "options": [
+      "It is oxidised",
+      "It is reduced",
+      "It is neither oxidised nor reduced",
+      "It acts as a catalyst"
+    ],
+    "answer": "It is reduced",
+    "time": 30
   },
   {
-    "question": "In Fe₂O₃ + 3CO → 2Fe + 3CO₂, is CO an oxidising or reducing agent?",
-    "options": ["Oxidising agent", "Reducing agent", "Neither", "Both"],
-    "answer": "Reducing agent",
-    "time": 60,
-    "explanation": "CO removes oxygen (causes reduction), so it's the reducing agent."
-  },
-  {
-    "question": "Colourless gas with HCl turns limewater milky. Identify the gas.",
-    "options": ["Hydrogen", "Oxygen", "Carbon dioxide", "Chlorine"],
+    "question": "A colourless gas turns limewater milky. Which gas is it?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Ammonia"
+    ],
     "answer": "Carbon dioxide",
-    "time": 60,
-    "explanation": "CO₂ turns limewater milky due to white CaCO₃ precipitate."
+    "time": 30
   },
   {
-    "question": "Gas with HCl turns limewater milky. Which anion was present?",
-    "options": ["Sulfate", "Nitrate", "Carbonate", "Chloride"],
-    "answer": "Carbonate",
-    "time": 60,
-    "explanation": "Carbonates react with acids to produce CO₂: CO₃²⁻ + 2H⁺ → H₂O + CO₂."
+    "question": "Which anion produces CO₂ when reacted with dilute acid?",
+    "options": [
+      "Sulfate (SO₄²⁻)",
+      "Nitrate (NO₃⁻)",
+      "Carbonate (CO₃²⁻)",
+      "Chloride (Cl⁻)"
+    ],
+    "answer": "Carbonate (CO₃²⁻)",
+    "time": 30
   },
   {
-    "question": "In 2Mg + O₂ → 2MgO, what is Mg's oxidation state in MgO?",
-    "options": ["0", "+1", "+2", "-2"],
+    "question": "In 2Mg + O₂ → 2MgO, what is the oxidation state of Mg in MgO?",
+    "options": [
+      "0",
+      "+1",
+      "+2",
+      "-2"
+    ],
     "answer": "+2",
-    "time": 60,
-    "explanation": "In MgO, Mg has +2 charge."
+    "time": 30
   },
   {
-    "question": "Green precipitate with NH₃ turns reddish-brown on standing. Name the green precipitate.",
-    "options": ["Iron(III) hydroxide", "Iron(II) hydroxide", "Copper(II) hydroxide", "Zinc hydroxide"],
+    "question": "A green precipitate forms with NH₃ and turns reddish-brown on standing. What is the initial precipitate?",
+    "options": [
+      "Iron(III) hydroxide",
+      "Iron(II) hydroxide",
+      "Copper(II) hydroxide",
+      "Zinc hydroxide"
+    ],
     "answer": "Iron(II) hydroxide",
-    "time": 300,
-    "explanation": "Fe²⁺ + 2OH⁻ → Fe(OH)₂ (green)."
+    "time": 40
   },
   {
-    "question": "Green Fe(OH)₂ turns reddish-brown on standing. Why?",
-    "options": ["It loses water", "Fe²⁺ oxidises to Fe³⁺ by air", "It absorbs CO₂", "It reacts with NH₃"],
-    "answer": "Fe²⁺ oxidises to Fe³⁺ by air",
-    "time": 300,
-    "explanation": "Air oxidises Fe(OH)₂ to Fe(OH)₃ (reddish-brown)."
+    "question": "Why does Fe(OH)₂ turn reddish-brown on standing?",
+    "options": [
+      "It loses water",
+      "Fe²⁺ is oxidised to Fe³⁺ by air",
+      "It absorbs CO₂ from air",
+      "It reacts with NH₃"
+    ],
+    "answer": "Fe²⁺ is oxidised to Fe³⁺ by air",
+    "time": 40
   },
   {
-    "question": "White ppt with NaOH (soluble in excess). White ppt with AgNO₃. No gas with HCl. Identify cation.",
-    "options": ["Al³⁺", "Zn²⁺", "Pb²⁺", "Ca²⁺"],
-    "answer": "Zn²⁺",
-    "time": 300,
-    "explanation": "White ppt soluble in excess = Zn²⁺ or Al³⁺. White ppt with AgNO₃ = Cl. ZnCl₂ fits."
-  },
-  {
-    "question": "White ppt with NaOH (soluble in excess). White ppt with AgNO₃. No gas with HCl. Identify anion.",
-    "options": ["SO₄²⁻", "CO₃²⁻", "Cl⁻", "NO₃⁻"],
-    "answer": "Cl⁻",
-    "time": 300,
-    "explanation": "White ppt with AgNO₃ = AgCl, so Cl⁻ present."
+    "question": "White ppt with NaOH (soluble in excess). White ppt with AgNO₃. No gas with HCl. Identify the compound.",
+    "options": [
+      "AlCl₃",
+      "ZnCl₂",
+      "PbCl₂",
+      "CaCl₂"
+    ],
+    "answer": "ZnCl₂",
+    "time": 60
   },
   {
     "question": "In 2FeCl₂ + Cl₂ → 2FeCl₃, what is the change in Fe's oxidation state?",
-    "options": ["0 to +2", "+2 to +3", "+3 to +2", "+2 to 0"],
+    "options": [
+      "0 to +2",
+      "+2 to +3",
+      "+3 to +2",
+      "+2 to 0"
+    ],
     "answer": "+2 to +3",
-    "time": 300,
-    "explanation": "Fe²⁺ → Fe³⁺ (oxidation state increases by 1)."
+    "time": 40
   },
   {
     "question": "In 2FeCl₂ + Cl₂ → 2FeCl₃, which is the reducing agent?",
-    "options": ["FeCl₂", "Cl₂", "FeCl₃", "Cl⁻"],
+    "options": [
+      "FeCl₂",
+      "Cl₂",
+      "FeCl₃",
+      "Cl⁻"
+    ],
     "answer": "FeCl₂",
-    "time": 300,
-    "explanation": "Fe²⁺ loses electrons, causing reduction of Cl₂. FeCl₂ is the reducing agent."
+    "time": 40
   },
   {
-    "question": "P displaces Q from QSO₄. R does not displace P from PSO₄. Order of reactivity (decreasing)?",
-    "options": ["P > Q > R", "R > P > Q", "Q > P > R", "P > R > Q"],
+    "question": "Metal P displaces Q from QSO₄. Metal R does not displace P from PSO₄. Order of reactivity (most to least)?",
+    "options": [
+      "P > Q > R",
+      "R > P > Q",
+      "Q > P > R",
+      "P > R > Q"
+    ],
     "answer": "R > P > Q",
-    "time": 300,
-    "explanation": "P > Q (P displaces Q). R > P (R doesn't displace P, so R is more reactive). Order: R > P > Q."
+    "time": 40
   },
   {
-    "question": "P displaces Q. R does not displace P. Which metal is the strongest reducing agent?",
-    "options": ["P", "Q", "R", "All equal"],
+    "question": "Which metal is the strongest reducing agent: P, Q, or R (from previous question)?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "All equal"
+    ],
     "answer": "R",
-    "time": 300,
-    "explanation": "Most reactive metal (R) loses electrons most easily = strongest reducing agent."
+    "time": 40
   },
   {
-    "question": "Iron nails: Tube A (dry air), Tube B (boiled water + oil), Tube C (water + air). Where will rusting occur?",
-    "options": ["Tube A only", "Tube B only", "Tube C only", "All tubes"],
-    "answer": "Tube C only",
-    "time": 300,
-    "explanation": "Tube A lacks water, Tube B lacks oxygen. Only Tube C has both water and oxygen."
+    "question": "Which test confirms the presence of chloride ions?",
+    "options": [
+      "Add NaOH → white ppt",
+      "Add AgNO₃ → white ppt soluble in NH₃",
+      "Add BaCl₂ → white ppt",
+      "Add acid → gas turns limewater milky"
+    ],
+    "answer": "Add AgNO₃ → white ppt soluble in NH₃",
+    "time": 40
   },
   {
-    "question": "Based on rusting experiment, what two conditions are required for rusting?",
-    "options": ["Heat and light", "Water and oxygen", "Acid and salt", "Air and CO₂"],
-    "answer": "Water and oxygen",
-    "time": 300,
-    "explanation": "Rusting requires both water (moisture) and oxygen (air) to occur."
+    "question": "A solution gives a white ppt with NaOH that dissolves in excess. It also gives a white ppt with NH₃ that dissolves in excess. Which cation is present?",
+    "options": [
+      "Al³⁺",
+      "Zn²⁺",
+      "Pb²⁺",
+      "Ca²⁺"
+    ],
+    "answer": "Zn²⁺",
+    "time": 40
+  },
+  {
+    "question": "Which gas relights a glowing splint?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Ammonia"
+    ],
+    "answer": "Oxygen",
+    "time": 30
+  },
+  {
+    "question": "Which gas gives a 'pop' with a lit splint?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Chlorine"
+    ],
+    "answer": "Hydrogen",
+    "time": 30
+  },
+  {
+    "question": "A solution gives a brown ppt with NaOH. Which cation is likely present?",
+    "options": [
+      "Fe²⁺",
+      "Fe³⁺",
+      "Cu²⁺",
+      "Zn²⁺"
+    ],
+    "answer": "Fe³⁺",
+    "time": 30
+  },
+  {
+    "question": "Which gas turns damp red litmus paper blue?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Ammonia"
+    ],
+    "answer": "Ammonia",
+    "time": 30
   }
 ]
