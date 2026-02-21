@@ -1,100 +1,156 @@
 [
   {
     "question": "Sarah increased allowance by 50%, Linda decreased by 50%, both equal. Difference was $60. Who had more originally?",
-    "options": ["Sarah", "Linda", "Both equal", "Cannot tell"],
+    "options": [
+      "Sarah",
+      "Linda",
+      "Both equal",
+      "Cannot tell"
+    ],
     "answer": "Linda",
-    "time": 90,
-    "explanation": "1.5 × Sarah = 0.5 × Linda → Linda = 3 × Sarah. Linda had more."
+    "time": 90
   },
   {
     "question": "Sarah increased allowance by 50%, Linda decreased by 50%, both equal. Difference was $60. Find Linda's original allowance.",
-    "options": ["$60", "$90", "$120", "$180"],
+    "options": [
+      "$60",
+      "$90",
+      "$120",
+      "$180"
+    ],
     "answer": "$90",
-    "time": 90,
-    "explanation": "Ratio S:L = 1:3. Difference = 2 units = $60 → 1 unit = $30. Linda = 3 units = $90."
+    "time": 90
   },
   {
     "question": "50% Sandy = 50% Freddy. 50% Freddy = 25% Amy. Amy has 40 more than Sandy. Ratio S:F:A?",
-    "options": ["1:1:2", "1:2:4", "2:1:1", "1:2:1"],
+    "options": [
+      "1:1:2",
+      "1:2:4",
+      "2:1:1",
+      "1:2:1"
+    ],
     "answer": "1:1:2",
-    "time": 90,
-    "explanation": "S = F. 2F = A. Ratio = 1:1:2."
+    "time": 90
   },
   {
     "question": "50% Sandy = 50% Freddy. 50% Freddy = 25% Amy. Amy has 40 more than Sandy. Total sweets?",
-    "options": ["140", "160", "180", "200"],
+    "options": [
+      "140",
+      "160",
+      "180",
+      "200"
+    ],
     "answer": "160",
-    "time": 90,
-    "explanation": "Difference = 1 unit = 40. Total = 4 units = 160."
+    "time": 90
   },
   {
     "question": "20% Grace = 30% Henry. 25% Grace = 35%(Henry + Jazz). Grace + Jazz = 48.4 hours. Henry's hours?",
-    "options": ["28.8", "30.8", "32.8", "34.8"],
+    "options": [
+      "28.8",
+      "30.8",
+      "32.8",
+      "34.8"
+    ],
     "answer": "30.8",
-    "time": 300,
-    "explanation": "G = 1.5H. H = 14J. 22J = 48.4 → J = 2.2. Henry = 30.8 hours."
+    "time": 300
   },
   {
     "question": "Hazel mass +25%, Jimmy mass -50%, both same. Heavier 42 kg more. Lighter person's mass?",
-    "options": ["24 kg", "28 kg", "32 kg", "36 kg"],
+    "options": [
+      "24 kg",
+      "28 kg",
+      "32 kg",
+      "36 kg"
+    ],
     "answer": "28 kg",
-    "time": 90,
-    "explanation": "Jimmy = 2.5 × Hazel. 1.5 × Hazel = 42 → Hazel = 28 kg."
+    "time": 90
   },
   {
     "question": "Red dress $120 after 20% discount. Orange $108 after 10% discount. Original red dress price?",
-    "options": ["$140", "$150", "$160", "$170"],
+    "options": [
+      "$140",
+      "$150",
+      "$160",
+      "$170"
+    ],
     "answer": "$150",
-    "time": 90,
-    "explanation": "80% = $120 → $150."
+    "time": 90
   },
   {
     "question": "Red dress $120 after 20% discount. Orange $108 after 10% discount. Total original price?",
-    "options": ["$250", "$260", "$270", "$280"],
+    "options": [
+      "$250",
+      "$260",
+      "$270",
+      "$280"
+    ],
     "answer": "$270",
-    "time": 90,
-    "explanation": "Red: $150. Orange: $120. Total: $270."
+    "time": 90
   },
   {
     "question": "Grapes $0.50 MORE/kg than cherries. Equal kg. Grape revenue $48 more. Total $1584. Kg of grapes?",
-    "options": ["86", "96", "106", "116"],
+    "options": [
+      "86",
+      "96",
+      "106",
+      "116"
+    ],
     "answer": "96",
-    "time": 300,
-    "explanation": "Qty = 48 / 0.50 = 96 kg."
+    "time": 300
   },
   {
     "question": "Grapes $0.50 MORE/kg than cherries. Equal kg. Grape revenue $48 more. Total $1584. Cost/kg cherries?",
-    "options": ["$6", "$8", "$10", "$12"],
+    "options": [
+      "$6",
+      "$8",
+      "$10",
+      "$12"
+    ],
     "answer": "$8",
-    "time": 300,
-    "explanation": "Cherry Rev = 768. Price = 768 / 96 = $8."
+    "time": 300
   },
   {
     "question": "Silky shirt $48 after 40% discount. Cotton $48 after 20% discount. Original cotton price?",
-    "options": ["$56", "$60", "$64", "$68"],
+    "options": [
+      "$56",
+      "$60",
+      "$64",
+      "$68"
+    ],
     "answer": "$60",
-    "time": 90,
-    "explanation": "80% = $48 → $60."
+    "time": 90
   },
   {
     "question": "Silky shirt $48 after 40% discount. Cotton $48 after 20% discount. How much more did silky cost?",
-    "options": ["$15", "$20", "$25", "$30"],
+    "options": [
+      "$15",
+      "$20",
+      "$25",
+      "$30"
+    ],
     "answer": "$20",
-    "time": 90,
-    "explanation": "Silky: $80. Cotton: $60. Difference: $20."
+    "time": 90
   },
   {
     "question": "Notebook $2 less than file. File revenue $345 more. Total $495. Files = 4× notebooks. Files sold?",
-    "options": ["50", "60", "70", "80"],
+    "options": [
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
     "answer": "60",
-    "time": 300,
-    "explanation": "Rev F = 420. u = 15. Files = 60."
+    "time": 300
   },
   {
     "question": "Notebook $2 less than file. File revenue $345 more. Total $495. Files = 4× notebooks. Notebook cost?",
-    "options": ["$4", "$5", "$6", "$7"],
+    "options": [
+      "$4",
+      "$5",
+      "$6",
+      "$7"
+    ],
     "answer": "$5",
-    "time": 300,
-    "explanation": "Price = 75 / 15 = $5."
+    "time": 300
   }
 ]
