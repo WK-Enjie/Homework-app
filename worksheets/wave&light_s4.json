@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which statement best describes how energy is transferred by a wave?",
+    "options": [
+      "Matter moves from the source to the receiver carrying energy",
+      "Energy moves through a medium without net transfer of matter",
+      "Particles travel at the same speed as the wave energy",
+      "Energy is stored in the particles and moves with them"
+    ],
+    "answer": "Energy moves through a medium without net transfer of matter",
+    "duration": 25
+  },
+  {
+    "question": "A sound wave travels at 340 m/s and has a period of 0.02 s. What is its wavelength?",
+    "options": [
+      "6.8 m",
+      "17.0 m",
+      "0.00006 m",
+      "340.02 m"
+    ],
+    "answer": "6.8 m",
+    "duration": 25
+  },
+  {
+    "question": "In a longitudinal wave, how do the particles of the medium vibrate?",
+    "options": [
+      "Perpendicular to the direction of wave travel",
+      "Parallel to the direction of wave travel",
+      "In circular orbits around a fixed point",
+      "They do not vibrate, only energy moves"
+    ],
+    "answer": "Parallel to the direction of wave travel",
+    "duration": 25
+  },
+  {
+    "question": "Two sound waves are displayed on an oscilloscope. Wave A has a larger amplitude than Wave B, but the same frequency. How does Wave A sound compared to Wave B?",
+    "options": [
+      "Louder and higher pitch",
+      "Louder and same pitch",
+      "Softer and same pitch",
+      "Louder and lower pitch"
+    ],
+    "answer": "Louder and same pitch",
+    "duration": 25
+  },
+  {
+    "question": "A ship sends a sonar pulse to the sea bed and receives the echo 0.4 s later. If the speed of sound in water is 1500 m/s, what is the depth of the sea?",
+    "options": [
+      "600 m",
+      "300 m",
+      "1500 m",
+      "750 m"
+    ],
+    "answer": "300 m",
+    "duration": 25
+  },
+  {
+    "question": "Which region of the electromagnetic spectrum has the highest frequency?",
+    "options": [
+      "Radio waves",
+      "Visible light",
+      "Gamma rays",
+      "Microwaves"
+    ],
+    "answer": "Gamma rays",
+    "duration": 25
+  },
+  {
+    "question": "A light ray strikes a plane mirror at an angle of 35° to the mirror surface. What is the angle of reflection?",
+    "options": [
+      "35°",
+      "55°",
+      "70°",
+      "90°"
+    ],
+    "answer": "55°",
+    "duration": 25
+  },
+  {
+    "question": "When light passes from air into glass, which property of the light wave remains unchanged?",
+    "options": [
+      "Speed",
+      "Wavelength",
+      "Frequency",
+      "Direction"
+    ],
+    "answer": "Frequency",
+    "duration": 25
+  },
+  {
+    "question": "What is the speed of ultraviolet radiation in a vacuum compared to visible light?",
+    "options": [
+      "Faster than visible light",
+      "Slower than visible light",
+      "The same as visible light",
+      "Zero, as it cannot travel in vacuum"
+    ],
+    "answer": "The same as visible light",
+    "duration": 25
+  },
+  {
+    "question": "Why does sound cannot travel through a vacuum?",
+    "options": [
+      "Vacuum absorbs all sound energy",
+      "Sound waves are electromagnetic",
+      "Sound requires particles to transmit vibrations",
+      "Vacuum temperature is too low for sound"
+    ],
+    "answer": "Sound requires particles to transmit vibrations",
+    "duration": 25
+  },
+  {
+    "question": "The speed of light in a certain medium is 2.0 × 10⁸ m/s. What is the refractive index of this medium? (Speed of light in vacuum = 3.0 × 10⁸ m/s)",
+    "options": [
+      "0.67",
+      "1.5",
+      "2.0",
+      "6.0"
+    ],
+    "answer": "1.5",
+    "duration": 25
+  },
+  {
+    "question": "Which description correctly distinguishes a real image from a virtual image formed by a lens?",
+    "options": [
+      "Real images are always upright; virtual images are inverted",
+      "Real images can be projected on a screen; virtual images cannot",
+      "Real images are formed by diverging rays; virtual images by converging rays",
+      "Real images are always smaller than the object; virtual images are larger"
+    ],
+    "answer": "Real images can be projected on a screen; virtual images cannot",
+    "duration": 25
+  },
+  {
+    "question": "In a sound wave, what is the region called where air particles are pushed closer together?",
+    "options": [
+      "Rarefaction",
+      "Trough",
+      "Compression",
+      "Wavelength"
+    ],
+    "answer": "Compression",
+    "duration": 25
+  },
+  {
+    "question": "A light ray passes from air into a denser medium. How does the ray bend and why?",
+    "options": [
+      "Bends away from normal; speed increases",
+      "Bends towards normal; speed decreases",
+      "Bends towards normal; speed increases",
+      "Bends away from normal; speed decreases"
+    ],
+    "answer": "Bends towards normal; speed decreases",
+    "duration": 25
+  },
+  {
+    "question": "What is the amplitude of a wave measured as?",
+    "options": [
+      "The distance between two consecutive crests",
+      "The maximum displacement from the rest position",
+      "The number of waves passing a point per second",
+      "The total distance travelled by the wave in one period"
+    ],
+    "answer": "The maximum displacement from the rest position",
+    "duration": 25
+  }
+]
