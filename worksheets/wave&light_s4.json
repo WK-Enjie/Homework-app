@@ -8,7 +8,7 @@
       "Energy is stored in the particles and moves with them"
     ],
     "answer": "Energy moves through a medium without net transfer of matter",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "A sound wave travels at 340 m/s and has a period of 0.02 s. What is its wavelength?",
@@ -19,7 +19,7 @@
       "340.02 m"
     ],
     "answer": "6.8 m",
-    "duration": 25
+    "duration": 50
   },
   {
     "question": "In a longitudinal wave, how do the particles of the medium vibrate?",
@@ -30,7 +30,7 @@
       "They do not vibrate, only energy moves"
     ],
     "answer": "Parallel to the direction of wave travel",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "Two sound waves are displayed on an oscilloscope. Wave A has a larger amplitude than Wave B, but the same frequency. How does Wave A sound compared to Wave B?",
@@ -41,7 +41,7 @@
       "Louder and lower pitch"
     ],
     "answer": "Louder and same pitch",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "A ship sends a sonar pulse to the sea bed and receives the echo 0.4 s later. If the speed of sound in water is 1500 m/s, what is the depth of the sea?",
@@ -52,7 +52,7 @@
       "750 m"
     ],
     "answer": "300 m",
-    "duration": 25
+    "duration": 50
   },
   {
     "question": "Which region of the electromagnetic spectrum has the highest frequency?",
@@ -63,7 +63,7 @@
       "Microwaves"
     ],
     "answer": "Gamma rays",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "A light ray strikes a plane mirror at an angle of 35° to the mirror surface. What is the angle of reflection?",
@@ -74,7 +74,7 @@
       "90°"
     ],
     "answer": "55°",
-    "duration": 25
+    "duration": 40
   },
   {
     "question": "When light passes from air into glass, which property of the light wave remains unchanged?",
@@ -85,7 +85,7 @@
       "Direction"
     ],
     "answer": "Frequency",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "What is the speed of ultraviolet radiation in a vacuum compared to visible light?",
@@ -96,7 +96,7 @@
       "Zero, as it cannot travel in vacuum"
     ],
     "answer": "The same as visible light",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "Why does sound cannot travel through a vacuum?",
@@ -107,7 +107,7 @@
       "Vacuum temperature is too low for sound"
     ],
     "answer": "Sound requires particles to transmit vibrations",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "The speed of light in a certain medium is 2.0 × 10⁸ m/s. What is the refractive index of this medium? (Speed of light in vacuum = 3.0 × 10⁸ m/s)",
@@ -118,7 +118,7 @@
       "6.0"
     ],
     "answer": "1.5",
-    "duration": 25
+    "duration": 50
   },
   {
     "question": "Which description correctly distinguishes a real image from a virtual image formed by a lens?",
@@ -129,7 +129,7 @@
       "Real images are always smaller than the object; virtual images are larger"
     ],
     "answer": "Real images can be projected on a screen; virtual images cannot",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "In a sound wave, what is the region called where air particles are pushed closer together?",
@@ -140,7 +140,7 @@
       "Wavelength"
     ],
     "answer": "Compression",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "A light ray passes from air into a denser medium. How does the ray bend and why?",
@@ -151,7 +151,7 @@
       "Bends away from normal; speed decreases"
     ],
     "answer": "Bends towards normal; speed decreases",
-    "duration": 25
+    "duration": 35
   },
   {
     "question": "What is the amplitude of a wave measured as?",
@@ -162,6 +162,6 @@
       "The total distance travelled by the wave in one period"
     ],
     "answer": "The maximum displacement from the rest position",
-    "duration": 25
+    "duration": 35
   }
 ]
