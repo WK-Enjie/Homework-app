@@ -12,6 +12,11 @@
     --horse-brown: #8B4513;
 }
 
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     margin: 0;
     background-color: #000;
@@ -21,13 +26,14 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 #game-container {
     width: 100%;
     max-width: 900px;
     height: 100vh;
-    max-height: 800px;
+    max-height: 100vh;
     background: radial-gradient(circle, #4a0d0d 0%, #1a0505 100%);
     position: relative;
     box-shadow: 0 0 50px rgba(255, 215, 0, 0.3);
@@ -59,14 +65,21 @@ body {
     color: var(--gold);
     width: 90%;
     max-width: 500px;
+    padding: 20px;
 }
 
 .login-box h1 {
     font-family: 'Black Ops One', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--red);
     text-shadow: 0 0 15px var(--gold);
     margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.login-box p {
+    font-size: 1rem;
+    margin: 10px 0;
 }
 
 .input-area {
@@ -78,25 +91,25 @@ body {
 }
 
 input {
-    padding: 15px;
-    font-size: 1.2rem;
+    padding: 12px;
+    font-size: 1rem;
     border-radius: 5px;
     border: 2px solid var(--gold);
     background: #111;
     color: white;
     text-align: center;
     width: 60%;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .btn {
-    padding: 15px 30px;
+    padding: 12px 25px;
     font-weight: bold;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     font-family: 'Black Ops One';
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 0.2s;
     background: linear-gradient(180deg, var(--red) 0%, #cc0000 100%);
     color: white;
@@ -116,51 +129,53 @@ input {
     border-radius: 5px;
     font-weight: bold;
     border: 1px solid red;
+    font-size: 0.9rem;
 }
 
 /* HUD */
 .hud {
-    height: 15%;
+    height: 12%;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 15px;
     color: white;
     font-family: 'Black Ops One';
+    align-items: center;
 }
 
 .vs-logo {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--gold);
-    align-self: center;
     text-shadow: 0 0 20px var(--red);
 }
 
 .enemy-hud {
     text-align: right;
-    width: 40%;
+    width: 35%;
 }
 
 .player-hud {
-    width: 40%;
+    width: 35%;
 }
 
 .name {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
     text-shadow: 2px 2px 0 #000;
 }
 
 .score-box {
     font-family: 'Roboto';
     color: var(--gold);
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 0.75rem;
+    margin-top: 3px;
 }
 
 .hp-bar-container {
     width: 100%;
-    height: 20px;
+    height: 15px;
     background: #333;
     border: 2px solid #fff;
     transform: skewX(-20deg);
@@ -184,7 +199,8 @@ input {
 
 /* ARENA */
 .arena {
-    height: 45%;
+    height: 38%;
+    min-height: 150px;
     position: relative;
     border-bottom: 5px solid #5c3a21;
     background: linear-gradient(to bottom, transparent 80%, rgba(0,0,0,0.3) 100%);
@@ -192,22 +208,22 @@ input {
 
 .fighter {
     position: absolute;
-    bottom: 20px;
-    width: 150px;
-    height: 150px;
+    bottom: 10px;
+    width: 100px;
+    height: 100px;
     text-align: center;
 }
 
 .player {
-    left: 10%;
+    left: 5%;
 }
 
 .enemy {
-    right: 10%;
+    right: 5%;
 }
 
 .avatar {
-    font-size: 100px;
+    font-size: 70px;
     filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
     position: relative;
     z-index: 2;
@@ -218,22 +234,22 @@ input {
 }
 
 .shadow {
-    width: 100px;
-    height: 20px;
+    width: 70px;
+    height: 15px;
     background: rgba(0,0,0,0.5);
     border-radius: 50%;
     position: absolute;
     bottom: 0;
-    left: 25px;
+    left: 15px;
     z-index: 1;
 }
 
 .aura {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 130px;
-    height: 130px;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
     background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
     border-radius: 50%;
     animation: pulse 1s infinite alternate;
@@ -243,26 +259,26 @@ input {
 /* PROJECTILES */
 .projectile {
     position: absolute;
-    font-size: 60px;
-    bottom: 60px;
+    font-size: 50px;
+    bottom: 50px;
     z-index: 10;
     filter: drop-shadow(0 0 10px orange);
 }
 
 #fireball {
-    left: 20%;
+    left: 15%;
 }
 
 #enemy-projectile {
-    right: 20%;
+    right: 15%;
     filter: drop-shadow(0 0 10px var(--gold));
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .explosion {
     position: absolute;
-    font-size: 120px;
-    bottom: 40px;
+    font-size: 100px;
+    bottom: 30px;
     z-index: 20;
     text-shadow: 0 0 20px yellow;
     transform: scale(1.5);
@@ -271,10 +287,10 @@ input {
 /* COMBAT TEXT */
 .combo-text {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 15%;
+    left: 5%;
     font-family: 'Black Ops One';
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--gold);
     transform: rotate(-10deg);
     text-shadow: 5px 5px 0 #000;
@@ -285,10 +301,10 @@ input {
 
 .crit-text {
     position: absolute;
-    top: 40%;
-    right: 20%;
+    top: 30%;
+    right: 10%;
     font-family: 'Black Ops One';
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ff0055;
     text-shadow: 2px 2px 0 white;
     z-index: 50;
@@ -299,12 +315,13 @@ input {
 .miss {
     color: #aaa;
     text-shadow: 2px 2px 0 #000;
-    left: 20%;
+    left: 10%;
 }
 
-/* CONTROL PANEL */
+/* CONTROL PANEL - CRITICAL FOR MOBILE */
 .control-panel {
-    height: 40%;
+    height: 50%;
+    min-height: 200px;
     background: #f4f4f4;
     border-top: 5px solid var(--gold);
     display: flex;
@@ -312,7 +329,7 @@ input {
 }
 
 .timer-strip {
-    height: 10px;
+    height: 8px;
     background: #333;
     width: 100%;
 }
@@ -325,56 +342,64 @@ input {
 }
 
 .question-box {
-    padding: 20px;
+    padding: 10px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    min-height: 0;
 }
 
 .q-header {
     color: #666;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
+    flex-shrink: 0;
 }
 
 #q-text {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     color: #222;
-    font-size: 1.3rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.3;
     flex-shrink: 0;
+    max-height: 60px;
+    overflow-y: auto;
 }
 
 .options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 8px;
     flex-grow: 1;
     min-height: 0;
+    overflow-y: auto;
 }
 
 .opt-btn {
     background: white;
     border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 1.1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 0 #bbb;
+    box-shadow: 0 3px 0 #bbb;
     transition: 0.1s;
     color: #333;
-    padding: 12px 8px;
+    padding: 10px 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     word-break: break-word;
+    line-height: 1.2;
+    min-height: 50px;
+    text-align: center;
 }
 
 .opt-btn:active {
-    transform: translateY(4px);
+    transform: translateY(3px);
     box-shadow: none;
 }
 
@@ -382,14 +407,14 @@ input {
     background: #4CAF50;
     color: white;
     border-color: #388E3C;
-    box-shadow: 0 4px 0 #1B5E20;
+    box-shadow: 0 3px 0 #1B5E20;
 }
 
 .opt-btn.wrong {
     background: #F44336;
     color: white;
     border-color: #D32F2F;
-    box-shadow: 0 4px 0 #B71C1C;
+    box-shadow: 0 3px 0 #B71C1C;
 }
 
 /* END SCREEN */
@@ -400,30 +425,46 @@ input {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    width: 100%;
+    width: 90%;
+    padding: 20px;
 }
 
 #end-title {
     font-family: 'Black Ops One';
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 0;
     text-shadow: 0 0 20px currentColor;
+    line-height: 1.2;
+}
+
+#end-reason {
+    font-size: 0.9rem;
+    margin: 10px 0;
 }
 
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    max-width: 400px;
-    margin: 30px auto;
+    gap: 10px;
+    max-width: 350px;
+    margin: 20px auto;
     background: rgba(0,0,0,0.5);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     border: 2px solid var(--gold);
 }
 
+.stats-grid > div {
+    text-align: center;
+}
+
+.stats-grid > div > div:first-child {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
 .big-num {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: var(--gold);
     font-weight: bold;
 }
@@ -431,22 +472,22 @@ input {
 /* ANIMATIONS */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+    50% { transform: translateY(-10px); }
 }
 
 @keyframes pulse {
     0% { opacity: 0.5; transform: scale(1); }
-    100% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1.1); }
 }
 
 @keyframes shootRight {
-    0% { left: 20%; transform: rotate(0deg); opacity: 1; }
-    100% { left: 80%; transform: rotate(360deg); opacity: 1; }
+    0% { left: 15%; transform: rotate(0deg); opacity: 1; }
+    100% { left: 75%; transform: rotate(360deg); opacity: 1; }
 }
 
 @keyframes shootLeft {
-    0% { right: 20%; transform: rotate(0deg); opacity: 1; }
-    100% { right: 80%; transform: rotate(-360deg); opacity: 1; }
+    0% { right: 15%; transform: rotate(0deg); opacity: 1; }
+    100% { right: 75%; transform: rotate(-360deg); opacity: 1; }
 }
 
 @keyframes shake {
@@ -458,13 +499,13 @@ input {
 
 @keyframes hitEffect {
     0% { filter: hue-rotate(0deg); }
-    20% { filter: hue-rotate(90deg) brightness(2); transform: translateX(20px); }
+    20% { filter: hue-rotate(90deg) brightness(2); transform: translateX(15px); }
     100% { filter: hue-rotate(0deg); transform: translateX(0); }
 }
 
 @keyframes playerHit {
     0% { filter: brightness(1); }
-    20% { filter: sepia(1) hue-rotate(-50deg) saturate(5); transform: translateX(-20px); }
+    20% { filter: sepia(1) hue-rotate(-50deg) saturate(5); transform: translateX(-15px); }
     100% { filter: brightness(1); transform: translateX(0); }
 }
 
@@ -496,92 +537,199 @@ input {
     animation: shake 0.5s;
 }
 
-/* Mobile Responsive - FIXED */
+/* ============================================
+   MOBILE RESPONSIVE - PROFESSIONAL OPTIMIZATION
+   ============================================ */
 @media (max-width: 600px) {
     #game-container {
         max-height: 100vh;
         border: none;
+        border-radius: 0;
     }
     
-    .login-box h1 { 
-        font-size: 2rem; 
-    }
-    
-    .options-grid { 
-        grid-template-columns: 1fr 1fr; /* Keep 2 columns to save vertical space */
-        gap: 8px;
-    }
-    
-    .opt-btn {
-        font-size: 0.95rem;
-        padding: 10px 5px;
-    }
-    
-    #q-text { 
-        font-size: 1rem; 
-        margin-bottom: 10px;
-    }
-    
-    .question-box {
-        padding: 10px;
-    }
-    
-    .control-panel {
-        height: 45%; /* Give more space to options on mobile */
-    }
-    
-    .arena {
-        height: 40%; /* Reduce arena height slightly */
+    body {
+        align-items: flex-start;
     }
     
     .hud {
-        height: 15%;
-        padding: 10px;
-    }
-    
-    .avatar { 
-        font-size: 70px; 
-    }
-    
-    .fighter { 
-        width: 100px; 
-        height: 100px; 
-    }
-    
-    .vs-logo { 
-        font-size: 2rem; 
+        height: 10%;
+        min-height: 50px;
+        padding: 5px 10px;
     }
     
     .name {
-        font-size: 1rem;
-    }
-    
-    #end-title { 
-        font-size: 2.5rem; 
-    }
-    
-    .big-num {
-        font-size: 2rem;
-    }
-    
-    .crit-text {
-        font-size: 2rem;
-    }
-    
-    .combo-text {
-        font-size: 3rem;
-    }
-}
-
-/* Extra small devices */
-@media (max-width: 400px) {
-    .opt-btn {
         font-size: 0.85rem;
-        padding: 8px 4px;
+    }
+    
+    .score-box {
+        font-size: 0.7rem;
+    }
+    
+    .hp-bar-container {
+        height: 12px;
+    }
+    
+    .vs-logo {
+        font-size: 1.5rem;
+    }
+    
+    .arena {
+        height: 35%;
+        min-height: 120px;
+    }
+    
+    .fighter {
+        width: 80px;
+        height: 80px;
+        bottom: 5px;
+    }
+    
+    .avatar {
+        font-size: 55px;
+    }
+    
+    .shadow {
+        width: 55px;
+        height: 12px;
+        left: 12px;
+    }
+    
+    .aura {
+        width: 70px;
+        height: 70px;
+        top: 5px;
+        left: 5px;
+    }
+    
+    .projectile {
+        font-size: 40px;
+        bottom: 40px;
+    }
+    
+    .explosion {
+        font-size: 80px;
+        bottom: 25px;
+    }
+    
+    /* CRITICAL: Control panel gets MORE space on mobile */
+    .control-panel {
+        height: 55%;
+        min-height: 220px;
+    }
+    
+    .question-box {
+        padding: 8px;
+    }
+    
+    .q-header {
+        font-size: 0.75rem;
     }
     
     #q-text {
         font-size: 0.9rem;
+        margin-bottom: 8px;
+        max-height: 50px;
+    }
+    
+    /* Keep 2 columns to save vertical space */
+    .options-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+    
+    .opt-btn {
+        font-size: 0.75rem;
+        padding: 8px 4px;
+        min-height: 45px;
+        line-height: 1.1;
+    }
+    
+    .combo-text {
+        font-size: 2rem;
+        top: 10%;
+    }
+    
+    .crit-text {
+        font-size: 1.5rem;
+        top: 25%;
+    }
+    
+    .login-box h1 {
+        font-size: 1.8rem;
+    }
+    
+    .login-box p {
+        font-size: 0.9rem;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 55%;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    #end-title {
+        font-size: 2rem;
+    }
+    
+    .big-num {
+        font-size: 1.5rem;
+    }
+    
+    .stats-grid {
+        gap: 8px;
+        padding: 12px;
+    }
+}
+
+/* Extra small devices (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .hud {
+        height: 9%;
+        min-height: 45px;
+    }
+    
+    .name {
+        font-size: 0.75rem;
+    }
+    
+    .arena {
+        height: 32%;
+        min-height: 100px;
+    }
+    
+    .fighter {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .avatar {
+        font-size: 48px;
+    }
+    
+    .control-panel {
+        height: 59%;
+        min-height: 240px;
+    }
+    
+    .options-grid {
+        gap: 5px;
+    }
+    
+    .opt-btn {
+        font-size: 0.7rem;
+        padding: 6px 3px;
+        min-height: 42px;
+    }
+    
+    #q-text {
+        font-size: 0.85rem;
+        max-height: 45px;
     }
     
     .login-box h1 {
@@ -589,12 +737,38 @@ input {
     }
     
     input {
-        font-size: 1rem;
-        padding: 10px;
+        width: 50%;
+        font-size: 0.85rem;
     }
     
     .btn {
-        padding: 12px 20px;
-        font-size: 1rem;
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .arena {
+        height: 40%;
+    }
+    
+    .control-panel {
+        height: 50%;
+    }
+    
+    .options-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .opt-btn {
+        min-height: 35px;
+        font-size: 0.7rem;
+        padding: 5px 3px;
+    }
+    
+    #q-text {
+        max-height: 35px;
+        font-size: 0.85rem;
     }
 }

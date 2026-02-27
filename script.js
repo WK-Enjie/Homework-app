@@ -113,7 +113,9 @@ function loadQuestion() {
         return;
     }
     const q = gameQuestions[currentIdx];
-    qText.textContent = q.question;
+    
+    // Trim whitespace from question data
+    qText.textContent = q.question ? q.question.trim() : "Loading...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
     comboDisplay.classList.add('hidden');
@@ -123,6 +125,7 @@ function loadQuestion() {
     clearInterval(timerInterval);
     questionStartTime = Date.now();
 
+    // Variable Timer Logic - use question time or default
     const currentLimit = q.time ? q.time * 1000 : DEFAULT_TIME_LIMIT;
 
     timerFill.style.width = '100%';
@@ -141,13 +144,16 @@ function loadQuestion() {
     }, 100);
 
     optionsContainer.innerHTML = '';
-    q.options.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'opt-btn';
-        btn.textContent = opt;
-        btn.onclick = () => handleAnswer(btn, opt, q.answer);
-        optionsContainer.appendChild(btn);
-    });
+    
+    if (q.options && Array.isArray(q.options)) {
+        q.options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'opt-btn';
+            btn.textContent = opt ? opt.trim() : '';
+            btn.onclick = () => handleAnswer(btn, opt ? opt.trim() : '', q.answer ? q.answer.trim() : '');
+            optionsContainer.appendChild(btn);
+        });
+    }
 }
 
 function handleAnswer(btn, selected, correct) {
@@ -268,7 +274,7 @@ function goToNextQuestion() {
 }
 
 function showExplosion(side) {
-    explosion.style.left = side === 'right' ? '80%' : '10%';
+    explosion.style.left = side === 'right' ? '75%' : '10%';
     explosion.classList.remove('hidden');
     setTimeout(() => explosion.classList.add('hidden'), 500);
 }
@@ -291,6 +297,7 @@ function endGame(result) {
     document.getElementById('final-score').textContent = score;
     document.getElementById('final-combo').textContent = maxCombo;
     
+    // Fixed: Removed trailing spaces in string comparisons
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";
