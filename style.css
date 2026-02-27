@@ -55,7 +55,6 @@ body {
     display: none !important;
 }
 
-/* LOGIN */
 .login-box {
     position: absolute;
     top: 50%;
@@ -132,7 +131,6 @@ input {
     font-size: 0.9rem;
 }
 
-/* HUD */
 .hud {
     height: 12%;
     min-height: 55px;
@@ -197,10 +195,9 @@ input {
     transition: width 0.3s ease-out;
 }
 
-/* ARENA */
 .arena {
-    height: 35%;
-    min-height: 130px;
+    height: 33%;
+    min-height: 120px;
     position: relative;
     border-bottom: 4px solid #5c3a21;
     background: linear-gradient(to bottom, transparent 80%, rgba(0,0,0,0.3) 100%);
@@ -209,8 +206,8 @@ input {
 .fighter {
     position: absolute;
     bottom: 10px;
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     text-align: center;
 }
 
@@ -223,7 +220,7 @@ input {
 }
 
 .avatar {
-    font-size: 65px;
+    font-size: 60px;
     filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
     position: relative;
     z-index: 2;
@@ -234,7 +231,7 @@ input {
 }
 
 .shadow {
-    width: 65px;
+    width: 60px;
     height: 12px;
     background: rgba(0,0,0,0.5);
     border-radius: 50%;
@@ -248,15 +245,14 @@ input {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
     border-radius: 50%;
     animation: pulse 1s infinite alternate;
     z-index: 0;
 }
 
-/* PROJECTILES */
 .projectile {
     position: absolute;
     font-size: 45px;
@@ -284,7 +280,6 @@ input {
     transform: scale(1.5);
 }
 
-/* COMBAT TEXT */
 .combo-text {
     position: absolute;
     top: 15%;
@@ -318,10 +313,9 @@ input {
     left: 10%;
 }
 
-/* CONTROL PANEL - CRITICAL FIXES */
 .control-panel {
-    height: 53%;
-    min-height: 250px;
+    height: 55%;
+    min-height: 280px;
     background: #f4f4f4;
     border-top: 4px solid var(--gold);
     display: flex;
@@ -384,7 +378,7 @@ input {
     background: white;
     border: 2px solid #ccc;
     border-radius: 6px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 3px 0 #bbb;
@@ -419,7 +413,6 @@ input {
     box-shadow: 0 3px 0 #B71C1C;
 }
 
-/* END SCREEN */
 .victory-box {
     position: absolute;
     top: 50%;
@@ -471,7 +464,6 @@ input {
     font-weight: bold;
 }
 
-/* ANIMATIONS */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -516,7 +508,6 @@ input {
     to { transform: scale(1) rotate(-10deg); opacity: 1; }
 }
 
-/* JS Utilities */
 .anim-shoot-right {
     animation: shootRight 0.5s linear forwards;
     display: block !important;
@@ -539,9 +530,6 @@ input {
     animation: shake 0.5s;
 }
 
-/* ============================================
-   MOBILE RESPONSIVE - CRITICAL FIXES
-   ============================================ */
 @media (max-width: 600px) {
     #game-container {
         max-height: 100vh;
@@ -576,47 +564,36 @@ input {
     }
     
     .arena {
-        height: 32%;
+        height: 30%;
         min-height: 110px;
     }
     
     .fighter {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
         bottom: 5px;
     }
     
     .avatar {
-        font-size: 55px;
+        font-size: 50px;
     }
     
     .shadow {
-        width: 55px;
+        width: 50px;
         height: 10px;
         left: 10px;
     }
     
     .aura {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
         top: 5px;
         left: 5px;
     }
     
-    .projectile {
-        font-size: 38px;
-        bottom: 35px;
-    }
-    
-    .explosion {
-        font-size: 75px;
-        bottom: 25px;
-    }
-    
-    /* CRITICAL: More height for control panel */
     .control-panel {
-        height: 58%;
-        min-height: 270px;
+        height: 60%;
+        min-height: 300px;
     }
     
     .question-box {
@@ -640,9 +617,9 @@ input {
     }
     
     .opt-btn {
-        font-size: 0.7rem;
+        font-size: 0.68rem;
         padding: 6px 4px;
-        min-height: 50px;
+        min-height: 52px;
         line-height: 1.1;
     }
     
@@ -682,37 +659,17 @@ input {
     .big-num {
         font-size: 1.4rem;
     }
-    
-    .stats-grid {
-        gap: 8px;
-        padding: 12px;
-    }
 }
 
-/* Extra small devices */
 @media (max-width: 375px) {
-    .hud {
-        height: 9%;
-        min-height: 45px;
-    }
-    
     .arena {
-        height: 30%;
+        height: 28%;
         min-height: 100px;
     }
     
-    .fighter {
-        width: 65px;
-        height: 65px;
-    }
-    
-    .avatar {
-        font-size: 48px;
-    }
-    
     .control-panel {
-        height: 61%;
-        min-height: 285px;
+        height: 62%;
+        min-height: 310px;
     }
     
     .options-grid {
@@ -722,7 +679,7 @@ input {
     .opt-btn {
         font-size: 0.65rem;
         padding: 5px 3px;
-        min-height: 48px;
+        min-height: 50px;
     }
     
     #q-text {
@@ -731,7 +688,6 @@ input {
     }
 }
 
-/* Landscape mobile */
 @media (max-height: 500px) and (orientation: landscape) {
     .arena {
         height: 38%;
@@ -747,12 +703,12 @@ input {
     
     .opt-btn {
         min-height: 35px;
-        font-size: 0.65rem;
+        font-size: 0.62rem;
         padding: 4px 2px;
     }
     
     #q-text {
         max-height: 30px;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }

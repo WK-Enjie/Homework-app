@@ -1,6 +1,3 @@
-// ==========================================
-// 1. GAME VARIABLES
-// ==========================================
 let allQuestions = [];
 let gameQuestions = [];
 let currentIdx = 0;
@@ -13,9 +10,6 @@ let questionStartTime;
 let timerInterval;
 const DEFAULT_TIME_LIMIT = 30000;
 
-// ==========================================
-// 2. DOM ELEMENTS
-// ==========================================
 const screens = {
     login: document.getElementById('login-screen'),
     battle: document.getElementById('battle-screen'),
@@ -41,17 +35,11 @@ const qText = document.getElementById('q-text');
 const optionsContainer = document.getElementById('options-container');
 const qProgress = document.getElementById('q-progress');
 
-// ==========================================
-// 3. LISTENERS
-// ==========================================
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') attemptLogin();
 });
 
-// ==========================================
-// 4. LOGIN & SETUP
-// ==========================================
 async function attemptLogin() {
     const pin = pinInput.value.trim();
     if (!pin) {
@@ -104,9 +92,6 @@ function shuffleArray(array) {
     }
 }
 
-// ==========================================
-// 5. QUESTION LOGIC
-// ==========================================
 function loadQuestion() {
     if (currentIdx >= gameQuestions.length) {
         endGame("Victory");
@@ -114,7 +99,7 @@ function loadQuestion() {
     }
     const q = gameQuestions[currentIdx];
     
-    // CRITICAL: Trim ALL whitespace from JSON data (your JSON has trailing spaces)
+    // CRITICAL: Trim ALL whitespace from JSON data
     qText.textContent = q.question ? q.question.trim() : "Loading...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
@@ -145,12 +130,12 @@ function loadQuestion() {
     optionsContainer.innerHTML = '';
     
     if (q.options && Array.isArray(q.options)) {
+        const answerText = q.answer ? q.answer.trim() : '';
         q.options.forEach(opt => {
             const btn = document.createElement('button');
             btn.className = 'opt-btn';
             const optText = opt ? opt.trim() : '';
             btn.textContent = optText;
-            const answerText = q.answer ? q.answer.trim() : '';
             btn.onclick = () => handleAnswer(btn, optText, answerText);
             optionsContainer.appendChild(btn);
         });
@@ -185,9 +170,6 @@ function disableButtons() {
     btns.forEach(b => b.disabled = true);
 }
 
-// ==========================================
-// 6. COMBAT & ANIMATION
-// ==========================================
 function calculatePlayerAttack(timeTaken) {
     combo++;
     if(combo > maxCombo) maxCombo = combo;
@@ -287,9 +269,6 @@ function updateBars() {
     else playerHPFill.style.background = 'var(--hp-blue)';
 }
 
-// ==========================================
-// 7. END GAME
-// ==========================================
 function endGame(result) {
     screens.battle.classList.add('hidden');
     screens.end.classList.remove('hidden');

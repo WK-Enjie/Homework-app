@@ -8,7 +8,6 @@
 </head>
 <body>
     <div id="game-container">
-        <!-- LOGIN SCREEN -->
         <div id="login-screen" class="screen">
             <div class="login-box">
                 <h1>🧧 CNY ARCADE 🧧</h1>
@@ -21,9 +20,7 @@
             </div>
         </div>
 
-        <!-- BATTLE SCREEN -->
         <div id="battle-screen" class="screen hidden">
-            <!-- HUD -->
             <div class="hud">
                 <div class="player-hud">
                     <div class="name">👦 HERO</div>
@@ -42,7 +39,6 @@
                 </div>
             </div>
 
-            <!-- ARENA -->
             <div class="arena">
                 <div class="fighter player">
                     <div class="aura"></div>
@@ -61,7 +57,6 @@
                 <div id="miss-display" class="crit-text miss hidden">MISSED!</div>
             </div>
 
-            <!-- CONTROL PANEL -->
             <div class="control-panel">
                 <div class="timer-strip">
                     <div id="timer-fill"></div>
@@ -69,14 +64,11 @@
                 <div class="question-box">
                     <div class="q-header" id="q-progress">QUESTION 1 / 12</div>
                     <div id="q-text">Loading...</div>
-                    <div class="options-grid" id="options-container">
-                        <!-- Options will be injected here -->
-                    </div>
+                    <div class="options-grid" id="options-container"></div>
                 </div>
             </div>
         </div>
 
-        <!-- END SCREEN -->
         <div id="end-screen" class="screen hidden">
             <div class="victory-box">
                 <h1 id="end-title">VICTORY!</h1>
