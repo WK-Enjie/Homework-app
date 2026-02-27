@@ -99,7 +99,6 @@ function loadQuestion() {
     }
     const q = gameQuestions[currentIdx];
     
-    // CRITICAL: Trim ALL whitespace from JSON data
     qText.textContent = q.question ? q.question.trim() : "Loading...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
@@ -113,14 +112,14 @@ function loadQuestion() {
     const currentLimit = q.time ? q.time * 1000 : DEFAULT_TIME_LIMIT;
 
     timerFill.style.width = '100%';
-    timerFill.style.background = '#00e676';
+    timerFill.style.background = 'var(--hp-green)';
 
     timerInterval = setInterval(() => {
         const elapsed = Date.now() - questionStartTime;
         const remainingPct = Math.max(0, 100 - (elapsed / currentLimit * 100));
         timerFill.style.width = `${remainingPct}%`;
         
-        if(remainingPct < 30) timerFill.style.background = '#d50000';
+        if(remainingPct < 30) timerFill.style.background = 'var(--hp-red)';
         
         if (remainingPct <= 0) {
             handleTimeout();
@@ -139,12 +138,26 @@ function loadQuestion() {
             btn.onclick = () => handleAnswer(btn, optText, answerText);
             optionsContainer.appendChild(btn);
         });
+        
+        // Dynamic text scaling for long answers on small screens
+        setTimeout(adjustFontSize, 10);
     }
+}
+
+function adjustFontSize() {
+    const btns = document.querySelectorAll('.opt-btn');
+    btns.forEach(btn => {
+        if (btn.textContent.length > 25) {
+            btn.style.fontSize = '0.65rem';
+        } else if (btn.textContent.length > 15) {
+            btn.style.fontSize = '0.75rem';
+        }
+    });
 }
 
 function handleAnswer(btn, selected, correct) {
     clearInterval(timerInterval);
-    disableButtons();
+    disableButtons(btn);
     if (selected === correct) {
         btn.classList.add('correct');
         const timeTaken = Date.now() - questionStartTime;
@@ -165,9 +178,12 @@ function handleTimeout() {
     triggerEnemyAttack();
 }
 
-function disableButtons() {
+function disableButtons(clickedBtn = null) {
     const btns = document.querySelectorAll('.opt-btn');
-    btns.forEach(b => b.disabled = true);
+    btns.forEach(b => {
+        b.disabled = true;
+        if(b === clickedBtn) b.classList.add('clicked');
+    });
 }
 
 function calculatePlayerAttack(timeTaken) {
@@ -216,9 +232,9 @@ function performPlayerAnimation(damage, isCrit, callback) {
             enemySprite.classList.remove('anim-enemy-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
             if (callback) callback();
-        }, 1000);
+        }, 800);
 
-    }, 500);
+    }, 400);
 }
 
 function triggerEnemyAttack() {
@@ -246,27 +262,29 @@ function triggerEnemyAttack() {
             } else {
                 goToNextQuestion();
             }
-        }, 1000);
+        }, 800);
 
-    }, 500);
+    }, 400);
 }
 
 function goToNextQuestion() {
-    currentIdx++;
-    loadQuestion();
+    setTimeout(() => {
+        currentIdx++;
+        loadQuestion();
+    }, 400); // Small delay to let user see the correct answer
 }
 
 function showExplosion(side) {
     explosion.style.left = side === 'right' ? '75%' : '10%';
     explosion.classList.remove('hidden');
-    setTimeout(() => explosion.classList.add('hidden'), 500);
+    setTimeout(() => explosion.classList.add('hidden'), 400);
 }
 
 function updateBars() {
     enemyHPFill.style.width = `${enemyHP}%`;
     playerHPFill.style.width = `${playerHP}%`;
-    if(playerHP < 30) playerHPFill.style.background = 'red';
-    else playerHPFill.style.background = 'var(--hp-blue)';
+    if(playerHP < 30) playerHPFill.style.background = 'linear-gradient(90deg, #880000, var(--hp-red))';
+    else playerHPFill.style.background = 'linear-gradient(90deg, #0088cc, var(--hp-blue))';
 }
 
 function endGame(result) {
@@ -279,7 +297,7 @@ function endGame(result) {
     
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
-        title.style.color = "red";
+        title.style.color = "var(--hp-red)";
         reason.textContent = "The Lucky Horse galloped away!";
     } 
     else if (enemyHP <= 5) {
