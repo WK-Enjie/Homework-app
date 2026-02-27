@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A solar-powered toy car moves when placed under sunlight. Which energy conversion takes place?",
+    "options": [
+      "Light energy → Electrical energy → Kinetic energy",
+      "Heat energy → Electrical energy → Kinetic energy",
+      "Light energy → Kinetic energy → Electrical energy",
+      "Electrical energy → Light energy → Kinetic energy"
+    ],
+    "answer": "Light energy → Electrical energy → Kinetic energy",
+    "time": 90,
+    "explanation": "Solar panels convert light energy from the Sun into electrical energy. The motor then converts electrical energy into kinetic energy to move the car."
+  },
+  {
+    "id": 2,
+    "question": "Why does a bouncing ball eventually stop bouncing?",
+    "options": [
+      "The ball loses all its energy to the surroundings",
+      "Energy is converted to heat and sound due to air resistance and friction",
+      "The gravitational force becomes weaker",
+      "The ball runs out of potential energy permanently"
+    ],
+    "answer": "Energy is converted to heat and sound due to air resistance and friction",
+    "time": 90,
+    "explanation": "Energy is not destroyed but converted to less useful forms (heat and sound) due to friction with the ground and air resistance, reducing the energy available for motion."
+  },
+  {
+    "id": 3,
+    "question": "In a hydroelectric dam, water stored at a height is released to turn turbines. What is the main energy conversion?",
+    "options": [
+      "Kinetic energy → Potential energy → Electrical energy",
+      "Potential energy → Kinetic energy → Electrical energy",
+      "Electrical energy → Kinetic energy → Potential energy",
+      "Heat energy → Potential energy → Electrical energy"
+    ],
+    "answer": "Potential energy → Kinetic energy → Electrical energy",
+    "time": 90,
+    "explanation": "Water at a height has potential energy. As it falls, it gains speed (kinetic energy). The moving water turns turbines to generate electrical energy."
+  },
+  {
+    "id": 4,
+    "question": "An electric fan is switched on. It produces moving air, sound, and heat. Which is the useful energy output?",
+    "options": [
+      "Heat energy only",
+      "Sound energy only",
+      "Kinetic energy of the moving air",
+      "Electrical energy input"
+    ],
+    "answer": "Kinetic energy of the moving air",
+    "time": 60,
+    "explanation": "The purpose of a fan is to move air (kinetic energy). Heat and sound are by-products and are considered wasted energy in this context."
+  },
+  {
+    "id": 5,
+    "question": "Why is the Sun considered the primary source of energy for most resources on Earth?",
+    "options": [
+      "Because the Sun is the hottest object in space",
+      "Because energy from fossil fuels and food chains originally came from the Sun",
+      "Because the Sun provides light only",
+      "Because the Sun is closer to Earth than other stars"
+    ],
+    "answer": "Because energy from fossil fuels and food chains originally came from the Sun",
+    "time": 90,
+    "explanation": "Plants use sunlight for photosynthesis. Animals eat plants. Fossil fuels are formed from ancient plants and animals. Thus, most energy sources trace back to the Sun."
+  },
+  {
+    "id": 6,
+    "question": "A stretched rubber band is released to shoot a paper pellet. What energy conversion occurs?",
+    "options": [
+      "Kinetic energy → Potential energy",
+      "Potential energy → Kinetic energy",
+      "Heat energy → Kinetic energy",
+      "Electrical energy → Potential energy"
+    ],
+    "answer": "Potential energy → Kinetic energy",
+    "time": 60,
+    "explanation": "The stretched rubber band stores potential energy (due to its state). When released, this converts to kinetic energy as the pellet moves."
+  },
+  {
+    "id": 7,
+    "question": "Which appliance converts electrical energy primarily into heat energy?",
+    "options": [
+      "Electric fan",
+      "Toaster",
+      "Television",
+      "Lamp"
+    ],
+    "answer": "Toaster",
+    "time": 60,
+    "explanation": "A toaster is designed to produce heat to brown bread. While it may produce some light, its main useful output is heat energy."
+  },
+  {
+    "id": 8,
+    "question": "Why do we need to conserve energy?",
+    "options": [
+      "Because energy cannot be converted",
+      "Because some energy sources are non-renewable and can be depleted",
+      "Because energy is free",
+      "Because conserving energy makes appliances work slower"
+    ],
+    "answer": "Because some energy sources are non-renewable and can be depleted",
+    "time": 60,
+    "explanation": "Fossil fuels are non-renewable. Using them wisely ensures they last longer and reduces environmental pollution from power stations."
+  },
+  {
+    "id": 9,
+    "question": "A pendulum swings from Position A (highest) to Position B (lowest). Where is kinetic energy maximum?",
+    "options": [
+      "Position A",
+      "Position B",
+      "Halfway between A and B",
+      "Kinetic energy is constant throughout"
+    ],
+    "answer": "Position B",
+    "time": 90,
+    "explanation": "At the lowest point (B), all potential energy has been converted to kinetic energy, so the speed and kinetic energy are at their maximum."
+  },
+  {
+    "id": 10,
+    "question": "Which action increases the gravitational potential energy of an object?",
+    "options": [
+      "Lowering the object to the ground",
+      "Lifting the object to a higher position",
+      "Pushing the object to move faster",
+      "Painting the object a darker colour"
+    ],
+    "answer": "Lifting the object to a higher position",
+    "time": 60,
+    "explanation": "Gravitational potential energy depends on height. Lifting an object increases its height, thus increasing its potential energy."
+  },
+  {
+    "id": 11,
+    "question": "In a circuit, wires become warm after being switched on. What energy conversion causes this?",
+    "options": [
+      "Electrical energy → Light energy",
+      "Electrical energy → Heat energy",
+      "Kinetic energy → Heat energy",
+      "Potential energy → Electrical energy"
+    ],
+    "answer": "Electrical energy → Heat energy",
+    "time": 90,
+    "explanation": "Some electrical energy is always converted to heat energy due to resistance in the wires. This is often considered wasted energy."
+  },
+  {
+    "id": 12,
+    "question": "How does using less electrical energy help the environment?",
+    "options": [
+      "It makes appliances last longer",
+      "It reduces the burning of fossil fuels in power stations, reducing pollution",
+      "It increases the cost of electricity",
+      "It stops the Sun from shining"
+    ],
+    "answer": "It reduces the burning of fossil fuels in power stations, reducing pollution",
+    "time": 90,
+    "explanation": "Many power stations burn fossil fuels to generate electricity. Using less reduces fuel consumption and pollution (greenhouse gases)."
+  },
+  {
+    "id": 13,
+    "question": "A battery-powered toy car moves up a ramp. What energy conversion takes place in the car?",
+    "options": [
+      "Chemical energy → Kinetic energy → Potential energy",
+      "Electrical energy → Kinetic energy → Potential energy",
+      "Potential energy → Kinetic energy → Electrical energy",
+      "Kinetic energy → Heat energy → Potential energy"
+    ],
+    "answer": "Electrical energy → Kinetic energy → Potential energy",
+    "time": 90,
+    "explanation": "The battery supplies electrical energy. The motor converts it to kinetic energy (motion). As it climbs, kinetic energy converts to potential energy (height)."
+  },
+  {
+    "id": 14,
+    "question": "Which statement about energy is TRUE?",
+    "options": [
+      "Energy can be created",
+      "Energy can be destroyed",
+      "Energy can be converted from one form to another",
+      "Energy is only found in living things"
+    ],
+    "answer": "Energy can be converted from one form to another",
+    "time": 60,
+    "explanation": "The Law of Conservation of Energy states energy cannot be created or destroyed, only converted from one form to another."
+  },
+  {
+    "id": 15,
+    "question": "A bicycle dynamo is attached to a wheel to power a light. What should the cyclist do to make the light glow brighter?",
+    "options": [
+      "Pedal slower",
+      "Pedal faster",
+      "Stop pedaling",
+      "Turn the handlebars"
+    ],
+    "answer": "Pedal faster",
+    "time": 90,
+    "explanation": "Pedaling faster increases the speed of the wheel, which means more kinetic energy. The dynamo converts this kinetic energy into electrical energy. More kinetic energy input results in more electrical energy output, making the light glow brighter."
+  }
+]

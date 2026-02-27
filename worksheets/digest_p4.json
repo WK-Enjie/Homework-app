@@ -1,0 +1,199 @@
+```json
+[
+  {
+    "id": 1,
+    "question": "Which is the correct order of food passing through the human digestive system?",
+    "options": [
+      "Mouth → Stomach → Gullet → Small intestine → Large intestine",
+      "Mouth → Gullet → Stomach → Small intestine → Large intestine",
+      "Mouth → Gullet → Small intestine → Stomach → Large intestine",
+      "Mouth → Stomach → Gullet → Large intestine → Small intestine"
+    ],
+    "answer": "Mouth → Gullet → Stomach → Small intestine → Large intestine",
+    "time": 90,
+    "explanation": "Food travels from the mouth, down the gullet (food pipe), into the stomach, then to the small intestine for absorption, and finally the large intestine."
+  },
+  {
+    "id": 2,
+    "question": "What happens to food in the mouth?",
+    "options": [
+      "Food is absorbed into the blood",
+      "Food is broken down by teeth and mixed with saliva",
+      "Food is stored for later use",
+      "Food is turned into waste immediately"
+    ],
+    "answer": "Food is broken down by teeth and mixed with saliva",
+    "time": 60,
+    "explanation": "Teeth chew food into smaller pieces (physical digestion) and saliva moistens it and starts breaking it down (chemical digestion)."
+  },
+  {
+    "id": 3,
+    "question": "What is the function of the gullet?",
+    "options": [
+      "To digest food using acids",
+      "To absorb nutrients into the blood",
+      "To push food from the mouth to the stomach",
+      "To remove waste from the body"
+    ],
+    "answer": "To push food from the mouth to the stomach",
+    "time": 60,
+    "explanation": "The gullet is a muscular tube that transports food. No digestion or absorption takes place in the gullet."
+  },
+  {
+    "id": 4,
+    "question": "Where does most of the absorption of digested food into the blood take place?",
+    "options": [
+      "Stomach",
+      "Large intestine",
+      "Small intestine",
+      "Gullet"
+    ],
+    "answer": "Small intestine",
+    "time": 60,
+    "explanation": "The small intestine has a large surface area where digested food nutrients are absorbed into the bloodstream."
+  },
+  {
+    "id": 5,
+    "question": "What is the main function of the large intestine?",
+    "options": [
+      "To break down food completely",
+      "To absorb water from undigested food",
+      "To produce digestive juices",
+      "To chew food"
+    ],
+    "answer": "To absorb water from undigested food",
+    "time": 60,
+    "explanation": "The large intestine absorbs excess water from the remaining undigested food, turning it into solid waste."
+  },
+  {
+    "id": 6,
+    "question": "Compare the amount of undigested food in the small intestine versus the large intestine.",
+    "options": [
+      "Small intestine has more undigested food than large intestine",
+      "Large intestine has more undigested food than small intestine",
+      "Both have the same amount of undigested food",
+      "Neither has any undigested food"
+    ],
+    "answer": "Large intestine has more undigested food than small intestine",
+    "time": 90,
+    "explanation": "By the time food reaches the large intestine, most digestion and absorption have occurred in the small intestine. Thus, the large intestine contains mostly undigested material."
+  },
+  {
+    "id": 7,
+    "question": "What happens in the stomach?",
+    "options": [
+      "Food is chewed into smaller pieces",
+      "Food is mixed with digestive juices and moved around",
+      "Nutrients are absorbed into the blood",
+      "Water is removed from undigested food"
+    ],
+    "answer": "Food is mixed with digestive juices and moved around",
+    "time": 60,
+    "explanation": "The stomach mixes food with digestive juices (acids and enzymes) and moves it around to break it down further into a liquid mixture."
+  },
+  {
+    "id": 8,
+    "question": "Which organ produces digestive juices that break down food in the stomach?",
+    "options": [
+      "Gullet",
+      "Stomach walls",
+      "Large intestine",
+      "Teeth"
+    ],
+    "answer": "Stomach walls",
+    "time": 60,
+    "explanation": "The walls of the stomach produce digestive juices (acids and enzymes) that help break down food, especially proteins."
+  },
+  {
+    "id": 9,
+    "question": "Why is it important to chew food thoroughly before swallowing?",
+    "options": [
+      "To make the food taste better",
+      "To break food into smaller pieces for easier digestion and swallowing",
+      "To make the stomach work harder",
+      "To prevent the gullet from working"
+    ],
+    "answer": "To break food into smaller pieces for easier digestion and swallowing",
+    "time": 90,
+    "explanation": "Smaller pieces increase surface area for digestive juices to work efficiently and prevent choking in the gullet."
+  },
+  {
+    "id": 10,
+    "question": "Which part of the digestive system is the longest?",
+    "options": [
+      "Stomach",
+      "Gullet",
+      "Small intestine",
+      "Large intestine"
+    ],
+    "answer": "Small intestine",
+    "time": 60,
+    "explanation": "The small intestine is the longest part (about 6-7 meters) to allow enough time and surface area for digestion and absorption."
+  },
+  {
+    "id": 11,
+    "question": "The table shows the amount of digested and undigested food found in two parts of the digestive system. Which statement is correct based on the table?\n\n| Part of Digestive System | Digested Food | Undigested Food |\n| Small Intestine | High | Low |\n| Large Intestine | Low | High |",
+    "options": [
+      "Most digestion happens in the large intestine",
+      "Most digestion happens in the small intestine",
+      "No digestion happens in the small intestine",
+      "The stomach has the most undigested food"
+    ],
+    "answer": "Most digestion happens in the small intestine",
+    "time": 90,
+    "explanation": "The table shows 'High' digested food in the small intestine, meaning most food is broken down and absorbed there. The large intestine has 'High' undigested food because most useful nutrients have already been absorbed."
+  },
+  {
+    "id": 12,
+    "question": "After food leaves the stomach, where does it go next?",
+    "options": [
+      "Gullet",
+      "Large intestine",
+      "Small intestine",
+      "Mouth"
+    ],
+    "answer": "Small intestine",
+    "time": 60,
+    "explanation": "Partially digested food moves from the stomach into the small intestine for completion of digestion and absorption."
+  },
+  {
+    "id": 13,
+    "question": "Which statement about digested food is TRUE?",
+    "options": [
+      "It is absorbed in the large intestine",
+      "It is absorbed in the small intestine into the blood",
+      "It is stored in the stomach",
+      "It is removed from the body immediately"
+    ],
+    "answer": "It is absorbed in the small intestine into the blood",
+    "time": 90,
+    "explanation": "Digested food (nutrients) is small enough to pass through the walls of the small intestine into the blood vessels."
+  },
+  {
+    "id": 14,
+    "question": "What is the final waste product of the digestive system called?",
+    "options": [
+      "Urine",
+      "Faeces",
+      "Saliva",
+      "Digestive juice"
+    ],
+    "answer": "Faeces",
+    "time": 60,
+    "explanation": "Faeces consists of undigested food, bacteria, and waste materials that are removed from the body via the anus."
+  },
+  {
+    "id": 15,
+    "question": "How do the parts of the digestive system work together?",
+    "options": [
+      "Each part works independently without connection",
+      "Each part performs a specific function to break down food and absorb nutrients",
+      "Only the stomach does all the work",
+      "Only the mouth does all the work"
+    ],
+    "answer": "Each part performs a specific function to break down food and absorb nutrients",
+    "time": 90,
+    "explanation": "The digestive system is a system where parts (mouth, gullet, stomach, intestines) work together to perform the function of digestion and absorption."
+  }
+]
+```
