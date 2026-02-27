@@ -114,7 +114,7 @@ function loadQuestion() {
     }
     const q = gameQuestions[currentIdx];
     
-    // Trim whitespace from question data
+    // CRITICAL: Trim all whitespace from JSON data (your JSON has trailing spaces in keys/values)
     qText.textContent = q.question ? q.question.trim() : "Loading...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
@@ -149,8 +149,9 @@ function loadQuestion() {
         q.options.forEach(opt => {
             const btn = document.createElement('button');
             btn.className = 'opt-btn';
-            btn.textContent = opt ? opt.trim() : '';
-            btn.onclick = () => handleAnswer(btn, opt ? opt.trim() : '', q.answer ? q.answer.trim() : '');
+            const optText = opt ? opt.trim() : '';
+            btn.textContent = optText;
+            btn.onclick = () => handleAnswer(btn, optText, q.answer ? q.answer.trim() : '');
             optionsContainer.appendChild(btn);
         });
     }
@@ -297,7 +298,7 @@ function endGame(result) {
     document.getElementById('final-score').textContent = score;
     document.getElementById('final-combo').textContent = maxCombo;
     
-    // Fixed: Removed trailing spaces in string comparisons
+    // FIXED: No trailing spaces in string comparisons
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";

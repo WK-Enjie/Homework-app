@@ -321,7 +321,7 @@ input {
 /* CONTROL PANEL - CRITICAL FOR MOBILE */
 .control-panel {
     height: 50%;
-    min-height: 200px;
+    min-height: 220px;
     background: #f4f4f4;
     border-top: 5px solid var(--gold);
     display: flex;
@@ -614,7 +614,7 @@ input {
     /* CRITICAL: Control panel gets MORE space on mobile */
     .control-panel {
         height: 55%;
-        min-height: 220px;
+        min-height: 240px;
     }
     
     .question-box {
@@ -631,7 +631,7 @@ input {
         max-height: 50px;
     }
     
-    /* Keep 2 columns to save vertical space */
+    /* KEEP 2 COLUMNS - DO NOT SWITCH TO 1 */
     .options-grid {
         grid-template-columns: 1fr 1fr;
         gap: 6px;
@@ -640,7 +640,7 @@ input {
     .opt-btn {
         font-size: 0.75rem;
         padding: 8px 4px;
-        min-height: 45px;
+        min-height: 48px;
         line-height: 1.1;
     }
     
@@ -714,7 +714,7 @@ input {
     
     .control-panel {
         height: 59%;
-        min-height: 240px;
+        min-height: 260px;
     }
     
     .options-grid {
@@ -724,7 +724,7 @@ input {
     .opt-btn {
         font-size: 0.7rem;
         padding: 6px 3px;
-        min-height: 42px;
+        min-height: 45px;
     }
     
     #q-text {
