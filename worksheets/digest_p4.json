@@ -1,4 +1,3 @@
-```json
 [
   {
     "id": 1,
@@ -10,8 +9,7 @@
       "Mouth → Stomach → Gullet → Large intestine → Small intestine"
     ],
     "answer": "Mouth → Gullet → Stomach → Small intestine → Large intestine",
-    "time": 90,
-    "explanation": "Food travels from the mouth, down the gullet (food pipe), into the stomach, then to the small intestine for absorption, and finally the large intestine."
+    "time": 90
   },
   {
     "id": 2,
@@ -23,8 +21,7 @@
       "Food is turned into waste immediately"
     ],
     "answer": "Food is broken down by teeth and mixed with saliva",
-    "time": 60,
-    "explanation": "Teeth chew food into smaller pieces (physical digestion) and saliva moistens it and starts breaking it down (chemical digestion)."
+    "time": 60
   },
   {
     "id": 3,
@@ -36,8 +33,7 @@
       "To remove waste from the body"
     ],
     "answer": "To push food from the mouth to the stomach",
-    "time": 60,
-    "explanation": "The gullet is a muscular tube that transports food. No digestion or absorption takes place in the gullet."
+    "time": 60
   },
   {
     "id": 4,
@@ -49,8 +45,7 @@
       "Gullet"
     ],
     "answer": "Small intestine",
-    "time": 60,
-    "explanation": "The small intestine has a large surface area where digested food nutrients are absorbed into the bloodstream."
+    "time": 60
   },
   {
     "id": 5,
@@ -62,8 +57,7 @@
       "To chew food"
     ],
     "answer": "To absorb water from undigested food",
-    "time": 60,
-    "explanation": "The large intestine absorbs excess water from the remaining undigested food, turning it into solid waste."
+    "time": 60
   },
   {
     "id": 6,
@@ -75,8 +69,7 @@
       "Neither has any undigested food"
     ],
     "answer": "Large intestine has more undigested food than small intestine",
-    "time": 90,
-    "explanation": "By the time food reaches the large intestine, most digestion and absorption have occurred in the small intestine. Thus, the large intestine contains mostly undigested material."
+    "time": 90
   },
   {
     "id": 7,
@@ -88,8 +81,7 @@
       "Water is removed from undigested food"
     ],
     "answer": "Food is mixed with digestive juices and moved around",
-    "time": 60,
-    "explanation": "The stomach mixes food with digestive juices (acids and enzymes) and moves it around to break it down further into a liquid mixture."
+    "time": 60
   },
   {
     "id": 8,
@@ -101,8 +93,7 @@
       "Teeth"
     ],
     "answer": "Stomach walls",
-    "time": 60,
-    "explanation": "The walls of the stomach produce digestive juices (acids and enzymes) that help break down food, especially proteins."
+    "time": 60
   },
   {
     "id": 9,
@@ -114,8 +105,7 @@
       "To prevent the gullet from working"
     ],
     "answer": "To break food into smaller pieces for easier digestion and swallowing",
-    "time": 90,
-    "explanation": "Smaller pieces increase surface area for digestive juices to work efficiently and prevent choking in the gullet."
+    "time": 90
   },
   {
     "id": 10,
@@ -127,8 +117,7 @@
       "Large intestine"
     ],
     "answer": "Small intestine",
-    "time": 60,
-    "explanation": "The small intestine is the longest part (about 6-7 meters) to allow enough time and surface area for digestion and absorption."
+    "time": 60
   },
   {
     "id": 11,
@@ -140,8 +129,7 @@
       "The stomach has the most undigested food"
     ],
     "answer": "Most digestion happens in the small intestine",
-    "time": 90,
-    "explanation": "The table shows 'High' digested food in the small intestine, meaning most food is broken down and absorbed there. The large intestine has 'High' undigested food because most useful nutrients have already been absorbed."
+    "time": 90
   },
   {
     "id": 12,
@@ -153,8 +141,7 @@
       "Mouth"
     ],
     "answer": "Small intestine",
-    "time": 60,
-    "explanation": "Partially digested food moves from the stomach into the small intestine for completion of digestion and absorption."
+    "time": 60
   },
   {
     "id": 13,
@@ -166,8 +153,7 @@
       "It is removed from the body immediately"
     ],
     "answer": "It is absorbed in the small intestine into the blood",
-    "time": 90,
-    "explanation": "Digested food (nutrients) is small enough to pass through the walls of the small intestine into the blood vessels."
+    "time": 90
   },
   {
     "id": 14,
@@ -179,8 +165,7 @@
       "Digestive juice"
     ],
     "answer": "Faeces",
-    "time": 60,
-    "explanation": "Faeces consists of undigested food, bacteria, and waste materials that are removed from the body via the anus."
+    "time": 60
   },
   {
     "id": 15,
@@ -192,8 +177,6 @@
       "Only the mouth does all the work"
     ],
     "answer": "Each part performs a specific function to break down food and absorb nutrients",
-    "time": 90,
-    "explanation": "The digestive system is a system where parts (mouth, gullet, stomach, intestines) work together to perform the function of digestion and absorption."
+    "time": 90
   }
 ]
-```
