@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Tom had some money. He spent $15 on food, then gave half of the remainder to his sister. He then spent $20 on a book and had $35 left. How much money did Tom have at first?",
+    "options": ["$120", "$130", "$140", "$150"],
+    "answer": "$130",
+    "time": 90
+  },
+  {
+    "id": 2,
+    "question": "There are some boys and girls in a hall. There are 3 times as many boys as girls. Each boy receives 3 balloons while each girl receives 5 balloons. A total of 70 balloons were given out. How many boys are there?",
+    "options": ["12", "15", "18", "21"],
+    "answer": "15",
+    "time": 120
+  },
+  {
+    "id": 3,
+    "question": "A teacher has some pencils. If she gives 5 pencils to each student, she will be short of 8 pencils. If she gives 4 pencils to each student, she will have 12 pencils left. How many students are there?",
+    "options": ["16", "18", "20", "22"],
+    "answer": "20",
+    "time": 90
+  },
+  {
+    "id": 4,
+    "question": "There are chickens and rabbits in a farm. There are 35 heads and 94 legs altogether. How many rabbits are there?",
+    "options": ["10", "12", "14", "16"],
+    "answer": "12",
+    "time": 120
+  },
+  {
+    "id": 5,
+    "question": "Sarah bought some apples and oranges. Apples cost $2 each and oranges cost $3 each. She bought 15 fruits altogether and paid $38. How many apples did she buy?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "time": 90
+  },
+  {
+    "id": 6,
+    "question": "A number is multiplied by 4, then 12 is added. The result is divided by 2, then 5 is subtracted. The final answer is 21. What was the original number?",
+    "options": ["8", "9", "10", "11"],
+    "answer": "10",
+    "time": 60
+  },
+  {
+    "id": 7,
+    "question": "In a class, if each student gets 6 stickers, there will be 10 stickers left. If each student gets 7 stickers, there will be 5 stickers short. How many students are in the class?",
+    "options": ["12", "13", "14", "15"],
+    "answer": "15",
+    "time": 90
+  },
+  {
+    "id": 8,
+    "question": "There are 20 questions in a test. Each correct answer scores 5 points and each wrong answer deducts 2 points. John scored 72 points. How many questions did he answer correctly?",
+    "options": ["14", "15", "16", "17"],
+    "answer": "16",
+    "time": 120
+  },
+  {
+    "id": 9,
+    "question": "A box contains red and blue marbles. There are 4 times as many red marbles as blue marbles. If 10 red marbles are removed and 5 blue marbles are added, there will be equal number of red and blue marbles. How many red marbles were there originally?",
+    "options": ["20", "24", "28", "32"],
+    "answer": "20",
+    "time": 150
+  },
+  {
+    "id": 10,
+    "question": "Mrs. Tan baked some cookies. She gave half of them to her neighbours, then ate 3 cookies. She then gave half of the remainder to her children and had 8 cookies left. How many cookies did she bake at first?",
+    "options": ["38", "40", "42", "44"],
+    "answer": "44",
+    "time": 90
+  },
+  {
+    "id": 11,
+    "question": "There are some $2 and $5 notes in a wallet. There are 25 notes altogether worth $98. How many $5 notes are there?",
+    "options": ["14", "15", "16", "17"],
+    "answer": "16",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "A group of children shared some candies. If each child gets 8 candies, there will be 6 candies left. If each child gets 9 candies, there will be 4 candies short. How many candies were there?",
+    "options": ["78", "82", "86", "90"],
+    "answer": "86",
+    "time": 120
+  },
+  {
+    "id": 13,
+    "question": "There are 3 times as many boys as girls in a club. Each boy pays $4 membership fee and each girl pays $6. The total collected was $216. How many members are there altogether?",
+    "options": ["36", "40", "44", "48"],
+    "answer": "40",
+    "time": 150
+  },
+  {
+    "id": 14,
+    "question": "Calculate: [(48 ÷ 6 + 12) × 3 - 15] ÷ 5 + 8",
+    "options": ["12", "13", "14", "15"],
+    "answer": "14",
+    "time": 60
+  },
+  {
+    "id": 15,
+    "question": "A farmer has cows and ducks. There are 50 animals altogether. The cows have 80 more legs than the ducks. How many cows are there?",
+    "options": ["20", "22", "24", "26"],
+    "answer": "22",
+    "time": 180
+  },
+  {
+    "id": 16,
+    "question": "Tom saved some money in January. In February, he saved twice as much as January. In March, he saved $30 less than February. He saved $270 altogether in 3 months. How much did he save in January?",
+    "options": ["50", "55", "60", "65"],
+    "answer": "60",
+    "time": 120
+  },
+  {
+    "id": 17,
+    "question": "There are some benches in a park. If 4 people sit on each bench, 6 people will be standing. If 5 people sit on each bench, 2 benches will be empty. How many people are there?",
+    "options": ["48", "50", "52", "54"],
+    "answer": "50",
+    "time": 180
+  },
+  {
+    "id": 18,
+    "question": "A shop sells pens at $3 each and pencils at $1 each. John bought 20 items altogether. He paid $44. How many more pens than pencils did he buy?",
+    "options": ["8", "10", "12", "14"],
+    "answer": "8",
+    "time": 90
+  },
+  {
+    "id": 19,
+    "question": "There are some red, blue and green balls in a bag. There are twice as many red balls as blue balls. There are 5 more green balls than blue balls. Altogether there are 65 balls. How many red balls are there?",
+    "options": ["20", "24", "28", "32"],
+    "answer": "24",
+    "time": 150
+  },
+  {
+    "id": 20,
+    "question": "Calculate: 120 - [36 ÷ (9 - 5) + 8 × 3] + (15 - 7) × 2",
+    "options": ["90", "95", "100", "105"],
+    "answer": "95",
+    "time": 60
+  }
+]
