@@ -114,7 +114,7 @@ function loadQuestion() {
     }
     const q = gameQuestions[currentIdx];
     
-    // CRITICAL: Trim all whitespace from JSON data (your JSON has trailing spaces in keys/values)
+    // CRITICAL: Trim ALL whitespace from JSON data (your JSON has trailing spaces)
     qText.textContent = q.question ? q.question.trim() : "Loading...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
@@ -125,7 +125,6 @@ function loadQuestion() {
     clearInterval(timerInterval);
     questionStartTime = Date.now();
 
-    // Variable Timer Logic - use question time or default
     const currentLimit = q.time ? q.time * 1000 : DEFAULT_TIME_LIMIT;
 
     timerFill.style.width = '100%';
@@ -151,7 +150,8 @@ function loadQuestion() {
             btn.className = 'opt-btn';
             const optText = opt ? opt.trim() : '';
             btn.textContent = optText;
-            btn.onclick = () => handleAnswer(btn, optText, q.answer ? q.answer.trim() : '');
+            const answerText = q.answer ? q.answer.trim() : '';
+            btn.onclick = () => handleAnswer(btn, optText, answerText);
             optionsContainer.appendChild(btn);
         });
     }
@@ -298,7 +298,6 @@ function endGame(result) {
     document.getElementById('final-score').textContent = score;
     document.getElementById('final-combo').textContent = maxCombo;
     
-    // FIXED: No trailing spaces in string comparisons
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";
