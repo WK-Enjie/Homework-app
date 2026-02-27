@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Calculate: (-3)² + 4 × (-5) - √144",
+    "options": ["-23", "-19", "-11", "-7"],
+    "answer": "-23",
+    "time": 75
+  },
+  {
+    "id": 2,
+    "question": "Calculate: [(-2)³ × 3 + 27] ÷ (-3) + √81",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8",
+    "time": 75
+  },
+  {
+    "id": 3,
+    "question": "Calculate: 5² - (√169 - 3³) + (-4) × 2",
+    "options": ["28", "31", "34", "37"],
+    "answer": "31",
+    "time": 75
+  },
+  {
+    "id": 4,
+    "question": "Calculate: [(-6)² - 4²] ÷ √100 + (-3)³",
+    "options": ["-25", "-23", "-21", "-19"],
+    "answer": "-25",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "question": "Calculate: √(25 × 16) - 2³ + 3³",
+    "options": ["35", "37", "39", "41"],
+    "answer": "39",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "Calculate: [(-5)² + √225] ÷ 2 - (-3)³",
+    "options": ["42", "45", "47", "50"],
+    "answer": "47",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "question": "Calculate: 4³ - √(144 + 81) + (-2)³",
+    "options": ["37", "39", "41", "43"],
+    "answer": "41",
+    "time": 90
+  },
+  {
+    "id": 8,
+    "question": "Calculate: [√400 - (-4)³] ÷ 4 + (-5)²",
+    "options": ["42", "44", "46", "48"],
+    "answer": "46",
+    "time": 90
+  },
+  {
+    "id": 9,
+    "question": "Calculate: (-3)³ + 3² × √16 - 5²",
+    "options": ["1", "3", "5", "7"],
+    "answer": "3",
+    "time": 75
+  },
+  {
+    "id": 10,
+    "question": "Calculate: [(-6)² + √144] ÷ 6 - (-2)³",
+    "options": ["12", "14", "16", "18"],
+    "answer": "16",
+    "time": 90
+  },
+  {
+    "id": 11,
+    "question": "Calculate: √(9 × 49) - (-3)³ + 4² - 50",
+    "options": ["12", "14", "16", "18"],
+    "answer": "14",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "Calculate: [(-3)³ + 6²] ÷ √9 + (-4)²",
+    "options": ["17", "19", "21", "23"],
+    "answer": "19",
+    "time": 105
+  },
+  {
+    "id": 13,
+    "question": "Calculate: 2³ - √(256 - 175) + (-3)² × 4",
+    "options": ["31", "33", "35", "37"],
+    "answer": "35",
+    "time": 90
+  },
+  {
+    "id": 14,
+    "question": "Calculate: [√(144 × 25) - (-5)³] ÷ 5 + (-2)³",
+    "options": ["25", "27", "29", "31"],
+    "answer": "29",
+    "time": 120
+  },
+  {
+    "id": 15,
+    "question": "Calculate: (-6)² + √289 - 4³ + (-2)³",
+    "options": ["-23", "-21", "-19", "-17"],
+    "answer": "-19",
+    "time": 105
+  },
+  {
+    "id": 16,
+    "question": "Calculate: [(-8)² - √(81 × 16)] ÷ 4 + (-3)³",
+    "options": ["-24", "-22", "-20", "-18"],
+    "answer": "-20",
+    "time": 120
+  },
+  {
+    "id": 17,
+    "question": "Calculate: 3³ - √(400 + 225) + (-4)³ - 20",
+    "options": ["-86", "-84", "-82", "-80"],
+    "answer": "-82",
+    "time": 120
+  },
+  {
+    "id": 18,
+    "question": "Calculate: [√576 + (-4)³] ÷ (-8) + 5² - 30",
+    "options": ["-2", "0", "2", "4"],
+    "answer": "0",
+    "time": 120
+  },
+  {
+    "id": 19,
+    "question": "Calculate: (-2)³ - √(100 - 36) + 5³ - 100",
+    "options": ["7", "9", "11", "13"],
+    "answer": "9",
+    "time": 105
+  },
+  {
+    "id": 20,
+    "question": "Calculate: [(-8)² + √64] ÷ 8 - (-2)³ + 3",
+    "options": ["18", "20", "22", "24"],
+    "answer": "20",
+    "time": 120
+  }
+]

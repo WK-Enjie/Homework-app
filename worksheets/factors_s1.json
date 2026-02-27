@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is a perfect square?",
+    "options": ["24", "36", "48", "60"],
+    "answer": "36",
+    "time": 30
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a perfect cube?",
+    "options": ["16", "27", "36", "48"],
+    "answer": "27",
+    "time": 30
+  },
+  {
+    "id": 3,
+    "question": "Find the HCF of 24 and 36.",
+    "options": ["6", "8", "12", "18"],
+    "answer": "12",
+    "time": 45
+  },
+  {
+    "id": 4,
+    "question": "Find the LCM of 8 and 12.",
+    "options": ["20", "24", "36", "48"],
+    "answer": "24",
+    "time": 45
+  },
+  {
+    "id": 5,
+    "question": "What is the smallest number that must be multiplied by 18 to make it a perfect square?",
+    "options": ["2", "3", "4", "6"],
+    "answer": "2",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "What is the smallest number that must be multiplied by 12 to make it a perfect square?",
+    "options": ["2", "3", "4", "6"],
+    "answer": "3",
+    "time": 60
+  },
+  {
+    "id": 7,
+    "question": "What is the smallest number that must be divided into 72 to make it a perfect square?",
+    "options": ["2", "3", "4", "6"],
+    "answer": "2",
+    "time": 60
+  },
+  {
+    "id": 8,
+    "question": "Find the HCF of 48, 72 and 96.",
+    "options": ["12", "16", "24", "32"],
+    "answer": "24",
+    "time": 75
+  },
+  {
+    "id": 9,
+    "question": "Find the LCM of 6, 9 and 15.",
+    "options": ["60", "75", "90", "120"],
+    "answer": "90",
+    "time": 75
+  },
+  {
+    "id": 10,
+    "question": "What is the smallest perfect square that is a multiple of 24?",
+    "options": ["144", "196", "256", "324"],
+    "answer": "144",
+    "time": 90
+  },
+  {
+    "id": 11,
+    "question": "What is the smallest number that must be multiplied by 50 to make it a perfect square?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "2",
+    "time": 60
+  },
+  {
+    "id": 12,
+    "question": "What is the smallest perfect cube that is a multiple of 12?",
+    "options": ["216", "343", "512", "729"],
+    "answer": "216",
+    "time": 90
+  },
+  {
+    "id": 13,
+    "question": "Find the HCF of 105 and 140.",
+    "options": ["25", "30", "35", "40"],
+    "answer": "35",
+    "time": 60
+  },
+  {
+    "id": 14,
+    "question": "Find the LCM of 14 and 21.",
+    "options": ["28", "35", "42", "56"],
+    "answer": "42",
+    "time": 60
+  },
+  {
+    "id": 15,
+    "question": "What is the smallest number that must be divided into 200 to make it a perfect square?",
+    "options": ["2", "4", "5", "8"],
+    "answer": "2",
+    "time": 75
+  },
+  {
+    "id": 16,
+    "question": "What is the smallest number that must be multiplied by 75 to make it a perfect square?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "time": 75
+  },
+  {
+    "id": 17,
+    "question": "Find the HCF of 144 and 180.",
+    "options": ["24", "30", "36", "48"],
+    "answer": "36",
+    "time": 75
+  },
+  {
+    "id": 18,
+    "question": "Find the LCM of 16, 20 and 24.",
+    "options": ["120", "160", "240", "320"],
+    "answer": "240",
+    "time": 90
+  },
+  {
+    "id": 19,
+    "question": "What is the smallest number that must be multiplied by 98 to make it a perfect square?",
+    "options": ["2", "3", "4", "7"],
+    "answer": "2",
+    "time": 75
+  },
+  {
+    "id": 20,
+    "question": "What is the smallest perfect square that is a multiple of 36 and 48?",
+    "options": ["576", "729", "900", "1024"],
+    "answer": "576",
+    "time": 120
+  }
+]
