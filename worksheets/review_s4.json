@@ -1,0 +1,197 @@
+[
+  {
+   "id": 1,
+   "question": "Which statement correctly defines one mole of a substance?",
+   "options": [
+    "The mass of a substance in grams equal to its relative atomic mass",
+    "The amount of substance containing 6.02 × 10²³ particles",
+    "The volume of gas that occupies 24 dm³ at room temperature",
+    "The concentration of a solution containing 1 g of solute per dm³"
+   ],
+   "answer": "The amount of substance containing 6.02 × 10²³ particles",
+   "time": 60,
+   "explanation": "One mole is defined as the amount of substance containing the Avogadro constant (6.02 × 10²³) of particles, whether atoms, molecules, or ions."
+  },
+  {
+   "id": 2,
+   "question": "What is the relative molecular mass (Mᵣ) of calcium nitrate, Ca(NO₃)₂? [Ar: Ca = 40, N = 14, O = 16]",
+   "options": [
+    "102",
+    "134",
+    "164",
+    "204"
+   ],
+   "answer": "164",
+   "time": 90,
+   "explanation": "Mᵣ = 40 + 2×(14 + 3×16) = 40 + 2×(62) = 40 + 124 = 164"
+  },
+  {
+   "id": 3,
+   "question": "How many moles are present in 11 g of carbon dioxide, CO₂? [Ar: C = 12, O = 16]",
+   "options": [
+    "0.25 mol",
+    "0.50 mol",
+    "2.0 mol",
+    "4.0 mol"
+   ],
+   "answer": "0.25 mol",
+   "time": 90,
+   "explanation": "Mᵣ of CO₂ = 12 + (2×16) = 44. Moles = mass ÷ Mᵣ = 11 ÷ 44 = 0.25 mol"
+  },
+  {
+   "id": 4,
+   "question": "What volume does 0.5 mol of oxygen gas occupy at room temperature and pressure (r.t.p.)? [1 mole of gas occupies 24 dm³ at r.t.p.]",
+   "options": [
+    "6 dm³",
+    "12 dm³",
+    "24 dm³",
+    "48 dm³"
+   ],
+   "answer": "12 dm³",
+   "time": 60,
+   "explanation": "Volume = moles × 24 dm³ = 0.5 × 24 = 12 dm³"
+  },
+  {
+   "id": 5,
+   "question": "A solution contains 0.2 mol of sodium hydroxide dissolved in 500 cm³ of water. What is the concentration in mol/dm³?",
+   "options": [
+    "0.1 mol/dm³",
+    "0.2 mol/dm³",
+    "0.4 mol/dm³",
+    "2.0 mol/dm³"
+   ],
+   "answer": "0.4 mol/dm³",
+   "time": 90,
+   "explanation": "500 cm³ = 0.5 dm³. Concentration = moles ÷ volume = 0.2 ÷ 0.5 = 0.4 mol/dm³"
+  },
+  {
+   "id": 6,
+   "question": "Which metal will react most vigorously with cold water?",
+   "options": [
+    "Magnesium",
+    "Zinc",
+    "Iron",
+    "Potassium"
+   ],
+   "answer": "Potassium",
+   "time": 60,
+   "explanation": "Potassium is at the top of the reactivity series and reacts violently with cold water, producing hydrogen gas and an alkaline solution."
+  },
+  {
+   "id": 7,
+   "question": "Which observation is made when zinc reacts with dilute hydrochloric acid?",
+   "options": [
+    "A blue solution forms",
+    "Effervescence and the metal dissolves",
+    "A red-brown precipitate forms",
+    "No visible change occurs"
+   ],
+   "answer": "Effervescence and the metal dissolves",
+   "time": 60,
+   "explanation": "Zinc is above hydrogen in the reactivity series and reacts with dilute acids to produce hydrogen gas (effervescence) while the metal dissolves to form zinc chloride solution."
+  },
+  {
+   "id": 8,
+   "question": "Metal X displaces copper from copper(II) sulfate solution but does not displace zinc from zinc sulfate solution. Where is metal X placed in the reactivity series?",
+   "options": [
+    "Above zinc",
+    "Between zinc and copper",
+    "Below copper",
+    "At the same position as hydrogen"
+   ],
+   "answer": "Between zinc and copper",
+   "time": 90,
+   "explanation": "A metal can only displace a less reactive metal from its salt solution. Since X displaces copper but not zinc, it must be more reactive than copper but less reactive than zinc."
+  },
+  {
+   "id": 9,
+   "question": "Which ionic equation represents the reaction when magnesium is added to copper(II) sulfate solution?",
+   "options": [
+    "Mg(s) + Cu²⁺(aq) → Mg²⁺(aq) + Cu(s)",
+    "Mg²⁺(aq) + Cu(s) → Mg(s) + Cu²⁺(aq)",
+    "Mg(s) + SO₄²⁻(aq) → MgSO₄(aq)",
+    "Cu²⁺(aq) + SO₄²⁻(aq) → CuSO₄(aq)"
+   ],
+   "answer": "Mg(s) + Cu²⁺(aq) → Mg²⁺(aq) + Cu(s)",
+   "time": 90,
+   "explanation": "Magnesium is more reactive than copper and displaces it. The ionic equation shows magnesium atoms losing electrons (oxidation) and copper ions gaining electrons (reduction)."
+  },
+  {
+   "id": 10,
+   "question": "Why is aluminium extracted by electrolysis rather than by heating with carbon?",
+   "options": [
+    "Aluminium oxide is too expensive to heat",
+    "Aluminium is more reactive than carbon",
+    "Carbon produces toxic gases with aluminium oxide",
+    "Electrolysis is a faster process"
+   ],
+   "answer": "Aluminium is more reactive than carbon",
+   "time": 90,
+   "explanation": "Metals above carbon in the reactivity series cannot be extracted by reduction with carbon. Aluminium is more reactive than carbon, so electrolysis is required to extract it from its ore."
+  },
+  {
+   "id": 11,
+   "question": "How are elements arranged in the Periodic Table?",
+   "options": [
+    "In order of increasing relative atomic mass",
+    "In order of increasing proton (atomic) number",
+    "In order of decreasing reactivity",
+    "In order of increasing number of neutrons"
+   ],
+   "answer": "In order of increasing proton (atomic) number",
+   "time": 60,
+   "explanation": "The modern Periodic Table arranges elements in order of increasing proton (atomic) number, which determines the element's identity and electronic configuration."
+  },
+  {
+   "id": 12,
+   "question": "Which statement about Group 1 elements (alkali metals) is correct?",
+   "options": [
+    "They become less reactive down the group",
+    "They have one electron in their outer shell",
+    "They form negative ions when reacting",
+    "Their melting points increase down the group"
+   ],
+   "answer": "They have one electron in their outer shell",
+   "time": 60,
+   "explanation": "All Group 1 elements have one electron in their outermost shell, which they readily lose to form +1 ions. Reactivity increases and melting points decrease down the group."
+  },
+  {
+   "id": 13,
+   "question": "Moving from left to right across Period 3 of the Periodic Table, elements change from:",
+   "options": [
+    "Non-metallic to metallic character",
+    "Metallic to non-metallic character",
+    "Gaseous to solid state",
+    "High density to low density"
+   ],
+   "answer": "Metallic to non-metallic character",
+   "time": 60,
+   "explanation": "Across a period, elements change from metals (e.g. sodium, magnesium) to metalloids (silicon) to non-metals (phosphorus, sulfur, chlorine, argon) as the number of outer electrons increases."
+  },
+  {
+   "id": 14,
+   "question": "An element has the electronic configuration 2,8,7. In which group and period is this element found?",
+   "options": [
+    "Group 7, Period 2",
+    "Group 7, Period 3",
+    "Group 17, Period 2",
+    "Group 17, Period 3"
+   ],
+   "answer": "Group 17, Period 3",
+   "time": 90,
+   "explanation": "The element has 3 electron shells (Period 3) and 7 electrons in the outer shell (Group 17, the halogens). This element is chlorine."
+  },
+  {
+   "id": 15,
+   "question": "Element Y is in Group 2 of the Periodic Table. Which property is most likely for Y?",
+   "options": [
+    "Forms a -2 ion when reacting",
+    "Has a low melting point",
+    "Reacts with water to produce hydrogen gas",
+    "Is a poor conductor of electricity"
+   ],
+   "answer": "Reacts with water to produce hydrogen gas",
+   "time": 90,
+   "explanation": "Group 2 elements are reactive metals that react with water (some vigorously) to produce hydrogen gas and metal hydroxides. They form +2 ions, have relatively high melting points, and are good conductors."
+  }
+]
