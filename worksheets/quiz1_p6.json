@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Express 3/8 as a percentage.",
+    "options": ["37.5%", "38%", "37%", "38.5%"],
+    "answer": "37.5%",
+    "time": 45
+  },
+  {
+    "id": 2,
+    "question": "Simplify the ratio 24:36 to its simplest form.",
+    "options": ["2:3", "3:4", "4:6", "6:9"],
+    "answer": "2:3",
+    "time": 45
+  },
+  {
+    "id": 3,
+    "question": "What is 15% of 240?",
+    "options": ["30", "36", "42", "48"],
+    "answer": "36",
+    "time": 45
+  },
+  {
+    "id": 4,
+    "question": "Express 0.625 as a fraction in simplest form.",
+    "options": ["5/8", "3/5", "7/10", "11/16"],
+    "answer": "5/8",
+    "time": 45
+  },
+  {
+    "id": 5,
+    "question": "If A:B = 3:5 and B:C = 2:7, find A:B:C.",
+    "options": ["3:5:7", "6:10:35", "3:10:35", "6:5:14"],
+    "answer": "6:10:35",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "Round off 4.5678 to 2 decimal places.",
+    "options": ["4.56", "4.57", "4.58", "4.59"],
+    "answer": "4.57",
+    "time": 30
+  },
+  {
+    "id": 7,
+    "question": "Calculate the interest on $5000 at 4% for 3 years.",
+    "options": ["$400", "$500", "$600", "$700"],
+    "answer": "$600",
+    "time": 60
+  },
+  {
+    "id": 8,
+    "question": "Express 7/20 as a decimal.",
+    "options": ["0.35", "0.37", "0.40", "0.42"],
+    "answer": "0.35",
+    "time": 45
+  },
+  {
+    "id": 9,
+    "question": "What percentage is 45 out of 180?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": "25%",
+    "time": 45
+  },
+  {
+    "id": 10,
+    "question": "Simplify: 2/3 + 1/6",
+    "options": ["1/2", "3/9", "5/6", "2/6"],
+    "answer": "5/6",
+    "time": 45
+  },
+  {
+    "id": 11,
+    "question": "If 40% of a number is 80, what is the number?",
+    "options": ["160", "180", "200", "220"],
+    "answer": "200",
+    "time": 45
+  },
+  {
+    "id": 12,
+    "question": "Express 125% as a mixed number in simplest form.",
+    "options": ["1 1/4", "1 1/5", "1 1/2", "1 3/4"],
+    "answer": "1 1/4",
+    "time": 45
+  },
+  {
+    "id": 13,
+    "question": "Round off 78945 to the nearest thousand.",
+    "options": ["78000", "79000", "78900", "79900"],
+    "answer": "79000",
+    "time": 30
+  },
+  {
+    "id": 14,
+    "question": "The ratio of boys to girls is 5:4. If there are 45 students, how many boys are there?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "25",
+    "time": 60
+  },
+  {
+    "id": 15,
+    "question": "Calculate: 0.3 × 0.4",
+    "options": ["0.12", "0.7", "1.2", "0.012"],
+    "answer": "0.12",
+    "time": 30
+  },
+  {
+    "id": 16,
+    "question": "Express 2/5 as a percentage.",
+    "options": ["20%", "30%", "40%", "50%"],
+    "answer": "40%",
+    "time": 30
+  },
+  {
+    "id": 17,
+    "question": "What is 3/4 of 96?",
+    "options": ["68", "72", "76", "80"],
+    "answer": "72",
+    "time": 45
+  },
+  {
+    "id": 18,
+    "question": "If $8000 is invested at 5% for 2 years, how much interest is earned?",
+    "options": ["$400", "$600", "$800", "$1000"],
+    "answer": "$800",
+    "time": 60
+  },
+  {
+    "id": 19,
+    "question": "Express 0.08 as a percentage.",
+    "options": ["0.8%", "8%", "80%", "800%"],
+    "answer": "8%",
+    "time": 30
+  },
+  {
+    "id": 20,
+    "question": "Simplify the ratio 0.5:0.25 to whole numbers.",
+    "options": ["1:2", "2:1", "5:25", "50:25"],
+    "answer": "2:1",
+    "time": 45
+  }
+]
