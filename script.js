@@ -1,20 +1,18 @@
 // ==========================================
 // 1. GAME VARIABLES
 // ==========================================
-let allQuestions = []; 
-let gameQuestions = []; 
+let allQuestions = [];
+let gameQuestions = [];
 let currentIdx = 0;
 let score = 0;
 let enemyHP = 100;
 let playerHP = 100;
 let combo = 0;
 let maxCombo = 0;
-
-// Timing
 let questionStartTime;
 let timerInterval;
-let currentRoundTime = 15000; // Default, but changes per question
-const DEFAULT_TIME_SEC = 15; 
+// ⚠️ CHANGED: Default time is now 30 seconds (30000 ms)
+const DEFAULT_TIME_LIMIT = 30000; 
 
 // ==========================================
 // 2. DOM ELEMENTS
@@ -28,21 +26,17 @@ const screens = {
 const pinInput = document.getElementById('pin-input');
 const startBtn = document.getElementById('start-btn');
 const errorMsg = document.getElementById('error-msg');
-
 const scoreDisplay = document.getElementById('score-display');
 const enemyHPFill = document.getElementById('enemy-hp-fill');
 const playerHPFill = document.getElementById('player-hp-fill');
-
 const playerSprite = document.getElementById('player-sprite');
-const nianSprite = document.getElementById('nian-sprite');
-const fireball = document.getElementById('fireball'); 
-const darkOrb = document.getElementById('dark-orb'); 
+const enemySprite = document.getElementById('enemy-sprite'); // Horse Theme
+const fireball = document.getElementById('fireball');
+const enemyProjectile = document.getElementById('enemy-projectile'); // Horse Theme
 const explosion = document.getElementById('explosion');
-
 const comboDisplay = document.getElementById('combo-display');
 const critDisplay = document.getElementById('crit-display');
 const missDisplay = document.getElementById('miss-display');
-
 const timerFill = document.getElementById('timer-fill');
 const qText = document.getElementById('q-text');
 const optionsContainer = document.getElementById('options-container');
@@ -52,7 +46,9 @@ const qProgress = document.getElementById('q-progress');
 // 3. LISTENERS
 // ==========================================
 startBtn.addEventListener('click', attemptLogin);
-pinInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') attemptLogin(); });
+pinInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') attemptLogin();
+});
 
 // ==========================================
 // 4. LOGIN & SETUP
@@ -63,7 +59,6 @@ async function attemptLogin() {
         showError("Please enter a Mission Code.");
         return;
     }
-
     try {
         const response = await fetch(`worksheets/${pin}.json`);
         if (!response.ok) throw new Error("Code not found or server error.");
@@ -87,24 +82,21 @@ function showError(msg) {
 }
 
 function startGame() {
-    // 1. Shuffle & Select 12
     shuffleArray(allQuestions);
-    gameQuestions = allQuestions.slice(0, 12);
-
-    // 2. Reset Stats
+    gameQuestions = allQuestions.slice(0, Math.min(12, allQuestions.length));
+    
     currentIdx = 0;
     score = 0;
     enemyHP = 100;
     playerHP = 100;
     combo = 0;
-    
-    // 3. Update UI
+    maxCombo = 0;
+
     updateBars();
     scoreDisplay.textContent = "0";
     screens.login.classList.add('hidden');
     screens.battle.classList.remove('hidden');
 
-    // 4. Load First Question
     loadQuestion();
 }
 
@@ -123,35 +115,28 @@ function loadQuestion() {
         endGame("Victory");
         return;
     }
-
     const q = gameQuestions[currentIdx];
-    
-    // --- SET TIME LIMIT ---
-    // Use JSON time if exists, otherwise default to 15s
-    const seconds = q.time ? parseInt(q.time) : DEFAULT_TIME_SEC;
-    currentRoundTime = seconds * 1000;
 
-    // UI Updates
     qText.textContent = q.question;
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
-    
-    // Hide FX
+
     comboDisplay.classList.add('hidden');
     critDisplay.classList.add('hidden');
     missDisplay.classList.add('hidden');
-    
-    // Reset Timer Visuals
+
     clearInterval(timerInterval);
     questionStartTime = Date.now();
+    
+    // ⚠️ CHANGED: Variable Timer Logic
+    // If q.time exists (in seconds), use it. Otherwise use default (30s).
+    const currentLimit = q.time ? q.time * 1000 : DEFAULT_TIME_LIMIT;
+    
     timerFill.style.width = '100%';
     timerFill.style.background = '#00e676';
-    
-    // Start Interval
+
     timerInterval = setInterval(() => {
         const elapsed = Date.now() - questionStartTime;
-        // Calculate percentage based on dynamic currentRoundTime
-        const remainingPct = Math.max(0, 100 - (elapsed / currentRoundTime * 100));
-        
+        const remainingPct = Math.max(0, 100 - (elapsed / currentLimit * 100));
         timerFill.style.width = `${remainingPct}%`;
         
         if(remainingPct < 30) timerFill.style.background = '#d50000';
@@ -161,7 +146,6 @@ function loadQuestion() {
         }
     }, 100);
 
-    // Generate Buttons
     optionsContainer.innerHTML = '';
     q.options.forEach(opt => {
         const btn = document.createElement('button');
@@ -175,7 +159,6 @@ function loadQuestion() {
 function handleAnswer(btn, selected, correct) {
     clearInterval(timerInterval);
     disableButtons();
-
     if (selected === correct) {
         btn.classList.add('correct');
         const timeTaken = Date.now() - questionStartTime;
@@ -183,7 +166,9 @@ function handleAnswer(btn, selected, correct) {
     } else {
         btn.classList.add('wrong');
         const btns = document.querySelectorAll('.opt-btn');
-        btns.forEach(b => { if(b.textContent === correct) b.classList.add('correct'); });
+        btns.forEach(b => {
+            if(b.textContent === correct) b.classList.add('correct');
+        });
         triggerEnemyAttack();
     }
 }
@@ -202,33 +187,20 @@ function disableButtons() {
 // ==========================================
 // 6. COMBAT & ANIMATION
 // ==========================================
-
-// --- PLAYER TURN ---
 function calculatePlayerAttack(timeTaken) {
     combo++;
     if(combo > maxCombo) maxCombo = combo;
-
     const baseDmg = 100 / gameQuestions.length;
     let speedMult = 1;
     let isCrit = false;
-    
-    // DYNAMIC CRIT LOGIC:
-    // Crit if answered within the first 25% of the allotted time
-    // Slow if took longer than 75% of the allotted time
-    const critThreshold = currentRoundTime * 0.25;
-    const slowThreshold = currentRoundTime * 0.75;
 
-    if (timeTaken < critThreshold) { 
-        speedMult = 1.5; 
-        isCrit = true; 
-    }
-    else if (timeTaken > slowThreshold) { 
-        speedMult = 0.8; 
-    }
+    // Adjusted crit threshold for 30s base (10% of time)
+    if (timeTaken < 3000) { speedMult = 1.5; isCrit = true; }
+    else if (timeTaken > (DEFAULT_TIME_LIMIT * 0.8)) { speedMult = 0.8; }
 
     const totalDmg = baseDmg * speedMult * (1 + (combo * 0.1));
     const points = Math.floor(100 * speedMult * (1 + (combo * 0.1)));
-    
+
     score += points;
     scoreDisplay.textContent = score;
 
@@ -244,7 +216,6 @@ function performPlayerAnimation(damage, isCrit, callback) {
         comboDisplay.textContent = `COMBO x${combo}!`;
         comboDisplay.classList.remove('hidden');
     }
-
     fireball.classList.remove('hidden');
     fireball.classList.add('anim-shoot-right');
 
@@ -253,7 +224,7 @@ function performPlayerAnimation(damage, isCrit, callback) {
         fireball.classList.remove('anim-shoot-right');
 
         showExplosion('right');
-        nianSprite.classList.add('anim-enemy-hit');
+        enemySprite.classList.add('anim-enemy-hit');
         
         if(isCrit) {
             critDisplay.classList.remove('hidden');
@@ -261,7 +232,7 @@ function performPlayerAnimation(damage, isCrit, callback) {
         }
 
         setTimeout(() => {
-            nianSprite.classList.remove('anim-enemy-hit');
+            enemySprite.classList.remove('anim-enemy-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
             if (callback) callback();
         }, 1000);
@@ -269,17 +240,15 @@ function performPlayerAnimation(damage, isCrit, callback) {
     }, 500);
 }
 
-// --- ENEMY TURN ---
 function triggerEnemyAttack() {
     combo = 0;
     missDisplay.classList.remove('hidden');
-
-    darkOrb.classList.remove('hidden');
-    darkOrb.classList.add('anim-shoot-left');
+    enemyProjectile.classList.remove('hidden');
+    enemyProjectile.classList.add('anim-shoot-left');
 
     setTimeout(() => {
-        darkOrb.classList.add('hidden');
-        darkOrb.classList.remove('anim-shoot-left');
+        enemyProjectile.classList.add('hidden');
+        enemyProjectile.classList.remove('anim-shoot-left');
 
         showExplosion('left');
         playerSprite.classList.add('anim-player-hit');
@@ -302,7 +271,6 @@ function triggerEnemyAttack() {
     }, 500);
 }
 
-// --- SHARED UTILS ---
 function goToNextQuestion() {
     currentIdx++;
     loadQuestion();
@@ -317,7 +285,6 @@ function showExplosion(side) {
 function updateBars() {
     enemyHPFill.style.width = `${enemyHP}%`;
     playerHPFill.style.width = `${playerHP}%`;
-    
     if(playerHP < 30) playerHPFill.style.background = 'red';
     else playerHPFill.style.background = 'var(--hp-blue)';
 }
@@ -328,24 +295,25 @@ function updateBars() {
 function endGame(result) {
     screens.battle.classList.add('hidden');
     screens.end.classList.remove('hidden');
-    
     const title = document.getElementById('end-title');
     const reason = document.getElementById('end-reason');
     document.getElementById('final-score').textContent = score;
+    document.getElementById('final-combo').textContent = maxCombo;
 
+    // ⚠️ FIXED: Syntax error (===) and removed trailing spaces
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";
-        reason.textContent = "You were knocked out!";
+        reason.textContent = "The Lucky Horse galloped away!";
     } 
     else if (enemyHP <= 5) {
         title.textContent = "VICTORY!";
         title.style.color = "var(--gold)";
-        reason.textContent = "The Nian has fled!";
+        reason.textContent = "You earned the Horse's blessing! 🧧";
     } 
     else {
         title.textContent = "GAME OVER";
         title.style.color = "#aaa";
-        reason.textContent = "The Nian survived.";
+        reason.textContent = "The Horse survived. Try again!";
     }
 }
