@@ -11,8 +11,7 @@ let combo = 0;
 let maxCombo = 0;
 let questionStartTime;
 let timerInterval;
-// ⚠️ CHANGED: Default time is now 30 seconds (30000 ms)
-const DEFAULT_TIME_LIMIT = 30000; 
+const DEFAULT_TIME_LIMIT = 30000;
 
 // ==========================================
 // 2. DOM ELEMENTS
@@ -30,9 +29,9 @@ const scoreDisplay = document.getElementById('score-display');
 const enemyHPFill = document.getElementById('enemy-hp-fill');
 const playerHPFill = document.getElementById('player-hp-fill');
 const playerSprite = document.getElementById('player-sprite');
-const enemySprite = document.getElementById('enemy-sprite'); // Horse Theme
+const enemySprite = document.getElementById('enemy-sprite');
 const fireball = document.getElementById('fireball');
-const enemyProjectile = document.getElementById('enemy-projectile'); // Horse Theme
+const enemyProjectile = document.getElementById('enemy-projectile');
 const explosion = document.getElementById('explosion');
 const comboDisplay = document.getElementById('combo-display');
 const critDisplay = document.getElementById('crit-display');
@@ -62,7 +61,6 @@ async function attemptLogin() {
     try {
         const response = await fetch(`worksheets/${pin}.json`);
         if (!response.ok) throw new Error("Code not found or server error.");
-        
         const data = await response.json();
         
         if (Array.isArray(data) && data.length > 0) {
@@ -84,7 +82,6 @@ function showError(msg) {
 function startGame() {
     shuffleArray(allQuestions);
     gameQuestions = allQuestions.slice(0, Math.min(12, allQuestions.length));
-    
     currentIdx = 0;
     score = 0;
     enemyHP = 100;
@@ -116,7 +113,6 @@ function loadQuestion() {
         return;
     }
     const q = gameQuestions[currentIdx];
-
     qText.textContent = q.question;
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
@@ -126,11 +122,9 @@ function loadQuestion() {
 
     clearInterval(timerInterval);
     questionStartTime = Date.now();
-    
-    // ⚠️ CHANGED: Variable Timer Logic
-    // If q.time exists (in seconds), use it. Otherwise use default (30s).
+
     const currentLimit = q.time ? q.time * 1000 : DEFAULT_TIME_LIMIT;
-    
+
     timerFill.style.width = '100%';
     timerFill.style.background = '#00e676';
 
@@ -193,8 +187,7 @@ function calculatePlayerAttack(timeTaken) {
     const baseDmg = 100 / gameQuestions.length;
     let speedMult = 1;
     let isCrit = false;
-
-    // Adjusted crit threshold for 30s base (10% of time)
+    
     if (timeTaken < 3000) { speedMult = 1.5; isCrit = true; }
     else if (timeTaken > (DEFAULT_TIME_LIMIT * 0.8)) { speedMult = 0.8; }
 
@@ -218,7 +211,6 @@ function performPlayerAnimation(damage, isCrit, callback) {
     }
     fireball.classList.remove('hidden');
     fireball.classList.add('anim-shoot-right');
-
     setTimeout(() => {
         fireball.classList.add('hidden');
         fireball.classList.remove('anim-shoot-right');
@@ -245,7 +237,6 @@ function triggerEnemyAttack() {
     missDisplay.classList.remove('hidden');
     enemyProjectile.classList.remove('hidden');
     enemyProjectile.classList.add('anim-shoot-left');
-
     setTimeout(() => {
         enemyProjectile.classList.add('hidden');
         enemyProjectile.classList.remove('anim-shoot-left');
@@ -299,8 +290,7 @@ function endGame(result) {
     const reason = document.getElementById('end-reason');
     document.getElementById('final-score').textContent = score;
     document.getElementById('final-combo').textContent = maxCombo;
-
-    // ⚠️ FIXED: Syntax error (===) and removed trailing spaces
+    
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";

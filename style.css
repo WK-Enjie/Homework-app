@@ -12,490 +12,589 @@
     --horse-brown: #8B4513;
 }
 
-body { 
-    margin: 0; 
-    background-color: #000; 
-    font-family: 'Roboto', sans-serif; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    overflow: hidden; 
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 #game-container {
-    width: 100%; 
-    max-width: 900px; 
-    height: 100vh; 
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
     max-height: 800px;
     background: radial-gradient(circle, #4a0d0d 0%, #1a0505 100%);
-    position: relative; 
-    box-shadow: 0 0 50px rgba(255, 215, 0, 0.3); 
-    overflow: hidden; 
+    position: relative;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.3);
+    overflow: hidden;
     border: 3px solid var(--gold);
 }
 
-.screen { 
-    width: 100%; 
-    height: 100%; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    display: flex; 
-    flex-direction: column; 
+.screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.hidden { 
-    display: none !important; 
+.hidden {
+    display: none !important;
 }
 
 /* LOGIN */
-.login-box { 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: var(--gold); 
-    width: 90%; 
-    max-width: 500px; 
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--gold);
+    width: 90%;
+    max-width: 500px;
 }
 
-.login-box h1 { 
-    font-family: 'Black Ops One', cursive; 
-    font-size: 3rem; 
-    color: var(--red); 
-    text-shadow: 0 0 15px var(--gold); 
-    margin-bottom: 10px; 
+.login-box h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    color: var(--red);
+    text-shadow: 0 0 15px var(--gold);
+    margin-bottom: 10px;
 }
 
-.input-area { 
-    display: flex; 
-    gap: 10px; 
-    justify-content: center; 
-    margin-top: 30px; 
+.input-area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
     flex-wrap: wrap;
 }
 
-input { 
-    padding: 15px; 
-    font-size: 1.2rem; 
-    border-radius: 5px; 
-    border: 2px solid var(--gold); 
-    background: #111; 
-    color: white; 
-    text-align: center; 
-    width: 60%; 
+input {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid var(--gold);
+    background: #111;
+    color: white;
+    text-align: center;
+    width: 60%;
     min-width: 200px;
 }
 
-.btn { 
-    padding: 15px 30px; 
-    font-weight: bold; 
-    cursor: pointer; 
-    border: none; 
-    border-radius: 5px; 
-    font-family: 'Black Ops One'; 
-    font-size: 1.2rem; 
-    transition: 0.2s; 
+.btn {
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Black Ops One';
+    font-size: 1.2rem;
+    transition: 0.2s;
     background: linear-gradient(180deg, var(--red) 0%, #cc0000 100%);
-    color: white; 
-    box-shadow: 0 5px 0 #990000; 
+    color: white;
+    box-shadow: 0 5px 0 #990000;
 }
 
-.btn:active { 
-    transform: translateY(5px); 
-    box-shadow: none; 
+.btn:active {
+    transform: translateY(5px);
+    box-shadow: none;
 }
 
-.error { 
-    color: #ff5555; 
-    background: rgba(0,0,0,0.8); 
-    padding: 10px; 
-    margin-top: 20px; 
-    border-radius: 5px; 
-    font-weight: bold; 
-    border: 1px solid red; 
+.error {
+    color: #ff5555;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid red;
 }
 
 /* HUD */
-.hud { 
-    height: 15%; 
-    display: flex; 
-    justify-content: space-between; 
-    padding: 20px; 
-    color: white; 
-    font-family: 'Black Ops One'; 
+.hud {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    font-family: 'Black Ops One';
 }
 
-.vs-logo { 
-    font-size: 3rem; 
-    color: var(--gold); 
-    align-self: center; 
-    text-shadow: 0 0 20px var(--red); 
+.vs-logo {
+    font-size: 3rem;
+    color: var(--gold);
+    align-self: center;
+    text-shadow: 0 0 20px var(--red);
 }
 
-.enemy-hud { 
-    text-align: right; 
-    width: 40%; 
+.enemy-hud {
+    text-align: right;
+    width: 40%;
 }
 
-.player-hud { 
-    width: 40%; 
+.player-hud {
+    width: 40%;
 }
 
-.name { 
-    font-size: 1.3rem; 
-    margin-bottom: 5px; 
-    letter-spacing: 2px; 
-    text-shadow: 2px 2px 0 #000; 
+.name {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 #000;
 }
 
-.score-box { 
-    font-family: 'Roboto'; 
-    color: var(--gold); 
-    font-size: 0.9rem; 
+.score-box {
+    font-family: 'Roboto';
+    color: var(--gold);
+    font-size: 0.9rem;
     margin-top: 5px;
 }
 
-.hp-bar-container { 
-    width: 100%; 
-    height: 20px; 
-    background: #333; 
-    border: 2px solid #fff; 
-    transform: skewX(-20deg); 
-    overflow: hidden; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+.hp-bar-container {
+    width: 100%;
+    height: 20px;
+    background: #333;
+    border: 2px solid #fff;
+    transform: skewX(-20deg);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-#player-hp-fill { 
-    width: 100%; 
-    height: 100%; 
-    background: var(--hp-blue); 
-    transition: width 0.3s ease-out; 
+#player-hp-fill {
+    width: 100%;
+    height: 100%;
+    background: var(--hp-blue);
+    transition: width 0.3s ease-out;
 }
 
-#enemy-hp-fill { 
-    width: 100%; 
-    height: 100%; 
-    background: linear-gradient(90deg, var(--cny-orange), var(--horse-brown)); 
-    transition: width 0.3s ease-out; 
+#enemy-hp-fill {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--cny-orange), var(--horse-brown));
+    transition: width 0.3s ease-out;
 }
 
 /* ARENA */
-.arena { 
-    height: 45%; 
-    position: relative; 
-    border-bottom: 5px solid #5c3a21; 
-    background: linear-gradient(to bottom, transparent 80%, rgba(0,0,0,0.3) 100%); 
+.arena {
+    height: 45%;
+    position: relative;
+    border-bottom: 5px solid #5c3a21;
+    background: linear-gradient(to bottom, transparent 80%, rgba(0,0,0,0.3) 100%);
 }
 
-.fighter { 
-    position: absolute; 
-    bottom: 20px; 
-    width: 150px; 
-    height: 150px; 
-    text-align: center; 
+.fighter {
+    position: absolute;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
 }
 
-.player { 
-    left: 10%; 
+.player {
+    left: 10%;
 }
 
-.enemy { 
-    right: 10%; 
+.enemy {
+    right: 10%;
 }
 
-.avatar { 
-    font-size: 100px; 
-    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); 
-    position: relative; 
-    z-index: 2; 
+.avatar {
+    font-size: 100px;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
+    position: relative;
+    z-index: 2;
 }
 
-#enemy-sprite { 
-    animation: float 3s infinite ease-in-out; 
+#enemy-sprite {
+    animation: float 3s infinite ease-in-out;
 }
 
-.shadow { 
-    width: 100px; 
-    height: 20px; 
-    background: rgba(0,0,0,0.5); 
-    border-radius: 50%; 
-    position: absolute; 
-    bottom: 0; 
-    left: 25px; 
-    z-index: 1; 
+.shadow {
+    width: 100px;
+    height: 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    z-index: 1;
 }
 
-.aura { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    width: 130px; 
-    height: 130px; 
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%); 
-    border-radius: 50%; 
-    animation: pulse 1s infinite alternate; 
-    z-index: 0; 
+.aura {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 130px;
+    height: 130px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+    z-index: 0;
 }
 
 /* PROJECTILES */
-.projectile { 
-    position: absolute; 
-    font-size: 60px; 
-    bottom: 60px; 
-    z-index: 10; 
-    filter: drop-shadow(0 0 10px orange); 
+.projectile {
+    position: absolute;
+    font-size: 60px;
+    bottom: 60px;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px orange);
 }
 
-#fireball { 
-    left: 20%; 
+#fireball {
+    left: 20%;
 }
 
-#enemy-projectile { 
-    right: 20%; 
-    filter: drop-shadow(0 0 10px var(--gold)); 
-    font-size: 70px; 
+#enemy-projectile {
+    right: 20%;
+    filter: drop-shadow(0 0 10px var(--gold));
+    font-size: 70px;
 }
 
-.explosion { 
-    position: absolute; 
-    font-size: 120px; 
-    bottom: 40px; 
-    z-index: 20; 
-    text-shadow: 0 0 20px yellow; 
-    transform: scale(1.5); 
+.explosion {
+    position: absolute;
+    font-size: 120px;
+    bottom: 40px;
+    z-index: 20;
+    text-shadow: 0 0 20px yellow;
+    transform: scale(1.5);
 }
 
 /* COMBAT TEXT */
-.combo-text { 
-    position: absolute; 
-    top: 20%; 
-    left: 10%; 
-    font-family: 'Black Ops One'; 
-    font-size: 4rem; 
-    color: var(--gold); 
-    transform: rotate(-10deg); 
-    text-shadow: 5px 5px 0 #000; 
-    animation: popIn 0.3s; 
-    pointer-events: none; 
-    z-index: 50; 
+.combo-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-family: 'Black Ops One';
+    font-size: 4rem;
+    color: var(--gold);
+    transform: rotate(-10deg);
+    text-shadow: 5px 5px 0 #000;
+    animation: popIn 0.3s;
+    pointer-events: none;
+    z-index: 50;
 }
 
-.crit-text { 
-    position: absolute; 
-    top: 40%; 
-    right: 20%; 
-    font-family: 'Black Ops One'; 
-    font-size: 3rem; 
-    color: #ff0055; 
-    text-shadow: 2px 2px 0 white; 
-    z-index: 50; 
-    animation: shake 0.5s; 
-    pointer-events: none; 
+.crit-text {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    font-family: 'Black Ops One';
+    font-size: 3rem;
+    color: #ff0055;
+    text-shadow: 2px 2px 0 white;
+    z-index: 50;
+    animation: shake 0.5s;
+    pointer-events: none;
 }
 
-.miss { 
-    color: #aaa; 
-    text-shadow: 2px 2px 0 #000; 
-    left: 20%; 
+.miss {
+    color: #aaa;
+    text-shadow: 2px 2px 0 #000;
+    left: 20%;
 }
 
 /* CONTROL PANEL */
-.control-panel { 
-    height: 40%; 
-    background: #f4f4f4; 
-    border-top: 5px solid var(--gold); 
-    display: flex; 
-    flex-direction: column; 
+.control-panel {
+    height: 40%;
+    background: #f4f4f4;
+    border-top: 5px solid var(--gold);
+    display: flex;
+    flex-direction: column;
 }
 
-.timer-strip { 
-    height: 10px; 
-    background: #333; 
-    width: 100%; 
+.timer-strip {
+    height: 10px;
+    background: #333;
+    width: 100%;
 }
 
-#timer-fill { 
-    height: 100%; 
-    background: var(--hp-green); 
-    width: 100%; 
-    transition: width 0.1s linear; 
+#timer-fill {
+    height: 100%;
+    background: var(--hp-green);
+    width: 100%;
+    transition: width 0.1s linear;
 }
 
-.question-box { 
-    padding: 20px; 
-    flex-grow: 1; 
-    display: flex; 
-    flex-direction: column; 
+.question-box {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.q-header { 
-    color: #666; 
-    font-weight: bold; 
-    margin-bottom: 5px; 
-    font-size: 0.9rem; 
-    letter-spacing: 1px; 
+.q-header {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
-#q-text { 
-    margin: 0 0 15px 0; 
-    color: #222; 
-    font-size: 1.3rem; 
-    line-height: 1.4; 
+#q-text {
+    margin: 0 0 15px 0;
+    color: #222;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    flex-shrink: 0;
 }
 
-.options-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 10px; 
-    flex-grow: 1; 
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex-grow: 1;
+    min-height: 0;
 }
 
-.opt-btn { 
-    background: white; 
-    border: 2px solid #ccc; 
-    border-radius: 8px; 
-    font-size: 1.1rem; 
-    font-weight: bold; 
-    cursor: pointer; 
-    box-shadow: 0 4px 0 #bbb; 
-    transition: 0.1s; 
-    color: #333; 
+.opt-btn {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #bbb;
+    transition: 0.1s;
+    color: #333;
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
 }
 
-.opt-btn:active { 
-    transform: translateY(4px); 
-    box-shadow: none; 
+.opt-btn:active {
+    transform: translateY(4px);
+    box-shadow: none;
 }
 
-.opt-btn.correct { 
-    background: #4CAF50; 
-    color: white; 
-    border-color: #388E3C; 
-    box-shadow: 0 4px 0 #1B5E20; 
+.opt-btn.correct {
+    background: #4CAF50;
+    color: white;
+    border-color: #388E3C;
+    box-shadow: 0 4px 0 #1B5E20;
 }
 
-.opt-btn.wrong { 
-    background: #F44336; 
-    color: white; 
-    border-color: #D32F2F; 
-    box-shadow: 0 4px 0 #B71C1C; 
+.opt-btn.wrong {
+    background: #F44336;
+    color: white;
+    border-color: #D32F2F;
+    box-shadow: 0 4px 0 #B71C1C;
 }
 
 /* END SCREEN */
-.victory-box { 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white; 
-    width: 100%; 
+.victory-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
 }
 
-#end-title { 
-    font-family: 'Black Ops One'; 
-    font-size: 4rem; 
-    margin: 0; 
-    text-shadow: 0 0 20px currentColor; 
+#end-title {
+    font-family: 'Black Ops One';
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 0 0 20px currentColor;
 }
 
-.stats-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 15px; 
-    max-width: 400px; 
-    margin: 30px auto; 
-    background: rgba(0,0,0,0.5); 
-    padding: 20px; 
-    border-radius: 10px; 
-    border: 2px solid var(--gold); 
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--gold);
 }
 
-.big-num { 
-    font-size: 2.5rem; 
-    color: var(--gold); 
-    font-weight: bold; 
+.big-num {
+    font-size: 2.5rem;
+    color: var(--gold);
+    font-weight: bold;
 }
 
 /* ANIMATIONS */
-@keyframes float { 
-    0%, 100% { transform: translateY(0); } 
-    50% { transform: translateY(-15px); } 
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
-@keyframes pulse { 
-    0% { opacity: 0.5; transform: scale(1); } 
-    100% { opacity: 1; transform: scale(1.2); } 
+@keyframes pulse {
+    0% { opacity: 0.5; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.2); }
 }
 
-@keyframes shootRight { 
-    0% { left: 20%; transform: rotate(0deg); opacity: 1; } 
-    100% { left: 80%; transform: rotate(360deg); opacity: 1; } 
+@keyframes shootRight {
+    0% { left: 20%; transform: rotate(0deg); opacity: 1; }
+    100% { left: 80%; transform: rotate(360deg); opacity: 1; }
 }
 
-@keyframes shootLeft { 
-    0% { right: 20%; transform: rotate(0deg); opacity: 1; } 
-    100% { right: 80%; transform: rotate(-360deg); opacity: 1; } 
+@keyframes shootLeft {
+    0% { right: 20%; transform: rotate(0deg); opacity: 1; }
+    100% { right: 80%; transform: rotate(-360deg); opacity: 1; }
 }
 
-@keyframes shake { 
-    0% { transform: translate(0); } 
-    25% { transform: translate(-5px, 5px); } 
-    75% { transform: translate(5px, -5px); } 
-    100% { transform: translate(0); } 
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 5px); }
+    75% { transform: translate(5px, -5px); }
+    100% { transform: translate(0); }
 }
 
-@keyframes hitEffect { 
-    0% { filter: hue-rotate(0deg); } 
-    20% { filter: hue-rotate(90deg) brightness(2); transform: translateX(20px); } 
-    100% { filter: hue-rotate(0deg); transform: translateX(0); } 
+@keyframes hitEffect {
+    0% { filter: hue-rotate(0deg); }
+    20% { filter: hue-rotate(90deg) brightness(2); transform: translateX(20px); }
+    100% { filter: hue-rotate(0deg); transform: translateX(0); }
 }
 
-@keyframes playerHit { 
-    0% { filter: brightness(1); } 
-    20% { filter: sepia(1) hue-rotate(-50deg) saturate(5); transform: translateX(-20px); } 
-    100% { filter: brightness(1); transform: translateX(0); } 
+@keyframes playerHit {
+    0% { filter: brightness(1); }
+    20% { filter: sepia(1) hue-rotate(-50deg) saturate(5); transform: translateX(-20px); }
+    100% { filter: brightness(1); transform: translateX(0); }
 }
 
-@keyframes popIn { 
-    from { transform: scale(0) rotate(-45deg); opacity: 0; } 
-    to { transform: scale(1) rotate(-10deg); opacity: 1; } 
+@keyframes popIn {
+    from { transform: scale(0) rotate(-45deg); opacity: 0; }
+    to { transform: scale(1) rotate(-10deg); opacity: 1; }
 }
 
 /* JS Utilities */
-.anim-shoot-right { 
-    animation: shootRight 0.5s linear forwards; 
-    display: block !important; 
+.anim-shoot-right {
+    animation: shootRight 0.5s linear forwards;
+    display: block !important;
 }
 
-.anim-shoot-left { 
-    animation: shootLeft 0.5s linear forwards; 
-    display: block !important; 
+.anim-shoot-left {
+    animation: shootLeft 0.5s linear forwards;
+    display: block !important;
 }
 
-.anim-enemy-hit { 
-    animation: hitEffect 0.4s ease-out; 
+.anim-enemy-hit {
+    animation: hitEffect 0.4s ease-out;
 }
 
-.anim-player-hit { 
-    animation: playerHit 0.4s ease-out; 
+.anim-player-hit {
+    animation: playerHit 0.4s ease-out;
 }
 
-.anim-shake-screen { 
-    animation: shake 0.5s; 
+.anim-shake-screen {
+    animation: shake 0.5s;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive - FIXED */
 @media (max-width: 600px) {
-    .login-box h1 { font-size: 2rem; }
-    .options-grid { grid-template-columns: 1fr; }
-    #q-text { font-size: 1.1rem; }
-    .avatar { font-size: 70px; }
-    .fighter { width: 100px; height: 100px; }
-    .hud { padding: 10px; }
-    .vs-logo { font-size: 2rem; }
-    #end-title { font-size: 2.5rem; }
+    #game-container {
+        max-height: 100vh;
+        border: none;
+    }
+    
+    .login-box h1 { 
+        font-size: 2rem; 
+    }
+    
+    .options-grid { 
+        grid-template-columns: 1fr 1fr; /* Keep 2 columns to save vertical space */
+        gap: 8px;
+    }
+    
+    .opt-btn {
+        font-size: 0.95rem;
+        padding: 10px 5px;
+    }
+    
+    #q-text { 
+        font-size: 1rem; 
+        margin-bottom: 10px;
+    }
+    
+    .question-box {
+        padding: 10px;
+    }
+    
+    .control-panel {
+        height: 45%; /* Give more space to options on mobile */
+    }
+    
+    .arena {
+        height: 40%; /* Reduce arena height slightly */
+    }
+    
+    .hud {
+        height: 15%;
+        padding: 10px;
+    }
+    
+    .avatar { 
+        font-size: 70px; 
+    }
+    
+    .fighter { 
+        width: 100px; 
+        height: 100px; 
+    }
+    
+    .vs-logo { 
+        font-size: 2rem; 
+    }
+    
+    .name {
+        font-size: 1rem;
+    }
+    
+    #end-title { 
+        font-size: 2.5rem; 
+    }
+    
+    .big-num {
+        font-size: 2rem;
+    }
+    
+    .crit-text {
+        font-size: 2rem;
+    }
+    
+    .combo-text {
+        font-size: 3rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .opt-btn {
+        font-size: 0.85rem;
+        padding: 8px 4px;
+    }
+    
+    #q-text {
+        font-size: 0.9rem;
+    }
+    
+    .login-box h1 {
+        font-size: 1.5rem;
+    }
+    
+    input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
 }

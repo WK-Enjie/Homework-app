@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>🧧 CNY Battle Arcade 🧧</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,9 +12,9 @@
         <div id="login-screen" class="screen">
             <div class="login-box">
                 <h1>🧧 CNY ARCADE 🧧</h1>
-                <p style="color: #fff; margin-bottom: 20px;">Defeat the Lucky Horse with Math!</p>
+                <p>Defeat the Lucky Horse with Math!</p>
                 <div class="input-area">
-                    <input type="text" id="pin-input" placeholder="Enter Mission Code">
+                    <input type="text" id="pin-input" placeholder="Enter Mission Code" maxlength="20">
                     <button id="start-btn" class="btn">START BATTLE</button>
                 </div>
                 <div id="error-msg" class="error hidden"></div>
@@ -27,37 +27,38 @@
             <div class="hud">
                 <div class="player-hud">
                     <div class="name">👦 HERO</div>
+                    <div class="score-box">SCORE: <span id="score-display">0</span></div>
                     <div class="hp-bar-container">
                         <div id="player-hp-fill"></div>
                     </div>
-                    <div class="score-box">SCORE: <span id="score-display">0</span></div>
                 </div>
                 <div class="vs-logo">VS</div>
                 <div class="enemy-hud">
                     <div class="name">🐴 LUCKY HORSE</div>
+                    <div class="score-box">COMBO: <span id="combo-display" class="hidden">0</span></div>
                     <div class="hp-bar-container">
                         <div id="enemy-hp-fill"></div>
                     </div>
-                    <div class="score-box">COMBO: <span id="combo-display" class="hidden"></span></div>
                 </div>
             </div>
 
             <!-- ARENA -->
             <div class="arena">
                 <div class="fighter player">
+                    <div class="aura"></div>
                     <div class="avatar" id="player-sprite">👦</div>
                     <div class="shadow"></div>
                 </div>
                 <div class="fighter enemy">
+                    <div class="aura"></div>
                     <div class="avatar" id="enemy-sprite">🐴</div>
                     <div class="shadow"></div>
-                    <div class="aura"></div>
                 </div>
                 <div id="fireball" class="projectile hidden">✨</div>
                 <div id="enemy-projectile" class="projectile hidden">🥕</div>
                 <div id="explosion" class="explosion hidden">💥</div>
                 <div id="crit-display" class="crit-text hidden">CRITICAL HIT!</div>
-                <div id="miss-display" class="combo-text miss hidden">MISSED!</div>
+                <div id="miss-display" class="crit-text miss hidden">MISSED!</div>
             </div>
 
             <!-- CONTROL PANEL -->
@@ -67,8 +68,10 @@
                 </div>
                 <div class="question-box">
                     <div class="q-header" id="q-progress">QUESTION 1 / 12</div>
-                    <p id="q-text">Loading...</p>
-                    <div id="options-container" class="options-grid"></div>
+                    <div id="q-text">Loading...</div>
+                    <div class="options-grid" id="options-container">
+                        <!-- Options will be injected here -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,12 +80,16 @@
         <div id="end-screen" class="screen hidden">
             <div class="victory-box">
                 <h1 id="end-title">VICTORY!</h1>
-                <p id="end-reason" style="font-size: 1.5rem; margin: 20px 0;"></p>
+                <p id="end-reason">You earned the Horse's blessing! 🧧</p>
                 <div class="stats-grid">
-                    <div>FINAL SCORE</div>
-                    <div class="big-num" id="final-score">0</div>
-                    <div>MAX COMBO</div>
-                    <div class="big-num" id="final-combo">0</div>
+                    <div>
+                        <div>FINAL SCORE</div>
+                        <div class="big-num" id="final-score">0</div>
+                    </div>
+                    <div>
+                        <div>MAX COMBO</div>
+                        <div class="big-num" id="final-combo">0</div>
+                    </div>
                 </div>
                 <button class="btn" onclick="location.reload()">PLAY AGAIN</button>
             </div>
