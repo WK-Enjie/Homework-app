@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "Calculate: 48 ÷ 6 + 12 × 3 - 15",
+    "options": ["25", "29", "33", "37"],
+    "answer": "29",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "There are 20 questions in a test. Each correct answer scores 5 points and each wrong answer deducts 2 points. John scored 72 points. How many questions did he answer correctly?",
+    "options": ["14", "15", "16", "17"],
+    "answer": "16",
+    "time": 90
+  },
+  {
+    "id": 3,
+    "question": "Tom had some money. He spent $15 on food, then gave half of the remainder to his sister. He then spent $20 on a book and had $35 left. How much money did Tom have at first?",
+    "options": ["$120", "$130", "$140", "$150"],
+    "answer": "$130",
+    "time": 90
+  },
+  {
+    "id": 4,
+    "question": "A teacher has some pencils. If she gives 5 pencils to each student, she will be short of 8 pencils. If she gives 4 pencils to each student, she will have 12 pencils left. How many students are there?",
+    "options": ["16", "18", "20", "22"],
+    "answer": "20",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "question": "Find the next number in the pattern: 2, 5, 10, 17, 26, ...",
+    "options": ["35", "37", "39", "41"],
+    "answer": "37",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "There are chickens and rabbits in a farm. There are 35 heads and 94 legs altogether. How many rabbits are there?",
+    "options": ["10", "12", "14", "16"],
+    "answer": "12",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "question": "Calculate: [72 ÷ (9 - 5) + 8 × 3] - 20",
+    "options": ["18", "22", "26", "30"],
+    "answer": "22",
+    "time": 75
+  },
+  {
+    "id": 8,
+    "question": "In a class, if each student gets 6 stickers, there will be 10 stickers left. If each student gets 7 stickers, there will be 5 stickers short. How many students are in the class?",
+    "options": ["12", "13", "14", "15"],
+    "answer": "15",
+    "time": 90
+  },
+  {
+    "id": 9,
+    "question": "Mrs. Tan baked some cookies. She gave half to her neighbours, then ate 3 cookies. She then gave half of the remainder to her children and had 8 cookies left. How many cookies did she bake at first?",
+    "options": ["38", "40", "42", "44"],
+    "answer": "38",
+    "time": 90
+  },
+  {
+    "id": 10,
+    "question": "Find the next number: 1, 4, 9, 16, 25, 36, ...",
+    "options": ["42", "45", "49", "54"],
+    "answer": "49",
+    "time": 60
+  }
+]

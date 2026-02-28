@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "A student has large and small baskets in a ratio of 1:2. Each large basket holds 8 pears, each small basket holds 5 pears. Using only large baskets, there is an excess of 20 pears. Using only small baskets, there is a shortage of 10 pears. How many pears are there in all?",
+    "options": ["130", "140", "150", "160"],
+    "answer": "140",
+    "time": 120
+  },
+  {
+    "id": 2,
+    "question": "There are red and blue boxes in a ratio of 2:3. Each red box holds 6 apples, each blue box holds 4 apples. Using only red boxes, there is an excess of 30 apples. Using only blue boxes, there is a shortage of 20 apples. How many apples are there in all?",
+    "options": ["180", "200", "220", "240"],
+    "answer": "200",
+    "time": 120
+  },
+  {
+    "id": 3,
+    "question": "A shop has big and small bags in a ratio of 3:4. Each big bag holds 10 candies, each small bag holds 6 candies. Using only big bags, there is an excess of 25 candies. Using only small bags, there is a shortage of 15 candies. How many candies are there in all?",
+    "options": ["265", "275", "285", "295"],
+    "answer": "275",
+    "time": 135
+  },
+  {
+    "id": 4,
+    "question": "There are large and small trays in a ratio of 2:5. Each large tray holds 12 cookies, each small tray holds 4 cookies. Using only large trays, there is an excess of 40 cookies. Using only small trays, there is a shortage of 20 cookies. How many cookies are there in all?",
+    "options": ["280", "300", "320", "340"],
+    "answer": "300",
+    "time": 135
+  },
+  {
+    "id": 5,
+    "question": "A farmer has big and small crates in a ratio of 1:3. Each big crate holds 15 oranges, each small crate holds 4 oranges. Using only big crates, there is an excess of 30 oranges. Using only small crates, there is a shortage of 15 oranges. How many oranges are there in all?",
+    "options": ["105", "120", "135", "150"],
+    "answer": "120",
+    "time": 120
+  },
+  {
+    "id": 6,
+    "question": "There are tall and short shelves in a ratio of 3:5. Each tall shelf holds 8 books, each short shelf holds 5 books. Using only tall shelves, there is an excess of 35 books. Using only short shelves, there is a shortage of 10 books. How many books are there in all?",
+    "options": ["155", "165", "175", "185"],
+    "answer": "175",
+    "time": 135
+  },
+  {
+    "id": 7,
+    "question": "A warehouse has large and small containers in a ratio of 2:3. Each large container holds 20 kg, each small container holds 12 kg. Using only large containers, there is an excess of 50 kg. Using only small containers, there is a shortage of 30 kg. How many kg of goods are there in all?",
+    "options": ["290", "310", "330", "350"],
+    "answer": "310",
+    "time": 150
+  },
+  {
+    "id": 8,
+    "question": "There are big and small jars in a ratio of 1:4. Each big jar holds 25 marbles, each small jar holds 5 marbles. Using only big jars, there is an excess of 40 marbles. Using only small jars, there is a shortage of 20 marbles. How many marbles are there in all?",
+    "options": ["140", "150", "160", "170"],
+    "answer": "160",
+    "time": 135
+  },
+  {
+    "id": 9,
+    "question": "A store has premium and regular boxes in a ratio of 3:7. Each premium box holds 10 toys, each regular box holds 4 toys. Using only premium boxes, there is an excess of 45 toys. Using only regular boxes, there is a shortage of 25 toys. How many toys are there in all?",
+    "options": ["255", "270", "285", "300"],
+    "answer": "270",
+    "time": 150
+  },
+  {
+    "id": 10,
+    "question": "There are large and small packets in a ratio of 2:5. Each large packet holds 18 stickers, each small packet holds 7 stickers. Using only large packets, there is an excess of 55 stickers. Using only small packets, there is a shortage of 30 stickers. How many stickers are there in all?",
+    "options": ["335", "355", "375", "395"],
+    "answer": "355",
+    "time": 150
+  }
+]

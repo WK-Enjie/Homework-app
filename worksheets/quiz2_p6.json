@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "Calculate: 3/4 + 5/8 - 1/2",
+    "options": ["5/8", "7/8", "9/8", "11/8"],
+    "answer": "7/8",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "Express 0.625 as a fraction in simplest form.",
+    "options": ["3/5", "5/8", "7/10", "11/16"],
+    "answer": "5/8",
+    "time": 60
+  },
+  {
+    "id": 3,
+    "question": "Which is larger: 3/5 or 5/8?",
+    "options": ["3/5", "5/8", "They are equal", "Cannot tell"],
+    "answer": "5/8",
+    "time": 45
+  },
+  {
+    "id": 4,
+    "question": "Calculate: 2.4 × 3.5",
+    "options": ["7.4", "8.4", "9.4", "10.4"],
+    "answer": "8.4",
+    "time": 60
+  },
+  {
+    "id": 5,
+    "question": "Convert 3.75 km to metres.",
+    "options": ["375 m", "3750 m", "37500 m", "37.5 m"],
+    "answer": "3750 m",
+    "time": 45
+  },
+  {
+    "id": 6,
+    "question": "What is 40% of 250?",
+    "options": ["80", "90", "100", "110"],
+    "answer": "100",
+    "time": 45
+  },
+  {
+    "id": 7,
+    "question": "Sarah bought 3 kg of apples at $4.50 per kg. How much did she pay?",
+    "options": ["$12.50", "$13.00", "$13.50", "$14.00"],
+    "answer": "$13.50",
+    "time": 45
+  },
+  {
+    "id": 8,
+    "question": "Calculate: 7/9 ÷ 2/3",
+    "options": ["5/6", "7/6", "9/6", "11/6"],
+    "answer": "7/6",
+    "time": 75
+  },
+  {
+    "id": 9,
+    "question": "Round off 4.5678 to 2 decimal places.",
+    "options": ["4.56", "4.57", "4.58", "4.59"],
+    "answer": "4.57",
+    "time": 45
+  },
+  {
+    "id": 10,
+    "question": "A shirt costs $80. After a 25% discount, what is the selling price?",
+    "options": ["$55", "$60", "$65", "$70"],
+    "answer": "$60",
+    "time": 60
+  }
+]

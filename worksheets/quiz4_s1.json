@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "Calculate: 3/4 + 5/8 - 1/2",
+    "options": ["5/8", "7/8", "9/8", "11/8"],
+    "answer": "7/8",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "Find the next number in the pattern: 2, 5, 10, 17, 26, ...",
+    "options": ["35", "37", "39", "41"],
+    "answer": "37",
+    "time": 60
+  },
+  {
+    "id": 3,
+    "question": "Simplify the ratio 48:72:96 to its simplest form.",
+    "options": ["2:3:4", "3:4:5", "4:5:6", "5:6:7"],
+    "answer": "2:3:4",
+    "time": 60
+  },
+  {
+    "id": 4,
+    "question": "What is 37.5% expressed as a fraction in simplest form?",
+    "options": ["3/8", "5/12", "7/16", "11/24"],
+    "answer": "3/8",
+    "time": 60
+  },
+  {
+    "id": 5,
+    "question": "If 3 apples cost $2.40, how much do 7 apples cost?",
+    "options": ["$5.20", "$5.40", "$5.60", "$5.80"],
+    "answer": "$5.60",
+    "time": 45
+  },
+  {
+    "id": 6,
+    "question": "Calculate: 2/3 × 9/10 ÷ 4/5",
+    "options": ["1/2", "3/4", "1", "5/4"],
+    "answer": "1",
+    "time": 75
+  },
+  {
+    "id": 7,
+    "question": "Find the next number: 1, 4, 9, 16, 25, ...",
+    "options": ["30", "32", "36", "40"],
+    "answer": "36",
+    "time": 45
+  },
+  {
+    "id": 8,
+    "question": "A shirt costs $80. After a 15% discount, what is the selling price?",
+    "options": ["$64", "$66", "$68", "$70"],
+    "answer": "$68",
+    "time": 60
+  },
+  {
+    "id": 9,
+    "question": "Tom is taller than Jerry. Jerry is taller than Spike. Who is the shortest?",
+    "options": ["Tom", "Jerry", "Spike", "Cannot tell"],
+    "answer": "Spike",
+    "time": 45
+  },
+  {
+    "id": 10,
+    "question": "Calculate: 1/2 + 1/4 + 1/8 + 1/16",
+    "options": ["13/16", "15/16", "17/16", "19/16"],
+    "answer": "15/16",
+    "time": 75
+  }
+]

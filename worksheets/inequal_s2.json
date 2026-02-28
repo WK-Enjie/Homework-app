@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Solve the inequality: 3x + 5 > 14",
+    "options": ["x > 3", "x > 4", "x > 5", "x > 6"],
+    "answer": "x > 3",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "Solve the inequality: 2x - 7 ≤ 11",
+    "options": ["x ≤ 7", "x ≤ 8", "x ≤ 9", "x ≤ 10"],
+    "answer": "x ≤ 9",
+    "time": 60
+  },
+  {
+    "id": 3,
+    "question": "Solve the inequality: -4x < 20",
+    "options": ["x < -5", "x > -5", "x < 5", "x > 5"],
+    "answer": "x > -5",
+    "time": 75
+  },
+  {
+    "id": 4,
+    "question": "Solve the inequality: 5(x - 2) ≥ 15",
+    "options": ["x ≥ 3", "x ≥ 4", "x ≥ 5", "x ≥ 6"],
+    "answer": "x ≥ 5",
+    "time": 75
+  },
+  {
+    "id": 5,
+    "question": "Solve the inequality: 3x + 4 < 2x + 10",
+    "options": ["x < 4", "x < 5", "x < 6", "x < 7"],
+    "answer": "x < 6",
+    "time": 75
+  },
+  {
+    "id": 6,
+    "question": "Solve the inequality: 7 - 2x > 1",
+    "options": ["x < 2", "x < 3", "x < 4", "x < 5"],
+    "answer": "x < 3",
+    "time": 75
+  },
+  {
+    "id": 7,
+    "question": "Solve the inequality: (x/3) + 2 ≤ 6",
+    "options": ["x ≤ 10", "x ≤ 12", "x ≤ 14", "x ≤ 16"],
+    "answer": "x ≤ 12",
+    "time": 75
+  },
+  {
+    "id": 8,
+    "question": "Solve the inequality: 2(x + 3) - 5 < 3x + 1",
+    "options": ["x > 0", "x > 1", "x > 2", "x > 3"],
+    "answer": "x > 0",
+    "time": 90
+  },
+  {
+    "id": 9,
+    "question": "Find the largest integer that satisfies: 4x - 3 < 25",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "time": 90
+  },
+  {
+    "id": 10,
+    "question": "Find the smallest integer that satisfies: 5x + 2 ≥ 27",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "time": 90
+  },
+  {
+    "id": 11,
+    "question": "Solve the inequality: (2x - 1)/3 > 5",
+    "options": ["x > 7", "x > 8", "x > 9", "x > 10"],
+    "answer": "x > 8",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "Solve the inequality: 3(2x - 1) ≤ 4x + 7",
+    "options": ["x ≤ 4", "x ≤ 5", "x ≤ 6", "x ≤ 7"],
+    "answer": "x ≤ 5",
+    "time": 90
+  },
+  {
+    "id": 13,
+    "question": "How many positive integers satisfy: 2x + 3 < 15?",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "time": 90
+  },
+  {
+    "id": 14,
+    "question": "Solve the inequality: 8 - 3(x - 2) ≥ 2",
+    "options": ["x ≤ 3", "x ≤ 4", "x ≤ 5", "x ≤ 6"],
+    "answer": "x ≤ 4",
+    "time": 105
+  },
+  {
+    "id": 15,
+    "question": "Solve the inequality: (x + 4)/2 - 3 > 1",
+    "options": ["x > 2", "x > 3", "x > 4", "x > 5"],
+    "answer": "x > 4",
+    "time": 105
+  },
+  {
+    "id": 16,
+    "question": "The sum of a number and 5 is less than 20. What is the largest possible integer value of the number?",
+    "options": ["13", "14", "15", "16"],
+    "answer": "14",
+    "time": 90
+  },
+  {
+    "id": 17,
+    "question": "Solve the inequality: 5 - 2x < 3x + 10",
+    "options": ["x > -1", "x > -2", "x > -3", "x > -4"],
+    "answer": "x > -1",
+    "time": 90
+  },
+  {
+    "id": 18,
+    "question": "Three times a number decreased by 7 is at least 20. What is the smallest integer value of the number?",
+    "options": ["8", "9", "10", "11"],
+    "answer": "9",
+    "time": 105
+  },
+  {
+    "id": 19,
+    "question": "A rectangle has length (x + 5) cm and width 3 cm. If the perimeter is less than 40 cm, what is the maximum integer value of x?",
+    "options": ["9", "10", "11", "12"],
+    "answer": "11",
+    "time": 120
+  },
+  {
+    "id": 20,
+    "question": "Solve the inequality: 4(2x + 1) - 3(x - 2) > 15",
+    "options": ["x > 0", "x > 1", "x > 2", "x > 3"],
+    "answer": "x > 1",
+    "time": 120
+  }
+]
