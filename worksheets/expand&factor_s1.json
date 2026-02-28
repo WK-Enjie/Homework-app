@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Expand: 4(2x - 7)",
+    "options": ["8x - 7", "8x - 28", "6x - 28", "8x - 11"],
+    "answer": "8x - 28",
+    "time": 45
+  },
+  {
+    "id": 2,
+    "question": "Expand: -3(5x + 4)",
+    "options": ["-15x + 12", "-15x - 12", "15x - 12", "-8x - 7"],
+    "answer": "-15x - 12",
+    "time": 45
+  },
+  {
+    "id": 3,
+    "question": "Expand: (x + 6)(x - 4)",
+    "options": ["x² + 2x - 24", "x² - 2x - 24", "x² + 10x - 24", "x² - 10x - 24"],
+    "answer": "x² + 2x - 24",
+    "time": 75
+  },
+  {
+    "id": 4,
+    "question": "Expand: (3x - 2)(2x + 5)",
+    "options": ["6x² + 11x - 10", "6x² + 19x - 10", "6x² + 11x + 10", "6x² - 11x - 10"],
+    "answer": "6x² + 11x - 10",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "question": "Expand and simplify: (2x + 3)²",
+    "options": ["4x² + 9", "4x² + 6x + 9", "4x² + 12x + 9", "4x² + 12x + 6"],
+    "answer": "4x² + 12x + 9",
+    "time": 75
+  },
+  {
+    "id": 6,
+    "question": "Expand and simplify: (5x - 4)²",
+    "options": ["25x² - 16", "25x² - 20x + 16", "25x² - 40x + 16", "25x² + 40x + 16"],
+    "answer": "25x² - 40x + 16",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "question": "Expand: (x + 7)(x - 7)",
+    "options": ["x² - 49", "x² + 49", "x² - 14x + 49", "x² + 14x - 49"],
+    "answer": "x² - 49",
+    "time": 60
+  },
+  {
+    "id": 8,
+    "question": "Expand: (4x + 1)(4x - 1)",
+    "options": ["16x² - 1", "16x² + 1", "8x² - 1", "16x² - 8x + 1"],
+    "answer": "16x² - 1",
+    "time": 75
+  },
+  {
+    "id": 9,
+    "question": "Factorise: 8x + 20",
+    "options": ["4(2x + 5)", "2(4x + 10)", "8(x + 20)", "4(2x + 20)"],
+    "answer": "4(2x + 5)",
+    "time": 45
+  },
+  {
+    "id": 10,
+    "question": "Factorise: 18x - 27",
+    "options": ["9(2x - 3)", "3(6x - 9)", "9(2x - 27)", "18(x - 9)"],
+    "answer": "9(2x - 3)",
+    "time": 45
+  },
+  {
+    "id": 11,
+    "question": "Factorise: x² + 9x + 20",
+    "options": ["(x + 4)(x + 5)", "(x + 2)(x + 10)", "(x + 1)(x + 20)", "(x + 3)(x + 6)"],
+    "answer": "(x + 4)(x + 5)",
+    "time": 75
+  },
+  {
+    "id": 12,
+    "question": "Factorise: x² - 11x + 24",
+    "options": ["(x - 3)(x - 8)", "(x - 4)(x - 6)", "(x - 2)(x - 12)", "(x - 1)(x - 24)"],
+    "answer": "(x - 3)(x - 8)",
+    "time": 90
+  },
+  {
+    "id": 13,
+    "question": "Factorise: x² + 3x - 28",
+    "options": ["(x + 7)(x - 4)", "(x - 7)(x + 4)", "(x + 14)(x - 2)", "(x - 14)(x + 2)"],
+    "answer": "(x + 7)(x - 4)",
+    "time": 90
+  },
+  {
+    "id": 14,
+    "question": "Factorise: x² - 5x - 36",
+    "options": ["(x - 9)(x + 4)", "(x + 9)(x - 4)", "(x - 6)(x + 6)", "(x - 12)(x + 3)"],
+    "answer": "(x - 9)(x + 4)",
+    "time": 105
+  },
+  {
+    "id": 15,
+    "question": "Factorise: 9x² - 16",
+    "options": ["(3x - 4)(3x - 4)", "(3x + 4)(3x - 4)", "(9x - 4)(x + 4)", "(9x + 4)(x - 4)"],
+    "answer": "(3x + 4)(3x - 4)",
+    "time": 75
+  },
+  {
+    "id": 16,
+    "question": "Factorise: 25x² - 49y²",
+    "options": ["(5x - 7y)(5x - 7y)", "(5x + 7y)(5x - 7y)", "(25x - 7y)(x + 7y)", "(5x - 49y)(5x + y)"],
+    "answer": "(5x + 7y)(5x - 7y)",
+    "time": 90
+  },
+  {
+    "id": 17,
+    "question": "Factorise: 6x² + 17x + 12",
+    "options": ["(2x + 3)(3x + 4)", "(6x + 4)(x + 3)", "(2x + 4)(3x + 3)", "(x + 6)(6x + 2)"],
+    "answer": "(2x + 3)(3x + 4)",
+    "time": 120
+  },
+  {
+    "id": 18,
+    "question": "Factorise: 4x² - 12x + 9",
+    "options": ["(2x - 3)(2x - 3)", "(4x - 3)(x - 3)", "(2x + 3)(2x - 3)", "(4x - 9)(x - 1)"],
+    "answer": "(2x - 3)(2x - 3)",
+    "time": 105
+  },
+  {
+    "id": 19,
+    "question": "Expand and simplify: 3(x + 2)² - 4(x + 1)",
+    "options": ["3x² + 8x + 8", "3x² + 12x + 8", "3x² + 8x + 12", "3x² + 10x + 8"],
+    "answer": "3x² + 8x + 8",
+    "time": 120
+  },
+  {
+    "id": 20,
+    "question": "The area of a rectangle is (x² + 11x + 28) cm². If the width is (x + 4) cm, find the length.",
+    "options": ["(x + 5) cm", "(x + 6) cm", "(x + 7) cm", "(x + 8) cm"],
+    "answer": "(x + 7) cm",
+    "time": 120
+  }
+]
