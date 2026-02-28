@@ -43,7 +43,7 @@
   },
   {
     "id": 7,
-    "question": "Calculate the interest on $5000 at 4% for 3 years.",
+    "question": "Calculate the interest on $5000 at 4% each year for 3 years.",
     "options": ["$400", "$500", "$600", "$700"],
     "answer": "$600",
     "time": 60
@@ -139,4 +139,5 @@
     "answer": "2:1",
     "time": 45
   }
+
 ]
