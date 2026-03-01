@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Amy had some money. She spent $12 on lunch, then gave 1/3 of the remainder to her brother. She then spent $18 on a toy and had $42 left. How much money did Amy have at first?",
+    "options": ["$105", "$111", "$117", "$123"],
+    "answer": "$117",
+    "time": 120
+  },
+  {
+    "id": 2,
+    "question": "There are some cats and dogs in a pet shop. There are 4 times as many cats as dogs. Each cat eats 2 cans of food daily while each dog eats 3 cans. A total of 88 cans are used daily. How many cats are there?",
+    "options": ["28", "32", "36", "40"],
+    "answer": "32",
+    "time": 150
+  },
+  {
+    "id": 3,
+    "question": "A teacher has some erasers. If she gives 6 erasers to each student, she will be short of 10 erasers. If she gives 5 erasers to each student, she will have 15 erasers left. How many students are there?",
+    "options": ["20", "22", "24", "26"],
+    "answer": "25",
+    "time": 150
+  },
+  {
+    "id": 4,
+    "question": "There are bicycles and tricycles in a park. There are 28 vehicles altogether and 68 wheels altogether. How many tricycles are there?",
+    "options": ["10", "12", "14", "16"],
+    "answer": "12",
+    "time": 150
+  },
+  {
+    "id": 5,
+    "question": "David bought some pens and pencils. Pens cost $4 each and pencils cost $2 each. He bought 18 items altogether and paid $56. How many pens did he buy?",
+    "options": ["8", "9", "10", "11"],
+    "answer": "10",
+    "time": 120
+  },
+  {
+    "id": 6,
+    "question": "A number is divided by 3, then 8 is added. The result is multiplied by 2, then 6 is subtracted. The final answer is 30. What was the original number?",
+    "options": ["21", "24", "27", "30"],
+    "answer": "27",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "question": "In a class, if each student gets 8 candies, there will be 12 candies left. If each student gets 9 candies, there will be 6 candies short. How many candies were there?",
+    "options": ["148", "152", "156", "160"],
+    "answer": "156",
+    "time": 150
+  },
+  {
+    "id": 8,
+    "question": "There are 25 questions in a test. Each correct answer scores 6 points and each wrong answer deducts 3 points. Mary scored 105 points. How many questions did she answer correctly?",
+    "options": ["18", "19", "20", "21"],
+    "answer": "20",
+    "time": 180
+  },
+  {
+    "id": 9,
+    "question": "A jar contains white and black beads. There are 5 times as many white beads as black beads. If 15 white beads are removed and 10 black beads are added, there will be equal number of white and black beads. How many white beads were there originally?",
+    "options": ["25", "30", "35", "40"],
+    "answer": "30",
+    "time": 180
+  },
+  {
+    "id": 10,
+    "question": "Mr. Lim sold some apples. He sold half of them in the morning, then sold 1/3 of the remainder in the afternoon. He had 24 apples left. How many apples did he have at first?",
+    "options": ["64", "68", "72", "76"],
+    "answer": "72",
+    "time": 120
+  },
+  {
+    "id": 11,
+    "question": "There are some $5 and $10 notes in a box. There are 30 notes altogether worth $240. How many $10 notes are there?",
+    "options": ["16", "17", "18", "19"],
+    "answer": "18",
+    "time": 120
+  },
+  {
+    "id": 12,
+    "question": "A group of students shared some stickers. If each student gets 10 stickers, there will be 8 stickers left. If each student gets 11 stickers, there will be 5 stickers short. How many stickers were there?",
+    "options": ["128", "132", "138", "142"],
+    "answer": "138",
+    "time": 150
+  },
+  {
+    "id": 13,
+    "question": "There are 4 times as many fiction books as non-fiction books in a library. After 20 fiction books and 5 non-fiction books were donated, there were 5 times as many fiction books as non-fiction books. How many fiction books were there at first?",
+    "options": ["280", "300", "320", "340"],
+    "answer": "320",
+    "time": 180
+  },
+  {
+    "id": 14,
+    "question": "Calculate: [(56 ÷ 7 + 10) × 4 - 20] ÷ 6 + 5",
+    "options": ["11", "12", "13", "14"],
+    "answer": "13",
+    "time": 90
+  },
+  {
+    "id": 15,
+    "question": "A farm has goats and sheep. There are 45 animals altogether. The goats have 40 more legs than the sheep. How many goats are there?",
+    "options": ["22", "24", "25", "26"],
+    "answer": "25",
+    "time": 180
+  },
+  {
+    "id": 16,
+    "question": "Lisa saved some money in Week 1. In Week 2, she saved 3 times as much as Week 1. In Week 3, she saved $40 more than Week 2. She saved $390 altogether in 3 weeks. How much did she save in Week 1?",
+    "options": ["60", "65", "70", "75"],
+    "answer": "70",
+    "time": 150
+  },
+  {
+    "id": 17,
+    "question": "There are some chairs in a hall. If 5 people sit on each chair, 8 people will be standing. If 6 people sit on each chair, 2 chairs will be empty. How many people are there?",
+    "options": ["98", "102", "108", "112"],
+    "answer": "108",
+    "time": 180
+  },
+  {
+    "id": 18,
+    "question": "A store sells notebooks at $5 each and folders at $3 each. Emily bought 16 items altogether. She paid $64. How many more notebooks than folders did she buy?",
+    "options": ["2", "4", "6", "8"],
+    "answer": "4",
+    "time": 120
+  },
+  {
+    "id": 19,
+    "question": "There are some yellow, red and blue marbles in a bag. There are 3 times as many yellow marbles as red marbles. There are 8 more blue marbles than red marbles. Altogether there are 88 marbles. How many yellow marbles are there?",
+    "options": ["45", "48", "51", "54"],
+    "answer": "48",
+    "time": 180
+  },
+  {
+    "id": 20,
+    "question": "Calculate: 150 - [42 ÷ (10 - 4) + 9 × 3] + (20 - 12) × 3",
+    "options": ["138", "140", "142", "144"],
+    "answer": "140",
+    "time": 90
+  }
+]
