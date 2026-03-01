@@ -1,31 +1,197 @@
-async function attemptLogin() {
-    const pin = pinInput.value.trim();
-    if (!pin) {
-        showError("Please enter a Mission Code.");
-        return;
-    }
-    try {
-        // REMOVED 'worksheets/' folder from the path
-        const response = await fetch(`${pin}.json`);
-        if (!response.ok) throw new Error("Code not found. Did you type 'mol_s3'?");
-        
-        let data = await response.json();
-        
-        // SAFETY: Clean the keys in case of trailing spaces in the JSON file
-        if (Array.isArray(data)) {
-            data = data.map(obj => {
-                const cleanObj = {};
-                for (let key in obj) {
-                    cleanObj[key.trim()] = obj[key];
-                }
-                return cleanObj;
-            });
-            allQuestions = data;
-            startGame();
-        } else {
-            throw new Error("Invalid data format.");
-        }
-    } catch (err) {
-        showError("Error: " + err.message);
-    }
-}
+[
+  {
+   "id": 1,
+   "question": "Zinc reacts with hydrochloric acid: Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g). If 0.10 mol of Zn is added to 0.15 mol of HCl, which reactant is limiting?",
+   "options": [
+    "Zinc",
+    "Hydrochloric acid",
+    "Both react completely",
+    "Neither reacts"
+   ],
+   "answer": "Hydrochloric acid",
+   "time": 90,
+   "explanation": "From the equation, 1 mol Zn needs 2 mol HCl. 0.10 mol Zn would need 0.20 mol HCl, but only 0.15 mol is available. HCl is used up first, so it is limiting."
+  },
+  {
+   "id": 2,
+   "question": "Hydrogen and oxygen react: 2H₂(g) + O₂(g) → 2H₂O(l). If 48 dm³ of H₂ reacts with 12 dm³ of O₂ at r.t.p., what is the total volume of gas remaining after the reaction? [1 mol gas = 24 dm³ at r.t.p.; H₂O is liquid at r.t.p.]",
+   "options": [
+    "12 dm³",
+    "24 dm³",
+    "36 dm³",
+    "48 dm³"
+   ],
+   "answer": "24 dm³",
+   "time": 120,
+   "explanation": "Volume ratio H₂:O₂ = 2:1. 12 dm³ O₂ needs 24 dm³ H₂. H₂ used = 24 dm³, excess H₂ = 48 - 24 = 24 dm³. H₂O is liquid, so only excess H₂ remains as gas. Total gas = 24 dm³."
+  },
+  {
+   "id": 3,
+   "question": "25.0 cm³ of 0.20 mol/dm³ NaOH reacts with 20.0 cm³ of 0.15 mol/dm³ HCl: NaOH + HCl → NaCl + H₂O. Which reactant is limiting?",
+   "options": [
+    "Sodium hydroxide",
+    "Hydrochloric acid",
+    "Both react completely",
+    "Cannot be determined"
+   ],
+   "answer": "Hydrochloric acid",
+   "time": 120,
+   "explanation": "Moles NaOH = 0.20 × 0.025 = 0.0050 mol. Moles HCl = 0.15 × 0.020 = 0.0030 mol. Ratio is 1:1, so HCl (0.0030 mol) is limiting as less is available."
+  },
+  {
+   "id": 4,
+   "question": "Methane burns: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l). If 12 dm³ of CH₄ reacts with 40 dm³ of O₂ at r.t.p., what is the total volume of gas after the reaction? [H₂O is liquid at r.t.p.]",
+   "options": [
+    "16 dm³",
+    "28 dm³",
+    "40 dm³",
+    "52 dm³"
+   ],
+   "answer": "28 dm³",
+   "time": 150,
+   "explanation": "Volume ratio CH₄:O₂ = 1:2. 12 dm³ CH₄ needs 24 dm³ O₂. O₂ is in excess by 40 - 24 = 16 dm³. CO₂ produced = 12 dm³ (1:1 with CH₄). Total gas = excess O₂ (16 dm³) + CO₂ (12 dm³) = 28 dm³."
+  },
+  {
+   "id": 5,
+   "question": "Magnesium reacts with sulfuric acid: Mg(s) + H₂SO₄(aq) → MgSO₄(aq) + H₂(g). If 0.05 mol Mg reacts with 0.03 mol H₂SO₄, what is the maximum moles of H₂ produced?",
+   "options": [
+    "0.02 mol",
+    "0.03 mol",
+    "0.05 mol",
+    "0.08 mol"
+   ],
+   "answer": "0.03 mol",
+   "time": 90,
+   "explanation": "Ratio Mg:H₂SO₄:H₂ = 1:1:1. H₂SO₄ (0.03 mol) is limiting. Maximum H₂ = moles of limiting reactant = 0.03 mol."
+  },
+  {
+   "id": 6,
+   "question": "Nitrogen and hydrogen react: N₂(g) + 3H₂(g) → 2NH₃(g). If 28 g of N₂ reacts with 6.0 g of H₂, what is the total volume of gas after the reaction at r.t.p.? [Ar: N=14, H=1; 1 mol = 24 dm³]",
+   "options": [
+    "24 dm³",
+    "48 dm³",
+    "72 dm³",
+    "96 dm³"
+   ],
+   "answer": "48 dm³",
+   "time": 180,
+   "explanation": "Moles N₂ = 28/28 = 1.0 mol. Moles H₂ = 6.0/2 = 3.0 mol. Ratio N₂:H₂ = 1:3, so exact stoichiometric amounts. Both fully react. NH₃ produced = 2.0 mol. Volume = 2.0 × 24 = 48 dm³. No excess gas remains."
+  },
+  {
+   "id": 7,
+   "question": "Ethene burns: C₂H₄(g) + 3O₂(g) → 2CO₂(g) + 2H₂O(l). If 10 dm³ of C₂H₄ reacts with 50 dm³ of O₂ at r.t.p., what is the total volume of gas after reaction? [H₂O is liquid]",
+   "options": [
+    "20 dm³",
+    "40 dm³",
+    "50 dm³",
+    "70 dm³"
+   ],
+   "answer": "40 dm³",
+   "time": 150,
+   "explanation": "Volume ratio C₂H₄:O₂ = 1:3. 10 dm³ C₂H₄ needs 30 dm³ O₂. Excess O₂ = 50 - 30 = 20 dm³. CO₂ produced = 2 × 10 = 20 dm³ (ratio 1:2). Total gas = 20 + 20 = 40 dm³."
+  },
+  {
+   "id": 8,
+   "question": "50.0 cm³ of 0.40 mol/dm³ HCl reacts with excess magnesium: Mg + 2HCl → MgCl₂ + H₂. What volume of H₂ is produced at r.t.p.? [1 mol gas = 24 dm³]",
+   "options": [
+    "0.24 dm³",
+    "0.48 dm³",
+    "1.20 dm³",
+    "2.40 dm³"
+   ],
+   "answer": "0.24 dm³",
+   "time": 120,
+   "explanation": "Moles HCl = 0.40 × 0.050 = 0.020 mol. Ratio 2HCl:1H₂, so moles H₂ = 0.020/2 = 0.010 mol. Volume = 0.010 × 24 = 0.24 dm³."
+  },
+  {
+   "id": 9,
+   "question": "Carbon monoxide burns: 2CO(g) + O₂(g) → 2CO₂(g). If 30 dm³ of CO reacts with 20 dm³ of O₂ at r.t.p., what is the total volume of gas after reaction?",
+   "options": [
+    "25 dm³",
+    "30 dm³",
+    "35 dm³",
+    "40 dm³"
+   ],
+   "answer": "35 dm³",
+   "time": 150,
+   "explanation": "Volume ratio CO:O₂ = 2:1. 30 dm³ CO needs 15 dm³ O₂. Excess O₂ = 20 - 15 = 5 dm³. CO₂ produced = 30 dm³ (ratio CO:CO₂ = 1:1). Total gas = excess O₂ (5 dm³) + CO₂ (30 dm³) = 35 dm³."
+  },
+  {
+   "id": 10,
+   "question": "In a titration, 20.0 cm³ of H₂SO₄ reacts with 25.0 cm³ of 0.20 mol/dm³ NaOH: 2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O. What is the concentration of H₂SO₄?",
+   "options": [
+    "0.10 mol/dm³",
+    "0.125 mol/dm³",
+    "0.20 mol/dm³",
+    "0.25 mol/dm³"
+   ],
+   "answer": "0.125 mol/dm³",
+   "time": 150,
+   "explanation": "Moles NaOH = 0.20 × 0.025 = 0.0050 mol. Ratio NaOH:H₂SO₄ = 2:1, so moles H₂SO₄ = 0.0050/2 = 0.0025 mol. Concentration = 0.0025/0.020 = 0.125 mol/dm³."
+  },
+  {
+   "id": 11,
+   "question": "Ammonia synthesis: N₂(g) + 3H₂(g) → 2NH₃(g). If 1.0 mol N₂ is mixed with 2.0 mol H₂, what is the total moles of gas after the reaction is complete?",
+   "options": [
+    "1.33 mol",
+    "1.67 mol",
+    "2.00 mol",
+    "2.33 mol"
+   ],
+   "answer": "1.67 mol",
+   "time": 180,
+   "explanation": "Ratio N₂:H₂ = 1:3. 1.0 mol N₂ needs 3.0 mol H₂, but only 2.0 mol H₂ available, so H₂ is limiting. 2.0 mol H₂ reacts with 2/3 = 0.67 mol N₂, producing 4/3 = 1.33 mol NH₃. Excess N₂ = 1.0 - 0.67 = 0.33 mol. Total gas = excess N₂ (0.33) + NH₃ (1.33) = 1.67 mol."
+  },
+  {
+   "id": 12,
+   "question": "A metal M reacts with hydrochloric acid: M(s) + 2HCl(aq) → MCl₂(aq) + H₂(g). 2.4 g of M reacts with excess HCl to produce 2.4 dm³ of H₂ at r.t.p. What is the Aᵣ of M? [1 mol gas = 24 dm³]",
+   "options": [
+    "12",
+    "24",
+    "40",
+    "56"
+   ],
+   "answer": "24",
+   "time": 150,
+   "explanation": "Moles H₂ = 2.4/24 = 0.10 mol. Ratio M:H₂ = 1:1, so moles M = 0.10 mol. Aᵣ = mass/moles = 2.4/0.10 = 24. Metal M is magnesium."
+  },
+  {
+   "id": 13,
+   "question": "Propane burns: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l). If 20 dm³ of C₃H reacts with 120 dm³ of O₂ at r.t.p., what is the total volume of gas after reaction? [H₂O is liquid]",
+   "options": [
+    "60 dm³",
+    "80 dm³",
+    "100 dm³",
+    "120 dm³"
+   ],
+   "answer": "80 dm³",
+   "time": 180,
+   "explanation": "Volume ratio C₃H:O₂ = 1:5. 20 dm³ C₃H₈ needs 100 dm³ O₂. Excess O₂ = 120 - 100 = 20 dm³. CO₂ produced = 3 × 20 = 60 dm³ (ratio 1:3). Total gas = excess O₂ (20) + CO₂ (60) = 80 dm³."
+  },
+  {
+   "id": 14,
+   "question": "Iron reacts with copper(II) sulfate: Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s). If 5.6 g Fe is added to 100 cm³ of 0.50 mol/dm³ CuSO₄, what mass of Cu is produced? [Ar: Fe=56, Cu=64]",
+   "options": [
+    "3.2 g",
+    "6.4 g",
+    "12.8 g",
+    "64 g"
+   ],
+   "answer": "3.2 g",
+   "time": 180,
+   "explanation": "Moles Fe = 5.6/56 = 0.10 mol. Moles CuSO₄ = 0.50 × 0.100 = 0.050 mol. Ratio 1:1, so CuSO₄ is limiting. Moles Cu = 0.050 mol. Mass Cu = 0.050 × 64 = 3.2 g."
+  },
+  {
+   "id": 15,
+   "question": "Hydrogen sulfide burns: 2H₂S(g) + 3O₂(g) → 2SO₂(g) + 2H₂O(l). If 24 dm³ of H₂S reacts with 48 dm³ of O₂ at r.t.p., what is the total volume of gas after reaction? [H₂O is liquid]",
+   "options": [
+    "16 dm³",
+    "32 dm³",
+    "36 dm³",
+    "48 dm³"
+   ],
+   "answer": "36 dm³",
+   "time": 180,
+   "explanation": "Volume ratio H₂S:O₂ = 2:3. 24 dm³ H₂S needs (3/2)×24 = 36 dm³ O₂. Excess O₂ = 48 - 36 = 12 dm³. SO₂ produced = 24 dm³ (ratio H₂S:SO₂ = 1:1). Total gas = excess O₂ (12) + SO₂ (24) = 36 dm³."
+  }
+]
