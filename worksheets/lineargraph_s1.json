@@ -1,107 +1,107 @@
 [
   {
     "id": 1,
-    "question": "Find the gradient of the line passing through points A(1, 3) and B(4, 9).",
-    "options": ["1.5", "2", "2.5", "3"],
-    "answer": "2",
+    "question": "Find the equation of the straight line passing through points A(1, 2) and B(3, 8).",
+    "options": ["y = 3x - 1", "y = 3x + 1", "y = 2x + 1", "y = 4x - 2"],
+    "answer": "y = 3x - 1",
     "time": 180
   },
   {
     "id": 2,
-    "question": "What is the gradient of the line with equation y = 3x - 5?",
-    "options": ["5", "-5", "3", "-3"],
-    "answer": "3",
+    "question": "A line has gradient 2 and y-intercept -3. What is its equation?",
+    "options": ["y = 2x - 3", "y = 2x + 3", "y = -2x - 3", "y = 3x - 2"],
+    "answer": "y = 2x - 3",
     "time": 180
   },
   {
     "id": 3,
-    "question": "A line has equation y = -2x + 7. What is its y-intercept?",
-    "options": ["2", "-2", "7", "-7"],
-    "answer": "7",
+    "question": "Find the equation of the line passing through (0, 4) and (2, 10).",
+    "options": ["y = 3x + 4", "y = 3x + 2", "y = 2x + 4", "y = 4x + 3"],
+    "answer": "y = 3x + 4",
     "time": 180
   },
   {
     "id": 4,
-    "question": "The point (3, k) lies on the line y = 2x + 1. Find the value of k.",
+    "question": "The line has equation y = 2x + 5. Find the value of x when y = 15.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "time": 180
+  },
+  {
+    "id": 5,
+    "question": "The line has equation y = -3x + 9. Find the value of y when x = 4.",
+    "options": ["-3", "3", "-12", "21"],
+    "answer": "-3",
+    "time": 180
+  },
+  {
+    "id": 6,
+    "question": "Find the x-intercept of the line y = 4x - 8.",
+    "options": ["2", "-2", "4", "-4"],
+    "answer": "2",
+    "time": 180
+  },
+  {
+    "id": 7,
+    "question": "Find the y-intercept of the line 3x + 2y = 12.",
+    "options": ["4", "6", "8", "12"],
+    "answer": "6",
+    "time": 180
+  },
+  {
+    "id": 8,
+    "question": "The line has equation 2x + y = 10. What are its x-intercept and y-intercept?",
+    "options": ["x = 5, y = 10", "x = 10, y = 5", "x = 2, y = 10", "x = 5, y = 2"],
+    "answer": "x = 5, y = 10",
+    "time": 180
+  },
+  {
+    "id": 9,
+    "question": "A taxi charges a flag-down fare of $3.50 and $0.80 per km. The total fare $F for travelling d km is F = 0.8d + 3.5. If a passenger pays $11.50, how many km did they travel?",
+    "options": ["8 km", "9 km", "10 km", "11 km"],
+    "answer": "10 km",
+    "time": 180
+  },
+  {
+    "id": 10,
+    "question": "A line has x-intercept 4 and y-intercept -2. What is its equation?",
+    "options": ["y = 0.5x - 2", "y = 0.5x + 2", "y = 2x - 2", "y = -0.5x - 2"],
+    "answer": "y = 0.5x - 2",
+    "time": 180
+  },
+  {
+    "id": 11,
+    "question": "The point (3, k) lies on the line y = 4x - 5. Find the value of k.",
     "options": ["5", "6", "7", "8"],
     "answer": "7",
     "time": 180
   },
   {
-    "id": 5,
-    "question": "Find the gradient of the line passing through P(-1, 4) and Q(3, -4).",
-    "options": ["-1", "-2", "2", "4"],
-    "answer": "-2",
-    "time": 180
-  },
-  {
-    "id": 6,
-    "question": "Which point lies on the line y = x + 2?",
-    "options": ["(1, 2)", "(2, 3)", "(3, 6)", "(4, 5)"],
-    "answer": "(2, 3)",
-    "time": 180
-  },
-  {
-    "id": 7,
-    "question": "A line has gradient 4 and passes through (0, -3). What is its equation?",
-    "options": ["y = 4x - 3", "y = 4x + 3", "y = -4x - 3", "y = -4x + 3"],
-    "answer": "y = 4x - 3",
-    "time": 180
-  },
-  {
-    "id": 8,
-    "question": "The equation of a line is 2y = 6x + 4. What is its gradient?",
-    "options": ["2", "3", "4", "6"],
-    "answer": "3",
-    "time": 180
-  },
-  {
-    "id": 9,
-    "question": "Find the value of y when x = -2 in the equation y = 3x + 5.",
-    "options": ["-11", "-1", "1", "11"],
-    "answer": "-1",
-    "time": 180
-  },
-  {
-    "id": 10,
-    "question": "A line passes through (2, 5) and (2, 9). What is its gradient?",
-    "options": ["0", "1", "undefined", "2"],
-    "answer": "undefined",
-    "time": 180
-  },
-  {
-    "id": 11,
-    "question": "Which equation represents a line parallel to y = 2x + 1?",
-    "options": ["y = 2x - 3", "y = -2x + 1", "y = 0.5x + 1", "y = -0.5x - 3"],
-    "answer": "y = 2x - 3",
-    "time": 180
-  },
-  {
     "id": 12,
-    "question": "The point (k, 8) lies on the line y = 2x. Find the value of k.",
+    "question": "The line has equation 5x - 2y = 20. Find its y-intercept.",
+    "options": ["-10", "10", "-4", "4"],
+    "answer": "-10",
+    "time": 180
+  },
+  {
+    "id": 13,
+    "question": "Find the equation of the line parallel to y = 3x + 1 that passes through (0, -4).",
+    "options": ["y = 3x - 4", "y = 3x + 4", "y = -3x - 4", "y = 4x - 3"],
+    "answer": "y = 3x - 4",
+    "time": 180
+  },
+  {
+    "id": 14,
+    "question": "The line has equation y = -2x + 8. Find the value of x when y = 0.",
     "options": ["2", "4", "6", "8"],
     "answer": "4",
     "time": 180
   },
   {
-    "id": 13,
-    "question": "A rectangle has vertices at (1, 1), (5, 1), (5, 4), and (1, 4). What is its area?",
-    "options": ["8 square units", "10 square units", "12 square units", "15 square units"],
-    "answer": "12 square units",
-    "time": 180
-  },
-  {
-    "id": 14,
-    "question": "Find the y-intercept of the line passing through (0, 3) and (4, 11).",
-    "options": ["1", "2", "3", "4"],
-    "answer": "3",
-    "time": 180
-  },
-  {
     "id": 15,
-    "question": "The line y = mx + 2 passes through the point (3, 11). Find the value of m.",
-    "options": ["2", "3", "4", "5"],
-    "answer": "3",
+    "question": "A line passes through (2, 7) and has y-intercept 3. Find its equation.",
+    "options": ["y = 2x + 3", "y = 2x - 3", "y = 3x + 2", "y = 4x + 3"],
+    "answer": "y = 2x + 3",
     "time": 180
   }
 ]
