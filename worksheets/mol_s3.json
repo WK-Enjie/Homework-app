@@ -157,7 +157,7 @@
   },
   {
    "id ": 13,
-   "question ":  "Propane burns: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l). If 20 dm³ of C₃H₈ reacts with 120 dm³ of O₂ at r.t.p., what is the total volume of gas after reaction? [H₂O is liquid] ",
+   "question ":  "Propane burns: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l). If 20 dm³ of C₃H reacts with 120 dm³ of O₂ at r.t.p., what is the total volume of gas after reaction? [H₂O is liquid] ",
    "options ": [
     "60 dm³",
     "80 dm³",
@@ -166,7 +166,7 @@
    ],
    "answer ":  "80 dm³",
    "time ": 180,
-   "explanation ":  "Volume ratio C₃H₈:O₂ = 1:5. 20 dm³ C₃H₈ needs 100 dm³ O₂. Excess O₂ = 120 - 100 = 20 dm³. CO₂ produced = 3 × 20 = 60 dm³ (ratio 1:3). Total gas = excess O₂ (20) + CO₂ (60) = 80 dm³."
+   "explanation ":  "Volume ratio C₃H:O₂ = 1:5. 20 dm³ C₃H₈ needs 100 dm³ O₂. Excess O₂ = 120 - 100 = 20 dm³. CO₂ produced = 3 × 20 = 60 dm³ (ratio 1:3). Total gas = excess O₂ (20) + CO₂ (60) = 80 dm³."
   },
   {
    "id ": 14,
