@@ -30,6 +30,7 @@ const explosion = document.getElementById('explosion');
 const comboDisplay = document.getElementById('combo-display');
 const critDisplay = document.getElementById('crit-display');
 const missDisplay = document.getElementById('miss-display');
+const healDisplay = document.getElementById('heal-display');
 const timerFill = document.getElementById('timer-fill');
 const qText = document.getElementById('q-text');
 const optionsContainer = document.getElementById('options-container');
@@ -102,6 +103,9 @@ function loadQuestion() {
     qText.textContent = q.question ? q.question.trim() : "Loading...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
+    // Automatically shrink font size for exceptionally long questions
+    adjustQuestionFontSize();
+
     comboDisplay.classList.add('hidden');
     critDisplay.classList.add('hidden');
     missDisplay.classList.add('hidden');
@@ -139,12 +143,23 @@ function loadQuestion() {
             optionsContainer.appendChild(btn);
         });
         
-        // Dynamic text scaling for long answers on small screens
-        setTimeout(adjustFontSize, 10);
+        // Shrink font for long text in options buttons
+        setTimeout(adjustOptionsFontSize, 10);
     }
 }
 
-function adjustFontSize() {
+function adjustQuestionFontSize() {
+    const qLength = qText.textContent.length;
+    if (qLength > 120) {
+        qText.style.fontSize = '0.85rem';
+    } else if (qLength > 60) {
+        qText.style.fontSize = '0.95rem';
+    } else {
+        qText.style.fontSize = ''; // Reset to CSS default
+    }
+}
+
+function adjustOptionsFontSize() {
     const btns = document.querySelectorAll('.opt-btn');
     btns.forEach(btn => {
         if (btn.textContent.length > 25) {
@@ -202,11 +217,28 @@ function calculatePlayerAttack(timeTaken) {
     score += points;
     scoreDisplay.textContent = score;
 
+    // Trigger 5-Combo Buff Mechanic
+    if (combo > 0 && combo % 5 === 0) {
+        playerHP = Math.min(100, playerHP + 20); // Heal 20 HP, capped at 100
+        showComboBuffText("COMBO HEAL! +20 HP");
+    }
+
     performPlayerAnimation(totalDmg, isCrit, () => {
         enemyHP = Math.max(0, enemyHP - totalDmg);
         updateBars();
         goToNextQuestion();
     });
+}
+
+function showComboBuffText(msg) {
+    healDisplay.textContent = msg;
+    healDisplay.classList.remove('hidden');
+    healDisplay.classList.add('anim-float-up');
+    
+    setTimeout(() => {
+        healDisplay.classList.add('hidden');
+        healDisplay.classList.remove('anim-float-up');
+    }, 1200);
 }
 
 function performPlayerAnimation(damage, isCrit, callback) {
@@ -271,7 +303,7 @@ function goToNextQuestion() {
     setTimeout(() => {
         currentIdx++;
         loadQuestion();
-    }, 400); // Small delay to let user see the correct answer
+    }, 400);
 }
 
 function showExplosion(side) {
