@@ -1,0 +1,197 @@
+[
+  {
+   "id ": 1,
+   "question ":  "Which statement correctly describes the trend in melting points down Group 1 (alkali metals)? ",
+   "options ": [
+    "Melting points increase down the group",
+    "Melting points decrease down the group",
+    "Melting points remain constant down the group",
+    "Melting points first increase then decrease down the group"
+   ],
+   "answer ":  "Melting points decrease down the group",
+   "time ": 70,
+   "explanation ":  "Down Group 1, atoms get larger. The electrostatic forces of attraction between positive metal ions and delocalised electrons become weaker, requiring less energy to overcome, so melting points decrease."
+  },
+  {
+   "id ": 2,
+   "question ":  "Why do the melting and boiling points increase down Group 17 (halogens)? ",
+   "options ": [
+    "The covalent bonds within molecules become stronger",
+    "The molecules become larger with more electrons, increasing intermolecular forces",
+    "The atomic radius decreases down the group",
+    "The electronegativity increases down the group"
+   ],
+   "answer ":  "The molecules become larger with more electrons, increasing intermolecular forces",
+   "time ": 70,
+   "explanation ":  "Down Group 17, halogen molecules (F₂, Cl₂, Br₂, I₂) become larger with more electrons. This increases the strength of intermolecular forces (van der Waals forces) between molecules, requiring more energy to overcome."
+  },
+  {
+   "id ": 3,
+   "question ":  "Moving from left to right across Period 3, which trend is observed in metallic character? ",
+   "options ": [
+    "Metallic character increases",
+    "Metallic character decreases",
+    "Metallic character remains constant",
+    "All elements become non-metals"
+   ],
+   "answer ":  "Metallic character decreases",
+   "time ": 40,
+   "explanation ":  "Across a period, the number of valence electrons increases. Elements on the left lose electrons easily (metallic), while elements on the right tend to gain electrons (non-metallic)."
+  },
+  {
+   "id ": 4,
+   "question ":  "Which explanation best describes why sodium has a lower melting point than magnesium in the same period? ",
+   "options ": [
+    "Sodium has more valence electrons than magnesium",
+    "Magnesium has stronger metallic bonds due to 2 valence electrons per atom",
+    "Sodium has a smaller atomic radius than magnesium",
+    "Magnesium has weaker electrostatic forces than sodium"
+   ],
+   "answer ":  "Magnesium has stronger metallic bonds due to 2 valence electrons per atom",
+   "time ": 70,
+   "explanation ":  "Magnesium has 2 valence electrons per atom compared to sodium's 1. More delocalised electrons create stronger electrostatic forces of attraction between positive ions and electrons, resulting in stronger metallic bonds and higher melting point."
+  },
+  {
+   "id ": 5,
+   "question ":  "What happens to the strength of electrostatic forces of attraction in metallic bonding as you go down Group 1? ",
+   "options ": [
+    "The forces become stronger as atoms get larger",
+    "The forces become weaker as atoms get larger",
+    "The forces remain constant regardless of atomic size",
+    "The forces depend only on the number of protons"
+   ],
+   "answer ":  "The forces become weaker as atoms get larger",
+   "time ": 70,
+   "explanation ":  "Down Group 1, metal ions become larger and the delocalised electrons are further from the positive ions. The electrostatic forces of attraction weaken, requiring less energy to overcome."
+  },
+  {
+   "id ": 6,
+   "question ":  "Which statement about Group 17 elements is correct? ",
+   "options ": [
+    "Fluorine is a solid at room temperature",
+    "Bromine is a gas at room temperature",
+    "Iodine is a solid at room temperature",
+    "Chlorine is a liquid at room temperature"
+   ],
+   "answer ":  "Iodine is a solid at room temperature",
+   "time ": 40,
+   "explanation ":  "Down Group 17, melting and boiling points increase. Fluorine and chlorine are gases, bromine is a liquid, and iodine is a solid at room temperature."
+  },
+  {
+   "id ": 7,
+   "question ":  "Why does reactivity increase down Group 1 (alkali metals)? ",
+   "options ": [
+    "The number of protons increases, attracting electrons more strongly",
+    "The valence electron is further from the nucleus, making it easier to lose",
+    "The atomic radius decreases, making electrons harder to remove",
+    "The number of electron shells decreases down the group"
+   ],
+   "answer ":  "The valence electron is further from the nucleus, making it easier to lose",
+   "time ": 70,
+   "explanation ":  "Down Group 1, atomic size increases. The single valence electron is further from the nucleus with more shielding, so the electrostatic attraction is weaker and the electron is more easily lost."
+  },
+  {
+   "id ": 8,
+   "question ":  "Which property increases down Group 17 (halogens)? ",
+   "options ": [
+    "Reactivity with metals",
+    "Electronegativity",
+    "Boiling point",
+    "Ability to gain electrons"
+   ],
+   "answer ":  "Boiling point",
+   "time ": 40,
+   "explanation ":  "Down Group 17, boiling points increase due to stronger intermolecular forces. Reactivity and electronegativity decrease down the group."
+  },
+  {
+   "id ": 9,
+   "question ":  "What type of forces must be overcome to melt iodine (I₂)? ",
+   "options ": [
+    "Strong covalent bonds within I₂ molecules",
+    "Weak intermolecular forces between I₂ molecules",
+    "Metallic bonds between iodine atoms",
+    "Ionic bonds between iodine ions"
+   ],
+   "answer ":  "Weak intermolecular forces between I₂ molecules",
+   "time ": 70,
+   "explanation ":  "Iodine has a simple molecular structure with strong covalent bonds within molecules but weak intermolecular forces (van der Waals) between molecules. Melting only requires overcoming the weak intermolecular forces."
+  },
+  {
+   "id ": 10,
+   "question ":  "Which statement correctly compares the atomic radius of sodium (Na) and chlorine (Cl) in Period 3? ",
+   "options ": [
+    "Sodium has a smaller atomic radius because it has fewer protons",
+    "Chlorine has a larger atomic radius because it has more electrons",
+    "Sodium has a larger atomic radius because it has weaker nuclear attraction on outer electrons",
+    "Atomic radius is the same for all elements in the same period"
+   ],
+   "answer ":  "Sodium has a larger atomic radius because it has weaker nuclear attraction on outer electrons",
+   "time ": 70,
+   "explanation ":  "Across Period 3, atomic radius decreases. Sodium has fewer protons pulling on the same number of electron shells, so the outer electrons experience weaker attraction and the atom is larger."
+  },
+  {
+   "id ": 11,
+   "question ":  "Why are noble gases (Group 18) unreactive? ",
+   "options ": [
+    "They have no electrons in their outer shell",
+    "They have a stable electronic configuration with a full outer shell",
+    "They have very high melting and boiling points",
+    "They form strong covalent bonds with other elements"
+   ],
+   "answer ":  "They have a stable electronic configuration with a full outer shell",
+   "time ": 40,
+   "explanation ":  "Noble gases have complete outer electron shells (8 electrons, except helium with 2). This stable configuration means they have little tendency to gain, lose, or share electrons."
+  },
+  {
+   "id ": 12,
+   "question ":  "Which factor explains why potassium reacts more vigorously with water than lithium? ",
+   "options ": [
+    "Potassium has more protons in its nucleus",
+    "Potassium has a smaller atomic radius than lithium",
+    "Potassium's valence electron is easier to lose due to weaker electrostatic attraction",
+    "Potassium forms stronger metallic bonds than lithium"
+   ],
+   "answer ":  "Potassium's valence electron is easier to lose due to weaker electrostatic attraction",
+   "time ": 70,
+   "explanation ":  "Potassium is below lithium in Group 1. Its larger atomic size means the valence electron is further from the nucleus with more shielding, so electrostatic attraction is weaker and the electron is more easily lost, increasing reactivity."
+  },
+  {
+   "id ": 13,
+   "question ":  "What happens to the number of valence electrons as you move from left to right across a period? ",
+   "options ": [
+    "The number of valence electrons decreases",
+    "The number of valence electrons remains constant",
+    "The number of valence electrons increases",
+    "The number of valence electrons first increases then decreases"
+   ],
+   "answer ":  "The number of valence electrons increases",
+   "time ": 40,
+   "explanation ":  "Across a period, each element has one more proton and one more electron than the previous. The additional electron goes into the same outer shell, so the number of valence electrons increases from 1 to 8."
+  },
+  {
+   "id ": 14,
+   "question ":  "Which statement about intermolecular forces in Group 17 is correct? ",
+   "options ": [
+    "Intermolecular forces decrease down the group as molecules get smaller",
+    "Intermolecular forces increase down the group as molecules get larger with more electrons",
+    "Intermolecular forces are the same for all Group 17 elements",
+    "Intermolecular forces depend only on the number of protons"
+   ],
+   "answer ":  "Intermolecular forces increase down the group as molecules get larger with more electrons",
+   "time ": 70,
+   "explanation ":  "Down Group 17, halogen molecules become larger and have more electrons. This increases the strength of van der Waals forces (intermolecular forces) between molecules, requiring more energy to separate them."
+  },
+  {
+   "id ": 15,
+   "question ":  "An element has the electronic configuration 2,8,1. In which group and period is this element found, and what is its likely reactivity? ",
+   "options ": [
+    "Group 1, Period 3; highly reactive metal",
+    "Group 17, Period 3; highly reactive non-metal",
+    "Group 1, Period 2; moderately reactive metal",
+    "Group 18, Period 3; unreactive noble gas"
+   ],
+   "answer ":  "Group 1, Period 3; highly reactive metal",
+   "time ": 70,
+   "explanation ":  "Electronic configuration 2,8,1 means 3 electron shells (Period 3) and 1 valence electron (Group 1). Group 1 elements are alkali metals that readily lose their single valence electron, making them highly reactive."
+  }
+]
