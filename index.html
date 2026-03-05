@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>🧧 CNY Battle Arcade 🧧</title>
+    <title>⚔️ Quest Arena ⚔️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="game-container">
         <div id="login-screen" class="screen">
             <div class="login-box">
-                <h1>🧧 CNY ARCADE 🧧</h1>
-                <p>Defeat the Lucky Horse with Math!</p>
+                <h1>⚔️ QUEST ARENA ⚔️</h1>
+                <p>Defeat the Dragon with Math!</p>
                 <div class="input-area">
-                    <input type="text" id="pin-input" placeholder="Enter Mission Code" maxlength="20">
-                    <button id="start-btn" class="btn">START BATTLE</button>
+                    <input type="text" id="pin-input" placeholder="Enter Quest Code" maxlength="20">
+                    <button id="start-btn" class="btn">BEGIN QUEST</button>
                 </div>
                 <div id="error-msg" class="error hidden"></div>
             </div>
@@ -23,15 +23,15 @@
         <div id="battle-screen" class="screen hidden">
             <div class="hud">
                 <div class="player-hud">
-                    <div class="name">👦 HERO</div>
+                    <div class="name">🧙‍♂️ WIZARD</div>
                     <div class="score-box">SCORE: <span id="score-display">0</span></div>
                     <div class="hp-bar-container">
                         <div id="player-hp-fill"></div>
                     </div>
                 </div>
-                <div class="vs-logo">VS</div>
+                <div class="vs-logo">⚔️</div>
                 <div class="enemy-hud">
-                    <div class="name">🐴 LUCKY HORSE</div>
+                    <div class="name">🐲 DRAGON</div>
                     <div class="score-box">COMBO: <span id="combo-display" class="hidden">0</span></div>
                     <div class="hp-bar-container">
                         <div id="enemy-hp-fill"></div>
@@ -40,21 +40,22 @@
             </div>
 
             <div class="arena">
+                <div class="stars-layer"></div>
                 <div class="fighter player">
                     <div class="aura player-aura"></div>
-                    <div class="avatar" id="player-sprite">👦</div>
+                    <div class="avatar" id="player-sprite">🧙‍♂️</div>
                     <div class="shadow"></div>
                 </div>
                 <div class="fighter enemy">
                     <div class="aura enemy-aura"></div>
-                    <div class="avatar" id="enemy-sprite">🐴</div>
+                    <div class="avatar" id="enemy-sprite">🐲</div>
                     <div class="shadow"></div>
                 </div>
-                <div id="fireball" class="projectile hidden">✨</div>
-                <div id="enemy-projectile" class="projectile hidden">🥕</div>
+                <div id="fireball" class="projectile hidden">🔮</div>
+                <div id="enemy-projectile" class="projectile hidden">🔥</div>
                 <div id="explosion" class="explosion hidden">💥</div>
                 <div id="crit-display" class="crit-text hidden">CRITICAL HIT!</div>
-                <div id="miss-display" class="crit-text miss hidden">MISSED!</div>
+                <div id="miss-display" class="crit-text miss hidden">BLOCKED!</div>
                 <div id="heal-display" class="heal-text hidden">+20 HP!</div>
             </div>
 
@@ -64,7 +65,7 @@
                 </div>
                 <div class="question-box">
                     <div class="q-header" id="q-progress">QUESTION 1 / 12</div>
-                    <div id="q-text">Loading...</div>
+                    <div id="q-text">Loading quest...</div>
                     <div class="options-grid" id="options-container"></div>
                 </div>
             </div>
@@ -73,7 +74,7 @@
         <div id="end-screen" class="screen hidden">
             <div class="victory-box">
                 <h1 id="end-title">VICTORY!</h1>
-                <p id="end-reason">You earned the Horse's blessing! 🧧</p>
+                <p id="end-reason">The dragon has been defeated! ⚔️</p>
                 <div class="stats-grid">
                     <div>
                         <div>FINAL SCORE</div>
@@ -84,7 +85,7 @@
                         <div class="big-num" id="final-combo">0</div>
                     </div>
                 </div>
-                <button class="btn" onclick="location.reload()">PLAY AGAIN</button>
+                <button class="btn" onclick="location.reload()">NEW QUEST</button>
             </div>
         </div>
     </div>

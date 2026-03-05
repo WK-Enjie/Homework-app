@@ -44,14 +44,14 @@ pinInput.addEventListener('keypress', (e) => {
 async function attemptLogin() {
     const pin = pinInput.value.trim();
     if (!pin) {
-        showError("Please enter a Mission Code.");
+        showError("Please enter a Quest Code.");
         return;
     }
     try {
         const response = await fetch(`worksheets/${pin}.json`);
         if (!response.ok) throw new Error("Code not found or server error.");
         const data = await response.json();
-        
+
         if (Array.isArray(data) && data.length > 0) {
             allQuestions = data;
             startGame();
@@ -99,11 +99,10 @@ function loadQuestion() {
         return;
     }
     const q = gameQuestions[currentIdx];
-    
-    qText.textContent = q.question ? q.question.trim() : "Loading...";
+
+    qText.textContent = q.question ? q.question.trim() : "Loading quest...";
     qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
 
-    // Automatically shrink font size for exceptionally long questions
     adjustQuestionFontSize();
 
     comboDisplay.classList.add('hidden');
@@ -122,16 +121,16 @@ function loadQuestion() {
         const elapsed = Date.now() - questionStartTime;
         const remainingPct = Math.max(0, 100 - (elapsed / currentLimit * 100));
         timerFill.style.width = `${remainingPct}%`;
-        
-        if(remainingPct < 30) timerFill.style.background = 'var(--hp-red)';
-        
+
+        if (remainingPct < 30) timerFill.style.background = 'var(--hp-red)';
+
         if (remainingPct <= 0) {
             handleTimeout();
         }
     }, 100);
 
     optionsContainer.innerHTML = '';
-    
+
     if (q.options && Array.isArray(q.options)) {
         const answerText = q.answer ? q.answer.trim() : '';
         q.options.forEach(opt => {
@@ -142,8 +141,7 @@ function loadQuestion() {
             btn.onclick = () => handleAnswer(btn, optText, answerText);
             optionsContainer.appendChild(btn);
         });
-        
-        // Shrink font for long text in options buttons
+
         setTimeout(adjustOptionsFontSize, 10);
     }
 }
@@ -155,7 +153,7 @@ function adjustQuestionFontSize() {
     } else if (qLength > 60) {
         qText.style.fontSize = '0.95rem';
     } else {
-        qText.style.fontSize = ''; // Reset to CSS default
+        qText.style.fontSize = '';
     }
 }
 
@@ -181,7 +179,7 @@ function handleAnswer(btn, selected, correct) {
         btn.classList.add('wrong');
         const btns = document.querySelectorAll('.opt-btn');
         btns.forEach(b => {
-            if(b.textContent === correct) b.classList.add('correct');
+            if (b.textContent === correct) b.classList.add('correct');
         });
         triggerEnemyAttack();
     }
@@ -197,17 +195,17 @@ function disableButtons(clickedBtn = null) {
     const btns = document.querySelectorAll('.opt-btn');
     btns.forEach(b => {
         b.disabled = true;
-        if(b === clickedBtn) b.classList.add('clicked');
+        if (b === clickedBtn) b.classList.add('clicked');
     });
 }
 
 function calculatePlayerAttack(timeTaken) {
     combo++;
-    if(combo > maxCombo) maxCombo = combo;
+    if (combo > maxCombo) maxCombo = combo;
     const baseDmg = 100 / gameQuestions.length;
     let speedMult = 1;
     let isCrit = false;
-    
+
     if (timeTaken < 3000) { speedMult = 1.5; isCrit = true; }
     else if (timeTaken > (DEFAULT_TIME_LIMIT * 0.8)) { speedMult = 0.8; }
 
@@ -217,10 +215,9 @@ function calculatePlayerAttack(timeTaken) {
     score += points;
     scoreDisplay.textContent = score;
 
-    // Trigger 5-Combo Buff Mechanic
     if (combo > 0 && combo % 5 === 0) {
-        playerHP = Math.min(100, playerHP + 20); // Heal 20 HP, capped at 100
-        showComboBuffText("COMBO HEAL! +20 HP");
+        playerHP = Math.min(100, playerHP + 20);
+        showComboBuffText("MAGIC HEAL! +20 HP");
     }
 
     performPlayerAnimation(totalDmg, isCrit, () => {
@@ -234,7 +231,7 @@ function showComboBuffText(msg) {
     healDisplay.textContent = msg;
     healDisplay.classList.remove('hidden');
     healDisplay.classList.add('anim-float-up');
-    
+
     setTimeout(() => {
         healDisplay.classList.add('hidden');
         healDisplay.classList.remove('anim-float-up');
@@ -254,8 +251,8 @@ function performPlayerAnimation(damage, isCrit, callback) {
 
         showExplosion('right');
         enemySprite.classList.add('anim-enemy-hit');
-        
-        if(isCrit) {
+
+        if (isCrit) {
             critDisplay.classList.remove('hidden');
             document.getElementById('game-container').classList.add('anim-shake-screen');
         }
@@ -288,7 +285,7 @@ function triggerEnemyAttack() {
         setTimeout(() => {
             playerSprite.classList.remove('anim-player-hit');
             document.getElementById('game-container').classList.remove('anim-shake-screen');
-            
+
             if (playerHP <= 0) {
                 endGame("Defeat");
             } else {
@@ -315,8 +312,8 @@ function showExplosion(side) {
 function updateBars() {
     enemyHPFill.style.width = `${enemyHP}%`;
     playerHPFill.style.width = `${playerHP}%`;
-    if(playerHP < 30) playerHPFill.style.background = 'linear-gradient(90deg, #880000, var(--hp-red))';
-    else playerHPFill.style.background = 'linear-gradient(90deg, #0088cc, var(--hp-blue))';
+    if (playerHP < 30) playerHPFill.style.background = 'linear-gradient(90deg, #880000, var(--hp-red))';
+    else playerHPFill.style.background = 'linear-gradient(90deg, #2563eb, var(--cyan))';
 }
 
 function endGame(result) {
@@ -326,20 +323,20 @@ function endGame(result) {
     const reason = document.getElementById('end-reason');
     document.getElementById('final-score').textContent = score;
     document.getElementById('final-combo').textContent = maxCombo;
-    
+
     if (result === "Defeat") {
-        title.textContent = "DEFEAT";
+        title.textContent = "QUEST FAILED";
         title.style.color = "var(--hp-red)";
-        reason.textContent = "The Lucky Horse galloped away!";
-    } 
+        reason.textContent = "The dragon was too powerful! Try again! 🐲";
+    }
     else if (enemyHP <= 5) {
-        title.textContent = "VICTORY!";
+        title.textContent = "QUEST COMPLETE!";
         title.style.color = "var(--gold)";
-        reason.textContent = "You earned the Horse's blessing! 🧧";
-    } 
+        reason.textContent = "The dragon has been defeated! ⚔️🏆";
+    }
     else {
-        title.textContent = "GAME OVER";
-        title.style.color = "#aaa";
-        reason.textContent = "The Horse survived. Try again!";
+        title.textContent = "QUEST UNFINISHED";
+        title.style.color = "#94a3b8";
+        reason.textContent = "The dragon escaped. Train harder, Wizard! 🐲";
     }
 }
