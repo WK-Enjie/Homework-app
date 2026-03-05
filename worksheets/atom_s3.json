@@ -1,0 +1,197 @@
+[
+  {
+   "id ": 1,
+   "question ":  "An atom has 11 protons, 12 neutrons and 11 electrons. What is its nucleon (mass) number? ",
+   "options ": [
+    "11",
+    "12",
+    "23",
+    "34"
+   ],
+   "answer ":  "23",
+   "time ": 40,
+   "explanation ":  "Nucleon number = protons + neutrons = 11 + 12 = 23. This atom is sodium-23."
+  },
+  {
+   "id ": 2,
+   "question ":  "Which electronic configuration represents an element in Group 17 of the Periodic Table? ",
+   "options ": [
+    "2,8,1",
+    "2,8,7",
+    "2,8,8",
+    "2,8,2"
+   ],
+   "answer ":  "2,8,7",
+   "time ": 50,
+   "explanation ":  "Group number equals the number of valence electrons. Group 17 elements have 7 electrons in their outer shell. Configuration 2,8,7 has 7 outer electrons."
+  },
+  {
+   "id ": 3,
+   "question ":  "An element has the electronic configuration 2,8,3. In which period and group is it found? ",
+   "options ": [
+    "Period 2, Group 3",
+    "Period 3, Group 13",
+    "Period 3, Group 3",
+    "Period 2, Group 13"
+   ],
+   "answer ":  "Period 3, Group 13",
+   "time ": 60,
+   "explanation ":  "Three electron shells = Period 3. Three valence electrons = Group 13 (or Group 3 in older notation). This element is aluminium."
+  },
+  {
+   "id ": 4,
+   "question ":  "Which statement about isotopes is correct? ",
+   "options ": [
+    "Isotopes have different proton numbers but the same nucleon number",
+    "Isotopes have the same proton number but different nucleon numbers",
+    "Isotopes have different numbers of electrons",
+    "Isotopes are atoms of different elements"
+   ],
+   "answer ":  "Isotopes have the same proton number but different nucleon numbers",
+   "time ": 50,
+   "explanation ":  "Isotopes are atoms of the same element (same proton number) with different numbers of neutrons, giving different nucleon (mass) numbers."
+  },
+  {
+   "id ": 5,
+   "question ":  "An ion has 13 protons, 14 neutrons and 10 electrons. What is its charge? ",
+   "options ": [
+    "1+",
+    "2+",
+    "3+",
+    "1-"
+   ],
+   "answer ":  "3+",
+   "time ": 60,
+   "explanation ":  "Charge = protons - electrons = 13 - 10 = 3+. This is the Al³⁺ ion. Neutrons do not affect charge."
+  },
+  {
+   "id ": 6,
+   "question ":  "Which particle has a relative charge of -1 and a negligible relative mass? ",
+   "options ": [
+    "Proton",
+    "Neutron",
+    "Electron",
+    "Nucleus"
+   ],
+   "answer ":  "Electron",
+   "time ": 40,
+   "explanation ":  "Electrons have a relative charge of -1 and a relative mass of approximately 1/1840 (negligible). Protons have +1 charge, neutrons have 0 charge."
+  },
+  {
+   "id ": 7,
+   "question ":  "An atom of chlorine has proton number 17 and nucleon number 35. How many neutrons does it contain? ",
+   "options ": [
+    "17",
+    "18",
+    "35",
+    "52"
+   ],
+   "answer ":  "18",
+   "time ": 40,
+   "explanation ":  "Neutrons = nucleon number - proton number = 35 - 17 = 18."
+  },
+  {
+   "id ": 8,
+   "question ":  "Which electronic configuration represents a noble gas? ",
+   "options ": [
+    "2,8,1",
+    "2,8,6",
+    "2,8,8",
+    "2,8,3"
+   ],
+   "answer ":  "2,8,8",
+   "time ": 50,
+   "explanation ":  "Noble gases have full outer electron shells. Configuration 2,8,8 has 8 electrons in the outer shell (stable octet), representing argon."
+  },
+  {
+   "id ": 9,
+   "question ":  "Two atoms, X and Y, have the same proton number but different nucleon numbers. What is the relationship between X and Y? ",
+   "options ": [
+    "They are isotopes of the same element",
+    "They are atoms of different elements",
+    "They are ions of the same element",
+    "They have the same number of neutrons"
+   ],
+   "answer ":  "They are isotopes of the same element",
+   "time ": 50,
+   "explanation ":  "Same proton number = same element. Different nucleon numbers = different numbers of neutrons. This is the definition of isotopes."
+  },
+  {
+   "id ": 10,
+   "question ":  "An element is in Period 4 of the Periodic Table. What does this tell you about its atoms? ",
+   "options ": [
+    "They have 4 protons",
+    "They have 4 electrons in the outer shell",
+    "They have 4 electron shells occupied",
+    "They have a nucleon number of 4"
+   ],
+   "answer ":  "They have 4 electron shells occupied",
+   "time ": 50,
+   "explanation ":  "Period number equals the number of occupied electron shells. Period 4 elements have electrons in four principal energy levels."
+  },
+  {
+   "id ": 11,
+   "question ":  "Which statement correctly describes the structure of an atom? ",
+   "options ": [
+    "Protons and electrons are in the nucleus; neutrons orbit the nucleus",
+    "Protons and neutrons are in the nucleus; electrons orbit in shells",
+    "Neutrons and electrons are in the nucleus; protons orbit the nucleus",
+    "All three particles are evenly distributed throughout the atom"
+   ],
+   "answer ":  "Protons and neutrons are in the nucleus; electrons orbit in shells",
+   "time ": 40,
+   "explanation ":  "The nucleus contains protons (positive) and neutrons (neutral). Electrons (negative) occupy energy levels or shells surrounding the nucleus."
+  },
+  {
+   "id ": 12,
+   "question ":  "An ion of magnesium has the electronic configuration 2,8. What is the charge on this ion? ",
+   "options ": [
+    "1+",
+    "2+",
+    "1-",
+    "2-"
+   ],
+   "answer ":  "2+",
+   "time ": 60,
+   "explanation ":  "Magnesium atom (proton number 12) has configuration 2,8,2. To achieve the stable 2,8 configuration, it loses 2 electrons, forming Mg²⁺."
+  },
+  {
+   "id ": 13,
+   "question ":  "Which particle determines the chemical properties of an element? ",
+   "options ": [
+    "Protons",
+    "Neutrons",
+    "Electrons, especially those in the outer shell",
+    "The nucleus as a whole"
+   ],
+   "answer ":  "Electrons, especially those in the outer shell",
+   "time ": 50,
+   "explanation ":  "Chemical reactions involve the transfer or sharing of electrons. The number of valence (outer shell) electrons determines how an element reacts."
+  },
+  {
+   "id ": 14,
+   "question ":  "An atom has the nuclide notation ²³₁₁Na. How many electrons does a neutral atom of this element have? ",
+   "options ": [
+    "11",
+    "12",
+    "23",
+    "34"
+   ],
+   "answer ":  "11",
+   "time ": 40,
+   "explanation ":  "In a neutral atom, number of electrons = number of protons. The subscript (11) is the proton number, so there are 11 electrons."
+  },
+  {
+   "id ": 15,
+   "question ":  "Particle Z has 17 protons, 18 neutrons and 18 electrons. What is Particle Z? ",
+   "options ": [
+    "A chlorine atom",
+    "A chloride ion (Cl⁻)",
+    "An argon atom",
+    "A potassium ion (K⁺)"
+   ],
+   "answer ":  "A chloride ion (Cl⁻)",
+   "time ": 70,
+   "explanation ":  "17 protons = Chlorine (element identity). 18 electrons vs 17 protons = 1 extra negative charge. Therefore, it is a chloride ion (Cl⁻)."
+  }
+]
