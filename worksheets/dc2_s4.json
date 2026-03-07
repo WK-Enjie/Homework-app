@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "What happens to the resistance of an LDR when light intensity increases?",
+    "options": [
+      "It remains constant",
+      "It becomes zero",
+      "It increases",
+      "It decreases"
+    ],
+    "answer": "It decreases",
+    "time": 30,
+    "explanation": "A Light-Dependent Resistor (LDR) has resistance that decreases as light intensity increases (Syllabus 15i)."
+  },
+  {
+    "id": 2,
+    "question": "What is the behaviour of an NTC thermistor?",
+    "options": [
+      "Resistance first increases then decreases",
+      "Resistance remains constant with temperature",
+      "Resistance increases with temperature",
+      "Resistance decreases with temperature"
+    ],
+    "answer": "Resistance decreases with temperature",
+    "time": 30,
+    "explanation": "NTC (Negative Temperature Coefficient) thermistor has resistance that decreases as temperature increases (Syllabus 15i)."
+  },
+  {
+    "id": 3,
+    "question": "A potential divider uses a 10 kΩ fixed resistor and an LDR. In bright light, the LDR has resistance 2 kΩ. If the supply is 6 V and output is taken across the LDR, what is V_out?",
+    "options": [
+      "6 V",
+      "3 V",
+      "5 V",
+      "1 V"
+    ],
+    "answer": "1 V",
+    "time": 60,
+    "explanation": "Using potential divider formula: V_out = V_in × R₂/(R₁ + R₂) = 6 V × 2/(10 + 2) = 6 × 2/12 = 1 V (Syllabus 15j)."
+  },
+  {
+    "id": 4,
+    "question": "A potential divider uses a 10 kΩ fixed resistor and an LDR with a 6 V supply. Output is taken across the LDR. In bright light, LDR resistance is 2 kΩ; in darkness, it is 20 kΩ. What is the change in output voltage from bright light to darkness?",
+    "options": [
+      "V_out becomes 6 V",
+      "V_out remains at 1 V",
+      "V_out increases to 4 V",
+      "V_out decreases to 0.5 V"
+    ],
+    "answer": "V_out increases to 4 V",
+    "time": 75,
+    "explanation": "Bright light: V_out = 6 × 2/(10+2) = 1 V. Darkness: V_out = 6 × 20/(10+20) = 4 V. Change = 4 V - 1 V = +3 V (increases) (Syllabus 15j)."
+  },
+  {
+    "id": 5,
+    "question": "A potential divider circuit has a 12 V supply, a fixed 2 kΩ resistor, and an NTC thermistor. At 25°C, the thermistor has resistance 10 kΩ. What is V_out taken across the thermistor?",
+    "options": [
+      "12 V",
+      "6 V",
+      "2 V",
+      "10 V"
+    ],
+    "answer": "10 V",
+    "time": 60,
+    "explanation": "V_out = 12 V × 10/(2 + 10) = 12 × 10/12 = 10 V (Syllabus 15j)."
+  },
+  {
+    "id": 6,
+    "question": "A potential divider has a 12 V supply, a fixed 2 kΩ resistor, and an NTC thermistor with output taken across the thermistor. At 25°C, thermistor resistance is 10 kΩ; at 50°C, it is 1 kΩ. What is the change in V_out when temperature rises from 25°C to 50°C?",
+    "options": [
+      "V_out becomes 0 V",
+      "V_out remains at 10 V",
+      "V_out decreases to 4 V",
+      "V_out increases to 11 V"
+    ],
+    "answer": "V_out decreases to 4 V",
+    "time": 75,
+    "explanation": "At 25°C: V_out = 12 × 10/(2+10) = 10 V. At 50°C: V_out = 12 × 1/(2+1) = 4 V. Change = 4 V - 10 V = -6 V (decreases) (Syllabus 15i)."
+  },
+  {
+    "id": 7,
+    "question": "An LDR is used in a potential divider to switch on a lamp at dusk. Where should the output be taken to ensure the lamp turns on when it gets dark?",
+    "options": [
+      "Across the battery",
+      "Across the fixed resistor",
+      "It doesn't matter",
+      "Across the LDR"
+    ],
+    "answer": "Across the LDR",
+    "time": 50,
+    "explanation": "In darkness, LDR resistance increases. Taking output across the LDR means V_out increases in darkness, which can trigger the switching circuit (Syllabus 15j)."
+  },
+  {
+    "id": 8,
+    "question": "A thermistor is used in a fire alarm circuit. To trigger the alarm when temperature rises, where should V_out be taken?",
+    "options": [
+      "Between the thermistor and ground",
+      "Across the fixed resistor",
+      "Across the NTC thermistor",
+      "Across the battery"
+    ],
+    "answer": "Across the fixed resistor",
+    "time": 50,
+    "explanation": "For an NTC thermistor, resistance decreases as temperature increases. To get increasing V_out with rising temperature, take output across the fixed resistor (Syllabus 15i)."
+  },
+  {
+    "id": 9,
+    "question": "A potential divider has a 9 V supply, a 3 kΩ fixed resistor, and an LDR. If V_out across the LDR is 6 V, what is the LDR resistance?",
+    "options": [
+      "1.5 kΩ",
+      "9 kΩ",
+      "3 kΩ",
+      "6 kΩ"
+    ],
+    "answer": "6 kΩ",
+    "time": 70,
+    "explanation": "Using V_out = V_in × R_LDR/(R_fixed + R_LDR): 6 = 9 × R/(3 + R). Solving: 6(3 + R) = 9R, 18 + 6R = 9R, 18 = 3R, R = 6 kΩ (Syllabus 15j)."
+  },
+  {
+    "id": 10,
+    "question": "In a potential divider circuit with an LDR where the output voltage is taken across the LDR, what is the main purpose of including a variable resistor?",
+    "options": [
+      "To decrease the voltage",
+      "To protect the LDR",
+      "To increase the current",
+      "To adjust the sensitivity or trigger point"
+    ],
+    "answer": "To adjust the sensitivity or trigger point",
+    "time": 40,
+    "explanation": "A variable resistor allows adjustment of the circuit's sensitivity, enabling calibration of the light level at which the output voltage across the LDR triggers a connected device (e.g., switching on a lamp at a desired darkness level) (Syllabus 15h)."
+  },
+  {
+    "id": 11,
+    "question": "An NTC thermistor has resistance 8 kΩ at 20°C and 2 kΩ at 60°C. In a potential divider with a 4 kΩ fixed resistor and 12 V supply, what is the change in V_out (across thermistor) when temperature rises from 20°C to 60°C?",
+    "options": [
+      "Decreases by 8 V",
+      "Increases by 4 V",
+      "Decreases by 4 V",
+      "Increases by 8 V"
+    ],
+    "answer": "Decreases by 4 V",
+    "time": 80,
+    "explanation": "At 20°C: V_out = 12 × 8/(4+8) = 8 V. At 60°C: V_out = 12 × 2/(4+2) = 4 V. Change = 4 V - 8 V = -4 V (Syllabus 15j)."
+  },
+  {
+    "id": 12,
+    "question": "Which component would you use to detect changes in light intensity?",
+    "options": [
+      "Variable resistor",
+      "Fixed resistor",
+      "Thermistor",
+      "LDR"
+    ],
+    "answer": "LDR",
+    "time": 30,
+    "explanation": "An LDR (Light-Dependent Resistor) is specifically designed to detect changes in light intensity (Syllabus 15a)."
+  },
+  {
+    "id": 13,
+    "question": "Which component would you use to detect changes in temperature?",
+    "options": [
+      "Diode",
+      "Fixed resistor",
+      "LDR",
+      "Thermistor"
+    ],
+    "answer": "Thermistor",
+    "time": 30,
+    "explanation": "A thermistor is specifically designed to detect temperature changes (Syllabus 15a)."
+  },
+  {
+    "id": 14,
+    "question": "In a potential divider with an LDR, if the output is taken across the fixed resistor instead of the LDR, what happens to V_out when light intensity increases?",
+    "options": [
+      "V_out becomes zero",
+      "V_out remains constant",
+      "V_out increases",
+      "V_out decreases"
+    ],
+    "answer": "V_out increases",
+    "time": 50,
+    "explanation": "When light increases, LDR resistance decreases. This means more voltage appears across the fixed resistor, so V_out across the fixed resistor increases (Syllabus 15i)."
+  },
+  {
+    "id": 15,
+    "question": "A street light circuit uses an LDR in a potential divider. The lamp should turn on when V_out reaches 4 V. If the supply is 6 V and fixed resistor is 5 kΩ, what should the LDR resistance be at the trigger point?",
+    "options": [
+      "15 kΩ",
+      "2.5 kΩ",
+      "5 kΩ",
+      "10 kΩ"
+    ],
+    "answer": "10 kΩ",
+    "time": 80,
+    "explanation": "Using V_out = V_in × R_LDR/(R_fixed + R_LDR): 4 = 6 × R/(5 + R). Solving: 4(5 + R) = 6R, 20 + 4R = 6R, 20 = 2R, R = 10 kΩ (Syllabus 15j)."
+  }
+]

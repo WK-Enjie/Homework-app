@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A 24 V battery is connected to a 4 Ω resistor in series with a parallel combination of a 12 Ω resistor and a 6 Ω resistor. What is the current flowing through the 6 Ω resistor?",
+    "options": [
+      "1 A",
+      "3 A",
+      "2 A",
+      "4 A"
+    ],
+    "answer": "2 A",
+    "time": 90,
+    "explanation": "Equivalent resistance of parallel part: (12×6)/(12+6) = 4 Ω. Total resistance = 4 Ω + 4 Ω = 8 Ω. Total current = 24 V ÷ 8 Ω = 3 A. Voltage across parallel part = 3 A × 4 Ω = 12 V. Current through 6 Ω resistor = 12 V ÷ 6 Ω = 2 A (Syllabus 15g)."
+  },
+  {
+    "id": 2,
+    "question": "A potential divider circuit uses a 12 V supply, a 2 kΩ fixed resistor, and an LDR. Output is taken across the LDR. In darkness, LDR resistance is 10 kΩ. In bright light, it drops to 2 kΩ. What is the change in output voltage?",
+    "options": [
+      "Increases by 4 V",
+      "Decreases by 4 V",
+      "Increases by 6 V",
+      "Decreases by 6 V"
+    ],
+    "answer": "Decreases by 4 V",
+    "time": 90,
+    "explanation": "Darkness: V_out = 12 × 10/(2+10) = 10 V. Bright light: V_out = 12 × 2/(2+2) = 6 V. Change = 6 V - 10 V = -4 V (Syllabus 15j)."
+  },
+  {
+    "id": 3,
+    "question": "Three identical lamps are connected such that L1 is in series with a parallel combination of L2 and L3. If L2 blows (becomes open circuit), what happens to the brightness of L1?",
+    "options": [
+      "L1 becomes brighter",
+      "L1 becomes dimmer",
+      "L1 brightness remains unchanged",
+      "L1 goes out completely"
+    ],
+    "answer": "L1 becomes dimmer",
+    "time": 75,
+    "explanation": "Initially, total resistance = R + 0.5R = 1.5R. After L2 blows, total resistance = R + R = 2R. Total resistance increases, so total current decreases. L1 is in the main branch, so current through L1 decreases (Syllabus 15b, 15g)."
+  },
+  {
+    "id": 4,
+    "question": "Two resistors, 10 Ω and 20 Ω, are connected in parallel. The total current supplied is 3 A. What is the power dissipated by the 10 Ω resistor?",
+    "options": [
+      "40 W",
+      "90 W",
+      "10 W",
+      "20 W"
+    ],
+    "answer": "40 W",
+    "time": 90,
+    "explanation": "Current divides inversely to resistance. Ratio I_10 : I_20 = 20 : 10 = 2 : 1. Total parts = 3. I_10 = (2/3) × 3 A = 2 A. Power = I²R = (2 A)² × 10 Ω = 40 W (Syllabus 15d, 15g)."
+  },
+  {
+    "id": 5,
+    "question": "A circuit consists of a battery, a switch, and two resistors in series. A voltmeter is connected across the switch. When the switch is open, what does the voltmeter read?",
+    "options": [
+      "Zero",
+      "Half the battery e.m.f.",
+      "The battery e.m.f.",
+      "Depends on the resistor values"
+    ],
+    "answer": "The battery e.m.f.",
+    "time": 60,
+    "explanation": "When the switch is open, no current flows. There is no voltage drop across the resistors (V=IR=0). Therefore, the full potential difference of the battery appears across the open switch (Syllabus 15c)."
+  },
+  {
+    "id": 6,
+    "question": "An NTC thermistor is connected in series with a fixed resistor. The output voltage is taken across the fixed resistor. What happens to V_out when temperature increases?",
+    "options": [
+      "V_out increases",
+      "V_out decreases",
+      "V_out remains constant",
+      "V_out becomes zero"
+    ],
+    "answer": "V_out increases",
+    "time": 60,
+    "explanation": "As temperature increases, NTC thermistor resistance decreases. Total circuit resistance decreases, so current increases. Since V_out is across the fixed resistor (V=IR), and I increases, V_out increases (Syllabus 15i)."
+  },
+  {
+    "id": 7,
+    "question": "Two resistors are connected in series across a 10 V supply. The potential difference across the first resistor (8 Ω) is 4 V. What is the resistance of the second resistor?",
+    "options": [
+      "8 Ω",
+      "12 Ω",
+      "16 Ω",
+      "2 Ω"
+    ],
+    "answer": "12 Ω",
+    "time": 75,
+    "explanation": "Voltage across second resistor = 10 V - 4 V = 6 V. Current is same in series: I = V₁/R₁ = 4 V ÷ 8 Ω = 0.5 A. R₂ = V₂/I = 6 V ÷ 0.5 A = 12 Ω (Syllabus 15c, 15g)."
+  },
+  {
+    "id": 8,
+    "question": "A potentiometer with total resistance 50 Ω is connected across a 10 V supply. What is the range of output voltages available from the wiper terminal?",
+    "options": [
+      "0 V to 5 V",
+      "5 V to 10 V",
+      "0 V to 10 V",
+      "2.5 V to 7.5 V"
+    ],
+    "answer": "0 V to 10 V",
+    "time": 45,
+    "explanation": "A potentiometer acts as a variable potential divider. Moving the wiper from one end to the other varies the output from 0 V (ground end) to the full supply voltage (Syllabus 15h)."
+  },
+  {
+    "id": 9,
+    "question": "A resistor of 5 Ω carries a current of 2 A. How much energy is dissipated by this resistor in 1 minute?",
+    "options": [
+      "10 J",
+      "600 J",
+      "1200 J",
+      "20 J"
+    ],
+    "answer": "1200 J",
+    "time": 60,
+    "explanation": "Power P = I²R = (2 A)² × 5 Ω = 20 W. Energy E = P × t = 20 W × 60 s = 1200 J (Syllabus 15g)."
+  },
+  {
+    "id": 10,
+    "question": "In a parallel circuit, if an additional resistor is added in parallel to the existing branches, what happens to the total current from the supply?",
+    "options": [
+      "Total current increases",
+      "Total current decreases",
+      "Total current remains the same",
+      "Total current becomes zero"
+    ],
+    "answer": "Total current increases",
+    "time": 45,
+    "explanation": "Adding a resistor in parallel decreases the total effective resistance. Since supply voltage is constant, by Ohm's Law (I=V/R), the total current increases (Syllabus 15d, 15f)."
+  },
+  {
+    "id": 11,
+    "question": "A wire has resistance R. Another wire of the same material has twice the length and half the cross-sectional area. What is its resistance?",
+    "options": [
+      "R",
+      "2R",
+      "4R",
+      "R/4"
+    ],
+    "answer": "4R",
+    "time": 60,
+    "explanation": "Resistance R ∝ L/A. New length = 2L, New Area = 0.5A. New Resistance ∝ 2L/0.5A = 4 × (L/A). So new resistance is 4R (Syllabus 14i)."
+  },
+  {
+    "id": 12,
+    "question": "Three 2 Ω resistors are connected such that two are in parallel and this combination is in series with the third. What is the total resistance?",
+    "options": [
+      "6 Ω",
+      "2 Ω",
+      "3 Ω",
+      "1 Ω"
+    ],
+    "answer": "3 Ω",
+    "time": 60,
+    "explanation": "Parallel combination: (2×2)/(2+2) = 1 Ω. Series combination: 1 Ω + 2 Ω = 3 Ω (Syllabus 15f)."
+  },
+  {
+    "id": 13,
+    "question": "A switch is connected in parallel with a 10 Ω resistor. When the switch is closed, what happens to the ammeter reading in series with this resistor?",
+    "options": [
+      "Reading increases",
+      "Reading decreases to zero",
+      "Reading remains the same",
+      "Reading fluctuates"
+    ],
+    "answer": "Reading decreases to zero",
+    "time": 60,
+    "explanation": "Closing the switch creates a short circuit (zero resistance path) across the resistor. All current flows through the switch, so no current flows through the 10 Ω resistor (Syllabus 15b)."
+  },
+  {
+    "id": 14,
+    "question": "A voltmeter is connected across a connecting wire with negligible resistance in a working circuit. What is the reading?",
+    "options": [
+      "Equal to supply voltage",
+      "Zero",
+      "Half supply voltage",
+      "Depends on current"
+    ],
+    "answer": "Zero",
+    "time": 45,
+    "explanation": "A connecting wire has negligible resistance (R ≈ 0). By Ohm's Law, V = IR. If R is zero, the potential difference V across it is zero (Syllabus 15g)."
+  },
+  {
+    "id": 15,
+    "question": "In a circuit with a fixed resistor and a variable resistor in series, how does the current change when the variable resistance is increased?",
+    "options": [
+      "Current increases",
+      "Current decreases",
+      "Current remains constant",
+      "Current becomes zero immediately"
+    ],
+    "answer": "Current decreases",
+    "time": 45,
+    "explanation": "Increasing the variable resistance increases the total resistance of the series circuit. Since supply voltage is constant, by Ohm's Law (I=V/R), the current decreases (Syllabus 15g)."
+  }
+]

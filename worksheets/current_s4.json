@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement correctly defines electric current?",
+    "options": [
+      "The energy transferred per unit charge",
+      "The rate of flow of electric charge",
+      "The total amount of charge in a circuit",
+      "The opposition to charge flow"
+    ],
+    "answer": "The rate of flow of electric charge",
+    "time": 30,
+    "explanation": "Electric current is defined as the rate of flow of electric charge. It is measured in amperes (A), where 1 A = 1 C/s (Syllabus 14a)."
+  },
+  {
+    "id": 2,
+    "question": "A charge of 300 C passes through a wire in 2 minutes. What is the current in the wire?",
+    "options": [
+      "150 A",
+      "600 A",
+      "0.42 A",
+      "2.5 A"
+    ],
+    "answer": "2.5 A",
+    "time": 45,
+    "explanation": "Using Q = It, rearrange to I = Q/t. Time = 2 min = 120 s. I = 300 C ÷ 120 s = 2.5 A (Syllabus 14c)."
+  },
+  {
+    "id": 3,
+    "question": "What is the direction of conventional current in a circuit?",
+    "options": [
+      "In the same direction as electron flow",
+      "From negative to positive terminal",
+      "Random direction depending on the component",
+      "From positive to negative terminal"
+    ],
+    "answer": "From positive to negative terminal",
+    "time": 30,
+    "explanation": "Conventional current is defined as flowing from the positive terminal to the negative terminal. This is opposite to electron flow (Syllabus 14b)."
+  },
+  {
+    "id": 4,
+    "question": "A battery has an e.m.f. of 12 V. What does this mean?",
+    "options": [
+      "The battery supplies 12 C of charge per second",
+      "The battery has a resistance of 12 Ω",
+      "The battery supplies 12 J of energy per coulomb of charge",
+      "The battery supplies 12 A of current"
+    ],
+    "answer": "The battery supplies 12 J of energy per coulomb of charge",
+    "time": 40,
+    "explanation": "Electromotive force (e.m.f.) is the work done per unit charge by the source in driving charges around a complete circuit (Syllabus 14d)."
+  },
+  {
+    "id": 5,
+    "question": "Three 1.5 V cells are connected in series. What is the total e.m.f.?",
+    "options": [
+      "0.5 V",
+      "3.0 V",
+      "1.5 V",
+      "4.5 V"
+    ],
+    "answer": "4.5 V",
+    "time": 30,
+    "explanation": "For cells in series, the total e.m.f. is the sum of individual e.m.f. values: 1.5 V + 1.5 V + 1.5 V = 4.5 V (Syllabus 14e)."
+  },
+  {
+    "id": 6,
+    "question": "A resistor has a potential difference of 6 V across it and a current of 0.5 A flowing through it. What is its resistance?",
+    "options": [
+      "0.083 Ω",
+      "6.5 Ω",
+      "3 Ω",
+      "12 Ω"
+    ],
+    "answer": "12 Ω",
+    "time": 40,
+    "explanation": "Using Ohm's Law: R = V/I = 6 V ÷ 0.5 A = 12 Ω (Syllabus 14h)."
+  },
+  {
+    "id": 7,
+    "question": "Which factor does NOT affect the resistance of a wire?",
+    "options": [
+      "Material of the wire",
+      "Current flowing through the wire",
+      "Length of the wire",
+      "Cross-sectional area"
+    ],
+    "answer": "Current flowing through the wire",
+    "time": 35,
+    "explanation": "Resistance depends on length, cross-sectional area, material (resistivity), and temperature. The current flowing through does not affect the resistance itself (Syllabus 14i)."
+  },
+  {
+    "id": 8,
+    "question": "A copper wire has resistance R. If its length is doubled while keeping the same thickness, what is the new resistance?",
+    "options": [
+      "R/2",
+      "4R",
+      "R",
+      "2R"
+    ],
+    "answer": "2R",
+    "time": 40,
+    "explanation": "Resistance is directly proportional to length (R ∝ L). Doubling the length doubles the resistance (Syllabus 14i)."
+  },
+  {
+    "id": 9,
+    "question": "What happens to the resistance of a metal wire when its temperature increases?",
+    "options": [
+      "It becomes zero",
+      "It remains constant",
+      "It decreases",
+      "It increases"
+    ],
+    "answer": "It increases",
+    "time": 30,
+    "explanation": "For metallic conductors, resistance increases with temperature because the metal ions vibrate more vigorously, causing more collisions with electrons (Syllabus 14j)."
+  },
+  {
+    "id": 10,
+    "question": "Which graph represents an ohmic conductor?",
+    "options": [
+      "A vertical line",
+      "A straight line through the origin",
+      "A curved line through the origin",
+      "A horizontal line"
+    ],
+    "answer": "A straight line through the origin",
+    "time": 35,
+    "explanation": "An ohmic conductor obeys Ohm's Law (V ∝ I), so its I-V graph is a straight line through the origin with constant gradient (Syllabus 14k)."
+  },
+  {
+    "id": 11,
+    "question": "How much work is done when 50 C of charge flows through a potential difference of 9 V?",
+    "options": [
+      "59 J",
+      "0.18 J",
+      "5.56 J",
+      "450 J"
+    ],
+    "answer": "450 J",
+    "time": 40,
+    "explanation": "Using W = QV: Work done = 50 C × 9 V = 450 J (Syllabus 14f)."
+  },
+  {
+    "id": 12,
+    "question": "A current of 0.2 A flows for 5 minutes. How much charge passes through the circuit?",
+    "options": [
+      "25 C",
+      "1500 C",
+      "1 C",
+      "60 C"
+    ],
+    "answer": "60 C",
+    "time": 45,
+    "explanation": "Using Q = It: Time = 5 min = 300 s. Q = 0.2 A × 300 s = 60 C (Syllabus 14c)."
+  },
+  {
+    "id": 13,
+    "question": "Which statement about electron flow is correct?",
+    "options": [
+      "Electron flow is the same as conventional current",
+      "Electrons do not flow in a circuit",
+      "Electrons flow from negative to positive",
+      "Electrons flow from positive to negative"
+    ],
+    "answer": "Electrons flow from negative to positive",
+    "time": 30,
+    "explanation": "Electrons are negatively charged particles that flow from the negative terminal to the positive terminal (Syllabus 14b)."
+  },
+  {
+    "id": 14,
+    "question": "A wire of resistance 8 Ω has a current of 1.5 A flowing through it. What is the potential difference across the wire?",
+    "options": [
+      "0.19 V",
+      "9.5 V",
+      "5.33 V",
+      "12 V"
+    ],
+    "answer": "12 V",
+    "time": 40,
+    "explanation": "Using V = IR: V = 1.5 A × 8 Ω = 12 V (Syllabus 14h)."
+  },
+  {
+    "id": 15,
+    "question": "What is the unit of resistance?",
+    "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Ohm"
+    ],
+    "answer": "Ohm",
+    "time": 25,
+    "explanation": "The unit of resistance is the ohm (Ω), where 1 Ω = 1 V/A (Syllabus 14g)."
+  }
+]
