@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A fair die is rolled twice. What is the probability of getting a 6 on both rolls?",
+    "options": [
+      "1/6",
+      "1/12",
+      "1/36",
+      "1/18"
+    ],
+    "answer": "1/36",
+    "time": 60,
+    "explanation": "The two rolls are independent events. P(6 on first) = 1/6, P(6 on second) = 1/6. For independent events: P(both 6) = 1/6 × 1/6 = 1/36."
+  },
+  {
+    "id": 2,
+    "question": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn at random WITHOUT replacement. What is the probability that both balls are red?",
+    "options": [
+      "25/64",
+      "5/14",
+      "25/56",
+      "5/8"
+    ],
+    "answer": "5/14",
+    "time": 90,
+    "explanation": "Without replacement: P(first red) = 5/8. After removing one red: P(second red) = 4/7. P(both red) = 5/8 × 4/7 = 20/56 = 5/14."
+  },
+  {
+    "id": 3,
+    "question": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn at random WITH replacement. What is the probability that both balls are red?",
+    "options": [
+      "25/64",
+      "5/14",
+      "25/56",
+      "5/8"
+    ],
+    "answer": "25/64",
+    "time": 75,
+    "explanation": "With replacement (independent events): P(first red) = 5/8, P(second red) = 5/8. P(both red) = 5/8 × 5/8 = 25/64."
+  },
+  {
+    "id": 4,
+    "question": "A card is drawn from a standard deck of 52 cards. What is the probability of drawing a King OR a Queen?",
+    "options": [
+      "1/13",
+      "2/13",
+      "1/26",
+      "1/52"
+    ],
+    "answer": "2/13",
+    "time": 60,
+    "explanation": "These are mutually exclusive events (cannot draw both King and Queen in one draw). P(King) = 4/52, P(Queen) = 4/52. P(King or Queen) = 4/52 + 4/52 = 8/52 = 2/13."
+  },
+  {
+    "id": 5,
+    "question": "The probability that it will rain tomorrow is 0.3. The probability that your team will win their match is 0.6. Assuming these are independent events, what is the probability that it will rain AND your team will win?",
+    "options": [
+      "0.9",
+      "0.18",
+      "0.3",
+      "0.6"
+    ],
+    "answer": "0.18",
+    "time": 60,
+    "explanation": "For independent events: P(A and B) = P(A) × P(B) = 0.3 × 0.6 = 0.18."
+  },
+  {
+    "id": 6,
+    "question": "A box contains 10 light bulbs, 3 of which are defective. If 2 bulbs are selected at random WITHOUT replacement, what is the probability that both are defective?",
+    "options": [
+      "9/100",
+      "3/50",
+      "1/15",
+      "3/10"
+    ],
+    "answer": "1/15",
+    "time": 90,
+    "explanation": "Without replacement: P(first defective) = 3/10. After removing one defective: P(second defective) = 2/9. P(both defective) = 3/10 × 2/9 = 6/90 = 1/15."
+  },
+  {
+    "id": 7,
+    "question": "In a class of 30 students, the probability that a randomly selected student studies Mathematics is 0.7. How many students would you expect to study Mathematics?",
+    "options": [
+      "7",
+      "21",
+      "30",
+      "10"
+    ],
+    "answer": "21",
+    "time": 45,
+    "explanation": "Expected frequency = Probability × Total number = 0.7 × 30 = 21 students."
+  },
+  {
+    "id": 8,
+    "question": "A fair coin is tossed 3 times. What is the probability of getting Heads on all three tosses?",
+    "options": [
+      "1/3",
+      "1/6",
+      "1/8",
+      "3/8"
+    ],
+    "answer": "1/8",
+    "time": 60,
+    "explanation": "Each toss is independent. P(Heads) = 1/2 for each toss. P(HHH) = 1/2 × 1/2 × 1/2 = 1/8."
+  },
+  {
+    "id": 9,
+    "question": "A spinner has 4 equal sections numbered 1, 2, 3, and 4. What is the probability of spinning an odd number OR a number greater than 3?",
+    "options": [
+      "1/2",
+      "3/4",
+      "1/4",
+      "2/3"
+    ],
+    "answer": "3/4",
+    "time": 75,
+    "explanation": "Odd numbers: 1, 3. Numbers > 3: 4. Note that 3 is odd and not > 3, so these events overlap. P(odd) = 2/4, P(>3) = 1/4. P(odd or >3) = P(1, 3, or 4) = 3/4."
+  },
+  {
+    "id": 10,
+    "question": "A bag contains 6 green marbles and 4 yellow marbles. If a marble is drawn at random, replaced, and then another marble is drawn, what is the probability of getting one green and one yellow (in any order)?",
+    "options": [
+      "6/25",
+      "12/25",
+      "24/100",
+      "3/5"
+    ],
+    "answer": "12/25",
+    "time": 120,
+    "explanation": "With replacement (independent). Two cases: G then Y, or Y then G. P(G then Y) = 6/10 × 4/10 = 24/100. P(Y then G) = 4/10 × 6/10 = 24/100. Total = 24/100 + 24/100 = 48/100 = 12/25."
+  },
+  {
+    "id": 11,
+    "question": "The probability of passing a driving test is 0.65. If 200 people take the test, how many would you expect to pass?",
+    "options": [
+      "65",
+      "130",
+      "200",
+      "70"
+    ],
+    "answer": "130",
+    "time": 45,
+    "explanation": "Expected frequency = Probability × Total number = 0.65 × 200 = 130 people."
+  },
+  {
+    "id": 12,
+    "question": "Two events A and B are mutually exclusive. If P(A) = 0.4 and P(B) = 0.3, what is P(A or B)?",
+    "options": [
+      "0.12",
+      "0.7",
+      "0.1",
+      "0.5"
+    ],
+    "answer": "0.7",
+    "time": 60,
+    "explanation": "For mutually exclusive events: P(A or B) = P(A) + P(B) = 0.4 + 0.3 = 0.7."
+  },
+  {
+    "id": 13,
+    "question": "A deck of cards has 52 cards. Two cards are drawn WITHOUT replacement. What is the probability that the first card is an Ace and the second card is a King?",
+    "options": [
+      "1/169",
+      "4/663",
+      "1/221",
+      "1/26"
+    ],
+    "answer": "4/663",
+    "time": 90,
+    "explanation": "Without replacement: P(Ace first) = 4/52 = 1/13. After removing one card: P(King second) = 4/51. P(Ace then King) = 1/13 × 4/51 = 4/663."
+  },
+  {
+    "id": 14,
+    "question": "A biased die has P(6) = 0.2. If the die is rolled 150 times, how many sixes would you expect?",
+    "options": [
+      "15",
+      "25",
+      "30",
+      "60"
+    ],
+    "answer": "30",
+    "time": 45,
+    "explanation": "Expected frequency = Probability × Number of trials = 0.2 × 150 = 30 sixes."
+  },
+  {
+    "id": 15,
+    "question": "A bag contains 8 balls: 3 red, 3 blue, and 2 green. Three balls are drawn WITHOUT replacement. What is the probability that all three are red?",
+    "options": [
+      "27/512",
+      "1/56",
+      "3/8",
+      "1/28"
+    ],
+    "answer": "1/56",
+    "time": 120,
+    "explanation": "Without replacement: P(first red) = 3/8, P(second red) = 2/7, P(third red) = 1/6. P(all three red) = 3/8 × 2/7 × 1/6 = 6/336 = 1/56."
+  }
+]

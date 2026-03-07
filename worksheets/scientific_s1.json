@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "Which instrument is most suitable for measuring the volume of a small irregular object?",
+    "options": [
+      "Ruler",
+      "Measuring cylinder with water displacement",
+      "Electronic balance",
+      "Thermometer"
+    ],
+    "answer": "Measuring cylinder with water displacement",
+    "time": 40,
+    "explanation": "Water displacement in a measuring cylinder is used to find the volume of irregular objects. The object is submerged, and the increase in water level equals the object's volume."
+  },
+  {
+    "id": 2,
+    "question": "When reading the volume of water in a measuring cylinder, the eye should be positioned:",
+    "options": [
+      "Above the meniscus",
+      "Below the meniscus",
+      "At the same level as the bottom of the meniscus",
+      "At any angle, as long as the scale is visible"
+    ],
+    "answer": "At the same level as the bottom of the meniscus",
+    "time": 30,
+    "explanation": "To avoid parallax error, the eye must be at the same level as the bottom of the meniscus for an accurate reading."
+  },
+  {
+    "id": 3,
+    "question": "Why do scientists take multiple measurements of the same quantity?",
+    "options": [
+      "To make the experiment take longer",
+      "To reduce the effect of random errors and improve precision",
+      "To ensure the measurement is always accurate",
+      "To use up all the available equipment"
+    ],
+    "answer": "To reduce the effect of random errors and improve precision",
+    "time": 40,
+    "explanation": "Taking multiple measurements and calculating an average helps reduce the effect of random errors. This makes the results more precise, meaning the repeated measurements are closer to each other."
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is an example of a random error?",
+    "options": [
+      "A ruler that is worn at the zero end",
+      "A balance that always reads 0.5 g too high",
+      "Slight variations in reaction time when starting a stopwatch",
+      "A thermometer that has not been calibrated"
+    ],
+    "answer": "Slight variations in reaction time when starting a stopwatch",
+    "time": 40,
+    "explanation": "Random errors are unpredictable variations, like slight differences in human reaction time. They cause measurements to scatter around the true value."
+  },
+  {
+    "id": 5,
+    "question": "How does calculating the average of multiple measurements help?",
+    "options": [
+      "It guarantees the result will be accurate",
+      "It reduces the effect of random errors on the final result",
+      "It eliminates all types of errors",
+      "It makes the measurement more precise without repeating"
+    ],
+    "answer": "It reduces the effect of random errors on the final result",
+    "time": 40,
+    "explanation": "Averaging multiple measurements helps cancel out random variations. Values that are too high and too low tend to balance out, giving a result closer to the true value."
+  },
+  {
+    "id": 6,
+    "question": "Which statement about random errors is TRUE?",
+    "options": [
+      "They always make measurements too high",
+      "They can be reduced by taking more measurements and averaging",
+      "They are caused by faulty equipment only",
+      "They cannot be reduced by any method"
+    ],
+    "answer": "They can be reduced by taking more measurements and averaging",
+    "time": 40,
+    "explanation": "Random errors cause measurements to vary unpredictably above and below the true value. Taking more measurements and averaging helps reduce their effect on the final result."
+  },
+  {
+    "id": 7,
+    "question": "A student measures the time for a pendulum to swing 10 times. They do this three times and get: 15.2 s, 18.7 s, 15.4 s. What should they do next?",
+    "options": [
+      "Use the middle value (15.4 s) as the answer",
+      "Calculate the average of all three values",
+      "Repeat the measurement to check the unusual result (18.7 s)",
+      "Use the fastest time as the most accurate"
+    ],
+    "answer": "Repeat the measurement to check the unusual result (18.7 s)",
+    "time": 50,
+    "explanation": "The value 18.7 s is very different from the other two, suggesting a possible mistake or large random error. The student should repeat the measurement to check if this value was an anomaly before calculating an average."
+  },
+  {
+    "id": 8,
+    "question": "Which practice helps reduce parallax error when reading a scale?",
+    "options": [
+      "Reading the scale quickly",
+      "Positioning the eye directly in line with the marking",
+      "Using a magnifying glass",
+      "Taking only one measurement"
+    ],
+    "answer": "Positioning the eye directly in line with the marking",
+    "time": 40,
+    "explanation": "Parallax error occurs when the scale is viewed from an angle. Positioning the eye directly in line with the marking ensures an accurate reading."
+  },
+  {
+    "id": 9,
+    "question": "A zero error in a measuring instrument is an example of:",
+    "options": [
+      "A random error",
+      "A systematic error",
+      "A human error only",
+      "An error that cannot be corrected"
+    ],
+    "answer": "A systematic error",
+    "time": 40,
+    "explanation": "A zero error causes the instrument to give a reading when it should read zero. This error affects all measurements in the same way, making it a systematic error."
+  },
+  {
+    "id": 10,
+    "question": "Which instrument would give the MOST precise measurement of a small mass?",
+    "options": [
+      "Kitchen scale (precision ±1 g)",
+      "Electronic balance (precision ±0.01 g)",
+      "Spring balance (precision ±0.1 N)",
+      "Beam balance (precision ±0.5 g)"
+    ],
+    "answer": "Electronic balance (precision ±0.01 g)",
+    "time": 40,
+    "explanation": "The electronic balance with ±0.01 g precision can detect smaller changes in mass, giving more precise measurements than instruments with larger uncertainty values."
+  },
+  {
+    "id": 11,
+    "question": "Which hazard symbol indicates a substance that can catch fire easily?",
+    "options": [
+      "Corrosive",
+      "Toxic",
+      "Flammable",
+      "Oxidising"
+    ],
+    "answer": "Flammable",
+    "time": 30,
+    "explanation": "The flammable symbol (flame icon) warns that a substance can ignite easily."
+  },
+  {
+    "id": 12,
+    "question": "Which precaution should be taken when using a Bunsen burner?",
+    "options": [
+      "Leave the gas tap open when not in use",
+      "Tie back long hair and wear safety goggles",
+      "Point the flame towards other students",
+      "Use the yellow flame for heating"
+    ],
+    "answer": "Tie back long hair and wear safety goggles",
+    "time": 30,
+    "explanation": "Safety goggles protect eyes from sparks or splashes. Tying back long hair prevents it from catching fire."
+  },
+  {
+    "id": 13,
+    "question": "When a chemical splashes into a student's eye, the FIRST action should be to:",
+    "options": [
+      "Rub the eye gently",
+      "Tell the teacher immediately and rinse with water at the eyewash station",
+      "Apply ointment from the first aid kit",
+      "Continue with the experiment"
+    ],
+    "answer": "Tell the teacher immediately and rinse with water at the eyewash station",
+    "time": 40,
+    "explanation": "Immediate rinsing with water at an eyewash station dilutes and removes the chemical. The teacher must be informed for further first aid and incident reporting."
+  },
+  {
+    "id": 14,
+    "question": "A corrosive substance is one that:",
+    "options": [
+      "Catches fire easily",
+      "Causes damage to living tissue or materials on contact",
+      "Releases oxygen and makes fires burn more intensely",
+      "Causes allergic skin reactions"
+    ],
+    "answer": "Causes damage to living tissue or materials on contact",
+    "time": 40,
+    "explanation": "Corrosive substances can burn skin, damage eyes, or corrode metals. Examples include strong acids and alkalis."
+  },
+  {
+    "id": 15,
+    "question": "If a chemical has an 'oxidising' hazard symbol, it means the substance:",
+    "options": [
+      "Catches fire easily",
+      "Causes severe skin burns",
+      "Can cause or intensify a fire by providing oxygen",
+      "Is harmful if swallowed"
+    ],
+    "answer": "Can cause or intensify a fire by providing oxygen",
+    "time": 40,
+    "explanation": "Oxidising substances release oxygen or accept electrons, causing other materials to burn more vigorously. They should be stored away from flammable materials."
+  },
+  {
+    "id": 16,
+    "question": "Why is it important to record measurements with the correct number of decimal places?",
+    "options": [
+      "To make the data look neater",
+      "To show the precision of the measuring instrument used",
+      "To ensure the answer is always a whole number",
+      "To make calculations easier"
+    ],
+    "answer": "To show the precision of the measuring instrument used",
+    "time": 40,
+    "explanation": "The number of decimal places reflects the precision of the instrument. Recording more decimal places than the instrument allows implies false precision; fewer loses useful information."
+  },
+  {
+    "id": 17,
+    "question": "Which method helps identify if a measurement has a large random error?",
+    "options": [
+      "Using only one very careful measurement",
+      "Comparing the spread of multiple repeated measurements",
+      "Using the most expensive instrument available",
+      "Measuring at different times of day"
+    ],
+    "answer": "Comparing the spread of multiple repeated measurements",
+    "time": 40,
+    "explanation": "If repeated measurements vary widely (large spread), this indicates large random errors and low precision. A small spread indicates high precision and small random errors."
+  },
+  {
+    "id": 18,
+    "question": "A hazard symbol showing a skull and crossbones indicates the substance is:",
+    "options": [
+      "Corrosive",
+      "Irritant",
+      "Toxic",
+      "Flammable"
+    ],
+    "answer": "Toxic",
+    "time": 30,
+    "explanation": "The skull and crossbones symbol warns that a substance is toxic and can cause serious harm or death if swallowed, inhaled, or absorbed through the skin."
+  },
+  {
+    "id": 19,
+    "question": "Which statement about precision in measurement is correct?",
+    "options": [
+      "Precision means the measurement is close to the true value",
+      "Precision means repeated measurements are close to each other",
+      "Precision can be improved by using a cheaper instrument",
+      "Precision is not important in science"
+    ],
+    "answer": "Precision means repeated measurements are close to each other",
+    "time": 40,
+    "explanation": "Precision refers to how close repeated measurements are to each other. High precision means consistent results, even if they are not accurate (close to the true value)."
+  },
+  {
+    "id": 20,
+    "question": "A student measures the length of a pencil three times: 15.2 cm, 15.3 cm, 15.2 cm. The average length is:",
+    "options": [
+      "15.2 cm",
+      "15.23 cm",
+      "15.3 cm",
+      "45.7 cm"
+    ],
+    "answer": "15.2 cm",
+    "time": 50,
+    "explanation": "Average = (15.2 + 15.3 + 15.2) ÷ 3 = 45.7 ÷ 3 = 15.23 cm. However, since the original measurements are to 1 decimal place, the answer should be reported as 15.2 cm (matching the precision of the instrument)."
+  }
+]

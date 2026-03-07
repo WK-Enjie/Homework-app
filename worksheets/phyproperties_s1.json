@@ -1,0 +1,261 @@
+[
+  {
+    "id": 1,
+    "question": "The formula for density is:",
+    "options": [
+      "Density = mass × volume",
+      "Density = mass ÷ volume",
+      "Density = volume ÷ mass",
+      "Density = mass + volume"
+    ],
+    "answer": "Density = mass ÷ volume",
+    "time": 30,
+    "explanation": "Density is defined as mass per unit volume: density = mass ÷ volume. Common units are g/cm³ or kg/m³."
+  },
+  {
+    "id": 2,
+    "question": "An object has a mass of 50 g and a volume of 10 cm³. Its density is:",
+    "options": [
+      "0.2 g/cm³",
+      "5 g/cm³",
+      "60 g/cm³",
+      "500 g/cm³"
+    ],
+    "answer": "5 g/cm³",
+    "time": 40,
+    "explanation": "Density = mass ÷ volume = 50 g ÷ 10 cm³ = 5 g/cm³."
+  },
+  {
+    "id": 3,
+    "question": "An object will float in water if its density is:",
+    "options": [
+      "Greater than 1 g/cm³",
+      "Equal to 1 g/cm³",
+      "Less than 1 g/cm³",
+      "Any density, as long as it is small"
+    ],
+    "answer": "Less than 1 g/cm³",
+    "time": 30,
+    "explanation": "Water has a density of approximately 1 g/cm³. An object floats if its density is less than the liquid it is placed in; it sinks if its density is greater."
+  },
+  {
+    "id": 4,
+    "question": "A block of wood has a density of 0.6 g/cm³. When placed in water (density 1 g/cm³), it will:",
+    "options": [
+      "Sink to the bottom",
+      "Float with part of it above the water",
+      "Remain suspended in the middle",
+      "Dissolve in the water"
+    ],
+    "answer": "Float with part of it above the water",
+    "time": 40,
+    "explanation": "Since the wood's density (0.6 g/cm³) is less than water's density (1 g/cm³), it will float. Part of it will be above the water surface."
+  },
+  {
+    "id": 5,
+    "question": "A student measures the mass of a stone as 120 g. When placed in a measuring cylinder with 50 cm³ of water, the water level rises to 90 cm³. The density of the stone is:",
+    "options": [
+      "1.33 g/cm³",
+      "2.4 g/cm³",
+      "3.0 g/cm³",
+      "4.0 g/cm³"
+    ],
+    "answer": "3.0 g/cm³",
+    "time": 60,
+    "explanation": "Volume of stone = final volume − initial volume = 90 cm³ − 50 cm³ = 40 cm³. Density = mass ÷ volume = 120 g ÷ 40 cm³ = 3.0 g/cm³."
+  },
+  {
+    "id": 6,
+    "question": "Which physical property describes a material's ability to withstand an applied force without deforming significantly?",
+    "options": [
+      "Hardness",
+      "Strength",
+      "Flexibility",
+      "Thermal conductivity"
+    ],
+    "answer": "Strength",
+    "time": 40,
+    "explanation": "Strength is the ability of a material to withstand an applied force without deforming significantly. This is different from hardness, which is resistance to scratching."
+  },
+  {
+    "id": 7,
+    "question": "Which physical property describes a material's resistance to being scratched or indented?",
+    "options": [
+      "Strength",
+      "Flexibility",
+      "Hardness",
+      "Electrical conductivity"
+    ],
+    "answer": "Hardness",
+    "time": 40,
+    "explanation": "Hardness is a material's resistance to scratching or indentation. A hard material like diamond can scratch softer materials."
+  },
+  {
+    "id": 8,
+    "question": "Which physical property describes a material's ability to bend without breaking?",
+    "options": [
+      "Strength",
+      "Hardness",
+      "Flexibility",
+      "Thermal conductivity"
+    ],
+    "answer": "Flexibility",
+    "time": 40,
+    "explanation": "Flexibility is the ability of a material to bend without breaking. Flexible materials like rubber can be bent and return to their original shape."
+  },
+  {
+    "id": 9,
+    "question": "Which physical property describes how well a material allows electric current to flow through it?",
+    "options": [
+      "Thermal conductivity",
+      "Electrical conductivity",
+      "Strength",
+      "Hardness"
+    ],
+    "answer": "Electrical conductivity",
+    "time": 40,
+    "explanation": "Electrical conductivity is a measure of how easily electric current can flow through a material. Metals like copper have high electrical conductivity."
+  },
+  {
+    "id": 10,
+    "question": "Which physical property describes how well a material transfers thermal energy through it?",
+    "options": [
+      "Electrical conductivity",
+      "Thermal conductivity",
+      "Flexibility",
+      "Strength"
+    ],
+    "answer": "Thermal conductivity",
+    "time": 40,
+    "explanation": "Thermal conductivity is a measure of how well a material transfers thermal energy. Metals like copper have high thermal conductivity."
+  },
+  {
+    "id": 11,
+    "question": "The table shows properties of four materials. Which material is MOST suitable for making electrical wires?",
+    "options": [
+      "Material A: high electrical conductivity, low strength",
+      "Material B: low electrical conductivity, high strength",
+      "Material C: high thermal conductivity, low flexibility",
+      "Material D: low electrical conductivity, high flexibility"
+    ],
+    "answer": "Material A: high electrical conductivity, low strength",
+    "time": 50,
+    "explanation": "Electrical wires need high electrical conductivity to allow current to flow easily. Strength is less critical for wires that are supported, so Material A is the best choice."
+  },
+  {
+    "id": 12,
+    "question": "The table shows properties of three materials for making a cutting tool. Which material is MOST suitable?",
+    "options": [
+      "Material X: high hardness, low flexibility",
+      "Material Y: low hardness, high flexibility",
+      "Material Z: high flexibility, low hardness"
+    ],
+    "answer": "Material X: high hardness, low flexibility",
+    "time": 50,
+    "explanation": "Cutting tools need high hardness to resist wear and maintain a sharp edge. Flexibility is not important for cutting tools, so Material X is the best choice."
+  },
+  {
+    "id": 13,
+    "question": "The table shows properties of materials for making a bridge cable. Which property is MOST important for this application?",
+    "options": [
+      "High flexibility",
+      "High strength",
+      "High thermal conductivity",
+      "Low hardness"
+    ],
+    "answer": "High strength",
+    "time": 40,
+    "explanation": "Bridge cables must support heavy loads without deforming. High strength ensures the cable can withstand large forces while maintaining its shape, which is critical for safety."
+  },
+  {
+    "id": 14,
+    "question": "The table shows properties of materials for making a cooking pot base. Which material is MOST suitable?",
+    "options": [
+      "Material A: high thermal conductivity, low strength",
+      "Material B: low thermal conductivity, high strength",
+      "Material C: high electrical conductivity, low thermal conductivity",
+      "Material D: low thermal conductivity, high flexibility"
+    ],
+    "answer": "Material A: high thermal conductivity, low strength",
+    "time": 50,
+    "explanation": "A cooking pot base needs high thermal conductivity to transfer heat efficiently from the stove to the food. Strength is less critical for the base, so Material A is the best choice."
+  },
+  {
+    "id": 15,
+    "question": "The table shows properties of materials for making a phone screen protector. Which material is MOST suitable?",
+    "options": [
+      "Material P: high hardness, low flexibility",
+      "Material Q: low hardness, high flexibility",
+      "Material R: high flexibility, low hardness",
+      "Material S: low hardness, low flexibility"
+    ],
+    "answer": "Material P: high hardness, low flexibility",
+    "time": 50,
+    "explanation": "A screen protector needs high hardness to resist scratches from keys or other objects. Flexibility is less important for a thin protector, so Material P is the best choice."
+  },
+  {
+    "id": 16,
+    "question": "The table shows properties of materials for making a rubber band. Which property is MOST important for this application?",
+    "options": [
+      "High hardness",
+      "High strength",
+      "High flexibility",
+      "High thermal conductivity"
+    ],
+    "answer": "High flexibility",
+    "time": 40,
+    "explanation": "A rubber band needs to stretch and return to its original shape without breaking. High flexibility allows the material to bend and stretch repeatedly, which is essential for this use."
+  },
+  {
+    "id": 17,
+    "question": "The table shows properties of materials for making a heat sink for a computer processor. Which material is MOST suitable?",
+    "options": [
+      "Material M: high thermal conductivity, low electrical conductivity",
+      "Material N: low thermal conductivity, high electrical conductivity",
+      "Material O: high thermal conductivity, high electrical conductivity",
+      "Material P: low thermal conductivity, low electrical conductivity"
+    ],
+    "answer": "Material O: high thermal conductivity, high electrical conductivity",
+    "time": 50,
+    "explanation": "A heat sink needs high thermal conductivity to transfer heat away from the processor quickly. High electrical conductivity is also useful for grounding, so Material O is the best choice."
+  },
+  {
+    "id": 18,
+    "question": "The table shows properties of materials for making a knife blade. Which property is MOST important for this application?",
+    "options": [
+      "High flexibility",
+      "High hardness",
+      "High thermal conductivity",
+      "Low strength"
+    ],
+    "answer": "High hardness",
+    "time": 40,
+    "explanation": "A knife blade needs high hardness to maintain a sharp edge and resist wear during cutting. Flexibility and thermal conductivity are less important for this application."
+  },
+  {
+    "id": 19,
+    "question": "The table shows properties of materials for making insulation for electrical wires. Which property is MOST important for this application?",
+    "options": [
+      "High electrical conductivity",
+      "Low electrical conductivity",
+      "High thermal conductivity",
+      "High strength"
+    ],
+    "answer": "Low electrical conductivity",
+    "time": 40,
+    "explanation": "Insulation for electrical wires must prevent electric current from flowing through it. Low electrical conductivity (high resistance) ensures the insulation safely contains the current within the wire."
+  },
+  {
+    "id": 20,
+    "question": "The table shows properties of materials for making a protective helmet. Which property is MOST important for this application?",
+    "options": [
+      "High flexibility",
+      "High strength",
+      "High thermal conductivity",
+      "Low hardness"
+    ],
+    "answer": "High strength",
+    "time": 40,
+    "explanation": "A protective helmet must withstand impact forces without deforming significantly to protect the wearer's head. High strength ensures the helmet can absorb impact while maintaining its protective shape."
+  }
+]
