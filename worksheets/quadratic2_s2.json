@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "question": "Expand using algebraic identity: (x + 4)²",
+    "options": ["x² + 16", "x² + 4x + 16", "x² + 8x + 16", "x² - 8x + 16"],
+    "answer": "x² + 8x + 16",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "Expand using algebraic identity: (x - 6)²",
+    "options": ["x² - 36", "x² - 6x + 36", "x² - 12x + 36", "x² + 12x + 36"],
+    "answer": "x² - 12x + 36",
+    "time": 60
+  },
+  {
+    "id": 3,
+    "question": "Expand using algebraic identity: (x + 9)(x - 9)",
+    "options": ["x² - 81", "x² + 81", "x² - 18x - 81", "x² - 9"],
+    "answer": "x² - 81",
+    "time": 45
+  },
+  {
+    "id": 4,
+    "question": "Expand using algebraic identity: (2x + 3)²",
+    "options": ["4x² + 9", "4x² + 6x + 9", "4x² + 12x + 9", "2x² + 12x + 9"],
+    "answer": "4x² + 12x + 9",
+    "time": 75
+  },
+  {
+    "id": 5,
+    "question": "Expand using algebraic identity: (3x - 5)²",
+    "options": ["9x² - 25", "9x² - 15x + 25", "9x² - 30x + 25", "9x² + 30x + 25"],
+    "answer": "9x² - 30x + 25",
+    "time": 75
+  },
+  {
+    "id": 6,
+    "question": "Expand using algebraic identity: (4x + 7)(4x - 7)",
+    "options": ["16x² - 49", "16x² + 49", "16x² - 56x - 49", "8x² - 49"],
+    "answer": "16x² - 49",
+    "time": 60
+  },
+  {
+    "id": 7,
+    "question": "Expand using algebraic identity: (6x - 1)²",
+    "options": ["36x² - 1", "36x² - 6x + 1", "36x² - 12x + 1", "36x² + 12x + 1"],
+    "answer": "36x² - 12x + 1",
+    "time": 75
+  },
+  {
+    "id": 8,
+    "question": "Factorise using algebraic identity: x² - 25",
+    "options": ["(x - 5)²", "(x + 5)²", "(x + 5)(x - 5)", "(x - 25)(x + 1)"],
+    "answer": "(x + 5)(x - 5)",
+    "time": 45
+  },
+  {
+    "id": 9,
+    "question": "Factorise using algebraic identity: x² - 144",
+    "options": ["(x - 12)²", "(x + 12)²", "(x + 12)(x - 12)", "(x - 72)(x + 2)"],
+    "answer": "(x + 12)(x - 12)",
+    "time": 60
+  },
+  {
+    "id": 10,
+    "question": "Factorise using algebraic identity: 16x² - 9",
+    "options": ["(4x - 3)²", "(4x + 3)²", "(4x + 3)(4x - 3)", "(16x - 3)(x + 3)"],
+    "answer": "(4x + 3)(4x - 3)",
+    "time": 60
+  },
+  {
+    "id": 11,
+    "question": "Factorise using algebraic identity: 49a² - 64b²",
+    "options": ["(7a - 8b)²", "(7a + 8b)²", "(7a + 8b)(7a - 8b)", "(49a - 8b)(a + 8b)"],
+    "answer": "(7a + 8b)(7a - 8b)",
+    "time": 75
+  },
+  {
+    "id": 12,
+    "question": "Factorise: x² + 10x + 25",
+    "options": ["(x + 5)(x - 5)", "(x + 5)²", "(x - 5)²", "(x + 25)(x + 1)"],
+    "answer": "(x + 5)²",
+    "time": 60
+  },
+  {
+    "id": 13,
+    "question": "Factorise: x² - 18x + 81",
+    "options": ["(x - 9)(x + 9)", "(x + 9)²", "(x - 9)²", "(x - 81)(x - 1)"],
+    "answer": "(x - 9)²",
+    "time": 75
+  },
+  {
+    "id": 14,
+    "question": "Factorise: 4x² + 20x + 25",
+    "options": ["(2x + 5)(2x - 5)", "(2x + 5)²", "(2x - 5)²", "(4x + 5)(x + 5)"],
+    "answer": "(2x + 5)²",
+    "time": 90
+  },
+  {
+    "id": 15,
+    "question": "Factorise: 9x² - 24x + 16",
+    "options": ["(3x + 4)(3x - 4)", "(3x + 4)²", "(3x - 4)²", "(9x - 4)(x - 4)"],
+    "answer": "(3x - 4)²",
+    "time": 90
+  },
+  {
+    "id": 16,
+    "question": "Expand: (√x + 2)(√x - 2)",
+    "options": ["x - 4", "x + 4", "x² - 4", "√x - 4"],
+    "answer": "x - 4",
+    "time": 75
+  },
+  {
+    "id": 17,
+    "question": "Expand: (√7 + √3)(√7 - √3)",
+    "options": ["4", "10", "√4", "√10"],
+    "answer": "4",
+    "time": 75
+  },
+  {
+    "id": 18,
+    "question": "Expand: (√(3x) + 5)(√(3x) - 5)",
+    "options": ["3x - 25", "3x + 25", "9x - 25", "3x - 5"],
+    "answer": "3x - 25",
+    "time": 90
+  },
+  {
+    "id": 19,
+    "question": "Evaluate without a calculator: 51² - 49²",
+    "options": ["200", "100", "4", "400"],
+    "answer": "200",
+    "time": 60
+  },
+  {
+    "id": 20,
+    "question": "Evaluate without a calculator: 73² - 27²",
+    "options": ["4600", "2300", "4000", "5000"],
+    "answer": "4600",
+    "time": 75
+  },
+  {
+    "id": 21,
+    "question": "Evaluate without a calculator: 102²",
+    "options": ["10404", "10204", "10400", "10604"],
+    "answer": "10404",
+    "time": 75
+  },
+  {
+    "id": 22,
+    "question": "Evaluate without a calculator: 98²",
+    "options": ["9604", "9404", "9600", "9804"],
+    "answer": "9604",
+    "time": 75
+  },
+  {
+    "id": 23,
+    "question": "Evaluate without a calculator: 47 × 53",
+    "options": ["2491", "2500", "2509", "2400"],
+    "answer": "2491",
+    "time": 75
+  },
+  {
+    "id": 24,
+    "question": "Given that (x + y)² = 64 and xy = 15, find the value of x² + y².",
+    "options": ["34", "49", "79", "94"],
+    "answer": "34",
+    "time": 90
+  },
+  {
+    "id": 25,
+    "question": "Given that x² + y² = 50 and xy = 7, find the value of (x + y)².",
+    "options": ["57", "64", "43", "36"],
+    "answer": "64",
+    "time": 90
+  },
+  {
+    "id": 26,
+    "question": "Given that x - y = 6 and xy = 16, find the value of x² + y².",
+    "options": ["52", "68", "20", "84"],
+    "answer": "68",
+    "time": 105
+  },
+  {
+    "id": 27,
+    "question": "Given that x² + y² = 85 and (x - y)² = 25, find the value of xy.",
+    "options": ["20", "30", "40", "60"],
+    "answer": "30",
+    "time": 105
+  },
+  {
+    "id": 28,
+    "question": "Simplify: (x + 4)² - (x - 4)²",
+    "options": ["8x", "16x", "32", "0"],
+    "answer": "16x",
+    "time": 90
+  },
+  {
+    "id": 29,
+    "question": "Simplify: (3x + 2)² - (3x - 2)²",
+    "options": ["12x", "24x", "8", "16"],
+    "answer": "24x",
+    "time": 90
+  },
+  {
+    "id": 30,
+    "question": "Simplify: (a + b)² + (a - b)²",
+    "options": ["2a² + 2b²", "4ab", "2a² - 2b²", "a² + b²"],
+    "answer": "2a² + 2b²",
+    "time": 90
+  },
+  {
+    "id": 31,
+    "question": "Simplify: (a + b)² - (a - b)²",
+    "options": ["2a² + 2b²", "4ab", "2a² - 2b²", "a² + b²"],
+    "answer": "4ab",
+    "time": 90
+  },
+  {
+    "id": 32,
+    "question": "Factorise completely: (x + 2)² - 9",
+    "options": ["(x + 5)(x - 1)", "(x - 5)(x + 1)", "(x + 5)(x + 1)", "(x - 5)(x - 1)"],
+    "answer": "(x + 5)(x - 1)",
+    "time": 105
+  },
+  {
+    "id": 33,
+    "question": "Factorise completely: (3x - 2)² - 16",
+    "options": ["(3x + 2)(3x - 6)", "(3x - 6)(3x + 2)", "(3x + 2)(3x + 6)", "(3x - 2)(3x - 6)"],
+    "answer": "(3x + 2)(3x - 6)",
+    "time": 105
+  },
+  {
+    "id": 34,
+    "question": "If x + 1/x = 4, find the value of x² + 1/x².",
+    "options": ["14", "16", "18", "12"],
+    "answer": "14",
+    "time": 120
+  },
+  {
+    "id": 35,
+    "question": "If x - 1/x = 5, find the value of x² + 1/x².",
+    "options": ["23", "25", "27", "29"],
+    "answer": "27",
+    "time": 120
+  },
+  {
+    "id": 36,
+    "question": "If a + b = 12 and a - b = 4, find the value of a² - b².",
+    "options": ["48", "32", "16", "64"],
+    "answer": "48",
+    "time": 90
+  },
+  {
+    "id": 37,
+    "question": "If a + b = 9 and ab = 20, find the value of a² + b².",
+    "options": ["41", "61", "81", "101"],
+    "answer": "41",
+    "time": 90
+  },
+  {
+    "id": 38,
+    "question": "Expand: (√a + √b)²",
+    "options": ["a + b", "a + 2√(ab) + b", "a - 2√(ab) + b", "a² + b²"],
+    "answer": "a + 2√(ab) + b",
+    "time": 90
+  },
+  {
+    "id": 39,
+    "question": "Simplify: (√a + √b)² - (√a - √b)²",
+    "options": ["2a + 2b", "4√(ab)", "4ab", "a - b"],
+    "answer": "4√(ab)",
+    "time": 105
+  },
+  {
+    "id": 40,
+    "question": "Evaluate: 199 × 201 using algebraic identity",
+    "options": ["39999", "40000", "39899", "40199"],
+    "answer": "39999",
+    "time": 75
+  }
+]
