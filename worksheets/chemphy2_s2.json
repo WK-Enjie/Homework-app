@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "Which word equation correctly represents the combustion of methane?",
+    "options": [
+      "methane + air → carbon dioxide + water",
+      "methane + oxygen → carbon dioxide + water",
+      "carbon dioxide + water → methane + oxygen",
+      "methane → carbon dioxide + water + oxygen"
+    ],
+    "answer": "methane + oxygen → carbon dioxide + water",
+    "time": 40,
+    "explanation": "Combustion is a reaction with oxygen that releases thermal energy. Methane reacts with oxygen (not 'air' as a whole) to produce carbon dioxide and water."
+  },
+  {
+    "id": 2,
+    "question": "Which word equation correctly represents the thermal decomposition of calcium carbonate?",
+    "options": [
+      "calcium carbonate + heat → calcium oxide + carbon dioxide",
+      "calcium oxide + carbon dioxide → calcium carbonate",
+      "calcium carbonate → calcium oxide + carbon dioxide",
+      "calcium carbonate + oxygen → calcium oxide + carbon dioxide"
+    ],
+    "answer": "calcium carbonate → calcium oxide + carbon dioxide",
+    "time": 40,
+    "explanation": "Thermal decomposition means a single substance breaks down into simpler substances when heated. Heat is a condition, not a reactant, so it is not written on the left side of the arrow."
+  },
+  {
+    "id": 3,
+    "question": "Which word equation correctly represents the neutralisation reaction between hydrochloric acid and sodium hydroxide?",
+    "options": [
+      "hydrochloric acid + sodium hydroxide → sodium chloride + water",
+      "sodium chloride + water → hydrochloric acid + sodium hydroxide",
+      "hydrochloric acid + sodium → sodium chloride + hydrogen",
+      "acid + alkali → salt"
+    ],
+    "answer": "hydrochloric acid + sodium hydroxide → sodium chloride + water",
+    "time": 40,
+    "explanation": "Neutralisation is when an acid reacts with an alkali to produce a salt and water. The specific names of the acid, alkali, and salt should be used in the word equation."
+  },
+  {
+    "id": 4,
+    "question": "Rusting of iron is an oxidation reaction. Which word equation correctly represents this process?",
+    "options": [
+      "iron + water → rust",
+      "iron + oxygen → iron oxide",
+      "iron + oxygen + water → hydrated iron(III) oxide",
+      "iron oxide + water → rust"
+    ],
+    "answer": "iron + oxygen + water → hydrated iron(III) oxide",
+    "time": 40,
+    "explanation": "Rusting requires both oxygen and water. The product is hydrated iron(III) oxide, commonly called rust. This is an oxidation reaction that occurs slowly at room temperature."
+  },
+  {
+    "id": 5,
+    "question": "In the word equation: hydrogen + oxygen → water, what important condition is missing for this reaction to occur?",
+    "options": [
+      "Light",
+      "A catalyst",
+      "Heat or a spark to start the reaction",
+      "Pressure"
+    ],
+    "answer": "Heat or a spark to start the reaction",
+    "time": 40,
+    "explanation": "Hydrogen and oxygen do not react at room temperature. A spark or flame is needed to provide the activation energy to start the reaction. Conditions like heat or light are often written above the arrow."
+  },
+  {
+    "id": 6,
+    "question": "Which statement correctly describes the role of the arrow (→) in a word equation?",
+    "options": [
+      "It means the reactants are equal to the products",
+      "It means the reactants change to form the products",
+      "It means the reaction can proceed in both directions",
+      "It means the products are more important than the reactants"
+    ],
+    "answer": "It means the reactants change to form the products",
+    "time": 30,
+    "explanation": "The arrow in a word equation means 'reacts to form' or 'produces'. It shows the direction of the chemical change from reactants (starting substances) to products (new substances formed)."
+  },
+  {
+    "id": 7,
+    "question": "Photosynthesis is a chemical reaction that occurs in plants. Which word equation correctly represents photosynthesis?",
+    "options": [
+      "carbon dioxide + water → glucose + oxygen",
+      "glucose + oxygen → carbon dioxide + water",
+      "carbon dioxide + oxygen → glucose + water",
+      "water + light → glucose + oxygen"
+    ],
+    "answer": "carbon dioxide + water → glucose + oxygen",
+    "time": 40,
+    "explanation": "In photosynthesis, plants use carbon dioxide and water, with light energy, to produce glucose and oxygen. Light is a condition for the reaction, not a reactant, so it is often written above the arrow."
+  },
+  {
+    "id": 8,
+    "question": "Which word equation correctly represents the reaction between sulfuric acid and potassium hydroxide?",
+    "options": [
+      "sulfuric acid + potassium hydroxide → potassium sulfate + water",
+      "potassium sulfate + water → sulfuric acid + potassium hydroxide",
+      "sulfuric acid + potassium → potassium sulfate + hydrogen",
+      "acid + base → salt"
+    ],
+    "answer": "sulfuric acid + potassium hydroxide → potassium sulfate + water",
+    "time": 40,
+    "explanation": "This is a neutralisation reaction. An acid reacts with an alkali to produce a salt and water. The specific names should be used: sulfuric acid, potassium hydroxide, and potassium sulfate."
+  },
+  {
+    "id": 9,
+    "question": "A student writes the word equation: 'copper + oxygen → copper oxide'. What is missing from this equation?",
+    "options": [
+      "The condition 'heat'",
+      "The state symbols (s), (l), (g)",
+      "The specific type of copper oxide formed",
+      "The mass of each substance"
+    ],
+    "answer": "The specific type of copper oxide formed",
+    "time": 40,
+    "explanation": "Copper can form different types of copper oxide. At Sec 2 level, students should specify the product name when possible. Specific product names make word equations more precise."
+  },
+  {
+    "id": 10,
+    "question": "Which word equation correctly represents the thermal decomposition of potassium chlorate?",
+    "options": [
+      "potassium chlorate + heat → potassium chloride + oxygen",
+      "potassium chloride + oxygen → potassium chlorate",
+      "potassium chlorate → potassium chloride + oxygen",
+      "potassium chlorate + oxygen → potassium chloride"
+    ],
+    "answer": "potassium chlorate → potassium chloride + oxygen",
+    "time": 40,
+    "explanation": "Thermal decomposition means a substance breaks down when heated. Potassium chlorate decomposes to potassium chloride and oxygen. Heat is a condition, not written as a reactant in the word equation."
+  },
+  {
+    "id": 11,
+    "question": "Cellular respiration is an oxidation reaction that occurs in living cells. Which word equation correctly represents this process?",
+    "options": [
+      "glucose + oxygen → carbon dioxide + water + thermal energy",
+      "carbon dioxide + water → glucose + oxygen",
+      "glucose → carbon dioxide + water + oxygen",
+      "oxygen + thermal energy → glucose + carbon dioxide"
+    ],
+    "answer": "glucose + oxygen → carbon dioxide + water + thermal energy",
+    "time": 40,
+    "explanation": "Cellular respiration is an oxidation reaction where glucose reacts with oxygen to release thermal energy and produce carbon dioxide and water. Thermal energy is a product, not a condition."
+  },
+  {
+    "id": 12,
+    "question": "Magnesium ribbon burns in air with a bright white flame. Which word equation correctly represents this combustion reaction?",
+    "options": [
+      "magnesium + air → magnesium oxide",
+      "magnesium + oxygen → magnesium oxide",
+      "magnesium oxide → magnesium + oxygen",
+      "magnesium + light → white powder"
+    ],
+    "answer": "magnesium + oxygen → magnesium oxide",
+    "time": 40,
+    "explanation": "In combustion, magnesium reacts with oxygen from the air to form magnesium oxide. 'Air' is a mixture; the reacting component is oxygen. The word equation shows reactants on the left, products on the right."
+  },
+  {
+    "id": 13,
+    "question": "Which statement about word equations is correct?",
+    "options": [
+      "Word equations show the exact number of atoms involved",
+      "Word equations use chemical formulae like H₂O and CO₂",
+      "Word equations show the names of reactants and products, with an arrow indicating the direction of change",
+      "Word equations must always include the conditions for the reaction"
+    ],
+    "answer": "Word equations show the names of reactants and products, with an arrow indicating the direction of change",
+    "time": 30,
+    "explanation": "Word equations use the names of substances (not formulae) to show what reacts and what is produced. The arrow indicates the direction of the chemical change. Conditions are helpful but not always required."
+  },
+  {
+    "id": 14,
+    "question": "Silver tarnishes when exposed to air containing sulfur compounds. Which word equation represents this oxidation reaction?",
+    "options": [
+      "silver + sulfur → silver sulfide",
+      "silver + oxygen → silver oxide",
+      "silver sulfide → silver + sulfur",
+      "silver + air → tarnish"
+    ],
+    "answer": "silver + sulfur → silver sulfide",
+    "time": 40,
+    "explanation": "Tarnishing of silver is a reaction between silver and sulfur compounds in the air to form silver sulfide, which appears as a dark layer. This is an oxidation reaction that occurs slowly at room temperature."
+  },
+  {
+    "id": 15,
+    "question": "Which word equation correctly shows the reactants and products for the reaction between zinc and hydrochloric acid?",
+    "options": [
+      "zinc + hydrochloric acid → zinc chloride + hydrogen",
+      "zinc chloride + hydrogen → zinc + hydrochloric acid",
+      "zinc + acid → zinc acid + hydrogen",
+      "hydrochloric acid → zinc + hydrogen + chloride"
+    ],
+    "answer": "zinc + hydrochloric acid → zinc chloride + hydrogen",
+    "time": 40,
+    "explanation": "When a metal reacts with an acid, it produces a salt and hydrogen gas. Zinc reacts with hydrochloric acid to form zinc chloride (the salt) and hydrogen gas."
+  },
+  {
+    "id": 16,
+    "question": "In the word equation: calcium carbonate → calcium oxide + carbon dioxide, what type of reaction is this?",
+    "options": [
+      "Combustion",
+      "Thermal decomposition",
+      "Oxidation",
+      "Neutralisation"
+    ],
+    "answer": "Thermal decomposition",
+    "time": 40,
+    "explanation": "This is thermal decomposition: one reactant (calcium carbonate) breaks down into two products (calcium oxide and carbon dioxide) when heated."
+  },
+  {
+    "id": 17,
+    "question": "Which word equation correctly represents the combustion of ethanol?",
+    "options": [
+      "ethanol + air → carbon dioxide + water",
+      "ethanol + oxygen → carbon dioxide + water",
+      "carbon dioxide + water → ethanol + oxygen",
+      "ethanol → carbon dioxide + water"
+    ],
+    "answer": "ethanol + oxygen → carbon dioxide + water",
+    "time": 40,
+    "explanation": "Combustion is a reaction with oxygen that releases thermal energy. Ethanol reacts with oxygen to produce carbon dioxide and water. 'Air' is a mixture; the reacting component is oxygen."
+  },
+  {
+    "id": 18,
+    "question": "A student observes that when a carbonate compound is heated, it produces a gas that turns limewater milky. Which word equation represents this observation?",
+    "options": [
+      "metal carbonate → metal oxide + carbon dioxide",
+      "metal oxide + carbon dioxide → metal carbonate",
+      "metal carbonate + heat → metal + carbon dioxide + oxygen",
+      "metal carbonate + oxygen → metal oxide + carbon dioxide"
+    ],
+    "answer": "metal carbonate → metal oxide + carbon dioxide",
+    "time": 50,
+    "explanation": "When a metal carbonate is heated, it undergoes thermal decomposition to form a metal oxide and carbon dioxide. The carbon dioxide turns limewater milky. Heat is a condition, not a reactant."
+  },
+  {
+    "id": 19,
+    "question": "Which statement correctly compares combustion and oxidation?",
+    "options": [
+      "Combustion is rapid oxidation with a flame; oxidation can be rapid or slow",
+      "Oxidation always produces a flame; combustion does not",
+      "Combustion and oxidation are completely different reaction types",
+      "Oxidation only occurs in living things; combustion only occurs in engines"
+    ],
+    "answer": "Combustion is rapid oxidation with a flame; oxidation can be rapid or slow",
+    "time": 50,
+    "explanation": "Combustion is a type of oxidation that is rapid and produces a flame. Oxidation is the broader category: it can be rapid (burning) or slow (rusting, respiration). Both involve reaction with oxygen."
+  },
+  {
+    "id": 20,
+    "question": "In the word equation for neutralisation: acid + alkali → salt + water, what is always produced besides the salt?",
+    "options": [
+      "Hydrogen gas",
+      "Carbon dioxide",
+      "Water",
+      "Oxygen"
+    ],
+    "answer": "Water",
+    "time": 30,
+    "explanation": "Neutralisation always produces a salt and water. The acid and alkali 'neutralise' each other's properties, forming these two products."
+  }
+]
