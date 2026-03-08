@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧧 CNY Battle Arcade 🧧</title>
+    <title>🔥 CNY Battle Arcade 🔥</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -13,8 +13,8 @@
         <!-- LOGIN SCREEN -->
         <div id="login-screen" class="screen">
             <div class="login-box">
-                <h1>🧧 CNY ARCADE 🧧</h1>
-                <p style="color: #fff; margin-bottom: 20px;">Defeat the Lucky Horse with Math!</p>
+                <h1>🔥 CNY BATTLE 🔥</h1>
+                <p style="color: #fff; margin-bottom: 20px;">Defeat the Dragon with Math!</p>
                 <div class="input-area">
                     <input type="text" id="pin-input" placeholder="Enter Mission Code">
                     <button id="start-btn" class="btn">START BATTLE</button>
@@ -25,9 +25,10 @@
 
         <!-- BATTLE SCREEN -->
         <div id="battle-screen" class="screen hidden">
+            <!-- HUD -->
             <div class="hud">
                 <div class="player-hud">
-                    <div class="name">👦 HERO</div>
+                    <div class="name">🧙 WIZARD</div>
                     <div class="hp-bar-container">
                         <div id="player-hp-fill"></div>
                     </div>
@@ -35,7 +36,7 @@
                 </div>
                 <div class="vs-logo">VS</div>
                 <div class="enemy-hud">
-                    <div class="name">🐴 LUCKY HORSE</div>
+                    <div class="name">🐉 DRAGON</div>
                     <div class="hp-bar-container">
                         <div id="enemy-hp-fill"></div>
                     </div>
@@ -43,24 +44,25 @@
                 </div>
             </div>
 
+            <!-- ARENA -->
             <div class="arena">
                 <div class="fighter player">
-                    <div class="avatar" id="player-sprite">👦</div>
+                    <div class="avatar" id="player-sprite">🧙</div>
                     <div class="shadow"></div>
                 </div>
                 <div class="fighter enemy">
-                    <div class="avatar" id="enemy-sprite">🐴</div>
+                    <div class="avatar" id="enemy-sprite">🐉</div>
                     <div class="shadow"></div>
                     <div class="aura"></div>
                 </div>
-                <div id="fireball" class="projectile hidden">✨</div>
-                <div id="enemy-projectile" class="projectile hidden">🥕</div>
+                <div id="fireball" class="projectile hidden">🔥</div>
+                <div id="enemy-projectile" class="projectile hidden">⚫</div>
                 <div id="explosion" class="explosion hidden">💥</div>
                 <div id="crit-display" class="crit-text hidden">CRITICAL HIT!</div>
                 <div id="miss-display" class="combo-text miss hidden">MISSED!</div>
-                <div id="damage-number" class="damage-number hidden"></div>
             </div>
 
+            <!-- CONTROL PANEL -->
             <div class="control-panel">
                 <div class="timer-strip">
                     <div id="timer-fill"></div>
@@ -84,7 +86,7 @@
                     <div>MAX COMBO</div>
                     <div class="big-num" id="final-combo">0</div>
                 </div>
-                <!-- FIXED: Added proper ID -->
+                <!-- FIXED: Added proper ID for PLAY AGAIN button -->
                 <button id="play-again-btn" class="btn">PLAY AGAIN</button>
             </div>
         </div>
