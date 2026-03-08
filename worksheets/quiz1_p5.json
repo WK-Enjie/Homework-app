@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "question": "Calculate: 48 ÷ 6 + 12 × 3 - 15",
-    "options": ["25", "29", "33", "37"],
-    "answer": "29",
-    "time": 60
+    "question": "Express $\\frac{3}{4}$ as a decimal.",
+    "options": ["0.34", "0.43", "0.75", "0.25"],
+    "answer": "0.75",
+    "time": 45
   },
   {
     "id": 2,
-    "question": "There are 20 questions in a test. Each correct answer scores 5 points and each wrong answer deducts 2 points. John scored 72 points. How many questions did he answer correctly?",
-    "options": ["14", "15", "16", "17"],
-    "answer": "16",
-    "time": 90
+    "question": "Express $0.6$ as a fraction in simplest form.",
+    "options": ["$\\frac{6}{10}$", "$\\frac{3}{5}$", "$\\frac{2}{3}$", "$\\frac{4}{5}$"],
+    "answer": "$\\frac{3}{5}$",
+    "time": 45
   },
   {
     "id": 3,
-    "question": "Tom had some money. He spent $15 on food, then gave half of the remainder to his sister. He then spent $20 on a book and had $35 left. How much money did Tom have at first?",
-    "options": ["$120", "$130", "$140", "$150"],
-    "answer": "$130",
-    "time": 90
+    "question": "Write 5067 in words.",
+    "options": ["Five thousand sixty-seven", "Five thousand six hundred seven", "Five thousand six hundred seventy", "Fifty thousand sixty-seven"],
+    "answer": "Five thousand sixty-seven",
+    "time": 45
   },
   {
     "id": 4,
-    "question": "A teacher has some pencils. If she gives 5 pencils to each student, she will be short of 8 pencils. If she gives 4 pencils to each student, she will have 12 pencils left. How many students are there?",
-    "options": ["16", "18", "20", "22"],
-    "answer": "20",
-    "time": 90
+    "question": "Write 'Three thousand and twenty-five' in numerals.",
+    "options": ["3250", "3025", "3205", "3052"],
+    "answer": "3025",
+    "time": 45
   },
   {
     "id": 5,
@@ -36,37 +36,107 @@
   },
   {
     "id": 6,
-    "question": "There are chickens and rabbits in a farm. There are 35 heads and 94 legs altogether. How many rabbits are there?",
-    "options": ["10", "12", "14", "16"],
-    "answer": "12",
-    "time": 90
+    "question": "A teacher has some pencils. If she gives 5 pencils to each student, she will be short of 8 pencils. If she gives 4 pencils to each student, she will have 12 pencils left. How many students are there?",
+    "options": ["16", "18", "20", "22"],
+    "answer": "20",
+    "time": 120
   },
   {
     "id": 7,
-    "question": "Calculate: [72 ÷ (9 - 5) + 8 × 3] - 20",
-    "options": ["18", "22", "26", "30"],
-    "answer": "22",
-    "time": 75
-  },
-  {
-    "id": 8,
     "question": "In a class, if each student gets 6 stickers, there will be 10 stickers left. If each student gets 7 stickers, there will be 5 stickers short. How many students are in the class?",
     "options": ["12", "13", "14", "15"],
     "answer": "15",
+    "time": 120
+  },
+  {
+    "id": 8,
+    "question": "Apples are sold at 3 for $2. What is the minimum amount of money needed to buy at least 20 apples?",
+    "options": ["$12", "$14", "$16", "$18"],
+    "answer": "$14",
     "time": 90
   },
   {
     "id": 9,
-    "question": "Mrs. Tan baked some cookies. She gave half to her neighbours, then ate 3 cookies. She then gave half of the remainder to her children and had 8 cookies left. How many cookies did she bake at first?",
-    "options": ["38", "40", "42", "44"],
-    "answer": "38",
-    "time": 90
+    "question": "Buns are sold in packets of 4. What is the minimum number of packets needed to get at least 30 buns?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8",
+    "time": 60
   },
   {
     "id": 10,
-    "question": "Find the next number: 1, 4, 9, 16, 25, 36, ...",
-    "options": ["42", "45", "49", "54"],
-    "answer": "49",
+    "question": "Tom has 3 times as many stickers as Jerry. Together they have 80 stickers. How many stickers does Jerry have?",
+    "options": ["15", "20", "25", "30"],
+    "answer": "20",
+    "time": 90
+  },
+  {
+    "id": 11,
+    "question": "The ratio of boys to girls in a class is 2:3. If there are 30 pupils in total, how many girls are there?",
+    "options": ["12", "15", "18", "20"],
+    "answer": "18",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "A group of children shared some candies. If each child gets 8 candies, there will be 6 candies left. If each child gets 9 candies, there will be 4 candies short. How many candies were there?",
+    "options": ["78", "82", "86", "90"],
+    "answer": "86",
+    "time": 120
+  },
+  {
+    "id": 13,
+    "question": "Notebooks are sold at 5 for $12. What is the maximum number of notebooks you can buy with $50?",
+    "options": ["18", "20", "22", "24"],
+    "answer": "20",
+    "time": 90
+  },
+  {
+    "id": 14,
+    "question": "Express $\\frac{7}{8}$ as a decimal.",
+    "options": ["0.78", "0.87", "0.875", "0.785"],
+    "answer": "0.875",
     "time": 60
+  },
+  {
+    "id": 15,
+    "question": "Box A has 4 times as many balls as Box B. After moving 15 balls from Box A to Box B, both boxes have the same number of balls. How many balls were in Box B at first?",
+    "options": ["5", "8", "10", "12"],
+    "answer": "10",
+    "time": 120
+  },
+  {
+    "id": 16,
+    "question": "Pens are sold in boxes of 6. Each box costs $8. What is the minimum cost to get at least 40 pens?",
+    "options": ["$48", "$56", "$64", "$72"],
+    "answer": "$56",
+    "time": 90
+  },
+  {
+    "id": 17,
+    "question": "Find the missing number in the pattern: 4, 9, 16, 25, __, 49",
+    "options": ["30", "32", "36", "40"],
+    "answer": "36",
+    "time": 60
+  },
+  {
+    "id": 18,
+    "question": "Sarah has $\\frac{2}{3}$ as many books as Amy. Together they have 45 books. How many books does Amy have?",
+    "options": ["18", "20", "25", "27"],
+    "answer": "27",
+    "time": 90
+  },
+  {
+    "id": 19,
+    "question": "A van can carry 8 passengers. What is the minimum number of vans needed to transport 50 passengers?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "time": 60
+  },
+  {
+    "id": 20,
+    "question": "There were 250 pens and pencils in a drawer. 40% of the pens were removed, and 10 pencils were removed. In the end, the number of pens and pencils remaining was equal. How many pens were there at first?",
+    "options": ["130", "140", "150", "160"],
+    "answer": "150",
+    "time": 120
   }
 ]
