@@ -71,7 +71,7 @@
   },
   {
     "id": 11,
-    "question": "The ratio of boys to girls in a class is 2:3. If there are 30 pupils in total, how many girls are there?",
+    "question": "$\\frac{2}{5}$ of the children in a class are boys. If there are 30 pupils in total, how many girls are there?",
     "options": ["12", "15", "18", "20"],
     "answer": "18",
     "time": 90
@@ -134,7 +134,7 @@
   },
   {
     "id": 20,
-    "question": "There were 250 pens and pencils in a drawer. 40% of the pens were removed, and 10 pencils were removed. In the end, the number of pens and pencils remaining was equal. How many pens were there at first?",
+    "question": "There were 250 pens and pencils in a drawer. $\\frac{2}{5}$ of the pens were removed, and 10 pencils were removed. In the end, the number of pens and pencils remaining was equal. How many pens were there at first?",
     "options": ["130", "140", "150", "160"],
     "answer": "150",
     "time": 120
