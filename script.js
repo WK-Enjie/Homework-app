@@ -1,6 +1,7 @@
 /* =====================================================
    LEVEL UP — Power Up Your Knowledge!
    FIXED: KaTeX auto-render for proper math display
+   FIXED: Try Again button now works
    Handles fractions, powers, surds, dollar signs
    ===================================================== */
 
@@ -32,6 +33,7 @@ const screens = {
 
 const pinInput        = $('pin-input');
 const startBtn        = $('start-btn');
+const tryAgainBtn     = $('try-again-btn');
 const errorMsg        = $('error-msg');
 const scoreDisplay    = $('score-display');
 const enemyHPFill     = $('enemy-hp-fill');
@@ -93,12 +95,6 @@ function waitForKaTeX() {
 
 // ═══════════════════════════════════════════
 //  MATH RENDERING — using KaTeX auto-render
-//  This properly handles:
-//    $\frac{1}{2}$     → fraction
-//    $x^{2}$           → power
-//    $\sqrt{3}$        → surd
-//    $\$400$           → $400 (currency)
-//    Spacing between text and math
 // ═══════════════════════════════════════════
 
 function renderMathIn(element) {
@@ -119,9 +115,7 @@ function renderMathIn(element) {
 
 function setMathText(element, text) {
   if (!text) { element.textContent = ''; return; }
-  // Set as textContent first (safe, preserves all characters)
   element.textContent = text;
-  // Then let KaTeX auto-render find and render $...$ blocks
   renderMathIn(element);
 }
 
@@ -210,12 +204,55 @@ function playSound(type) {
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
 
+// ── Try Again Button ──
+if (tryAgainBtn) {
+  tryAgainBtn.addEventListener('click', restartGame);
+}
+
 // Prevent zoom on double-tap (iOS)
 document.addEventListener('touchend', (e) => {
   const now = Date.now();
   if (now - (document._lastTouch || 0) < 300) e.preventDefault();
   document._lastTouch = now;
 }, { passive: false });
+
+// ═══════════════════════════════════════════
+//  RESTART GAME
+// ═══════════════════════════════════════════
+
+function restartGame() {
+  // Reset all game state
+  currentIdx = 0;
+  score = 0;
+  enemyHP = 100;
+  playerHP = 100;
+  combo = 0;
+  maxCombo = 0;
+  correctCount = 0;
+  playerLevel = 1;
+  gameQuestions = [];
+  clearInterval(timerInterval);
+
+  // Reset UI elements
+  scoreDisplay.textContent = '0';
+  optionsContainer.innerHTML = '';
+  qText.textContent = '';
+  timerFill.style.width = '100%';
+  timerFill.style.background = 'var(--hp-green)';
+  enemySprite.textContent = '🐉';
+  playerSprite.textContent = '🧙‍♂️';
+  hideFloats();
+  updateBars();
+
+  // Reset start button
+  startBtn.disabled = false;
+  startBtn.textContent = '⚔️ BEGIN QUEST';
+
+  // Switch screens: hide end, show login
+  screens.end.classList.add('hidden');
+  screens.battle.classList.add('hidden');
+  screens.login.classList.remove('hidden');
+}
 
 // ═══════════════════════════════════════════
 //  LOGIN
@@ -230,7 +267,6 @@ async function attemptLogin() {
   startBtn.textContent = "⏳ Loading…";
 
   try {
-    // Wait for KaTeX to be ready
     await waitForKaTeX();
 
     const res = await fetch(`worksheets/${pin}.json`);
@@ -272,6 +308,7 @@ function startGame() {
   updateBars();
   scoreDisplay.textContent = '0';
   screens.login.classList.add('hidden');
+  screens.end.classList.add('hidden');
   screens.battle.classList.remove('hidden');
   loadQuestion();
 }
@@ -293,7 +330,6 @@ function loadQuestion() {
   const q = gameQuestions[currentIdx];
   const questionText = q.question ? q.question.trim() : 'Loading quest…';
 
-  // ★ Set text then render math ★
   setMathText(qText, questionText);
 
   qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
@@ -326,7 +362,6 @@ function loadQuestion() {
       btn.className = 'opt-btn';
       btn.dataset.raw = raw;
 
-      // ★ Set text then render math ★
       setMathText(btn, raw);
 
       btn.onclick = () => handleAnswer(btn, raw, answerRaw);
@@ -419,14 +454,12 @@ function calcAttack(timeTaken) {
   score += pts;
   scoreDisplay.textContent = score;
 
-  // Level up every 3 correct
   const newLevel = Math.floor(correctCount / 3) + 1;
   if (newLevel > playerLevel) {
     playerLevel = newLevel;
     showLevelUp();
   }
 
-  // Heal every 5 combo streak
   if (combo > 0 && combo % 5 === 0) {
     playerHP = Math.min(100, playerHP + 20);
     showFloat(healDisplay, '✨ POWER HEAL +20 HP!');
