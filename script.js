@@ -59,7 +59,7 @@ window.addEventListener('orientationchange', () => {
     setTimeout(fixViewportHeight, 200);
 });
 
-// ── Audio (Web Audio API — no external files) ──
+// ── Audio (Web Audio API) ──
 let audioCtx;
 function initAudio() {
     if (!audioCtx) {
@@ -135,7 +135,7 @@ function playSound(type) {
 }
 
 // ═══════════════════════════════════════════
-//  MATH RENDERING (KaTeX) - FIXED REGEX
+//  MATH RENDERING (KaTeX) - FIXED
 // ═══════════════════════════════════════════
 function renderMath(text) {
     if (!text) return '';
@@ -143,7 +143,7 @@ function renderMath(text) {
     
     let result = text;
     
-    // Display math: $$...$$ (Escape the $ with \$)
+    // Display math: $$...$$ (ESCAPE THE $ WITH \$)
     result = result.replace(/\$\$([\s\S]+?)\$\$/g, (match, latex) => {
         try {
             return katex.renderToString(latex.trim(), {
@@ -152,7 +152,7 @@ function renderMath(text) {
         } catch (e) { return escapeHtml(match); }
     });
     
-    // Inline math: $...$ (Escape the $ with \$)
+    // Inline math: $...$ (ESCAPE THE $ WITH \$)
     result = result.replace(/\$(.+?)\$/g, (match, latex) => {
         try {
             return katex.renderToString(latex.trim(), {
@@ -177,7 +177,6 @@ function normalise(s) {
 // ── Event Listeners ──
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
-// Prevent zoom on double-tap (iOS)
 document.addEventListener('touchend', (e) => {
     const now = Date.now();
     if (now - (document._lastTouch || 0) < 300) e.preventDefault();
@@ -253,7 +252,6 @@ function loadQuestion() {
     qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
     hideFloats();
     
-    // Timer
     clearInterval(timerInterval);
     questionStartTime = Date.now();
     const limit = (q.time || DEFAULT_TIME_LIMIT / 1000) * 1000;
@@ -268,7 +266,6 @@ function loadQuestion() {
         if (pct <= 0) handleTimeout();
     }, 80);
     
-    // Build options
     optionsContainer.innerHTML = '';
     if (q.options && Array.isArray(q.options)) {
         const answerRaw = q.answer ? q.answer.trim() : '';
@@ -359,14 +356,12 @@ function calcAttack(timeTaken) {
     score += pts;
     scoreDisplay.textContent = score;
     
-    // Level up every 3 correct
     const newLevel = Math.floor(correctCount / 3) + 1;
     if (newLevel > playerLevel) {
         playerLevel = newLevel;
         showLevelUp();
     }
     
-    // Heal every 5 combo streak
     if (combo > 0 && combo % 5 === 0) {
         playerHP = Math.min(100, playerHP + 20);
         showFloat(healDisplay, '✨ POWER HEAL +20 HP!');

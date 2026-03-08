@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     
-    <!-- KaTeX for Math Rendering (CRITICAL) -->
+    <!-- KaTeX for Math Rendering (REQUIRED) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     
@@ -35,7 +35,6 @@
 
         <!-- BATTLE SCREEN -->
         <div id="battle-screen" class="screen hidden">
-            <!-- HUD -->
             <div id="hud-top">
                 <div class="hp-section">
                     <div class="hp-label">DRAGON</div>
@@ -51,19 +50,14 @@
                 </div>
             </div>
 
-            <!-- ARENA -->
             <div id="arena">
                 <div id="arena-bg"></div>
                 <div id="player-sprite" class="sprite">🧙</div>
                 <div id="enemy-sprite" class="sprite">🐉</div>
-                
-                <!-- Projectiles & Effects -->
                 <div id="fireball" class="projectile hidden">🔥</div>
                 <div id="enemy-projectile" class="projectile hidden">💀</div>
                 <div id="explosion" class="hidden">💥</div>
                 <div id="particles"></div>
-                
-                <!-- Float Text -->
                 <div id="combo-display" class="float-text hidden"></div>
                 <div id="crit-display" class="float-text hidden"></div>
                 <div id="miss-display" class="float-text hidden"></div>
@@ -72,10 +66,8 @@
                 <div id="level-up-flash" class="float-text hidden"></div>
             </div>
 
-            <!-- TIMER -->
             <div id="timer-bar"><div id="timer-fill"></div></div>
 
-            <!-- QUESTION AREA -->
             <div id="question-area">
                 <div id="q-progress"></div>
                 <div id="q-text"></div>
@@ -89,7 +81,6 @@
                 <div id="end-icon">🏆</div>
                 <h2 id="end-title">QUEST COMPLETE!</h2>
                 <p id="end-reason">The dragon has been defeated!</p>
-                
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-label">SCORE</div>
@@ -104,7 +95,6 @@
                         <div id="final-accuracy" class="stat-value">0%</div>
                     </div>
                 </div>
-                
                 <button id="retry-btn">🔄 TRY AGAIN</button>
             </div>
         </div>
