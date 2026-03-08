@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
     <!-- KaTeX for Math Rendering (REQUIRED) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -31,7 +31,7 @@
                 <div class="login-subtitle">Power Up Your Knowledge!</div>
                 <div class="login-dragon">🐉</div>
                 <p class="login-hint">Enter your Quest Code to begin the battle.</p>
-                <input type="text" id="pin-input" placeholder="QUEST CODE" maxlength="50" autocomplete="off">
+                <input type="text" id="pin-input" placeholder="QUEST CODE" maxlength="10" autocomplete="off">
                 <button id="start-btn">⚔️ BEGIN QUEST</button>
                 <div id="error-msg" class="hidden"></div>
             </div>
@@ -99,16 +99,11 @@
                         <div id="final-accuracy" class="stat-value">0%</div>
                     </div>
                 </div>
-                <button id=$('try-again-btn')>🔄 TRY AGAIN</button>
+                <button id="retry-btn">🔄 TRY AGAIN</button>
             </div>
         </div>
 
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
