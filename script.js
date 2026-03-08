@@ -1,3 +1,10 @@
+/* =====================================================
+   LEVEL UP — Power Up Your Knowledge!
+   Battle game with KaTeX math rendering
+   Supports: fractions, powers, surds, any subject
+   ===================================================== */
+
+// ── Game State ──
 let allQuestions = [];
 let gameQuestions = [];
 let currentIdx = 0;
@@ -6,337 +13,633 @@ let enemyHP = 100;
 let playerHP = 100;
 let combo = 0;
 let maxCombo = 0;
+let correctCount = 0;
+let playerLevel = 1;
 let questionStartTime;
 let timerInterval;
 const DEFAULT_TIME_LIMIT = 30000;
+const TOTAL_QUESTIONS = 12;
+
+// ── DOM References ──
+const $ = (id) => document.getElementById(id);
 
 const screens = {
-    login: document.getElementById('login-screen'),
-    battle: document.getElementById('battle-screen'),
-    end: document.getElementById('end-screen')
+  login:  $('login-screen'),
+  battle: $('battle-screen'),
+  end:    $('end-screen')
 };
 
-const pinInput = document.getElementById('pin-input');
-const startBtn = document.getElementById('start-btn');
-const errorMsg = document.getElementById('error-msg');
-const scoreDisplay = document.getElementById('score-display');
-const enemyHPFill = document.getElementById('enemy-hp-fill');
-const playerHPFill = document.getElementById('player-hp-fill');
-const playerSprite = document.getElementById('player-sprite');
-const enemySprite = document.getElementById('enemy-sprite');
-const fireball = document.getElementById('fireball');
-const enemyProjectile = document.getElementById('enemy-projectile');
-const explosion = document.getElementById('explosion');
-const comboDisplay = document.getElementById('combo-display');
-const critDisplay = document.getElementById('crit-display');
-const missDisplay = document.getElementById('miss-display');
-const healDisplay = document.getElementById('heal-display');
-const timerFill = document.getElementById('timer-fill');
-const qText = document.getElementById('q-text');
-const optionsContainer = document.getElementById('options-container');
-const qProgress = document.getElementById('q-progress');
+const pinInput        = $('pin-input');
+const startBtn        = $('start-btn');
+const errorMsg        = $('error-msg');
+const scoreDisplay    = $('score-display');
+const enemyHPFill     = $('enemy-hp-fill');
+const playerHPFill    = $('player-hp-fill');
+const playerSprite    = $('player-sprite');
+const enemySprite     = $('enemy-sprite');
+const fireball        = $('fireball');
+const enemyProjectile = $('enemy-projectile');
+const explosion       = $('explosion');
+const comboDisplay    = $('combo-display');
+const critDisplay     = $('crit-display');
+const missDisplay     = $('miss-display');
+const healDisplay     = $('heal-display');
+const damageNumber    = $('damage-number');
+const levelUpFlash    = $('level-up-flash');
+const timerFill       = $('timer-fill');
+const qText           = $('q-text');
+const optionsContainer= $('options-container');
+const qProgress       = $('q-progress');
+const particlesEl     = $('particles');
 
+// ── Audio (Web Audio API — no external files) ──
+let audioCtx;
+function initAudio() {
+  if (!audioCtx) {
+    try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+    catch(e) {}
+  }
+}
+
+function playSound(type) {
+  if (!audioCtx) return;
+  try {
+    const osc  = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    const t = audioCtx.currentTime;
+
+    switch (type) {
+      case 'correct':
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(523, t);
+        osc.frequency.setValueAtTime(659, t + 0.08);
+        osc.frequency.setValueAtTime(784, t + 0.16);
+        gain.gain.setValueAtTime(0.18, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+        osc.start(t); osc.stop(t + 0.35);
+        break;
+      case 'crit':
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(600, t);
+        osc.frequency.exponentialRampToValueAtTime(1400, t + 0.12);
+        osc.frequency.exponentialRampToValueAtTime(800, t + 0.25);
+        gain.gain.setValueAtTime(0.12, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+        osc.start(t); osc.stop(t + 0.35);
+        break;
+      case 'wrong':
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(250, t);
+        osc.frequency.exponentialRampToValueAtTime(80, t + 0.35);
+        gain.gain.setValueAtTime(0.12, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+        osc.start(t); osc.stop(t + 0.35);
+        break;
+      case 'hit':
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(160, t);
+        osc.frequency.exponentialRampToValueAtTime(40, t + 0.2);
+        gain.gain.setValueAtTime(0.2, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.2);
+        osc.start(t); osc.stop(t + 0.2);
+        break;
+      case 'heal':
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(440, t);
+        osc.frequency.setValueAtTime(554, t + 0.1);
+        osc.frequency.setValueAtTime(659, t + 0.2);
+        osc.frequency.setValueAtTime(880, t + 0.3);
+        gain.gain.setValueAtTime(0.12, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.45);
+        osc.start(t); osc.stop(t + 0.45);
+        break;
+      case 'levelup':
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(523, t);
+        osc.frequency.setValueAtTime(659, t + 0.1);
+        osc.frequency.setValueAtTime(784, t + 0.2);
+        osc.frequency.setValueAtTime(1047, t + 0.3);
+        gain.gain.setValueAtTime(0.15, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.6);
+        osc.start(t); osc.stop(t + 0.6);
+        break;
+    }
+  } catch(e) {}
+}
+
+// ═══════════════════════════════════════════
+//  MATH RENDERING (KaTeX)
+//
+//  Wrap LaTeX in $...$ in your JSON files:
+//    "$\\frac{1}{2}$"        → ½
+//    "$x^{2}$"               → x²
+//    "$\\sqrt{3}$"           → √3
+//    "$\\sqrt[3]{8}$"        → ∛8
+//    "$2\\frac{1}{3}$"       → 2⅓
+// ═══════════════════════════════════════════
+
+function renderMath(text) {
+  if (!text) return '';
+  if (typeof katex === 'undefined') return escapeHtml(text);
+
+  // Display math: $$...$$
+  let result = text.replace(/\$\$([\s\S]+?)\$\$/g, (_, latex) => {
+    try {
+      return katex.renderToString(latex.trim(), {
+        throwOnError: false, displayMode: true
+      });
+    } catch (e) { return escapeHtml(_); }
+  });
+
+  // Inline math: $...$
+  result = result.replace(/\$(.+?)\$/g, (_, latex) => {
+    try {
+      return katex.renderToString(latex.trim(), {
+        throwOnError: false, displayMode: false
+      });
+    } catch (e) { return escapeHtml(_); }
+  });
+
+  return result;
+}
+
+function escapeHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+/** Normalise answer text for comparison */
+function normalise(s) {
+  return s ? s.trim().replace(/\s+/g, ' ').toLowerCase() : '';
+}
+
+// ── Event Listeners ──
 startBtn.addEventListener('click', attemptLogin);
-pinInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') attemptLogin();
-});
+pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
+
+// ═══════════════════════════════════════════
+//  LOGIN
+// ═══════════════════════════════════════════
 
 async function attemptLogin() {
-    const pin = pinInput.value.trim();
-    if (!pin) {
-        showError("Please enter a Quest Code.");
-        return;
-    }
-    try {
-        const response = await fetch(`worksheets/${pin}.json`);
-        if (!response.ok) throw new Error("Code not found or server error.");
-        const data = await response.json();
+  initAudio();
+  const pin = pinInput.value.trim();
+  if (!pin) { showError("Please enter a Quest Code."); return; }
 
-        if (Array.isArray(data) && data.length > 0) {
-            allQuestions = data;
-            startGame();
-        } else {
-            throw new Error("File is empty or invalid JSON.");
-        }
-    } catch (err) {
-        showError("Error: " + err.message);
-    }
+  startBtn.disabled = true;
+  startBtn.textContent = "⏳ Loading…";
+
+  try {
+    const res = await fetch(`worksheets/${pin}.json`);
+    if (!res.ok) throw new Error("Quest not found! Check your code.");
+    const data = await res.json();
+    if (!Array.isArray(data) || data.length === 0)
+      throw new Error("Quest file is empty or invalid.");
+    allQuestions = data;
+    startGame();
+  } catch (err) {
+    showError(err.message);
+    startBtn.disabled = false;
+    startBtn.textContent = "⚔️ BEGIN QUEST";
+  }
 }
 
 function showError(msg) {
-    errorMsg.textContent = msg;
-    errorMsg.classList.remove('hidden');
+  errorMsg.textContent = msg;
+  errorMsg.classList.remove('hidden');
+  setTimeout(() => errorMsg.classList.add('hidden'), 4000);
 }
+
+// ═══════════════════════════════════════════
+//  GAME START
+// ═══════════════════════════════════════════
 
 function startGame() {
-    shuffleArray(allQuestions);
-    gameQuestions = allQuestions.slice(0, Math.min(12, allQuestions.length));
-    currentIdx = 0;
-    score = 0;
-    enemyHP = 100;
-    playerHP = 100;
-    combo = 0;
-    maxCombo = 0;
+  shuffle(allQuestions);
+  gameQuestions = allQuestions.slice(0, Math.min(TOTAL_QUESTIONS, allQuestions.length));
+  currentIdx = 0;
+  score = 0;
+  enemyHP = 100;
+  playerHP = 100;
+  combo = 0;
+  maxCombo = 0;
+  correctCount = 0;
+  playerLevel = 1;
 
-    updateBars();
-    scoreDisplay.textContent = "0";
-    screens.login.classList.add('hidden');
-    screens.battle.classList.remove('hidden');
-
-    loadQuestion();
+  updateBars();
+  scoreDisplay.textContent = '0';
+  screens.login.classList.add('hidden');
+  screens.battle.classList.remove('hidden');
+  loadQuestion();
 }
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
 }
+
+// ═══════════════════════════════════════════
+//  QUESTION LOADING
+// ═══════════════════════════════════════════
 
 function loadQuestion() {
-    if (currentIdx >= gameQuestions.length) {
-        endGame("Victory");
-        return;
-    }
-    const q = gameQuestions[currentIdx];
+  if (currentIdx >= gameQuestions.length) { endGame('Victory'); return; }
 
-    qText.textContent = q.question ? q.question.trim() : "Loading quest...";
-    qProgress.textContent = `QUESTION ${currentIdx + 1} / ${gameQuestions.length}`;
+  const q = gameQuestions[currentIdx];
+  const questionText = q.question ? q.question.trim() : 'Loading quest…';
 
-    adjustQuestionFontSize();
+  // ★ Render math with KaTeX ★
+  qText.innerHTML = renderMath(questionText);
 
-    comboDisplay.classList.add('hidden');
-    critDisplay.classList.add('hidden');
-    missDisplay.classList.add('hidden');
+  qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
+  hideFloats();
 
-    clearInterval(timerInterval);
-    questionStartTime = Date.now();
+  // Timer
+  clearInterval(timerInterval);
+  questionStartTime = Date.now();
+  const limit = (q.time || DEFAULT_TIME_LIMIT / 1000) * 1000;
 
-    const currentLimit = q.time ? q.time * 1000 : DEFAULT_TIME_LIMIT;
+  timerFill.style.width = '100%';
+  timerFill.style.background = 'var(--hp-green)';
 
-    timerFill.style.width = '100%';
-    timerFill.style.background = 'var(--hp-green)';
+  timerInterval = setInterval(() => {
+    const elapsed = Date.now() - questionStartTime;
+    const pct = Math.max(0, 100 - elapsed / limit * 100);
+    timerFill.style.width = `${pct}%`;
+    if (pct < 25)       timerFill.style.background = 'var(--hp-red)';
+    else if (pct < 55)  timerFill.style.background = '#ff8800';
+    if (pct <= 0) handleTimeout();
+  }, 80);
 
-    timerInterval = setInterval(() => {
-        const elapsed = Date.now() - questionStartTime;
-        const remainingPct = Math.max(0, 100 - (elapsed / currentLimit * 100));
-        timerFill.style.width = `${remainingPct}%`;
+  // Build option buttons
+  optionsContainer.innerHTML = '';
+  if (q.options && Array.isArray(q.options)) {
+    const answerRaw = q.answer ? q.answer.trim() : '';
+    q.options.forEach(opt => {
+      const raw = opt ? opt.trim() : '';
+      const btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.dataset.raw = raw;
+      btn.innerHTML = renderMath(raw);   // ★ render math ★
+      btn.onclick = () => handleAnswer(btn, raw, answerRaw);
+      optionsContainer.appendChild(btn);
+    });
+  }
 
-        if (remainingPct < 30) timerFill.style.background = 'var(--hp-red)';
-
-        if (remainingPct <= 0) {
-            handleTimeout();
-        }
-    }, 100);
-
-    optionsContainer.innerHTML = '';
-
-    if (q.options && Array.isArray(q.options)) {
-        const answerText = q.answer ? q.answer.trim() : '';
-        q.options.forEach(opt => {
-            const btn = document.createElement('button');
-            btn.className = 'opt-btn';
-            const optText = opt ? opt.trim() : '';
-            btn.textContent = optText;
-            btn.onclick = () => handleAnswer(btn, optText, answerText);
-            optionsContainer.appendChild(btn);
-        });
-
-        setTimeout(adjustOptionsFontSize, 10);
-    }
+  updateDragon();
 }
 
-function adjustQuestionFontSize() {
-    const qLength = qText.textContent.length;
-    if (qLength > 120) {
-        qText.style.fontSize = '0.85rem';
-    } else if (qLength > 60) {
-        qText.style.fontSize = '0.95rem';
-    } else {
-        qText.style.fontSize = '';
-    }
-}
-
-function adjustOptionsFontSize() {
-    const btns = document.querySelectorAll('.opt-btn');
-    btns.forEach(btn => {
-        if (btn.textContent.length > 25) {
-            btn.style.fontSize = '0.65rem';
-        } else if (btn.textContent.length > 15) {
-            btn.style.fontSize = '0.75rem';
-        }
+function hideFloats() {
+  [comboDisplay, critDisplay, missDisplay, healDisplay, damageNumber, levelUpFlash]
+    .forEach(el => {
+      el.classList.add('hidden');
+      el.classList.remove('anim-float-up');
     });
 }
 
+function updateDragon() {
+  if (enemyHP > 75)      enemySprite.textContent = '🐉';
+  else if (enemyHP > 50) enemySprite.textContent = '🐲';
+  else if (enemyHP > 25) enemySprite.textContent = '🔥🐲';
+  else                   enemySprite.textContent = '☠️🐲';
+}
+
+// ═══════════════════════════════════════════
+//  ANSWER HANDLING
+// ═══════════════════════════════════════════
+
 function handleAnswer(btn, selected, correct) {
-    clearInterval(timerInterval);
-    disableButtons(btn);
-    if (selected === correct) {
-        btn.classList.add('correct');
-        const timeTaken = Date.now() - questionStartTime;
-        calculatePlayerAttack(timeTaken);
-    } else {
-        btn.classList.add('wrong');
-        const btns = document.querySelectorAll('.opt-btn');
-        btns.forEach(b => {
-            if (b.textContent === correct) b.classList.add('correct');
-        });
-        triggerEnemyAttack();
-    }
+  clearInterval(timerInterval);
+  disableAll();
+
+  if (normalise(selected) === normalise(correct)) {
+    btn.classList.add('correct');
+    correctCount++;
+    playSound('correct');
+    const timeTaken = Date.now() - questionStartTime;
+    calcAttack(timeTaken);
+  } else {
+    btn.classList.add('wrong');
+    playSound('wrong');
+    document.querySelectorAll('.opt-btn').forEach(b => {
+      if (normalise(b.dataset.raw) === normalise(correct)) b.classList.add('correct');
+    });
+    triggerEnemyAttack();
+  }
 }
 
 function handleTimeout() {
-    clearInterval(timerInterval);
-    disableButtons();
-    triggerEnemyAttack();
+  clearInterval(timerInterval);
+  disableAll();
+  playSound('wrong');
+
+  const q = gameQuestions[currentIdx];
+  const correctRaw = q.answer ? q.answer.trim() : '';
+  document.querySelectorAll('.opt-btn').forEach(b => {
+    if (normalise(b.dataset.raw) === normalise(correctRaw)) b.classList.add('correct');
+  });
+
+  missDisplay.textContent = '⏰ TIME UP!';
+  missDisplay.classList.remove('hidden');
+  triggerEnemyAttack();
 }
 
-function disableButtons(clickedBtn = null) {
-    const btns = document.querySelectorAll('.opt-btn');
-    btns.forEach(b => {
-        b.disabled = true;
-        if (b === clickedBtn) b.classList.add('clicked');
-    });
+function disableAll() {
+  document.querySelectorAll('.opt-btn').forEach(b => { b.disabled = true; b.onclick = null; });
 }
 
-function calculatePlayerAttack(timeTaken) {
-    combo++;
-    if (combo > maxCombo) maxCombo = combo;
-    const baseDmg = 100 / gameQuestions.length;
-    let speedMult = 1;
-    let isCrit = false;
+// ═══════════════════════════════════════════
+//  PLAYER ATTACK (correct answer)
+// ═══════════════════════════════════════════
 
-    if (timeTaken < 3000) { speedMult = 1.5; isCrit = true; }
-    else if (timeTaken > (DEFAULT_TIME_LIMIT * 0.8)) { speedMult = 0.8; }
+function calcAttack(timeTaken) {
+  combo++;
+  if (combo > maxCombo) maxCombo = combo;
 
-    const totalDmg = baseDmg * speedMult * (1 + (combo * 0.1));
-    const points = Math.floor(100 * speedMult * (1 + (combo * 0.1)));
+  const baseDmg = 100 / gameQuestions.length;
+  let speedMult = 1;
+  let isCrit = false;
 
-    score += points;
-    scoreDisplay.textContent = score;
+  if      (timeTaken < 3000) { speedMult = 1.6; isCrit = true; }
+  else if (timeTaken < 5000) { speedMult = 1.25; }
+  else if (timeTaken > DEFAULT_TIME_LIMIT * 0.8) { speedMult = 0.8; }
 
-    if (combo > 0 && combo % 5 === 0) {
-        playerHP = Math.min(100, playerHP + 20);
-        showComboBuffText("MAGIC HEAL! +20 HP");
+  const comboMult = 1 + combo * 0.12;
+  const totalDmg  = baseDmg * speedMult * comboMult;
+  const pts       = Math.floor(100 * speedMult * comboMult);
+
+  score += pts;
+  scoreDisplay.textContent = score;
+
+  // Level up every 3 correct answers
+  const newLevel = Math.floor(correctCount / 3) + 1;
+  if (newLevel > playerLevel) {
+    playerLevel = newLevel;
+    showLevelUp();
+  }
+
+  // Heal every 5 combo streak
+  if (combo > 0 && combo % 5 === 0) {
+    playerHP = Math.min(100, playerHP + 20);
+    showFloat(healDisplay, '✨ POWER HEAL +20 HP!');
+    playSound('heal');
+  }
+
+  doPlayerAnim(totalDmg, isCrit, () => {
+    enemyHP = Math.max(0, enemyHP - totalDmg);
+    updateBars();
+    if (enemyHP <= 0) endGame('Victory');
+    else nextQ();
+  });
+}
+
+function showLevelUp() {
+  playSound('levelup');
+  levelUpFlash.textContent = `⬆️ LEVEL ${playerLevel}!`;
+  levelUpFlash.classList.remove('hidden', 'anim-float-up');
+  void levelUpFlash.offsetWidth;
+  levelUpFlash.classList.add('anim-float-up');
+  levelUpFlash.classList.remove('hidden');
+
+  // gold burst
+  const burst = document.createElement('div');
+  burst.className = 'level-up-burst';
+  $('arena').appendChild(burst);
+  setTimeout(() => burst.remove(), 850);
+
+  // bonus particles
+  spawnParticles('center', '#ffd700', 18);
+
+  setTimeout(() => {
+    levelUpFlash.classList.add('hidden');
+    levelUpFlash.classList.remove('anim-float-up');
+  }, 1400);
+}
+
+function doPlayerAnim(dmg, isCrit, cb) {
+  // combo banner
+  if (combo > 1) {
+    comboDisplay.textContent = `⚡ COMBO x${combo}!`;
+    comboDisplay.classList.remove('hidden');
+  }
+
+  // fireball
+  fireball.textContent = isCrit ? '☄️' : '🔥';
+  fireball.classList.remove('hidden', 'anim-shoot-right');
+  void fireball.offsetWidth;
+  fireball.classList.add('anim-shoot-right');
+
+  setTimeout(() => {
+    fireball.classList.add('hidden');
+    fireball.classList.remove('anim-shoot-right');
+
+    if (isCrit) playSound('crit');
+    else playSound('hit');
+
+    showExplosion('right');
+    spawnParticles('right', isCrit ? '#ffdd00' : '#ff8800', isCrit ? 14 : 8);
+    enemySprite.classList.add('anim-enemy-hit');
+
+    // damage number
+    damageNumber.textContent = `−${Math.round(dmg)}`;
+    damageNumber.style.right = '15%';
+    damageNumber.style.left  = 'auto';
+    damageNumber.style.color = isCrit ? '#ffdd00' : '#ff5544';
+    damageNumber.classList.remove('hidden', 'anim-float-up');
+    void damageNumber.offsetWidth;
+    damageNumber.classList.add('anim-float-up');
+
+    if (isCrit) {
+      critDisplay.textContent = pick([
+        '⚡ CRITICAL!', '💥 DEVASTATING!',
+        '🌟 BRILLIANT!', '🔥 SUPERB!'
+      ]);
+      critDisplay.classList.remove('hidden');
+      flashScreen();
+      $('game-container').classList.add('anim-shake-screen');
     }
 
-    performPlayerAnimation(totalDmg, isCrit, () => {
-        enemyHP = Math.max(0, enemyHP - totalDmg);
-        updateBars();
-        goToNextQuestion();
-    });
-}
-
-function showComboBuffText(msg) {
-    healDisplay.textContent = msg;
-    healDisplay.classList.remove('hidden');
-    healDisplay.classList.add('anim-float-up');
-
     setTimeout(() => {
-        healDisplay.classList.add('hidden');
-        healDisplay.classList.remove('anim-float-up');
-    }, 1200);
+      enemySprite.classList.remove('anim-enemy-hit');
+      $('game-container').classList.remove('anim-shake-screen');
+      cb && cb();
+    }, 750);
+  }, 380);
 }
 
-function performPlayerAnimation(damage, isCrit, callback) {
-    if (combo > 1) {
-        comboDisplay.textContent = `COMBO x${combo}!`;
-        comboDisplay.classList.remove('hidden');
-    }
-    fireball.classList.remove('hidden');
-    fireball.classList.add('anim-shoot-right');
-    setTimeout(() => {
-        fireball.classList.add('hidden');
-        fireball.classList.remove('anim-shoot-right');
-
-        showExplosion('right');
-        enemySprite.classList.add('anim-enemy-hit');
-
-        if (isCrit) {
-            critDisplay.classList.remove('hidden');
-            document.getElementById('game-container').classList.add('anim-shake-screen');
-        }
-
-        setTimeout(() => {
-            enemySprite.classList.remove('anim-enemy-hit');
-            document.getElementById('game-container').classList.remove('anim-shake-screen');
-            if (callback) callback();
-        }, 800);
-
-    }, 400);
-}
+// ═══════════════════════════════════════════
+//  ENEMY ATTACK (wrong / timeout)
+// ═══════════════════════════════════════════
 
 function triggerEnemyAttack() {
-    combo = 0;
-    missDisplay.classList.remove('hidden');
-    enemyProjectile.classList.remove('hidden');
-    enemyProjectile.classList.add('anim-shoot-left');
+  combo = 0;
+
+  if (!missDisplay.textContent || missDisplay.classList.contains('hidden')) {
+    missDisplay.textContent = pick([
+      '💀 WRONG!', '❌ MISS!', '😱 OUCH!', '💔 INCORRECT!'
+    ]);
+  }
+  missDisplay.classList.remove('hidden');
+
+  enemyProjectile.textContent = pick(['💀', '🔥', '⚡', '☠️']);
+  enemyProjectile.classList.remove('hidden', 'anim-shoot-left');
+  void enemyProjectile.offsetWidth;
+  enemyProjectile.classList.add('anim-shoot-left');
+
+  setTimeout(() => {
+    enemyProjectile.classList.add('hidden');
+    enemyProjectile.classList.remove('anim-shoot-left');
+
+    playSound('hit');
+    showExplosion('left');
+    spawnParticles('left', '#ff3344', 10);
+    playerSprite.classList.add('anim-player-hit');
+    $('game-container').classList.add('anim-shake-screen');
+
+    const dmg = 25;
+    playerHP = Math.max(0, playerHP - dmg);
+    updateBars();
+
+    damageNumber.textContent = `−${dmg}`;
+    damageNumber.style.left  = '8%';
+    damageNumber.style.right = 'auto';
+    damageNumber.style.color = '#ff3344';
+    damageNumber.classList.remove('hidden', 'anim-float-up');
+    void damageNumber.offsetWidth;
+    damageNumber.classList.add('anim-float-up');
+
     setTimeout(() => {
-        enemyProjectile.classList.add('hidden');
-        enemyProjectile.classList.remove('anim-shoot-left');
-
-        showExplosion('left');
-        playerSprite.classList.add('anim-player-hit');
-        document.getElementById('game-container').classList.add('anim-shake-screen');
-
-        playerHP = Math.max(0, playerHP - 25);
-        updateBars();
-
-        setTimeout(() => {
-            playerSprite.classList.remove('anim-player-hit');
-            document.getElementById('game-container').classList.remove('anim-shake-screen');
-
-            if (playerHP <= 0) {
-                endGame("Defeat");
-            } else {
-                goToNextQuestion();
-            }
-        }, 800);
-
-    }, 400);
+      playerSprite.classList.remove('anim-player-hit');
+      $('game-container').classList.remove('anim-shake-screen');
+      if (playerHP <= 0) endGame('Defeat');
+      else nextQ();
+    }, 750);
+  }, 380);
 }
 
-function goToNextQuestion() {
-    setTimeout(() => {
-        currentIdx++;
-        loadQuestion();
-    }, 400);
+function nextQ() {
+  setTimeout(() => { currentIdx++; loadQuestion(); }, 350);
 }
+
+// ═══════════════════════════════════════════
+//  VISUAL EFFECTS
+// ═══════════════════════════════════════════
 
 function showExplosion(side) {
-    explosion.style.left = side === 'right' ? '75%' : '10%';
-    explosion.classList.remove('hidden');
-    setTimeout(() => explosion.classList.add('hidden'), 400);
+  explosion.style.left = side === 'right' ? '70%' : '12%';
+  explosion.style.top  = '40%';
+  explosion.classList.remove('hidden');
+  setTimeout(() => explosion.classList.add('hidden'), 450);
 }
+
+function spawnParticles(side, color, count = 8) {
+  let cx;
+  if      (side === 'right')  cx = 73;
+  else if (side === 'left')   cx = 15;
+  else                        cx = 50; // center
+
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = 3 + Math.random() * 5;
+    p.style.width  = size + 'px';
+    p.style.height = size + 'px';
+    p.style.left = cx + '%';
+    p.style.top  = (35 + Math.random() * 20) + '%';
+    p.style.background = color;
+    p.style.boxShadow  = `0 0 ${size}px ${color}`;
+    p.style.setProperty('--px', `${(Math.random()-0.5)*140}px`);
+    p.style.setProperty('--py', `${(Math.random()-0.5)*140}px`);
+    particlesEl.appendChild(p);
+    setTimeout(() => p.remove(), 750);
+  }
+}
+
+function flashScreen() {
+  const f = document.createElement('div');
+  f.className = 'flash-overlay';
+  $('arena').appendChild(f);
+  setTimeout(() => f.remove(), 350);
+}
+
+function showFloat(el, txt) {
+  el.textContent = txt;
+  el.classList.remove('hidden', 'anim-float-up');
+  void el.offsetWidth;
+  el.classList.add('anim-float-up');
+  el.classList.remove('hidden');
+  setTimeout(() => {
+    el.classList.add('hidden');
+    el.classList.remove('anim-float-up');
+  }, 1300);
+}
+
+// ═══════════════════════════════════════════
+//  HP BARS
+// ═══════════════════════════════════════════
 
 function updateBars() {
-    enemyHPFill.style.width = `${enemyHP}%`;
-    playerHPFill.style.width = `${playerHP}%`;
-    if (playerHP < 30) playerHPFill.style.background = 'linear-gradient(90deg, #880000, var(--hp-red))';
-    else playerHPFill.style.background = 'linear-gradient(90deg, #2563eb, var(--cyan))';
+  enemyHPFill.style.width  = Math.max(0, enemyHP) + '%';
+  playerHPFill.style.width = Math.max(0, playerHP) + '%';
+
+  playerHPFill.style.background = playerHP < 30
+    ? 'linear-gradient(90deg,#880000,var(--hp-red))'
+    : 'linear-gradient(90deg,#1d4ed8,var(--cyan))';
+
+  enemyHPFill.style.background = enemyHP < 30
+    ? 'linear-gradient(90deg,#440000,#880000)'
+    : 'linear-gradient(90deg,#cc2233,#ff5544)';
 }
+
+// ═══════════════════════════════════════════
+//  END GAME
+// ═══════════════════════════════════════════
 
 function endGame(result) {
+  clearInterval(timerInterval);
+
+  setTimeout(() => {
     screens.battle.classList.add('hidden');
     screens.end.classList.remove('hidden');
-    const title = document.getElementById('end-title');
-    const reason = document.getElementById('end-reason');
-    document.getElementById('final-score').textContent = score;
-    document.getElementById('final-combo').textContent = maxCombo;
 
-    if (result === "Defeat") {
-        title.textContent = "QUEST FAILED";
-        title.style.color = "var(--hp-red)";
-        reason.textContent = "The dragon was too powerful! Try again! 🐲";
+    const title  = $('end-title');
+    const reason = $('end-reason');
+    const icon   = $('end-icon');
+    $('final-score').textContent = score;
+    $('final-combo').textContent = maxCombo;
+
+    const answered = Math.min(currentIdx + 1, gameQuestions.length);
+    const acc = answered > 0 ? Math.round(correctCount / answered * 100) : 0;
+    $('final-accuracy').textContent = acc + '%';
+
+    if (result === 'Defeat') {
+      icon.textContent  = '💀';
+      title.textContent = 'QUEST FAILED';
+      title.style.color = 'var(--hp-red)';
+      reason.textContent = 'The dragon was too powerful! Study harder and try again! 🐲';
+    } else if (enemyHP <= 0) {
+      icon.textContent  = '🏆';
+      title.textContent = 'DRAGON SLAIN!';
+      title.style.color = 'var(--gold)';
+      reason.textContent = 'Your knowledge defeated the dragon! You levelled up! ⚔️✨';
+    } else if (enemyHP <= 25) {
+      icon.textContent  = '⚔️';
+      title.textContent = 'QUEST COMPLETE!';
+      title.style.color = 'var(--gold)';
+      reason.textContent = 'The dragon retreats, badly wounded! Great effort! 🐲💨';
+    } else {
+      icon.textContent  = '🐲';
+      title.textContent = 'QUEST UNFINISHED';
+      title.style.color = '#94a3b8';
+      reason.textContent = 'The dragon escaped. Keep learning and come back stronger! 📚';
     }
-    else if (enemyHP <= 5) {
-        title.textContent = "QUEST COMPLETE!";
-        title.style.color = "var(--gold)";
-        reason.textContent = "The dragon has been defeated! ⚔️🏆";
-    }
-    else {
-        title.textContent = "QUEST UNFINISHED";
-        title.style.color = "#94a3b8";
-        reason.textContent = "The dragon escaped. Train harder, Wizard! 🐲";
-    }
+  }, 500);
 }
+
+// ── Utilities ──
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
