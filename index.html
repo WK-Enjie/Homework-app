@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>⚔️ Level Up — Defeat the Dragon!</title>
-
-  <!-- KaTeX for fractions, powers, surds -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>⚔️ Level Up — Defeat the Dragon!</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX for Math Rendering (CRITICAL) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div id="game-container">
-
-  <!-- ===== LOGIN SCREEN ===== -->
-  <div id="login-screen" class="screen">
-    <div class="login-box">
-      <div class="login-badge">⚔️</div>
-      <div class="login-title">LEVEL UP</div>
-      <div class="login-subtitle">Power Up Your Knowledge!</div>
-      <div class="login-dragon">🐉</div>
-      <div class="login-hint">Answer questions correctly to slay the dragon</div>
-      <input type="text" id="pin-input" placeholder="Enter Quest Code" autocomplete="off" spellcheck="false">
-      <button id="start-btn">⚔️ BEGIN QUEST</button>
-      <div id="error-msg" class="hidden"></div>
-    </div>
-  </div>
-
-  <!-- ===== BATTLE SCREEN ===== -->
-  <div id="battle-screen" class="screen hidden">
-    <!-- HUD -->
-    <div id="hud-top">
-      <div class="hp-section enemy-section">
-        <div class="hp-label">🐉 DRAGON</div>
-        <div class="hp-bar"><div id="enemy-hp-fill" class="hp-fill enemy-fill"></div></div>
-      </div>
-      <div id="score-badge">
-        <div id="score-label">SCORE</div>
-        <div id="score-display">0</div>
-      </div>
-      <div class="hp-section player-section">
-        <div class="hp-label">🧙 HERO</div>
-        <div class="hp-bar"><div id="player-hp-fill" class="hp-fill player-fill"></div></div>
-      </div>
-    </div>
-
-    <!-- Battle Arena -->
-    <div id="arena">
-      <div id="arena-bg"></div>
-      <div id="player-sprite" class="sprite">🧙</div>
-      <div id="fireball" class="projectile hidden">🔥</div>
-      <div id="enemy-projectile" class="projectile hidden">💀</div>
-      <div id="explosion" class="hidden">💥</div>
-      <div id="enemy-sprite" class="sprite">🐉</div>
-
-      <!-- Floating combat text -->
-      <div id="combo-display" class="float-text hidden"></div>
-      <div id="crit-display" class="float-text hidden">⚡ CRITICAL!</div>
-      <div id="miss-display" class="float-text hidden">💀 WRONG!</div>
-      <div id="heal-display" class="float-text hidden"></div>
-      <div id="damage-number" class="float-text hidden"></div>
-      <div id="level-up-flash" class="float-text hidden"></div>
-
-      <!-- Particles -->
-      <div id="particles"></div>
-    </div>
-
-    <!-- Timer -->
-    <div id="timer-bar"><div id="timer-fill"></div></div>
-
-    <!-- Question Area -->
-    <div id="question-area">
-      <div id="q-progress"></div>
-      <div id="q-text"></div>
-      <div id="options-container"></div>
-    </div>
-  </div>
-
-  <!-- ===== END SCREEN ===== -->
-  <div id="end-screen" class="screen hidden">
-    <div class="end-box">
-      <div id="end-icon"></div>
-      <div id="end-title"></div>
-      <div id="end-reason"></div>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-label">SCORE</div>
-          <div id="final-score" class="stat-value">0</div>
+    <div id="game-container">
+        
+        <!-- LOGIN SCREEN -->
+        <div id="login-screen" class="screen">
+            <div class="login-box">
+                <div class="login-badge">⚔️</div>
+                <h1 class="login-title">LEVEL UP</h1>
+                <div class="login-subtitle">Power Up Your Knowledge!</div>
+                <div class="login-dragon">🐉</div>
+                <p class="login-hint">Enter your Quest Code to begin the battle.</p>
+                <input type="text" id="pin-input" placeholder="QUEST CODE" maxlength="10" autocomplete="off">
+                <button id="start-btn">⚔️ BEGIN QUEST</button>
+                <div id="error-msg" class="hidden"></div>
+            </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-label">MAX COMBO</div>
-          <div id="final-combo" class="stat-value">0</div>
+
+        <!-- BATTLE SCREEN -->
+        <div id="battle-screen" class="screen hidden">
+            <!-- HUD -->
+            <div id="hud-top">
+                <div class="hp-section">
+                    <div class="hp-label">DRAGON</div>
+                    <div class="hp-bar"><div id="enemy-hp-fill" class="hp-fill enemy-fill"></div></div>
+                </div>
+                <div id="score-badge">
+                    <div id="score-label">SCORE</div>
+                    <div id="score-display">0</div>
+                </div>
+                <div class="hp-section">
+                    <div class="hp-label">HERO</div>
+                    <div class="hp-bar"><div id="player-hp-fill" class="hp-fill player-fill"></div></div>
+                </div>
+            </div>
+
+            <!-- ARENA -->
+            <div id="arena">
+                <div id="arena-bg"></div>
+                <div id="player-sprite" class="sprite">🧙</div>
+                <div id="enemy-sprite" class="sprite">🐉</div>
+                
+                <!-- Projectiles & Effects -->
+                <div id="fireball" class="projectile hidden">🔥</div>
+                <div id="enemy-projectile" class="projectile hidden">💀</div>
+                <div id="explosion" class="hidden">💥</div>
+                <div id="particles"></div>
+                
+                <!-- Float Text -->
+                <div id="combo-display" class="float-text hidden"></div>
+                <div id="crit-display" class="float-text hidden"></div>
+                <div id="miss-display" class="float-text hidden"></div>
+                <div id="heal-display" class="float-text hidden"></div>
+                <div id="damage-number" class="float-text hidden"></div>
+                <div id="level-up-flash" class="float-text hidden"></div>
+            </div>
+
+            <!-- TIMER -->
+            <div id="timer-bar"><div id="timer-fill"></div></div>
+
+            <!-- QUESTION AREA -->
+            <div id="question-area">
+                <div id="q-progress"></div>
+                <div id="q-text"></div>
+                <div id="options-container"></div>
+            </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-label">ACCURACY</div>
-          <div id="final-accuracy" class="stat-value">0%</div>
+
+        <!-- END SCREEN -->
+        <div id="end-screen" class="screen hidden">
+            <div class="end-box">
+                <div id="end-icon">🏆</div>
+                <h2 id="end-title">QUEST COMPLETE!</h2>
+                <p id="end-reason">The dragon has been defeated!</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">SCORE</div>
+                        <div id="final-score" class="stat-value">0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">COMBO</div>
+                        <div id="final-combo" class="stat-value">0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">ACCURACY</div>
+                        <div id="final-accuracy" class="stat-value">0%</div>
+                    </div>
+                </div>
+                
+                <button id="retry-btn">🔄 TRY AGAIN</button>
+            </div>
         </div>
-      </div>
-      <button id="retry-btn" onclick="location.reload()">🔄 TRY AGAIN</button>
+
     </div>
-  </div>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
