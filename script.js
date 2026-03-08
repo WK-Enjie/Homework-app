@@ -11,7 +11,7 @@ let combo = 0;
 let maxCombo = 0;
 let questionStartTime;
 let timerInterval;
-const DEFAULT_TIME_LIMIT = 30000;
+const DEFAULT_TIME_LIMIT = 30000; // 30 seconds default
 
 // ==========================================
 // 2. DOM ELEMENTS
@@ -175,7 +175,7 @@ function loadQuestion() {
     questionStartTime = Date.now();
     
     // ✅ FIXED: Use q.time or q['time '] with fallback
-    const timeVal = q.time || q['time '] || DEFAULT_TIME_LIMIT / 1000;
+    const timeVal = q.time || q['time '] || q.duration || q['duration '] || DEFAULT_TIME_LIMIT / 1000;
     const currentLimit = timeVal * 1000;
     
     timerFill.style.width = '100%';
@@ -356,16 +356,16 @@ function endGame(result) {
     if (result === "Defeat") {
         title.textContent = "DEFEAT";
         title.style.color = "red";
-        reason.textContent = "The Lucky Horse galloped away!";
+        reason.textContent = "The Dragon was too powerful!";
     } 
     else if (enemyHP <= 5) {
         title.textContent = "VICTORY!";
         title.style.color = "var(--gold)";
-        reason.textContent = "You earned the Horse's blessing! 🧧";
+        reason.textContent = "You defeated the Dragon! 🐉✨";
     } 
     else {
         title.textContent = "GAME OVER";
         title.style.color = "#aaa";
-        reason.textContent = "The Horse survived. Try again!";
+        reason.textContent = "The Dragon escaped. Try again!";
     }
 }
