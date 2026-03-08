@@ -1,6 +1,6 @@
 /* ============================================
    LEVEL UP — Power Up Your Knowledge!
-   Dark fantasy battle theme
+   Fully responsive for ALL devices
    ============================================ */
 
 :root {
@@ -18,33 +18,54 @@
   --wrong: #ef4444;
   --border: #252550;
   --border-glow: #3a3a7a;
+
+  /* Safe area for notch devices */
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html, body {
+html {
   height: 100%;
   overflow: hidden;
+  /* Prevent pull-to-refresh on mobile */
+  overscroll-behavior: none;
 }
 
 body {
+  height: 100%;
+  overflow: hidden;
   font-family: 'Chakra Petch', 'Segoe UI', sans-serif;
   background: #000;
   color: var(--text-primary);
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Prevent text selection on game elements */
+  -webkit-user-select: none;
+  user-select: none;
+  /* Prevent bounce scroll on iOS */
+  position: fixed;
+  width: 100%;
 }
 
 #game-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   height: 100vh;
-  height: 100dvh;
+  height: 100dvh; /* dynamic viewport height — handles mobile address bar */
   position: relative;
   overflow: hidden;
   background: var(--bg-dark);
   box-shadow: 0 0 60px rgba(0,0,0,0.8);
+  /* Safe area padding for notch phones */
+  padding-top: var(--sat);
+  padding-bottom: var(--sab);
+  padding-left: var(--sal);
+  padding-right: var(--sar);
 }
 
 .screen {
@@ -55,28 +76,37 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  /* Respect safe areas */
+  padding-top: var(--sat);
+  padding-bottom: var(--sab);
 }
+
 .hidden { display: none !important; }
 
 /* ============================================
    LOGIN SCREEN
    ============================================ */
+#login-screen {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .login-box {
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: clamp(1rem, 3vh, 2rem) clamp(1rem, 4vw, 1.5rem);
   width: 90%;
-  max-width: 380px;
+  max-width: 400px;
 }
 
 .login-badge {
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
   margin-bottom: 0.3rem;
   filter: drop-shadow(0 0 12px rgba(255,215,0,0.5));
 }
 
 .login-title {
   font-family: 'Press Start 2P', monospace;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
   color: var(--gold);
   text-shadow: 0 0 20px rgba(255,215,0,0.4), 0 2px 0 #8b6914;
   margin-bottom: 0.4rem;
@@ -90,19 +120,18 @@ body {
 
 .login-subtitle {
   color: var(--cyan);
-  font-size: 0.95rem;
+  font-size: clamp(0.8rem, 2.5vw, 0.95rem);
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
   letter-spacing: 0.5px;
 }
 
 .login-dragon {
-  font-size: 5rem;
-  margin: 0.8rem 0;
+  font-size: clamp(3rem, 12vw, 5rem);
+  margin: clamp(0.4rem, 2vh, 0.8rem) 0;
   animation: dragonFloat 3s ease-in-out infinite;
   filter: drop-shadow(0 0 20px rgba(255,100,0,0.4));
 }
-
 @keyframes dragonFloat {
   0%, 100% { transform: translateY(0) rotate(-2deg); }
   50% { transform: translateY(-18px) rotate(2deg); }
@@ -110,16 +139,16 @@ body {
 
 .login-hint {
   color: var(--text-secondary);
-  font-size: 0.78rem;
-  margin-bottom: 1.2rem;
+  font-size: clamp(0.7rem, 2vw, 0.82rem);
+  margin-bottom: clamp(0.6rem, 2vh, 1.2rem);
   font-style: italic;
   line-height: 1.4;
 }
 
 #pin-input {
   width: 100%;
-  padding: 14px 16px;
-  font-size: 1.1rem;
+  padding: clamp(10px, 2vh, 14px) 16px;
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
   text-align: center;
   background: var(--bg-card);
   border: 2px solid var(--border);
@@ -127,9 +156,12 @@ body {
   color: var(--text-primary);
   font-family: 'Chakra Petch', sans-serif;
   outline: none;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.6rem, 1.5vh, 1rem);
   transition: border-color 0.3s, box-shadow 0.3s;
   letter-spacing: 2px;
+  /* Allow text selection in input */
+  -webkit-user-select: text;
+  user-select: text;
 }
 #pin-input::placeholder {
   color: var(--text-secondary);
@@ -142,8 +174,8 @@ body {
 
 #start-btn, #retry-btn {
   width: 100%;
-  padding: 15px;
-  font-size: 1.05rem;
+  padding: clamp(12px, 2vh, 16px);
+  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
   font-weight: 700;
   font-family: 'Chakra Petch', sans-serif;
   border: none;
@@ -151,6 +183,7 @@ body {
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.3s;
   letter-spacing: 1px;
+  -webkit-tap-highlight-color: transparent;
 }
 #start-btn {
   background: linear-gradient(135deg, #ffd700, #ff8c00);
@@ -162,15 +195,12 @@ body {
   box-shadow: 0 6px 30px rgba(255,140,0,0.5);
 }
 #start-btn:active { transform: scale(0.98); }
-#start-btn:disabled {
-  opacity: 0.6;
-  cursor: wait;
-}
+#start-btn:disabled { opacity: 0.6; cursor: wait; }
 
 #error-msg {
   color: var(--hp-red);
-  margin-top: 1rem;
-  font-size: 0.85rem;
+  margin-top: 0.8rem;
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
   font-weight: 600;
 }
 
@@ -179,6 +209,7 @@ body {
    ============================================ */
 #battle-screen {
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 /* --- HUD --- */
@@ -186,25 +217,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px 6px;
+  padding: clamp(4px, 1vh, 8px) clamp(8px, 2vw, 14px) clamp(3px, 0.8vh, 6px);
   width: 100%;
-  gap: 8px;
+  gap: clamp(4px, 1vw, 10px);
   background: rgba(0,0,0,0.4);
+  flex-shrink: 0;
 }
 
-.hp-section { flex: 1; }
+.hp-section { flex: 1; min-width: 0; }
 
 .hp-label {
-  font-size: 0.55rem;
+  font-size: clamp(0.4rem, 1.3vw, 0.55rem);
   font-weight: 700;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   letter-spacing: 1px;
   color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hp-bar {
   width: 100%;
-  height: 16px;
+  height: clamp(10px, 2vh, 16px);
   background: #0d0d20;
   border-radius: 8px;
   overflow: hidden;
@@ -225,7 +260,7 @@ body {
   top: 2px;
   left: 4px;
   right: 4px;
-  height: 4px;
+  height: 3px;
   background: rgba(255,255,255,0.2);
   border-radius: 4px;
 }
@@ -235,17 +270,18 @@ body {
 
 #score-badge {
   text-align: center;
-  min-width: 65px;
+  min-width: clamp(45px, 12vw, 70px);
+  flex-shrink: 0;
 }
 #score-label {
-  font-size: 0.45rem;
+  font-size: clamp(0.35rem, 1vw, 0.45rem);
   font-family: 'Press Start 2P', monospace;
   color: var(--text-secondary);
   margin-bottom: 2px;
 }
 #score-display {
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.8rem;
+  font-size: clamp(0.6rem, 2vw, 0.85rem);
   color: var(--gold);
   text-shadow: 0 0 8px rgba(255,215,0,0.3);
 }
@@ -253,13 +289,15 @@ body {
 /* --- ARENA --- */
 #arena {
   width: 100%;
-  height: 200px;
+  /* Dynamic height: uses available space */
+  height: clamp(100px, 25vh, 220px);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 clamp(12px, 5vw, 30px);
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 #arena-bg {
@@ -294,13 +332,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0; right: 0;
-  height: 40px;
+  height: 30px;
   background: linear-gradient(0deg, rgba(10,30,10,0.8), transparent);
   z-index: 1;
 }
 
 .sprite {
-  font-size: 3.8rem;
+  font-size: clamp(2rem, 8vw, 4rem);
   z-index: 2;
   filter: drop-shadow(0 8px 15px rgba(0,0,0,0.6));
   position: relative;
@@ -326,14 +364,14 @@ body {
 /* Projectiles */
 .projectile {
   position: absolute;
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
   z-index: 3;
   filter: drop-shadow(0 0 8px rgba(255,100,0,0.6));
 }
 
 #explosion {
   position: absolute;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 7vw, 3.5rem);
   z-index: 4;
   animation: explode 0.4s ease-out forwards;
   pointer-events: none;
@@ -349,7 +387,7 @@ body {
   position: absolute;
   z-index: 10;
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.65rem;
+  font-size: clamp(0.45rem, 1.5vw, 0.65rem);
   pointer-events: none;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.9), -1px -1px 3px rgba(0,0,0,0.5);
   white-space: nowrap;
@@ -360,40 +398,40 @@ body {
   left: 50%;
   transform: translateX(-50%);
   color: var(--gold);
-  font-size: 0.75rem;
+  font-size: clamp(0.5rem, 2vw, 0.75rem);
 }
 #crit-display {
   top: 28%;
   left: 50%;
   transform: translateX(-50%);
   color: #ff6644;
-  font-size: 0.6rem;
+  font-size: clamp(0.45rem, 1.5vw, 0.6rem);
 }
 #miss-display {
   top: 35%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--hp-red);
-  font-size: 0.65rem;
+  font-size: clamp(0.45rem, 1.5vw, 0.65rem);
 }
 #heal-display {
   top: 65%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--hp-green);
-  font-size: 0.55rem;
+  font-size: clamp(0.4rem, 1.3vw, 0.55rem);
 }
 #damage-number {
   top: 22%;
   color: #ff4444;
-  font-size: 1.1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
 }
 #level-up-flash {
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--gold);
-  font-size: 0.7rem;
+  font-size: clamp(0.5rem, 1.8vw, 0.7rem);
 }
 
 /* Particles */
@@ -504,7 +542,7 @@ body {
 /* --- TIMER --- */
 #timer-bar {
   width: 100%;
-  height: 5px;
+  height: clamp(3px, 0.6vh, 6px);
   background: #0a0a1a;
   flex-shrink: 0;
 }
@@ -519,29 +557,30 @@ body {
 #question-area {
   flex: 1;
   width: 100%;
-  padding: 10px 14px 14px;
+  padding: clamp(6px, 1.5vh, 12px) clamp(8px, 2vw, 16px) clamp(8px, 1.5vh, 16px);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   min-height: 0;
 }
 
 #q-progress {
-  font-size: 0.5rem;
+  font-size: clamp(0.35rem, 1.2vw, 0.5rem);
   font-family: 'Press Start 2P', monospace;
   color: var(--text-secondary);
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: clamp(3px, 0.8vh, 6px);
   letter-spacing: 1.5px;
   flex-shrink: 0;
 }
 
 #q-text {
-  font-size: 1.05rem;
+  font-size: clamp(0.85rem, 2.8vw, 1.1rem);
   font-weight: 600;
   text-align: center;
-  padding: 8px 6px 12px;
-  min-height: 50px;
+  padding: clamp(4px, 1vh, 10px) clamp(4px, 1vw, 8px) clamp(6px, 1.5vh, 14px);
+  min-height: clamp(35px, 6vh, 55px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -566,26 +605,26 @@ body {
 #options-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: clamp(6px, 1.2vh, 12px);
   margin-top: auto;
-  padding-top: 4px;
+  padding-top: clamp(2px, 0.5vh, 6px);
 }
 
 .opt-btn {
-  padding: 14px 8px;
-  font-size: 0.9rem;
+  padding: clamp(8px, 1.5vh, 16px) clamp(4px, 1vw, 10px);
+  font-size: clamp(0.75rem, 2.2vw, 0.95rem);
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 600;
   background: var(--bg-card);
   color: var(--text-primary);
   border: 2px solid var(--border);
-  border-radius: 14px;
+  border-radius: clamp(10px, 2vw, 14px);
   cursor: pointer;
   transition: all 0.15s;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 56px;
+  min-height: clamp(40px, 7vh, 60px);
   text-align: center;
   word-break: break-word;
   line-height: 1.5;
@@ -638,15 +677,20 @@ body {
 /* ============================================
    END SCREEN
    ============================================ */
+#end-screen {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .end-box {
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: clamp(1rem, 3vh, 2rem) clamp(1rem, 4vw, 1.5rem);
   width: 90%;
   max-width: 400px;
 }
 
 #end-icon {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 10vw, 4rem);
   margin-bottom: 0.5rem;
   animation: endBounce 2s ease-in-out infinite;
 }
@@ -657,7 +701,7 @@ body {
 
 #end-title {
   font-family: 'Press Start 2P', monospace;
-  font-size: 1.1rem;
+  font-size: clamp(0.7rem, 2.8vw, 1.15rem);
   margin-bottom: 0.8rem;
   line-height: 1.6;
   animation: endGlow 2s ease-in-out infinite alternate;
@@ -669,33 +713,33 @@ body {
 
 #end-reason {
   color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin-bottom: 2rem;
+  font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+  margin-bottom: clamp(1rem, 3vh, 2rem);
   line-height: 1.5;
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 2rem;
+  gap: clamp(6px, 1.5vw, 12px);
+  margin-bottom: clamp(1rem, 3vh, 2rem);
 }
 .stat-item {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 14px 6px;
+  padding: clamp(8px, 1.5vh, 14px) clamp(4px, 1vw, 8px);
 }
 .stat-label {
-  font-size: 0.45rem;
+  font-size: clamp(0.3rem, 1vw, 0.45rem);
   font-family: 'Press Start 2P', monospace;
   color: var(--text-secondary);
-  margin-bottom: 8px;
+  margin-bottom: clamp(4px, 1vh, 8px);
   letter-spacing: 0.5px;
 }
 .stat-value {
   font-family: 'Press Start 2P', monospace;
-  font-size: 1rem;
+  font-size: clamp(0.65rem, 2.5vw, 1rem);
   color: var(--gold);
 }
 
@@ -710,22 +754,145 @@ body {
 }
 
 /* ============================================
-   RESPONSIVE
+   LANDSCAPE MODE
    ============================================ */
-@media (max-height: 720px) {
-  #arena { height: 170px; }
-  .sprite { font-size: 3rem; }
-  .opt-btn { padding: 11px 6px; min-height: 48px; }
-  #q-text { font-size: 0.95rem; padding: 6px 4px 8px; }
+@media (orientation: landscape) and (max-height: 500px) {
+  #game-container {
+    max-width: 100%;
+  }
+
+  #battle-screen {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #hud-top {
+    width: 100%;
+    padding: 4px 10px 3px;
+  }
+
+  #arena {
+    width: 40%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  #timer-bar {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  #question-area {
+    width: 60%;
+    height: calc(100% - 36px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px 10px;
+  }
+
+  .sprite { font-size: clamp(1.8rem, 6vw, 2.8rem); }
+
+  #q-text { font-size: clamp(0.75rem, 2vw, 0.95rem); min-height: 30px; padding: 3px 4px 5px; }
+
+  .opt-btn {
+    min-height: 34px;
+    padding: 6px 4px;
+    font-size: clamp(0.65rem, 1.6vw, 0.82rem);
+  }
+
+  #options-container { gap: 5px; }
+
+  .login-dragon { font-size: 2.5rem; margin: 0.3rem 0; }
+  .login-title { font-size: 1rem; }
+  .login-box { padding: 0.8rem 1rem; }
 }
-@media (max-height: 620px) {
-  #arena { height: 140px; }
-  .sprite { font-size: 2.5rem; }
-  .opt-btn { padding: 9px 5px; min-height: 42px; font-size: 0.8rem; }
-  #q-text { font-size: 0.9rem; min-height: 40px; }
-  .login-dragon { font-size: 3.5rem; }
+
+/* ============================================
+   VERY TALL PHONES (Samsung Ultra, etc.)
+   ============================================ */
+@media (min-height: 800px) and (max-width: 500px) {
+  #arena { height: clamp(180px, 28vh, 240px); }
+  .opt-btn { min-height: 58px; padding: 14px 10px; }
+  #q-text { font-size: 1.05rem; padding: 10px 8px 14px; }
 }
-@media (max-height: 550px) {
-  #arena { height: 110px; }
-  .sprite { font-size: 2rem; }
+
+/* ============================================
+   TABLETS (iPad, etc.)
+   ============================================ */
+@media (min-width: 600px) and (min-height: 700px) {
+  #game-container { max-width: 550px; }
+  #arena { height: clamp(200px, 28vh, 280px); }
+  .sprite { font-size: clamp(3.5rem, 7vw, 5rem); }
+  .opt-btn {
+    min-height: 65px;
+    font-size: 1rem;
+    padding: 16px 12px;
+    border-radius: 16px;
+  }
+  #q-text { font-size: 1.15rem; }
+  .hp-bar { height: 18px; }
+}
+
+/* ============================================
+   LARGE TABLETS / DESKTOP
+   ============================================ */
+@media (min-width: 1024px) {
+  #game-container {
+    max-width: 480px;
+    border-radius: 24px;
+    height: min(100dvh, 900px);
+    box-shadow: 0 0 80px rgba(0,0,0,0.9), 0 0 0 1px rgba(255,255,255,0.05);
+  }
+}
+
+/* ============================================
+   VERY SMALL SCREENS (iPhone SE, old devices)
+   ============================================ */
+@media (max-height: 570px) and (orientation: portrait) {
+  #arena { height: clamp(80px, 18vh, 130px); }
+  .sprite { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+
+  #q-text {
+    font-size: clamp(0.78rem, 2.5vw, 0.9rem);
+    min-height: 30px;
+    padding: 3px 4px 6px;
+  }
+
+  .opt-btn {
+    min-height: 36px;
+    padding: 7px 4px;
+    font-size: clamp(0.7rem, 2vw, 0.82rem);
+  }
+
+  #options-container { gap: 5px; }
+  #hud-top { padding: 3px 8px 2px; }
+  .hp-bar { height: 10px; }
+
+  .login-dragon { font-size: 2.8rem; margin: 0.3rem 0; }
+  .login-hint { font-size: 0.7rem; margin-bottom: 0.5rem; }
+}
+
+/* ============================================
+   ULTRA SMALL (Galaxy Fold closed, etc.)
+   ============================================ */
+@media (max-width: 300px) {
+  .login-title { font-size: 0.85rem; letter-spacing: 1px; }
+  .login-dragon { font-size: 2.2rem; }
+  .login-subtitle { font-size: 0.7rem; }
+  #pin-input { padding: 10px; font-size: 0.85rem; }
+
+  #options-container {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .opt-btn {
+    min-height: 32px;
+    padding: 6px 4px;
+    font-size: 0.72rem;
+  }
+  .sprite { font-size: 1.5rem; }
 }

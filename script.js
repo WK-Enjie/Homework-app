@@ -1,7 +1,6 @@
 /* =====================================================
    LEVEL UP — Power Up Your Knowledge!
-   Battle game with KaTeX math rendering
-   Supports: fractions, powers, surds, any subject
+   Fully responsive battle game with KaTeX
    ===================================================== */
 
 // ── Game State ──
@@ -51,6 +50,17 @@ const qText           = $('q-text');
 const optionsContainer= $('options-container');
 const qProgress       = $('q-progress');
 const particlesEl     = $('particles');
+
+// ── Viewport fix for mobile browsers ──
+function fixViewportHeight() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+fixViewportHeight();
+window.addEventListener('resize', fixViewportHeight);
+window.addEventListener('orientationchange', () => {
+  setTimeout(fixViewportHeight, 200);
+});
 
 // ── Audio (Web Audio API — no external files) ──
 let audioCtx;
@@ -131,13 +141,6 @@ function playSound(type) {
 
 // ═══════════════════════════════════════════
 //  MATH RENDERING (KaTeX)
-//
-//  Wrap LaTeX in $...$ in your JSON files:
-//    "$\\frac{1}{2}$"        → ½
-//    "$x^{2}$"               → x²
-//    "$\\sqrt{3}$"           → √3
-//    "$\\sqrt[3]{8}$"        → ∛8
-//    "$2\\frac{1}{3}$"       → 2⅓
 // ═══════════════════════════════════════════
 
 function renderMath(text) {
@@ -171,7 +174,6 @@ function escapeHtml(str) {
   return d.innerHTML;
 }
 
-/** Normalise answer text for comparison */
 function normalise(s) {
   return s ? s.trim().replace(/\s+/g, ' ').toLowerCase() : '';
 }
@@ -179,6 +181,13 @@ function normalise(s) {
 // ── Event Listeners ──
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
+
+// Prevent zoom on double-tap (iOS)
+document.addEventListener('touchend', (e) => {
+  const now = Date.now();
+  if (now - (document._lastTouch || 0) < 300) e.preventDefault();
+  document._lastTouch = now;
+}, { passive: false });
 
 // ═══════════════════════════════════════════
 //  LOGIN
@@ -253,9 +262,7 @@ function loadQuestion() {
   const q = gameQuestions[currentIdx];
   const questionText = q.question ? q.question.trim() : 'Loading quest…';
 
-  // ★ Render math with KaTeX ★
   qText.innerHTML = renderMath(questionText);
-
   qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
   hideFloats();
 
@@ -276,7 +283,7 @@ function loadQuestion() {
     if (pct <= 0) handleTimeout();
   }, 80);
 
-  // Build option buttons
+  // Build options
   optionsContainer.innerHTML = '';
   if (q.options && Array.isArray(q.options)) {
     const answerRaw = q.answer ? q.answer.trim() : '';
@@ -285,7 +292,7 @@ function loadQuestion() {
       const btn = document.createElement('button');
       btn.className = 'opt-btn';
       btn.dataset.raw = raw;
-      btn.innerHTML = renderMath(raw);   // ★ render math ★
+      btn.innerHTML = renderMath(raw);
       btn.onclick = () => handleAnswer(btn, raw, answerRaw);
       optionsContainer.appendChild(btn);
     });
@@ -354,7 +361,7 @@ function disableAll() {
 }
 
 // ═══════════════════════════════════════════
-//  PLAYER ATTACK (correct answer)
+//  PLAYER ATTACK
 // ═══════════════════════════════════════════
 
 function calcAttack(timeTaken) {
@@ -376,7 +383,7 @@ function calcAttack(timeTaken) {
   score += pts;
   scoreDisplay.textContent = score;
 
-  // Level up every 3 correct answers
+  // Level up every 3 correct
   const newLevel = Math.floor(correctCount / 3) + 1;
   if (newLevel > playerLevel) {
     playerLevel = newLevel;
@@ -406,13 +413,11 @@ function showLevelUp() {
   levelUpFlash.classList.add('anim-float-up');
   levelUpFlash.classList.remove('hidden');
 
-  // gold burst
   const burst = document.createElement('div');
   burst.className = 'level-up-burst';
   $('arena').appendChild(burst);
   setTimeout(() => burst.remove(), 850);
 
-  // bonus particles
   spawnParticles('center', '#ffd700', 18);
 
   setTimeout(() => {
@@ -422,13 +427,11 @@ function showLevelUp() {
 }
 
 function doPlayerAnim(dmg, isCrit, cb) {
-  // combo banner
   if (combo > 1) {
     comboDisplay.textContent = `⚡ COMBO x${combo}!`;
     comboDisplay.classList.remove('hidden');
   }
 
-  // fireball
   fireball.textContent = isCrit ? '☄️' : '🔥';
   fireball.classList.remove('hidden', 'anim-shoot-right');
   void fireball.offsetWidth;
@@ -445,7 +448,6 @@ function doPlayerAnim(dmg, isCrit, cb) {
     spawnParticles('right', isCrit ? '#ffdd00' : '#ff8800', isCrit ? 14 : 8);
     enemySprite.classList.add('anim-enemy-hit');
 
-    // damage number
     damageNumber.textContent = `−${Math.round(dmg)}`;
     damageNumber.style.right = '15%';
     damageNumber.style.left  = 'auto';
@@ -473,7 +475,7 @@ function doPlayerAnim(dmg, isCrit, cb) {
 }
 
 // ═══════════════════════════════════════════
-//  ENEMY ATTACK (wrong / timeout)
+//  ENEMY ATTACK
 // ═══════════════════════════════════════════
 
 function triggerEnemyAttack() {
@@ -541,7 +543,7 @@ function spawnParticles(side, color, count = 8) {
   let cx;
   if      (side === 'right')  cx = 73;
   else if (side === 'left')   cx = 15;
-  else                        cx = 50; // center
+  else                        cx = 50;
 
   for (let i = 0; i < count; i++) {
     const p = document.createElement('div');
