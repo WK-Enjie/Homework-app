@@ -85,7 +85,7 @@
   },
   {
     "id": 13,
-    "question": "Notebooks are sold at 5 for $12. What is the maximum number of notebooks you can buy with $50 ?",
+    "question": "Notebooks are sold at 5 for 12 dollars. What is the maximum number of notebooks you can buy with 50 dollars?",
     "options": ["18", "20", "22", "24"],
     "answer": "20",
     "time": 90
@@ -141,3 +141,4 @@
   }
 
 ]
+
