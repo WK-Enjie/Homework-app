@@ -1,7 +1,7 @@
 /* =====================================================
    LEVEL UP — Power Up Your Knowledge!
-   Fully responsive battle game with KaTeX
-   Fixed: dollar sign rendering ($400, $80, etc.)
+   FIXED: KaTeX auto-render for proper math display
+   Handles fractions, powers, surds, dollar signs
    ===================================================== */
 
 // ── Game State ──
@@ -17,6 +17,7 @@ let correctCount = 0;
 let playerLevel = 1;
 let questionStartTime;
 let timerInterval;
+let katexReady = false;
 const DEFAULT_TIME_LIMIT = 30000;
 const TOTAL_QUESTIONS = 12;
 
@@ -62,6 +63,71 @@ window.addEventListener('resize', fixViewportHeight);
 window.addEventListener('orientationchange', () => {
   setTimeout(fixViewportHeight, 200);
 });
+
+// ═══════════════════════════════════════════
+//  KATEX — Wait for it to load
+// ═══════════════════════════════════════════
+
+function waitForKaTeX() {
+  return new Promise((resolve) => {
+    if (typeof katex !== 'undefined' && typeof renderMathInElement === 'function') {
+      katexReady = true;
+      resolve();
+      return;
+    }
+    let attempts = 0;
+    const check = setInterval(() => {
+      attempts++;
+      if (typeof katex !== 'undefined' && typeof renderMathInElement === 'function') {
+        clearInterval(check);
+        katexReady = true;
+        resolve();
+      } else if (attempts > 80) {
+        clearInterval(check);
+        console.warn('KaTeX failed to load — showing raw text');
+        resolve();
+      }
+    }, 100);
+  });
+}
+
+// ═══════════════════════════════════════════
+//  MATH RENDERING — using KaTeX auto-render
+//  This properly handles:
+//    $\frac{1}{2}$     → fraction
+//    $x^{2}$           → power
+//    $\sqrt{3}$        → surd
+//    $\$400$           → $400 (currency)
+//    Spacing between text and math
+// ═══════════════════════════════════════════
+
+function renderMathIn(element) {
+  if (!katexReady) return;
+  try {
+    renderMathInElement(element, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$',  right: '$',  display: false }
+      ],
+      throwOnError: false,
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    });
+  } catch (e) {
+    console.warn('KaTeX render error:', e);
+  }
+}
+
+function setMathText(element, text) {
+  if (!text) { element.textContent = ''; return; }
+  // Set as textContent first (safe, preserves all characters)
+  element.textContent = text;
+  // Then let KaTeX auto-render find and render $...$ blocks
+  renderMathIn(element);
+}
+
+function normalise(s) {
+  return s ? s.trim().replace(/\s+/g, ' ').toLowerCase() : '';
+}
 
 // ── Audio (Web Audio API — no external files) ──
 let audioCtx;
@@ -140,61 +206,6 @@ function playSound(type) {
   } catch(e) {}
 }
 
-// ═══════════════════════════════════════════
-//  MATH RENDERING (KaTeX)
-//  FIXED: handles \$ (dollar currency sign)
-//
-//  In JSON use:
-//    "$\\frac{1}{2}$"    → fraction
-//    "$x^{2}$"           → power
-//    "$\\sqrt{3}$"       → surd
-//    "$\\$400$"          → $400 currency
-// ═══════════════════════════════════════════
-
-function renderMath(text) {
-  if (!text) return '';
-  if (typeof katex === 'undefined') return escapeHtml(text);
-
-  // Step 1: Protect escaped dollar signs \$ with a placeholder
-  const PLACEHOLDER = '\u0000DLRSGN\u0000';
-  let processed = text.replace(/\\\$/g, PLACEHOLDER);
-
-  // Step 2: Display math $$...$$
-  processed = processed.replace(/\$\$([\s\S]+?)\$\$/g, (_, latex) => {
-    const restored = latex.replace(new RegExp(PLACEHOLDER, 'g'), '\\$');
-    try {
-      return katex.renderToString(restored.trim(), {
-        throwOnError: false, displayMode: true
-      });
-    } catch (e) { return escapeHtml(restored); }
-  });
-
-  // Step 3: Inline math $...$
-  processed = processed.replace(/\$(.+?)\$/g, (_, latex) => {
-    const restored = latex.replace(new RegExp(PLACEHOLDER, 'g'), '\\$');
-    try {
-      return katex.renderToString(restored.trim(), {
-        throwOnError: false, displayMode: false
-      });
-    } catch (e) { return escapeHtml(restored); }
-  });
-
-  // Step 4: Restore any remaining placeholders as literal $
-  processed = processed.replace(new RegExp(PLACEHOLDER, 'g'), '$');
-
-  return processed;
-}
-
-function escapeHtml(str) {
-  const d = document.createElement('div');
-  d.textContent = str;
-  return d.innerHTML;
-}
-
-function normalise(s) {
-  return s ? s.trim().replace(/\s+/g, ' ').toLowerCase() : '';
-}
-
 // ── Event Listeners ──
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
@@ -219,6 +230,9 @@ async function attemptLogin() {
   startBtn.textContent = "⏳ Loading…";
 
   try {
+    // Wait for KaTeX to be ready
+    await waitForKaTeX();
+
     const res = await fetch(`worksheets/${pin}.json`);
     if (!res.ok) throw new Error("Quest not found! Check your code.");
     const data = await res.json();
@@ -279,7 +293,9 @@ function loadQuestion() {
   const q = gameQuestions[currentIdx];
   const questionText = q.question ? q.question.trim() : 'Loading quest…';
 
-  qText.innerHTML = renderMath(questionText);
+  // ★ Set text then render math ★
+  setMathText(qText, questionText);
+
   qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
   hideFloats();
 
@@ -309,7 +325,10 @@ function loadQuestion() {
       const btn = document.createElement('button');
       btn.className = 'opt-btn';
       btn.dataset.raw = raw;
-      btn.innerHTML = renderMath(raw);
+
+      // ★ Set text then render math ★
+      setMathText(btn, raw);
+
       btn.onclick = () => handleAnswer(btn, raw, answerRaw);
       optionsContainer.appendChild(btn);
     });
