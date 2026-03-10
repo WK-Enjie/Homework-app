@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Cookies are packed in bags of 6. If there are 85 cookies, what is the maximum number of bags that can be filled completely?",
+    "options": ["12", "13", "14", "15"],
+    "answer": "14",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "Tom has 3 times as many marbles as Jerry. Together they have 80 marbles. How many marbles does Tom have?",
+    "options": ["50", "55", "60", "65"],
+    "answer": "60",
+    "time": 90
+  },
+  {
+    "id": 3,
+    "question": "Pencils are sold in boxes of 8. What is the minimum number of boxes needed to get at least 50 pencils?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "time": 60
+  },
+  {
+    "id": 4,
+    "question": "Amy has 5 times as many stickers as Ben. After Amy gave 50 stickers to Ben, they had the same number. How many stickers did Amy have at first?",
+    "options": ["100", "120", "125", "150"],
+    "answer": "125",
+    "time": 120
+  },
+  {
+    "id": 5,
+    "question": "Find the next number in the pattern: 3, 6, 12, 24, 48, ...",
+    "options": ["72", "84", "96", "108"],
+    "answer": "96",
+    "time": 45
+  },
+  {
+    "id": 6,
+    "question": "There are 45 students. Each van can carry 7 students. What is the minimum number of vans needed?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "time": 60
+  },
+  {
+    "id": 7,
+    "question": "John has 4 times as many books as Mary. After John bought 18 more books and Mary bought 3 more books, John had 5 times as many books as Mary. How many books did Mary have at first?",
+    "options": ["10", "12", "15", "18"],
+    "answer": "15",
+    "time": 150
+  },
+  {
+    "id": 8,
+    "question": "Apples are packed in trays of 10. If there are 127 apples, how many apples will be left over after filling as many trays as possible?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "time": 60
+  },
+  {
+    "id": 9,
+    "question": "Find the missing number in the pattern: 5, 10, 17, 26, __, 50",
+    "options": ["35", "37", "39", "41"],
+    "answer": "37",
+    "time": 75
+  },
+  {
+    "id": 10,
+    "question": "Lisa has 3 times as much money as Kate. After Lisa spent $40 and Kate spent $10, they had the same amount. How much money did Lisa have at first?",
+    "options": ["$75", "$90", "$105", "$120"],
+    "answer": "$90",
+    "time": 120
+  },
+  {
+    "id": 11,
+    "question": "Balloons are tied in bunches of 9. What is the maximum number of complete bunches that can be made from 100 balloons?",
+    "options": ["9", "10", "11", "12"],
+    "answer": "11",
+    "time": 60
+  },
+  {
+    "id": 12,
+    "question": "There are 2 times as many boys as girls in a class. After 12 boys and 5 girls joined, there were 3 times as many boys as girls. How many girls were there at first?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "7",
+    "time": 150
+  },
+  {
+    "id": 13,
+    "question": "Find the next number: 1, 4, 9, 16, 25, ...",
+    "options": ["30", "32", "36", "40"],
+    "answer": "36",
+    "time": 45
+  },
+  {
+    "id": 14,
+    "question": "Notebooks cost $4 each. What is the maximum number of notebooks that can be bought with $35?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "8",
+    "time": 45
+  },
+  {
+    "id": 15,
+    "question": "Peter has 6 times as many cards as Paul. After Peter gave 75 cards to Paul, they had the same number. How many cards did Peter have at first?",
+    "options": ["150", "160", "170", "180"],
+    "answer": "180",
+    "time": 120
+  },
+  {
+    "id": 16,
+    "question": "Find the missing number: 2, 5, 11, 23, 47, __",
+    "options": ["85", "91", "95", "99"],
+    "answer": "95",
+    "time": 75
+  },
+  {
+    "id": 17,
+    "question": "Eggs are packed in cartons of 12. A farmer has 155 eggs. How many cartons can be filled completely?",
+    "options": ["11", "12", "13", "14"],
+    "answer": "12",
+    "time": 60
+  },
+  {
+    "id": 18,
+    "question": "Sam has 4 times as many toy cars as Tim. After Sam bought 20 more cars and Tim bought 5 more cars, Sam had 3 times as many cars as Tim. How many cars did Tim have at first?",
+    "options": ["8", "10", "12", "15"],
+    "answer": "10",
+    "time": 150
+  },
+  {
+    "id": 19,
+    "question": "Find the next number in the pattern: 100, 95, 85, 70, 50, ...",
+    "options": ["25", "30", "35", "40"],
+    "answer": "25",
+    "time": 75
+  },
+  {
+    "id": 20,
+    "question": "Ribbon is sold in rolls of 5 metres. What is the minimum number of rolls needed to get at least 38 metres of ribbon?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8",
+    "time": 60
+  }
+]
