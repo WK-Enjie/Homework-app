@@ -79,16 +79,16 @@
   },
   {
     "id": 7,
-    "question": "Complete the sentence: Aluminium is extracted by ______ of molten aluminium oxide because aluminium is ______ reactive than carbon. Carbon ______ reduce aluminium oxide.",
+    "question": "Complete the sentence: Iron is extracted from iron ore using carbon in a blast furnace because iron is ______ reactive than carbon. Carbon acts as a ______ agent and is ______ to carbon dioxide.",
     "options": [
-      "electrolysis, more, cannot",
-      "reduction, less, can",
-      "electrolysis, less, can",
-      "reduction, more, cannot"
+      "less, reducing, oxidised",
+      "more, reducing, oxidised",
+      "less, oxidising, reduced",
+      "more, oxidising, reduced"
     ],
-    "answer": "electrolysis, more, cannot",
+    "answer": "less, reducing, oxidised",
     "time": 90,
-    "explanation": "Aluminium is above carbon in the reactivity series. Carbon cannot reduce aluminium oxide because aluminium has a stronger affinity for oxygen than carbon does. Metals above carbon require electrolysis for extraction."
+    "explanation": "Iron is below carbon in the reactivity series (less reactive). Carbon can reduce iron oxide because carbon has a stronger affinity for oxygen than iron does. Carbon gains oxygen (oxidised) and iron loses oxygen (reduced). Carbon is the reducing agent."
   },
   {
     "id": 8,
@@ -157,16 +157,16 @@
   },
   {
     "id": 13,
-    "question": "In a simple cell with magnesium and copper electrodes, which metal undergoes oxidation and why?",
+    "question": "Complete the sentence: Galvanising protects iron by coating it with ______. This metal is ______ reactive than iron and provides ______ protection even if the coating is scratched.",
     "options": [
-      "Magnesium, because it is more reactive and loses electrons more easily",
-      "Copper, because it is less reactive and gains electrons more easily",
-      "Magnesium, because it is less reactive and gains electrons more easily",
-      "Copper, because it is more reactive and loses electrons more easily"
+      "zinc, more, sacrificial",
+      "tin, less, barrier",
+      "zinc, less, barrier",
+      "tin, more, sacrificial"
     ],
-    "answer": "Magnesium, because it is more reactive and loses electrons more easily",
+    "answer": "zinc, more, sacrificial",
     "time": 90,
-    "explanation": "In a simple cell, the more reactive metal undergoes oxidation (loses electrons). Magnesium is more reactive than copper, so: Mg → Mg²⁺ + 2e⁻ (oxidation at anode). Electrons flow from Mg to Cu through external circuit."
+    "explanation": "Galvanising coats iron with zinc. Zinc is more reactive than iron (higher in reactivity series). Even if scratched, zinc corrodes preferentially (sacrificial protection) because zinc loses electrons more readily than iron. Tin coating (tin cans) provides only barrier protection."
   },
   {
     "id": 14,
@@ -183,16 +183,16 @@
   },
   {
     "id": 15,
-    "question": "Why does recycling aluminium require less energy than extracting aluminium from bauxite ore?",
+    "question": "Why is it important to recycle metals like iron and aluminium?",
     "options": [
-      "Recycling avoids the electrolysis step which requires high energy",
-      "Recycled aluminium is purer than extracted aluminium",
-      "Recycled aluminium does not need to be melted",
-      "Bauxite ore is more expensive than recycled aluminium"
+      "Recycling saves energy and reduces environmental damage from mining",
+      "Recycled metals are always stronger than extracted metals",
+      "Recycling is cheaper than using metals once",
+      "Recycled metals do not corrode or rust"
     ],
-    "answer": "Recycling avoids the electrolysis step which requires high energy",
+    "answer": "Recycling saves energy and reduces environmental damage from mining",
     "time": 90,
-    "explanation": "Extracting aluminium from bauxite requires electrolysis of molten Al₂O₃ at high temperature (energy intensive). Recycling involves melting existing aluminium (much lower energy). Recycling saves ~95% of extraction energy. Environmental benefit: reduced CO₂ emissions."
+    "explanation": "Recycling metals saves significant energy (aluminium recycling saves ~95% of extraction energy). It reduces the need for mining (environmental damage, habitat destruction). It reduces landfill waste and CO₂ emissions. Economic benefit: recycled metals are valuable resources."
   },
   {
     "id": 16,
@@ -248,15 +248,15 @@
   },
   {
     "id": 20,
-    "question": "Complete the sentence: In electroplating, the object to be plated is placed at the ______ electrode. The plating metal is placed at the ______ electrode. The electrolyte contains ______ of the plating metal.",
+    "question": "Complete the sentence: Brass is an alloy of copper and ______. Alloys are generally ______ than pure metals because the different sized atoms disrupt the ______, making it harder for layers to slide.",
     "options": [
-      "cathode (negative), anode (positive), ions",
-      "anode (positive), cathode (negative), ions",
-      "cathode (negative), anode (positive), atoms",
-      "anode (positive), cathode (negative), atoms"
+      "zinc, harder, regular lattice structure",
+      "tin, softer, regular lattice structure",
+      "zinc, softer, crystal bonds",
+      "tin, harder, crystal bonds"
     ],
-    "answer": "cathode (negative), anode (positive), ions",
+    "answer": "zinc, harder, regular lattice structure",
     "time": 90,
-    "explanation": "In electroplating, the object to be electroplated is placed at the cathode (negative electrode), so reduction of cations at the cathode results in a solid deposit. The anode (positive electrode) is the metal used for electroplating. The electrolyte contains ions of the plating metal."
+    "explanation": "Brass = copper + zinc. Alloys are harder than pure metals because different sized atoms disrupt the regular lattice structure of the metal. This makes it harder for layers of atoms to slide over each other. Other alloys: bronze (copper + tin), steel (iron + carbon)."
   }
 ]
