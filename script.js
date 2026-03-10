@@ -1,8 +1,6 @@
 /* =====================================================
    LEVEL UP — Power Up Your Knowledge!
-   FIXED: KaTeX auto-render for proper math display
-   FIXED: Try Again button now works
-   Handles fractions, powers, surds, dollar signs
+   Fully responsive battle game with KaTeX
    ===================================================== */
 
 // ── Game State ──
@@ -18,7 +16,6 @@ let correctCount = 0;
 let playerLevel = 1;
 let questionStartTime;
 let timerInterval;
-let katexReady = false;
 const DEFAULT_TIME_LIMIT = 30000;
 const TOTAL_QUESTIONS = 12;
 
@@ -33,7 +30,6 @@ const screens = {
 
 const pinInput        = $('pin-input');
 const startBtn        = $('start-btn');
-const tryAgainBtn     = $('try-again-btn');
 const errorMsg        = $('error-msg');
 const scoreDisplay    = $('score-display');
 const enemyHPFill     = $('enemy-hp-fill');
@@ -65,63 +61,6 @@ window.addEventListener('resize', fixViewportHeight);
 window.addEventListener('orientationchange', () => {
   setTimeout(fixViewportHeight, 200);
 });
-
-// ═══════════════════════════════════════════
-//  KATEX — Wait for it to load
-// ═══════════════════════════════════════════
-
-function waitForKaTeX() {
-  return new Promise((resolve) => {
-    if (typeof katex !== 'undefined' && typeof renderMathInElement === 'function') {
-      katexReady = true;
-      resolve();
-      return;
-    }
-    let attempts = 0;
-    const check = setInterval(() => {
-      attempts++;
-      if (typeof katex !== 'undefined' && typeof renderMathInElement === 'function') {
-        clearInterval(check);
-        katexReady = true;
-        resolve();
-      } else if (attempts > 80) {
-        clearInterval(check);
-        console.warn('KaTeX failed to load — showing raw text');
-        resolve();
-      }
-    }, 100);
-  });
-}
-
-// ═══════════════════════════════════════════
-//  MATH RENDERING — using KaTeX auto-render
-// ═══════════════════════════════════════════
-
-function renderMathIn(element) {
-  if (!katexReady) return;
-  try {
-    renderMathInElement(element, {
-      delimiters: [
-        { left: '$$', right: '$$', display: true },
-        { left: '$',  right: '$',  display: false }
-      ],
-      throwOnError: false,
-      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    });
-  } catch (e) {
-    console.warn('KaTeX render error:', e);
-  }
-}
-
-function setMathText(element, text) {
-  if (!text) { element.textContent = ''; return; }
-  element.textContent = text;
-  renderMathIn(element);
-}
-
-function normalise(s) {
-  return s ? s.trim().replace(/\s+/g, ' ').toLowerCase() : '';
-}
 
 // ── Audio (Web Audio API — no external files) ──
 let audioCtx;
@@ -200,14 +139,48 @@ function playSound(type) {
   } catch(e) {}
 }
 
+// ═══════════════════════════════════════════
+//  MATH RENDERING (KaTeX)
+// ═══════════════════════════════════════════
+
+function renderMath(text) {
+  if (!text) return '';
+  if (typeof katex === 'undefined') return escapeHtml(text);
+
+  // Display math: $$...$$
+  let result = text.replace(/\$\$([\s\S]+?)\$\$/g, (_, latex) => {
+    try {
+      return katex.renderToString(latex.trim(), {
+        throwOnError: false, displayMode: true
+      });
+    } catch (e) { return escapeHtml(_); }
+  });
+
+  // Inline math: $...$
+  result = result.replace(/\$(.+?)\$/g, (_, latex) => {
+    try {
+      return katex.renderToString(latex.trim(), {
+        throwOnError: false, displayMode: false
+      });
+    } catch (e) { return escapeHtml(_); }
+  });
+
+  return result;
+}
+
+function escapeHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+function normalise(s) {
+  return s ? s.trim().replace(/\s+/g, ' ').toLowerCase() : '';
+}
+
 // ── Event Listeners ──
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
-
-// ── Try Again Button ──
-if (tryAgainBtn) {
-  tryAgainBtn.addEventListener('click', restartGame);
-}
 
 // Prevent zoom on double-tap (iOS)
 document.addEventListener('touchend', (e) => {
@@ -215,44 +188,6 @@ document.addEventListener('touchend', (e) => {
   if (now - (document._lastTouch || 0) < 300) e.preventDefault();
   document._lastTouch = now;
 }, { passive: false });
-
-// ═══════════════════════════════════════════
-//  RESTART GAME
-// ═══════════════════════════════════════════
-
-function restartGame() {
-  // Reset all game state
-  currentIdx = 0;
-  score = 0;
-  enemyHP = 100;
-  playerHP = 100;
-  combo = 0;
-  maxCombo = 0;
-  correctCount = 0;
-  playerLevel = 1;
-  gameQuestions = [];
-  clearInterval(timerInterval);
-
-  // Reset UI elements
-  scoreDisplay.textContent = '0';
-  optionsContainer.innerHTML = '';
-  qText.textContent = '';
-  timerFill.style.width = '100%';
-  timerFill.style.background = 'var(--hp-green)';
-  enemySprite.textContent = '🐉';
-  playerSprite.textContent = '🧙‍♂️';
-  hideFloats();
-  updateBars();
-
-  // Reset start button
-  startBtn.disabled = false;
-  startBtn.textContent = '⚔️ BEGIN QUEST';
-
-  // Switch screens: hide end, show login
-  screens.end.classList.add('hidden');
-  screens.battle.classList.add('hidden');
-  screens.login.classList.remove('hidden');
-}
 
 // ═══════════════════════════════════════════
 //  LOGIN
@@ -267,8 +202,6 @@ async function attemptLogin() {
   startBtn.textContent = "⏳ Loading…";
 
   try {
-    await waitForKaTeX();
-
     const res = await fetch(`worksheets/${pin}.json`);
     if (!res.ok) throw new Error("Quest not found! Check your code.");
     const data = await res.json();
@@ -308,7 +241,6 @@ function startGame() {
   updateBars();
   scoreDisplay.textContent = '0';
   screens.login.classList.add('hidden');
-  screens.end.classList.add('hidden');
   screens.battle.classList.remove('hidden');
   loadQuestion();
 }
@@ -330,8 +262,7 @@ function loadQuestion() {
   const q = gameQuestions[currentIdx];
   const questionText = q.question ? q.question.trim() : 'Loading quest…';
 
-  setMathText(qText, questionText);
-
+  qText.innerHTML = renderMath(questionText);
   qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
   hideFloats();
 
@@ -361,9 +292,7 @@ function loadQuestion() {
       const btn = document.createElement('button');
       btn.className = 'opt-btn';
       btn.dataset.raw = raw;
-
-      setMathText(btn, raw);
-
+      btn.innerHTML = renderMath(raw);
       btn.onclick = () => handleAnswer(btn, raw, answerRaw);
       optionsContainer.appendChild(btn);
     });
@@ -454,12 +383,14 @@ function calcAttack(timeTaken) {
   score += pts;
   scoreDisplay.textContent = score;
 
+  // Level up every 3 correct
   const newLevel = Math.floor(correctCount / 3) + 1;
   if (newLevel > playerLevel) {
     playerLevel = newLevel;
     showLevelUp();
   }
 
+  // Heal every 5 combo streak
   if (combo > 0 && combo % 5 === 0) {
     playerHP = Math.min(100, playerHP + 20);
     showFloat(healDisplay, '✨ POWER HEAL +20 HP!');
