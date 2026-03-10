@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "question": "Complete the sentence: During rusting, iron atoms lose electrons to form ______ ions, while oxygen gains electrons to form ______ ions. This process requires both ______ and ______ to be present.",
+    "options": [
+      "Fe²⁺, O²⁻, oxygen, water",
+      "Fe³⁺, O²⁻, oxygen, water",
+      "Fe²⁺, OH⁻, oxygen, water",
+      "Fe³⁺, OH⁻, oxygen, water"
+    ],
+    "answer": "Fe²⁺, O²⁻, oxygen, water",
+    "time": 90,
+    "explanation": "During rusting, iron atoms lose electrons (oxidation): Fe → Fe²⁺ + 2e⁻. Oxygen gains electrons (reduction): O₂ + 4e⁻ → 2O²⁻. Both oxygen and water must be present for rusting to occur. Fe²⁺ may be further oxidised to Fe³⁺ in the presence of oxygen and water."
+  },
+  {
+    "id": 2,
+    "question": "Metal X reacts with steam but not cold water. Metal Y reacts vigorously with cold water. Metal Z does not react with dilute hydrochloric acid. Arrange X, Y, Z in order of decreasing reactivity.",
+    "options": [
+      "Y > X > Z",
+      "X > Y > Z",
+      "Z > X > Y",
+      "Y > Z > X"
+    ],
+    "answer": "Y > X > Z",
+    "time": 90,
+    "explanation": "Metals that react with cold water (Y) are most reactive (e.g., K, Na, Ca). Metals reacting only with steam (X) are moderately reactive (e.g., Mg, Zn, Fe). Metals not reacting with dilute acid (Z) are below hydrogen (e.g., Cu, Ag). Order: Y > X > Z."
+  },
+  {
+    "id": 3,
+    "question": "In the extraction of iron: Fe₂O₃ + 3CO → 2Fe + 3CO₂. If 160 g of Fe₂O₃ produces 98 g of Fe, calculate the percentage yield. [Ar: Fe=56, O=16]",
+    "options": [
+      "70%",
+      "80%",
+      "87.5%",
+      "95%"
+    ],
+    "answer": "87.5%",
+    "time": 120,
+    "explanation": "Mr Fe₂O₃ = (2×56)+(3×16) = 160. Theoretical yield: 160 g Fe₂O₃ → 112 g Fe (2×56). Percentage yield = (actual/theoretical)×100 = (98/112)×100 = 87.5%."
+  },
+  {
+    "id": 4,
+    "question": "Complete the half-equation: During sacrificial protection, magnesium loses electrons: Mg → ______ + ______. These electrons prevent iron from ______.",
+    "options": [
+      "Mg²⁺, 2e⁻, oxidising",
+      "Mg²⁺, 2e⁻, rusting",
+      "Mg⁺, e⁻, oxidising",
+      "Mg²⁺, 2e⁻, corroding"
+    ],
+    "answer": "Mg²⁺, 2e⁻, oxidising",
+    "time": 90,
+    "explanation": "Magnesium loses 2 electrons: Mg → Mg²⁺ + 2e⁻ (oxidation). These electrons prevent iron from losing electrons (oxidising). Iron is protected because magnesium corrodes preferentially (sacrificial protection)."
+  },
+  {
+    "id": 5,
+    "question": "Four metals P, Q, R, S are tested. P displaces Q from Q sulfate. R does not displace P from P sulfate. S displaces R from R sulfate. Q does not react with dilute acid. What is the order of decreasing reactivity?",
+    "options": [
+      "S > R > P > Q",
+      "P > Q > S > R",
+      "S > P > R > Q",
+      "P > S > R > Q"
+    ],
+    "answer": "S > P > R > Q",
+    "time": 90,
+    "explanation": "S displaces R (S > R). P displaces Q (P > Q). R does not displace P (P > R). Q does not react with acid (Q below H, least reactive). Combining: S > P > R > Q. A metal can only displace a less reactive metal from its salt solution."
+  },
+  {
+    "id": 6,
+    "question": "In the reaction: Zn + CuSO₄ → ZnSO₄ + Cu. Which substance is the reducing agent and why?",
+    "options": [
+      "Zn, because it loses electrons and causes Cu²⁺ to be reduced",
+      "Cu²⁺, because it gains electrons and causes Zn to be oxidised",
+      "SO₄²⁻, because it remains unchanged throughout",
+      "ZnSO₄, because it is the product of oxidation"
+    ],
+    "answer": "Zn, because it loses electrons and causes Cu²⁺ to be reduced",
+    "time": 90,
+    "explanation": "A reducing agent loses electrons (is oxidised) and causes another species to be reduced. Zn loses 2 electrons: Zn → Zn²⁺ + 2e⁻ (oxidation). These electrons reduce Cu²⁺ to Cu: Cu²⁺ + 2e⁻ → Cu. Therefore, Zn is the reducing agent."
+  },
+  {
+    "id": 7,
+    "question": "Complete the sentence: Aluminium is extracted by ______ of molten aluminium oxide because aluminium is ______ reactive than carbon. Carbon ______ reduce aluminium oxide.",
+    "options": [
+      "electrolysis, more, cannot",
+      "reduction, less, can",
+      "electrolysis, less, can",
+      "reduction, more, cannot"
+    ],
+    "answer": "electrolysis, more, cannot",
+    "time": 90,
+    "explanation": "Aluminium is above carbon in the reactivity series. Carbon cannot reduce aluminium oxide because aluminium has a stronger affinity for oxygen than carbon does. Metals above carbon require electrolysis for extraction."
+  },
+  {
+    "id": 8,
+    "question": "A student tests metal X with various solutions. X displaces copper from CuSO₄ but not zinc from ZnSO₄. X reacts slowly with dilute HCl. Where is X in the reactivity series?",
+    "options": [
+      "Above zinc",
+      "Between zinc and iron",
+      "Between zinc and copper",
+      "Below copper"
+    ],
+    "answer": "Between zinc and copper",
+    "time": 90,
+    "explanation": "X displaces Cu (X > Cu). X does not displace Zn (Zn > X). X reacts with acid (X above H). Order: Zn > X > (H) > Cu. X is between zinc and copper in reactivity series. Possible metals: iron, lead, or tin."
+  },
+  {
+    "id": 9,
+    "question": "In the blast furnace reaction: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Which element is oxidised and which is reduced?",
+    "options": [
+      "C oxidised (C²⁺ to C⁴⁺), Fe reduced (Fe³⁺ to Fe⁰)",
+      "Fe oxidised (Fe³⁺ to Fe⁰), C reduced (C²⁺ to C⁴⁺)",
+      "O oxidised (O²⁻ to O⁰), Fe reduced (Fe³⁺ to Fe⁰)",
+      "C oxidised (C²⁺ to C⁴⁺), O reduced (O²⁻ to O⁰)"
+    ],
+    "answer": "C oxidised (C²⁺ to C⁴⁺), Fe reduced (Fe³⁺ to Fe⁰)",
+    "time": 90,
+    "explanation": "CO gains oxygen to form CO₂ (oxidation). Fe₂O₃ loses oxygen to form Fe (reduction). In redox terms: Fe³⁺ gains electrons (reduced to Fe⁰), C²⁺ loses electrons (oxidised to C⁴⁺). CO is the reducing agent, Fe₂O₃ is the oxidising agent."
+  },
+  {
+    "id": 10,
+    "question": "Complete the explanation: Reactivity increases down Group 1 because the outer electron is further from the nucleus and there are more ______. This means ______ electrostatic attraction between nucleus and outer electron, so electron is lost ______.",
+    "options": [
+      "inner electron shells, weaker, more easily",
+      "protons, stronger, less easily",
+      "inner electron shells, stronger, less easily",
+      "protons, weaker, more easily"
+    ],
+    "answer": "inner electron shells, weaker, more easily",
+    "time": 90,
+    "explanation": "Down Group 1, atoms have more electron shells. The outer electron is further from the nucleus and experiences more shielding from inner electron shells. Attraction between nucleus and outer electron is weaker, so electron is lost more easily, increasing reactivity."
+  },
+  {
+    "id": 11,
+    "question": "100 kg of iron ore (Fe₂O₃) is reduced by carbon monoxide. If the process is 80% efficient, what mass of iron is produced? [Ar: Fe=56, O=16]",
+    "options": [
+      "56 kg",
+      "64 kg",
+      "70 kg",
+      "80 kg"
+    ],
+    "answer": "56 kg",
+    "time": 120,
+    "explanation": "Mr Fe₂O₃ = (2×56)+(3×16) = 160. Mass ratio Fe:Fe₂O₃ = 112:160 = 7:10. Theoretical Fe from 100 kg = 100 × (112/160) = 70 kg. At 80% efficiency: 70 × 0.80 = 56 kg."
+  },
+  {
+    "id": 12,
+    "question": "Complete the sentence: Chlorine is more reactive than iodine because chlorine atoms have ______ inner electron shells. This means ______ attraction on incoming electrons, so chlorine gains electrons ______.",
+    "options": [
+      "fewer, stronger, more easily",
+      "more, weaker, less easily",
+      "fewer, weaker, less easily",
+      "more, stronger, more easily"
+    ],
+    "answer": "fewer, stronger, more easily",
+    "time": 90,
+    "explanation": "Chlorine has fewer inner electron shells than iodine. The nucleus attracts incoming electrons more strongly due to less distance and less shielding. Chlorine gains electrons more easily, making it more reactive (stronger oxidising agent)."
+  },
+  {
+    "id": 13,
+    "question": "In a simple cell with magnesium and copper electrodes, which metal undergoes oxidation and why?",
+    "options": [
+      "Magnesium, because it is more reactive and loses electrons more easily",
+      "Copper, because it is less reactive and gains electrons more easily",
+      "Magnesium, because it is less reactive and gains electrons more easily",
+      "Copper, because it is more reactive and loses electrons more easily"
+    ],
+    "answer": "Magnesium, because it is more reactive and loses electrons more easily",
+    "time": 90,
+    "explanation": "In a simple cell, the more reactive metal undergoes oxidation (loses electrons). Magnesium is more reactive than copper, so: Mg → Mg²⁺ + 2e⁻ (oxidation at anode). Electrons flow from Mg to Cu through external circuit."
+  },
+  {
+    "id": 14,
+    "question": "Complete the half-equations for rusting: Oxidation: Fe → ______ + ______. Reduction: O₂ + 2H₂O + ______ → 4OH⁻. The overall process is a ______ reaction.",
+    "options": [
+      "Fe²⁺, 2e⁻, 4e⁻, redox",
+      "Fe³⁺, 3e⁻, 4e⁻, redox",
+      "Fe²⁺, 2e⁻, 2e⁻, displacement",
+      "Fe³⁺, 3e⁻, 2e⁻, displacement"
+    ],
+    "answer": "Fe²⁺, 2e⁻, 4e⁻, redox",
+    "time": 90,
+    "explanation": "Rusting involves electron transfer (redox). Iron loses electrons (oxidation): Fe → Fe²⁺ + 2e⁻. Oxygen gains electrons (reduction): O₂ + 2H₂O + 4e⁻ → 4OH⁻. Both oxidation and reduction occur simultaneously, defining a redox reaction."
+  },
+  {
+    "id": 15,
+    "question": "Why does recycling aluminium require less energy than extracting aluminium from bauxite ore?",
+    "options": [
+      "Recycling avoids the electrolysis step which requires high energy",
+      "Recycled aluminium is purer than extracted aluminium",
+      "Recycled aluminium does not need to be melted",
+      "Bauxite ore is more expensive than recycled aluminium"
+    ],
+    "answer": "Recycling avoids the electrolysis step which requires high energy",
+    "time": 90,
+    "explanation": "Extracting aluminium from bauxite requires electrolysis of molten Al₂O₃ at high temperature (energy intensive). Recycling involves melting existing aluminium (much lower energy). Recycling saves ~95% of extraction energy. Environmental benefit: reduced CO₂ emissions."
+  },
+  {
+    "id": 16,
+    "question": "Complete the sentence: A ship's steel hull is protected by zinc blocks. Zinc is ______ reactive than iron, so it corrodes ______. This method is called ______ protection.",
+    "options": [
+      "more, preferentially, sacrificial",
+      "less, preferentially, barrier",
+      "more, slowly, barrier",
+      "less, slowly, sacrificial"
+    ],
+    "answer": "more, preferentially, sacrificial",
+    "time": 90,
+    "explanation": "Zinc is more reactive than iron (higher in reactivity series). Zinc loses electrons more readily: Zn → Zn²⁺ + 2e⁻. These electrons prevent iron from oxidising. Zinc corrodes instead of iron, 'sacrificing' itself to protect the iron (sacrificial protection)."
+  },
+  {
+    "id": 17,
+    "question": "In the reaction: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂. Which statement correctly identifies the oxidising agent?",
+    "options": [
+      "Fe³⁺, because it gains electrons and is reduced to Fe²⁺",
+      "I⁻, because it loses electrons and is oxidised to I₂",
+      "Fe²⁺, because it is the product of reduction",
+      "I₂, because it is the product of oxidation"
+    ],
+    "answer": "Fe³⁺, because it gains electrons and is reduced to Fe²⁺",
+    "time": 90,
+    "explanation": "An oxidising agent gains electrons (is reduced) and causes another species to be oxidised. Fe³⁺ gains 1 electron per ion: Fe³⁺ + e⁻ → Fe²⁺ (reduction). I⁻ loses electrons: 2I⁻ → I₂ + 2e⁻ (oxidation). Therefore, Fe³⁺ is the oxidising agent."
+  },
+  {
+    "id": 18,
+    "question": "Complete the explanation: Iron nails rust in tube A (water + air) but not in tube B (boiled water + oil). The oil layer prevents ______ from dissolving back into the water. Boiling removes ______ from the water.",
+    "options": [
+      "oxygen, oxygen",
+      "water, oxygen",
+      "oxygen, water",
+      "water, water"
+    ],
+    "answer": "oxygen, oxygen",
+    "time": 90,
+    "explanation": "Rusting requires BOTH oxygen AND water. Tube A: oxygen and water present - rust forms. Tube B: boiling removes dissolved oxygen, oil layer prevents oxygen from air dissolving back into water - no rust. This demonstrates essential conditions for corrosion."
+  },
+  {
+    "id": 19,
+    "question": "Metal M reacts with dilute HCl to produce hydrogen gas. M does not react with cold water but reacts with steam to produce hydrogen. M is most likely:",
+    "options": [
+      "Magnesium",
+      "Potassium",
+      "Copper",
+      "Silver"
+    ],
+    "answer": "Magnesium",
+    "time": 90,
+    "explanation": "Potassium reacts with cold water (too reactive). Copper and silver do not react with dilute acids (below hydrogen). Magnesium fits: no reaction with cold water, reacts with steam (Mg + H₂O(g) → MgO + H₂), and reacts with dilute acids to produce H₂."
+  },
+  {
+    "id": 20,
+    "question": "Complete the sentence: In electroplating, the object to be plated is placed at the ______ electrode. The plating metal is placed at the ______ electrode. The electrolyte contains ______ of the plating metal.",
+    "options": [
+      "cathode (negative), anode (positive), ions",
+      "anode (positive), cathode (negative), ions",
+      "cathode (negative), anode (positive), atoms",
+      "anode (positive), cathode (negative), atoms"
+    ],
+    "answer": "cathode (negative), anode (positive), ions",
+    "time": 90,
+    "explanation": "In electroplating, the object to be electroplated is placed at the cathode (negative electrode), so reduction of cations at the cathode results in a solid deposit. The anode (positive electrode) is the metal used for electroplating. The electrolyte contains ions of the plating metal."
+  }
+]

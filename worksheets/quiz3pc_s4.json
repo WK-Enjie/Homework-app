@@ -1,0 +1,199 @@
+```json
+[
+  {
+    "id": 1,
+    "question": "Potassium reacts more violently with water than sodium. Which explanation best links atomic structure to this difference in reactivity?",
+    "options": [
+      "Potassium has more protons, attracting electrons more strongly",
+      "Potassium has more electron shells, weakening the attraction on the outer electron",
+      "Potassium has a higher melting point, releasing more energy",
+      "Potassium has a larger atomic mass, causing faster movement"
+    ],
+    "answer": "Potassium has more electron shells, weakening the attraction on the outer electron",
+    "time": 90,
+    "explanation": "Potassium (4 shells) has more inner electron shells than sodium (3 shells). This increases shielding and distance from the nucleus, weakening the electrostatic attraction on the outer electron, making it easier to lose."
+  },
+  {
+    "id": 2,
+    "question": "Magnesium oxide (MgO) has a higher melting point than sodium chloride (NaCl). Why?",
+    "options": [
+      "MgO has covalent bonds while NaCl has ionic bonds",
+      "Mg²⁺ and O²⁻ ions have higher charges than Na⁺ and Cl⁻, creating stronger electrostatic forces",
+      "MgO has a larger molecular mass than NaCl",
+      "NaCl contains water of crystallisation which lowers its melting point"
+    ],
+    "answer": "Mg²⁺ and O²⁻ ions have higher charges than Na⁺ and Cl⁻, creating stronger electrostatic forces",
+    "time": 90,
+    "explanation": "Both are ionic. Mg²⁺/O²⁻ have double the charge of Na⁺/Cl⁻. Stronger electrostatic attraction between higher charged ions requires more energy to overcome, resulting in a higher melting point."
+  },
+  {
+    "id": 3,
+    "question": "The graph shows volume of gas vs time for the reaction of calcium carbonate with acid. Curve X is the original experiment. Which change produces Curve Y (steeper initial gradient, same final volume)?",
+    "options": [
+      "Using a catalyst",
+      "Increasing the temperature",
+      "Using powdered calcium carbonate instead of lumps",
+      "Increasing the concentration of the acid"
+    ],
+    "answer": "Using powdered calcium carbonate instead of lumps",
+    "time": 90,
+    "explanation": "Powder increases surface area, increasing collision frequency (steeper gradient). Same final volume means the same amount of limiting reactant was used. Catalysts are not typically used for this specific reaction in O-Level contexts compared to surface area."
+  },
+  {
+    "id": 4,
+    "question": "Metal X oxide cannot be reduced by heating with carbon. Metal Y oxide can be reduced by heating with carbon. What is the order of reactivity?",
+    "options": [
+      "X > Carbon > Y",
+      "Y > Carbon > X",
+      "Carbon > X > Y",
+      "X > Y > Carbon"
+    ],
+    "answer": "X > Carbon > Y",
+    "time": 90,
+    "explanation": "If X oxide cannot be reduced by carbon, X is more reactive than carbon (holds oxygen more strongly). If Y oxide can be reduced, Y is less reactive than carbon. Order: X > Carbon > Y."
+  },
+  {
+    "id": 5,
+    "question": "In an experiment, iron nails rust in tube A (water + air) but not in tube B (boiled water + oil). What is the specific purpose of the oil layer?",
+    "options": [
+      "To keep the water warm",
+      "To prevent oxygen from dissolving back into the water",
+      "To prevent water from evaporating",
+      "To react with the iron to form a protective layer"
+    ],
+    "answer": "To prevent oxygen from dissolving back into the water",
+    "time": 90,
+    "explanation": "Boiling removes dissolved oxygen. The oil layer acts as a barrier to prevent oxygen from the air from dissolving back into the water, ensuring oxygen is absent."
+  },
+  {
+    "id": 6,
+    "question": "Increasing temperature increases the rate of reaction. Which statement best explains this using collision theory?",
+    "options": [
+      "Particles move faster, increasing collision frequency only",
+      "More particles possess energy greater than or equal to the activation energy",
+      "The activation energy is lowered by the heat",
+      "Particles become larger and collide more forcefully"
+    ],
+    "answer": "More particles possess energy greater than or equal to the activation energy",
+    "time": 90,
+    "explanation": "While collision frequency increases slightly, the main factor is that a significantly larger proportion of particles have sufficient energy (≥ Activation Energy) to react successfully upon collision."
+  },
+  {
+    "id": 7,
+    "question": "Solid sodium chloride does not conduct electricity, but molten sodium chloride does. Why?",
+    "options": [
+      "Electrons are free to move in the liquid but not the solid",
+      "Ions are free to move in the liquid but fixed in position in the solid",
+      "The bonds break completely to form atoms in the liquid",
+      "Water molecules allow ions to move in the liquid"
+    ],
+    "answer": "Ions are free to move in the liquid but fixed in position in the solid",
+    "time": 90,
+    "explanation": "Ionic compounds conduct when molten/dissolved because ions are mobile charge carriers. In the solid lattice, ions are fixed in position by strong electrostatic forces and cannot carry charge."
+  },
+  {
+    "id": 8,
+    "question": "Which statement correctly describes the electrostatic forces in a covalent bond?",
+    "options": [
+      "Attraction between positive ions and delocalised electrons",
+      "Attraction between oppositely charged ions",
+      "Attraction between positive nuclei and shared pairs of electrons",
+      "Repulsion between negative electrons in different atoms"
+    ],
+    "answer": "Attraction between positive nuclei and shared pairs of electrons",
+    "time": 90,
+    "explanation": "A covalent bond is held together by the strong electrostatic attraction between the positively charged nuclei of the bonded atoms and the negatively charged shared pair(s) of electrons."
+  },
+  {
+    "id": 9,
+    "question": "Metal P displaces Q from Q sulfate. Metal R does not react with dilute acid. Metal Q reacts slowly with dilute acid. Order of reactivity?",
+    "options": [
+      "P > Q > R",
+      "Q > P > R",
+      "R > Q > P",
+      "P > R > Q"
+    ],
+    "answer": "P > Q > R",
+    "time": 90,
+    "explanation": "P displaces Q (P > Q). Q reacts with acid (Q > H). R does not react with acid (H > R). Combined: P > Q > H > R, so P > Q > R."
+  },
+  {
+    "id": 10,
+    "question": "Group 1 carbonates (e.g., Na₂CO₃) are thermally stable, but Group 2 carbonates (e.g., CaCO₃) decompose on heating. This suggests:",
+    "options": [
+      "Group 1 metals are less reactive than Group 2 metals",
+      "Group 2 carbonates have covalent bonds",
+      "Group 1 carbonates have weaker ionic bonds",
+      "Group 1 metals are more reactive than Group 2 metals, so their carbonates are more thermally stable"
+    ],
+    "answer": "Group 1 metals are more reactive than Group 2 metals, so their carbonates are more thermally stable",
+    "time": 90,
+    "explanation": "Thermal stability of carbonates increases with the reactivity of the metal. Group 1 metals are more reactive than Group 2 metals, so their carbonates require more energy to decompose."
+  },
+  {
+    "id": 11,
+    "question": "Metals are malleable. Which explanation links this property to metallic bonding?",
+    "options": [
+      "Layers of ions can slide over each other while the sea of electrons maintains attraction",
+      "Covalent bonds can stretch without breaking",
+      "Ionic bonds reform after layers shift",
+      "Weak intermolecular forces allow layers to slide"
+    ],
+    "answer": "Layers of ions can slide over each other while the sea of electrons maintains attraction",
+    "time": 90,
+    "explanation": "In metals, layers of positive ions can slide. The non-directional 'sea of electrons' continues to hold the structure together, preventing fracture."
+  },
+  {
+    "id": 12,
+    "question": "In the reaction: CuO + H₂ → Cu + H₂O. Which substance is the oxidising agent?",
+    "options": [
+      "H₂",
+      "CuO",
+      "Cu",
+      "H₂O"
+    ],
+    "answer": "CuO",
+    "time": 90,
+    "explanation": "CuO loses oxygen (reduced). The substance that is reduced is the oxidising agent. H₂ gains oxygen (oxidised) and is the reducing agent."
+  },
+  {
+    "id": 13,
+    "question": "Increasing pressure increases the rate of reaction for gaseous reactions. Why does it NOT affect solid reactants?",
+    "options": [
+      "Solids are not affected by pressure",
+      "Particles in solids are already closely packed; pressure cannot increase collision frequency significantly",
+      "Solids do not participate in collisions",
+      "Pressure only works on liquids"
+    ],
+    "answer": "Particles in solids are already closely packed; pressure cannot increase collision frequency significantly",
+    "time": 90,
+    "explanation": "Pressure affects rate by forcing gas particles closer together (increasing concentration/collision frequency). Solid particles are already in contact; pressure has negligible effect on their arrangement."
+  },
+  {
+    "id": 14,
+    "question": "Zinc blocks are attached to iron pipes. Even if the zinc coating is scratched, the iron does not rust. Why?",
+    "options": [
+      "Zinc forms a waterproof seal over the scratch",
+      "Zinc is more reactive than iron and loses electrons preferentially",
+      "Iron becomes unreactive when touching zinc",
+      "Zinc reacts with water to form a protective oxide"
+    ],
+    "answer": "Zinc is more reactive than iron and loses electrons preferentially",
+    "time": 90,
+    "explanation": "This is sacrificial protection. Zinc is higher in the reactivity series, so it oxidises (loses electrons) in preference to iron, protecting the iron even if exposed."
+  },
+  {
+    "id": 15,
+    "question": "Diamond and graphite are both forms of carbon. Why does graphite conduct electricity but diamond does not?",
+    "options": [
+      "Graphite has ionic bonds; diamond has covalent bonds",
+      "Graphite has delocalised electrons between layers; diamond has all electrons in fixed bonds",
+      "Graphite is a metal; diamond is a non-metal",
+      "Graphite contains impurities that allow conduction"
+    ],
+    "answer": "Graphite has delocalised electrons between layers; diamond has all electrons in fixed bonds",
+    "time": 90,
+    "explanation": "In graphite, each carbon bonds to 3 others, leaving 1 electron per atom delocalised between layers (mobile charge). In diamond, all 4 valence electrons are used in fixed covalent bonds (no mobile charge)."
+  }
+]
+```
