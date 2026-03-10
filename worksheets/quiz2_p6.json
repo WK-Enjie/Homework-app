@@ -1,142 +1,142 @@
 [
   {
     "id": 1,
-    "question": "There are 80 boys and girls in a hall. After 1/4 of the boys and 5 girls left, the number of boys became equal to the number of girls. How many boys were there at first?",
-    "options": ["40", "45", "50", "55"],
-    "answer": "50",
+    "question": "There are $80$ boys and girls in a hall. After $\\frac{1}{4}$ of the boys and $5$ girls left, the number of boys became equal to the number of girls. How many boys were there at first?",
+    "options": ["$40$", "$45$", "$50$", "$55$"],
+    "answer": "$50$",
     "time": 150
   },
   {
     "id": 2,
-    "question": "The ratio of boys to girls in a class was 3:2. After 10 boys and 5 girls joined the class, the ratio became 4:3. How many pupils were in the class at first?",
-    "options": ["45", "50", "55", "60"],
-    "answer": "50",
+    "question": "The ratio of boys to girls in a class was $3:2$. After $10$ boys and $5$ girls joined the class, the ratio became $4:3$. How many pupils were in the class at first?",
+    "options": ["$45$", "$50$", "$55$", "$60$"],
+    "answer": "$50$",
     "time": 180
   },
   {
     "id": 3,
-    "question": "There were 360 apples and oranges in a basket. 25% of the apples were eaten and 20 oranges were added. In the end, there were equal numbers of apples and oranges. How many apples were there at first?",
-    "options": ["180", "200", "220", "240"],
-    "answer": "200",
+    "question": "There were $360$ apples and oranges in a basket. $25\\%$ of the apples were eaten and $20$ oranges were added. In the end, there were equal numbers of apples and oranges. How many apples were there at first?",
+    "options": ["$180$", "$200$", "$220$", "$240$"],
+    "answer": "$200$",
     "time": 180
   },
   {
     "id": 4,
-    "question": "The number of boys is 3 times the number of girls. After 20 boys and 12 girls left, the number of boys became 4 times the number of girls. How many girls were there at first?",
-    "options": ["14", "16", "18", "20"],
-    "answer": "16",
+    "question": "The number of boys is $3$ times the number of girls. After $20$ boys and $12$ girls left, the number of boys became $4$ times the number of girls. How many girls were there at first?",
+    "options": ["$14$", "$16$", "$18$", "$20$"],
+    "answer": "$16$",
     "time": 180
   },
   {
     "id": 5,
-    "question": "There were 480 stamps in two albums. Album A lost 20% of its stamps. Album B gained 30 stamps. In the end, both albums had the same number of stamps. How many stamps were in Album A at first?",
-    "options": ["250", "270", "290", "310"],
-    "answer": "270",
+    "question": "There were $480$ stamps in two albums. Album A lost $20\\%$ of its stamps. Album B gained $30$ stamps. In the end, both albums had the same number of stamps. How many stamps were in Album A at first?",
+    "options": ["$250$", "$270$", "$290$", "$310$"],
+    "answer": "$270$",
     "time": 180
   },
   {
     "id": 6,
-    "question": "The ratio of Adam's money to Ben's money was 5:3. After Adam spent 40% of his money and Ben received $20, they had the same amount. How much money did Adam have at first?",
-    "options": ["$80", "$100", "$120", "$150"],
-    "answer": "$100",
+    "question": "The ratio of Adam's money to Ben's money was $5:3$. After Adam spent $40\\%$ of his money and Ben received $\\$20$, they had the same amount. How much money did Adam have at first?",
+    "options": ["$\\$80$", "$\\$100$", "$\\$120$", "$\\$150$"],
+    "answer": "$\\$100$",
     "time": 180
   },
   {
     "id": 7,
-    "question": "There are 280 students in Hall A and Hall B. 1/4 of the students in Hall A moved to Hall B. Then 15 students left Hall B. In the end, both halls had the same number of students. How many students were in Hall A at first?",
-    "options": ["140", "150", "160", "170"],
-    "answer": "160",
+    "question": "There are $280$ students in Hall A and Hall B. $\\frac{1}{4}$ of the students in Hall A moved to Hall B. Then $15$ students left Hall B. In the end, both halls had the same number of students. How many students were in Hall A at first?",
+    "options": ["$140$", "$150$", "$160$", "$170$"],
+    "answer": "$160$",
     "time": 180
   },
   {
     "id": 8,
-    "question": "The number of fiction books is 4 times the number of non-fiction books. After 50 fiction books were borrowed and 10 non-fiction books were added, the number of fiction books became 3 times the number of non-fiction books. How many non-fiction books were there at first?",
-    "options": ["25", "30", "35", "40"],
-    "answer": "30",
+    "question": "The number of fiction books is $4$ times the number of non-fiction books. After $50$ fiction books were borrowed and $10$ non-fiction books were added, the number of fiction books became $3$ times the number of non-fiction books. How many non-fiction books were there at first?",
+    "options": ["$25$", "$30$", "$35$", "$40$"],
+    "answer": "$30$",
     "time": 180
   },
   {
     "id": 9,
-    "question": "There were 420 cows and goats on a farm. 30% of the cows were sold and 25 goats were bought. In the end, there were equal numbers of cows and goats. How many cows were there at first?",
-    "options": ["200", "220", "240", "260"],
-    "answer": "220",
+    "question": "There were $420$ cows and goats on a farm. $30\\%$ of the cows were sold and $25$ goats were bought. In the end, there were equal numbers of cows and goats. How many cows were there at first?",
+    "options": ["$200$", "$220$", "$240$", "$260$"],
+    "answer": "$220$",
     "time": 180
   },
   {
     "id": 10,
-    "question": "The ratio of red marbles to blue marbles was 7:4. After 21 red marbles were removed and 12 blue marbles were added, the ratio became 1:1. How many red marbles were there at first?",
-    "options": ["42", "49", "56", "63"],
-    "answer": "49",
+    "question": "The ratio of red marbles to blue marbles was $7:4$. After $21$ red marbles were removed and $12$ blue marbles were added, the ratio became $1:1$. How many red marbles were there at first?",
+    "options": ["$42$", "$49$", "$56$", "$63$"],
+    "answer": "$49$",
     "time": 180
   },
   {
     "id": 11,
-    "question": "There were 500 beads in Box X and Box Y. 1/5 of the beads in Box X were moved to Box Y. Then 20 beads were removed from Box Y. In the end, both boxes had the same number of beads. How many beads were in Box X at first?",
-    "options": ["250", "275", "300", "325"],
-    "answer": "275",
+    "question": "There were $500$ beads in Box X and Box Y. $\\frac{1}{5}$ of the beads in Box X were moved to Box Y. Then $20$ beads were removed from Box Y. In the end, both boxes had the same number of beads. How many beads were in Box X at first?",
+    "options": ["$250$", "$275$", "$300$", "$325$"],
+    "answer": "$275$",
     "time": 180
   },
   {
     "id": 12,
-    "question": "The number of boys is 2 times the number of girls. After 15 boys left and 9 girls joined, the number of boys became equal to the number of girls. How many pupils were there at first?",
-    "options": ["36", "42", "48", "54"],
-    "answer": "48",
+    "question": "The number of boys is $2$ times the number of girls. After $15$ boys left and $9$ girls joined, the number of boys became equal to the number of girls. How many pupils were there at first?",
+    "options": ["$36$", "$42$", "$48$", "$54$"],
+    "answer": "$48$",
     "time": 180
   },
   {
     "id": 13,
-    "question": "There were 380 pens and pencils in a drawer. 35% of the pens were removed and 14 pencils were removed. In the end, the number of pens and pencils remaining was equal. How many pens were there at first?",
-    "options": ["180", "200", "220", "240"],
-    "answer": "200",
+    "question": "There were $380$ pens and pencils in a drawer. $35\\%$ of the pens were removed and $14$ pencils were removed. In the end, the number of pens and pencils remaining was equal. How many pens were there at first?",
+    "options": ["$180$", "$200$", "$220$", "$240$"],
+    "answer": "$200$",
     "time": 180
   },
   {
     "id": 14,
-    "question": "The ratio of Tom's stamps to Jerry's stamps was 9:5. After Tom gave 28 stamps to Jerry, the ratio became 1:1. How many stamps did Tom have at first?",
-    "options": ["72", "84", "96", "108"],
-    "answer": "84",
+    "question": "The ratio of Tom's stamps to Jerry's stamps was $9:5$. After Tom gave $28$ stamps to Jerry, the ratio became $1:1$. How many stamps did Tom have at first?",
+    "options": ["$72$", "$84$", "$96$", "$108$"],
+    "answer": "$84$",
     "time": 150
   },
   {
     "id": 15,
-    "question": "There are 320 students in a school. 40% are boys. After some boys joined the school, the percentage of boys became 50%. How many boys joined the school?",
-    "options": ["32", "40", "48", "56"],
-    "answer": "48",
+    "question": "There are $320$ students in a school. $40\\%$ are boys. After some boys joined the school, the percentage of boys became $50\\%$. How many boys joined the school?",
+    "options": ["$32$", "$40$", "$48$", "$56$"],
+    "answer": "$48$",
     "time": 150
   },
   {
     "id": 16,
-    "question": "The number of apples is 5 times the number of oranges. After 40 apples were eaten and 8 oranges were eaten, the number of apples became 4 times the number of oranges. How many oranges were there at first?",
-    "options": ["10", "12", "14", "16"],
-    "answer": "12",
+    "question": "The number of apples is $5$ times the number of oranges. After $40$ apples were eaten and $8$ oranges were eaten, the number of apples became $4$ times the number of oranges. How many oranges were there at first?",
+    "options": ["$10$", "$12$", "$14$", "$16$"],
+    "answer": "$12$",
     "time": 180
   },
   {
     "id": 17,
-    "question": "There were 450 marbles in Jar P and Jar Q. 20% of the marbles in Jar P were moved to Jar Q. Then 30 marbles were removed from Jar Q. In the end, both jars had the same number of marbles. How many marbles were in Jar P at first?",
-    "options": ["220", "240", "260", "280"],
-    "answer": "240",
+    "question": "There were $450$ marbles in Jar P and Jar Q. $20\\%$ of the marbles in Jar P were moved to Jar Q. Then $30$ marbles were removed from Jar Q. In the end, both jars had the same number of marbles. How many marbles were in Jar P at first?",
+    "options": ["$220$", "$240$", "$260$", "$280$"],
+    "answer": "$240$",
     "time": 180
   },
   {
     "id": 18,
-    "question": "The ratio of Sarah's money to Jane's money was 8:5. After Sarah spent $30 and Jane received $15, they had the same amount. How much money did Sarah have at first?",
-    "options": ["$80", "$90", "$100", "$120"],
-    "answer": "$120",
+    "question": "The ratio of Sarah's money to Jane's money was $8:5$. After Sarah spent $\\$30$ and Jane received $\\$15$, they had the same amount. How much money did Sarah have at first?",
+    "options": ["$\\$80$", "$\\$90$", "$\\$100$", "$\\$120$"],
+    "answer": "$\\$120$",
     "time": 180
   },
   {
     "id": 19,
-    "question": "There were 280 fiction and non-fiction books in a library. 1/7 of the fiction books and 20 non-fiction books were removed. In the end, there were equal numbers of both types. How many fiction books were there at first?",
-    "options": ["140", "154", "168", "182"],
-    "answer": "154",
+    "question": "There were $280$ fiction and non-fiction books in a library. $\\frac{1}{7}$ of the fiction books and $20$ non-fiction books were removed. In the end, there were equal numbers of both types. How many fiction books were there at first?",
+    "options": ["$140$", "$154$", "$168$", "$182$"],
+    "answer": "$154$",
     "time": 180
   },
   {
     "id": 20,
-    "question": "The number of boys is 3 times the number of girls. After 24 boys left and 8 girls joined, the number of boys became 2 times the number of girls. How many girls were there at first?",
-    "options": ["16", "18", "20", "22"],
-    "answer": "20",
+    "question": "The number of boys is $3$ times the number of girls. After $24$ boys left and $8$ girls joined, the number of boys became $2$ times the number of girls. How many girls were there at first?",
+    "options": ["$16$", "$18$", "$20$", "$22$"],
+    "answer": "$20$",
     "time": 180
   }
 ]
