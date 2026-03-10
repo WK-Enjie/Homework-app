@@ -1,8 +1,7 @@
 /* =====================================================
    LEVEL UP — Power Up Your Knowledge!
-   FIXED: KaTeX auto-render for proper math display
-   FIXED: Try Again button now works
-   Handles fractions, powers, surds, dollar signs
+   Chemistry formula rendering (sub/sup) + KaTeX math
+   Handles: FeCl3→FeCl₃, Fe2+→Fe²⁺, $\frac{1}{2}$
    ===================================================== */
 
 // ── Game State ──
@@ -94,7 +93,89 @@ function waitForKaTeX() {
 }
 
 // ═══════════════════════════════════════════
-//  MATH RENDERING — using KaTeX auto-render
+//  CHEMISTRY FORMATTING — auto sub/sup
+//  Converts plain text like Fe2+, FeCl3, O2-
+//  into proper HTML with <sub> and <sup> tags
+//
+//  SAFE for normal text: "Group 17", "Period 3"
+//  are NOT affected (numbers must follow elements)
+// ═══════════════════════════════════════════
+
+function escapeHtml(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatChemistry(text) {
+  if (!text) return '';
+
+  // ── Preserve $...$ math blocks from chemistry formatting ──
+  // Extract math expressions, replace with placeholders, restore after
+  const mathBlocks = [];
+  let processed = text.replace(/\$\$[\s\S]*?\$\$/g, function(match) {
+    mathBlocks.push(match);
+    return '\x00MATH' + (mathBlocks.length - 1) + '\x00';
+  });
+  processed = processed.replace(/\$[^$]*?\$/g, function(match) {
+    mathBlocks.push(match);
+    return '\x00MATH' + (mathBlocks.length - 1) + '\x00';
+  });
+
+  let result = escapeHtml(processed);
+
+  // ── Pass 1: Ionic charges attached to element symbols ──
+  // Matches: Fe2+  Fe3+  Cl-  O2-  Cu2+  H+  Si4+
+  result = result.replace(
+    /([A-Z][a-z]?)(\d*)([\+\-])(?!\w)/g,
+    function (_match, elem, num, sign) {
+      var displaySign = sign === '-' ? '\u2212' : '+';
+      var sup = num ? num + displaySign : displaySign;
+      return elem + '<sup>' + sup + '</sup>';
+    }
+  );
+
+  // ── Pass 2a: Subscript numbers after element symbols ──
+  // Matches: H2O  FeCl2  Al2O3  CH4  SiO2
+  result = result.replace(
+    /([A-Z][a-z]?)(\d+)/g,
+    function (_match, elem, num) {
+      return elem + '<sub>' + num + '</sub>';
+    }
+  );
+
+  // ── Pass 2b: Subscript numbers after closing parentheses ──
+  // Matches: (OH)2  (NH4)3  Ca(OH)2
+  result = result.replace(
+    /\)(\d+)/g,
+    function (_match, num) {
+      return ')<sub>' + num + '</sub>';
+    }
+  );
+
+  // ── Pass 3: Charges separated by space from formula ──
+  // Matches: SO4 2-   CO3 2-   PO4 3-
+  result = result.replace(
+    /(<\/sub>)\s+(\d*)([\+\u2212\-])(?!\w)/g,
+    function (_match, closeSub, num, sign) {
+      var displaySign = (sign === '-' || sign === '\u2212') ? '\u2212' : '+';
+      var sup = num ? num + displaySign : displaySign;
+      return closeSub + '<sup>' + sup + '</sup>';
+    }
+  );
+
+  // ── Restore math blocks ──
+  result = result.replace(/\x00MATH(\d+)\x00/g, function(_match, idx) {
+    return mathBlocks[parseInt(idx)];
+  });
+
+  return result;
+}
+
+// ═══════════════════════════════════════════
+//  MATH + CHEMISTRY RENDERING
 // ═══════════════════════════════════════════
 
 function renderMathIn(element) {
@@ -113,9 +194,14 @@ function renderMathIn(element) {
   }
 }
 
+/**
+ * Sets content with BOTH chemistry AND math rendering:
+ * 1. formatChemistry() → Fe2+ becomes Fe<sup>2+</sup>
+ * 2. KaTeX → $\frac{1}{2}$ becomes a rendered fraction
+ */
 function setMathText(element, text) {
-  if (!text) { element.textContent = ''; return; }
-  element.textContent = text;
+  if (!text) { element.innerHTML = ''; return; }
+  element.innerHTML = formatChemistry(text);
   renderMathIn(element);
 }
 
@@ -204,7 +290,6 @@ function playSound(type) {
 startBtn.addEventListener('click', attemptLogin);
 pinInput.addEventListener('keypress', e => { if (e.key === 'Enter') attemptLogin(); });
 
-// ── Try Again Button ──
 if (tryAgainBtn) {
   tryAgainBtn.addEventListener('click', restartGame);
 }
@@ -221,7 +306,6 @@ document.addEventListener('touchend', (e) => {
 // ═══════════════════════════════════════════
 
 function restartGame() {
-  // Reset all game state
   currentIdx = 0;
   score = 0;
   enemyHP = 100;
@@ -233,10 +317,9 @@ function restartGame() {
   gameQuestions = [];
   clearInterval(timerInterval);
 
-  // Reset UI elements
   scoreDisplay.textContent = '0';
   optionsContainer.innerHTML = '';
-  qText.textContent = '';
+  qText.innerHTML = '';
   timerFill.style.width = '100%';
   timerFill.style.background = 'var(--hp-green)';
   enemySprite.textContent = '🐉';
@@ -244,11 +327,9 @@ function restartGame() {
   hideFloats();
   updateBars();
 
-  // Reset start button
   startBtn.disabled = false;
   startBtn.textContent = '⚔️ BEGIN QUEST';
 
-  // Switch screens: hide end, show login
   screens.end.classList.add('hidden');
   screens.battle.classList.add('hidden');
   screens.login.classList.remove('hidden');
@@ -335,7 +416,6 @@ function loadQuestion() {
   qProgress.textContent = `QUEST ${currentIdx + 1} / ${gameQuestions.length}`;
   hideFloats();
 
-  // Timer
   clearInterval(timerInterval);
   questionStartTime = Date.now();
   const limit = (q.time || DEFAULT_TIME_LIMIT / 1000) * 1000;
@@ -352,7 +432,6 @@ function loadQuestion() {
     if (pct <= 0) handleTimeout();
   }, 80);
 
-  // Build options
   optionsContainer.innerHTML = '';
   if (q.options && Array.isArray(q.options)) {
     const answerRaw = q.answer ? q.answer.trim() : '';
