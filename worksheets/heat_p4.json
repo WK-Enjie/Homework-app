@@ -1,0 +1,195 @@
+  {
+    "id": 1,
+    "question": "Which of the following is a common source of heat?",
+    "options": [
+      "A mirror",
+      "The Sun",
+      "A glass of water",
+      "A wooden chair"
+    ],
+    "answer": "The Sun",
+    "time": 60,
+    "explanation": "The Sun is a common source of heat. It gives out heat energy that warms the Earth. Mirrors, water, and wooden chairs do not produce heat energy on their own."
+  },
+  {
+    "id": 2,
+    "question": "What does temperature measure?",
+    "options": [
+      "The amount of heat in an object",
+      "The degree of hotness of an object",
+      "The size of an object",
+      "The weight of an object"
+    ],
+    "answer": "The degree of hotness of an object",
+    "time": 60,
+    "explanation": "Temperature measures the degree of hotness or coldness of an object. It is measured in degrees Celsius (°C) using a thermometer."
+  },
+  {
+    "id": 3,
+    "question": "Heat flows from a hotter object to a colder object. What happens when you place a cold spoon in a cup of hot soup?",
+    "options": [
+      "Cold flows from the spoon to the soup",
+      "Heat flows from the soup to the spoon",
+      "Heat flows from the spoon to the soup",
+      "No heat flows between them"
+    ],
+    "answer": "Heat flows from the soup to the spoon",
+    "time": 90,
+    "explanation": "Heat always flows from a hotter object to a colder object. The hot soup is hotter than the cold spoon, so heat flows from the soup to the spoon, making the spoon warmer."
+  },
+  {
+    "id": 4,
+    "question": "A metal ball is heated and it expands. What happens to the metal ball when it cools down?",
+    "options": [
+      "It expands further",
+      "It contracts",
+      "It stays the same size",
+      "It changes colour"
+    ],
+    "answer": "It contracts",
+    "time": 60,
+    "explanation": "When objects are heated, they expand (get bigger). When they cool down, they contract (get smaller). This is called contraction."
+  },
+  {
+    "id": 5,
+    "question": "Why are there gaps between sections of railway tracks?",
+    "options": [
+      "To make the tracks look neat",
+      "To allow the tracks to expand on hot days",
+      "To reduce the cost of materials",
+      "To let water drain through"
+    ],
+    "answer": "To allow the tracks to expand on hot days",
+    "time": 90,
+    "explanation": "Metal railway tracks expand when heated on hot days. The gaps provide space for this expansion. Without gaps, the tracks would bend or buckle when they expand."
+  },
+  {
+    "id": 6,
+    "question": "Two cups of water are at different temperatures. Cup A is at 80°C and Cup B is at 30°C. In which direction will heat flow if the cups are placed next to each other?",
+    "options": [
+      "From Cup B to Cup A",
+      "From Cup A to Cup B",
+      "No heat will flow",
+      "Heat will flow in both directions equally"
+    ],
+    "answer": "From Cup A to Cup B",
+    "time": 90,
+    "explanation": "Heat flows from a hotter object to a colder object. Cup A (80°C) is hotter than Cup B (30°C), so heat will flow from Cup A to Cup B until both reach the same temperature."
+  },
+  {
+    "id": 7,
+    "question": "What happens to the liquid in a thermometer when it is placed in hot water?",
+    "options": [
+      "The liquid contracts and moves down",
+      "The liquid expands and moves up",
+      "The liquid stays at the same level",
+      "The liquid changes colour"
+    ],
+    "answer": "The liquid expands and moves up",
+    "time": 60,
+    "explanation": "When the thermometer is placed in hot water, the liquid inside gains heat and expands (takes up more space). This causes the liquid to rise up the tube, showing a higher temperature."
+  },
+  {
+    "id": 8,
+    "question": "A tight metal lid on a glass jar is difficult to open. Why does running hot water over the lid help?",
+    "options": [
+      "The hot water makes the lid slippery",
+      "The metal lid expands when heated, making it easier to open",
+      "The glass jar contracts when heated",
+      "The hot water cools the contents inside"
+    ],
+    "answer": "The metal lid expands when heated, making it easier to open",
+    "time": 90,
+    "explanation": "When heated, the metal lid expands (gets bigger). This makes the lid slightly looser on the jar, making it easier to twist and open."
+  },
+  {
+    "id": 9,
+    "question": "Which statement about heat is correct?",
+    "options": [
+      "Heat is a type of matter",
+      "Heat is a form of energy",
+      "Heat is measured in degrees Celsius",
+      "Heat cannot flow between objects"
+    ],
+    "answer": "Heat is a form of energy",
+    "time": 60,
+    "explanation": "Heat is a form of energy that can flow from one object to another. Temperature is measured in degrees Celsius, not heat. Heat can flow between objects."
+  },
+  {
+    "id": 10,
+    "question": "A student places a balloon in a warm place. What happens to the balloon and why?",
+    "options": [
+      "The balloon shrinks because air contracts when warm",
+      "The balloon expands because air inside expands when heated",
+      "The balloon stays the same size",
+      "The balloon changes colour"
+    ],
+    "answer": "The balloon expands because air inside expands when heated",
+    "time": 90,
+    "explanation": "When air is heated, it expands (takes up more space). The air inside the balloon expands when warmed, causing the balloon to get bigger."
+  },
+  {
+    "id": 11,
+    "question": "Mary leaves a cup of hot tea on the table. After 30 minutes, the tea becomes cooler. What happened?",
+    "options": [
+      "The heat disappeared",
+      "Heat flowed from the tea to the cooler surroundings",
+      "The tea absorbed cold from the air",
+      "The heat changed into temperature"
+    ],
+    "answer": "Heat flowed from the tea to the cooler surroundings",
+    "time": 90,
+    "explanation": "Heat flows from a hotter object to a colder object. The hot tea is hotter than the surrounding air, so heat flows from the tea to the air until they reach the same temperature."
+  },
+  {
+    "id": 12,
+    "question": "What happens to a metal bridge on a very hot day?",
+    "options": [
+      "It contracts and becomes shorter",
+      "It expands and becomes longer",
+      "It stays the same length",
+      "It becomes heavier"
+    ],
+    "answer": "It expands and becomes longer",
+    "time": 60,
+    "explanation": "Metals expand when heated. On a very hot day, the metal bridge gains heat from the Sun and expands, becoming slightly longer."
+  },
+  {
+    "id": 13,
+    "question": "Which of the following shows heat gain?",
+    "options": [
+      "Water freezing to form ice",
+      "Ice melting to form water",
+      "Steam condensing to form water",
+      "Water vapour forming dew"
+    ],
+    "answer": "Ice melting to form water",
+    "time": 90,
+    "explanation": "When ice melts, it gains heat from the surroundings. Heat gain causes ice (solid) to change to water (liquid). The other options involve heat loss."
+  },
+  {
+    "id": 14,
+    "question": "A student measures the temperature of water before and after heating. The temperature increases from 25°C to 65°C. What can the student conclude?",
+    "options": [
+      "The water lost heat",
+      "The water gained heat",
+      "The temperature stayed the same",
+      "The water changed to steam"
+    ],
+    "answer": "The water gained heat",
+    "time": 60,
+    "explanation": "When the temperature of water increases, it means the water has gained heat. Heat gain causes the temperature to rise."
+  },
+  {
+    "id": 15,
+    "question": "Why do power lines sag more on hot days than on cold days?",
+    "options": [
+      "The wires become heavier on hot days",
+      "The wires expand and become longer on hot days",
+      "The wires contract on hot days",
+      "The poles become shorter on hot days"
+    ],
+    "answer": "The wires expand and become longer on hot days",
+    "time": 90,
+    "explanation": "Metal wires expand when heated. On hot days, the wires gain heat from the Sun and expand, becoming longer. This causes them to sag more between the poles."
+  }
