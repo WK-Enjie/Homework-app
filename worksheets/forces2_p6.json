@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A ball is dropped from a height. Which force causes the ball to fall downwards?",
+    "options": [
+      "Frictional force",
+      "Magnetic force",
+      "Gravitational force",
+      "Elastic spring force"
+    ],
+    "answer": "Gravitational force",
+    "time": 60,
+    "explanation": "Gravitational force is a pull force that exists between any two objects with mass. On Earth, it pulls objects towards the centre of the Earth, causing them to fall downwards."
+  },
+  {
+    "id": 2,
+    "question": "A box is pushed across a rough floor and eventually stops. Which force causes the box to slow down and stop?",
+    "options": [
+      "Gravitational force",
+      "Frictional force",
+      "Magnetic force",
+      "Elastic spring force"
+    ],
+    "answer": "Frictional force",
+    "time": 60,
+    "explanation": "Frictional force is a contact force that opposes motion. It acts in the opposite direction to the movement of the box, causing it to slow down and stop."
+  },
+  {
+    "id": 3,
+    "question": "A spring is stretched by hanging a mass on it. In which direction does the elastic spring force act?",
+    "options": [
+      "Downwards, same as the weight",
+      "Upwards, opposite to the stretch",
+      "Sideways, perpendicular to the spring",
+      "In a circular motion"
+    ],
+    "answer": "Upwards, opposite to the stretch",
+    "time": 60,
+    "explanation": "Elastic spring force is a restoring force. It always acts in the opposite direction to the stretch or compression, trying to return the spring to its original length."
+  },
+  {
+    "id": 4,
+    "question": "Two magnets are placed near each other. What happens to the magnetic force if the gap between them is increased?",
+    "options": [
+      "The magnetic force increases",
+      "The magnetic force decreases",
+      "The magnetic force stays the same",
+      "The magnetic force becomes zero immediately"
+    ],
+    "answer": "The magnetic force decreases",
+    "time": 60,
+    "explanation": "Magnetic force is a non-contact force that acts at a distance. The strength of the magnetic force decreases as the distance (gap) between the magnets increases."
+  },
+  {
+    "id": 5,
+    "question": "Two springs, P and Q, are hung with identical 200g masses. Spring P extends 4cm. Spring Q extends 8cm. Which spring is stiffer?",
+    "options": [
+      "Spring P",
+      "Spring Q",
+      "Both are equally stiff",
+      "Cannot be determined"
+    ],
+    "answer": "Spring P",
+    "time": 90,
+    "explanation": "A stiffer spring is harder to stretch. For the same mass (force), Spring P extended less (4cm) compared to Spring Q (8cm). Therefore, Spring P is stiffer."
+  },
+  {
+    "id": 6,
+    "question": "A student squeezes a rubber ball. The ball changes shape. What does this show about force?",
+    "options": [
+      "A force can change the shape of an object",
+      "A force can change the colour of an object",
+      "A force can change the mass of an object",
+      "A force can change the material of an object"
+    ],
+    "answer": "A force can change the shape of an object",
+    "time": 60,
+    "explanation": "One of the effects of a force is that it can change the shape of an object. When the student applies force to squeeze the ball, its shape changes."
+  },
+  {
+    "id": 7,
+    "question": "Why do the palms of your hands feel warm when you rub them together quickly?",
+    "options": [
+      "Gravitational force produces heat",
+      "Frictional force converts motion into heat",
+      "Magnetic force attracts heat",
+      "Elastic spring force stores heat"
+    ],
+    "answer": "Frictional force converts motion into heat",
+    "time": 60,
+    "explanation": "When two surfaces rub against each other, frictional force opposes the motion. This friction converts some of the kinetic energy into heat energy, making the surfaces warm."
+  },
+  {
+    "id": 8,
+    "question": "An object has a mass of 5kg on Earth. What happens to its mass and weight on the Moon where gravity is weaker?",
+    "options": [
+      "Mass decreases, weight decreases",
+      "Mass stays the same, weight decreases",
+      "Mass increases, weight stays the same",
+      "Mass stays the same, weight stays the same"
+    ],
+    "answer": "Mass stays the same, weight decreases",
+    "time": 90,
+    "explanation": "Mass is the amount of matter in an object and does not change with location. Weight is the measure of gravitational force acting on the object. Since Moon's gravity is weaker, weight decreases but mass remains the same."
+  },
+  {
+    "id": 9,
+    "question": "A paperclip is attracted to a magnet without touching it. What type of force is this?",
+    "options": [
+      "Contact force",
+      "Non-contact force",
+      "Frictional force",
+      "Gravitational force"
+    ],
+    "answer": "Non-contact force",
+    "time": 60,
+    "explanation": "Magnetic force can act over a distance without the magnet touching the object. This makes it a non-contact force, unlike friction which requires contact."
+  },
+  {
+    "id": 10,
+    "question": "In an experiment to test how surface roughness affects friction, what is the changed variable?",
+    "options": [
+      "The type of surface used",
+      "The mass of the object",
+      "The distance the object moves",
+      "The force used to push the object"
+    ],
+    "answer": "The type of surface used",
+    "time": 90,
+    "explanation": "The changed variable is the factor being deliberately changed to test its effect. Here, the type of surface (roughness) is changed to see how it affects friction."
+  },
+  {
+    "id": 11,
+    "question": "A spring is compressed by pushing down on it. When released, the spring pushes back up. Why?",
+    "options": [
+      "Gravitational force pulls it up",
+      "Elastic spring force acts to restore its original length",
+      "Magnetic force repels it upwards",
+      "Frictional force pushes it upwards"
+    ],
+    "answer": "Elastic spring force acts to restore its original length",
+    "time": 60,
+    "explanation": "When a spring is compressed, it stores energy. The elastic spring force acts in the opposite direction to the compression, trying to return the spring to its original shape."
+  },
+  {
+    "id": 12,
+    "question": "Which surface would produce the greatest frictional force on a sliding block?",
+    "options": [
+      "Polished glass",
+      "Smooth ice",
+      "Rough sandpaper",
+      "Oiled metal"
+    ],
+    "answer": "Rough sandpaper",
+    "time": 60,
+    "explanation": "Frictional force is greater on rougher surfaces. Sandpaper has a very rough texture compared to glass, ice, or oiled metal, so it produces the greatest friction."
+  },
+  {
+    "id": 13,
+    "question": "An astronaut weighs 600N on Earth. Why would he weigh less on the Moon?",
+    "options": [
+      "The Moon has less air",
+      "The Moon has weaker gravitational force",
+      "The astronaut loses mass on the Moon",
+      "The Moon is colder than Earth"
+    ],
+    "answer": "The Moon has weaker gravitational force",
+    "time": 60,
+    "explanation": "Weight is the measure of gravitational force acting on an object. The Moon is smaller than Earth and has weaker gravity, so the astronaut weighs less there."
+  },
+  {
+    "id": 14,
+    "question": "Two ring magnets are placed on a pencil. They float apart without touching. Why?",
+    "options": [
+      "Like poles are facing each other, causing repulsion",
+      "Unlike poles are facing each other, causing attraction",
+      "Gravitational force pushes them apart",
+      "Frictional force holds them in place"
+    ],
+    "answer": "Like poles are facing each other, causing repulsion",
+    "time": 90,
+    "explanation": "When like poles (North-North or South-South) of two magnets face each other, they repel. This magnetic repulsion force pushes them apart, allowing them to float."
+  },
+  {
+    "id": 15,
+    "question": "A toy car rolls down a ramp. Which force causes it to speed up as it goes down?",
+    "options": [
+      "Frictional force",
+      "Gravitational force",
+      "Magnetic force",
+      "Elastic spring force"
+    ],
+    "answer": "Gravitational force",
+    "time": 60,
+    "explanation": "Gravitational force pulls the car downwards towards the Earth. As the car moves down the ramp, this pull causes it to accelerate and speed up."
+  }
+]
