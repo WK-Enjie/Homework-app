@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement correctly describes electric charge?",
+    "options": [
+      "Charge is measured in amperes",
+      "There are three types of charge: positive, negative and neutral",
+      "Unlike charges attract and like charges repel",
+      "Charge can be created or destroyed in a circuit"
+    ],
+    "answer": "Unlike charges attract and like charges repel",
+    "time": 30,
+    "explanation": "There are two types of electric charge: positive and negative. Unlike charges attract each other, while like charges repel. Charge is measured in coulombs (C)."
+  },
+  {
+    "id": 2,
+    "question": "What is the unit of electric current?",
+    "options": [
+      "Coulomb",
+      "Volt",
+      "Ampere",
+      "Ohm"
+    ],
+    "answer": "Ampere",
+    "time": 30,
+    "explanation": "Electric current is the rate of flow of charge and is measured in amperes (A). 1 A = 1 C/s."
+  },
+  {
+    "id": 3,
+    "question": "Which statement correctly distinguishes between conventional current and electron flow?",
+    "options": [
+      "Conventional current flows from negative to positive; electrons flow from positive to negative",
+      "Conventional current flows from positive to negative; electrons flow from negative to positive",
+      "Both conventional current and electron flow are in the same direction",
+      "Conventional current only exists in AC circuits"
+    ],
+    "answer": "Conventional current flows from positive to negative; electrons flow from negative to positive",
+    "time": 35,
+    "explanation": "Conventional current direction (established before electrons were discovered) is from positive to negative terminal. Electron flow is opposite: negative to positive."
+  },
+  {
+    "id": 4,
+    "question": "A charge of 120 C passes through a wire in 30 seconds. What is the current in the wire?",
+    "options": [
+      "4 A",
+      "0.25 A",
+      "3600 A",
+      "90 A"
+    ],
+    "answer": "4 A",
+    "time": 40,
+    "explanation": "Using Q = It, rearrange to I = Q/t. I = 120 C ÷ 30 s = 4 A."
+  },
+  {
+    "id": 5,
+    "question": "What does the electromotive force (e.m.f.) of a cell represent?",
+    "options": [
+      "The maximum current the cell can supply",
+      "The work done per unit charge by the source in driving charges around a complete circuit",
+      "The resistance of the cell",
+      "The potential difference across the cell when no current flows"
+    ],
+    "answer": "The work done per unit charge by the source in driving charges around a complete circuit",
+    "time": 40,
+    "explanation": "E.m.f. is the work done per unit charge by the source in driving charges around a complete circuit. It is measured in volts (V)."
+  },
+  {
+    "id": 6,
+    "question": "What is the potential difference across a component if 24 J of work is done to move 6 C of charge through it?",
+    "options": [
+      "4 V",
+      "144 V",
+      "0.25 V",
+      "18 V"
+    ],
+    "answer": "4 V",
+    "time": 40,
+    "explanation": "Using V = W/Q: V = 24 J ÷ 6 C = 4 V. Potential difference is the work done per unit charge."
+  },
+  {
+    "id": 7,
+    "question": "Which statement correctly defines resistance?",
+    "options": [
+      "Resistance = current × potential difference",
+      "Resistance = potential difference ÷ current",
+      "Resistance = charge ÷ time",
+      "Resistance = work done ÷ charge"
+    ],
+    "answer": "Resistance = potential difference ÷ current",
+    "time": 35,
+    "explanation": "Resistance is defined as the ratio of potential difference to current: R = V/I. It is measured in ohms (Ω)."
+  },
+  {
+    "id": 8,
+    "question": "A resistor has a potential difference of 9 V across it and a current of 3 A flowing through it. What is its resistance?",
+    "options": [
+      "27 Ω",
+      "0.33 Ω",
+      "3 Ω",
+      "12 Ω"
+    ],
+    "answer": "3 Ω",
+    "time": 40,
+    "explanation": "Using R = V/I: R = 9 V ÷ 3 A = 3 Ω."
+  },
+  {
+    "id": 9,
+    "question": "Which factor does NOT affect the resistance of a wire?",
+    "options": [
+      "Length of the wire",
+      "Cross-sectional area of the wire",
+      "Material of the wire",
+      "Current flowing through the wire"
+    ],
+    "answer": "Current flowing through the wire",
+    "time": 35,
+    "explanation": "Resistance depends on length (R ∝ L), cross-sectional area (R ∝ 1/A), and material (resistivity). The current flowing through does not affect the resistance itself."
+  },
+  {
+    "id": 10,
+    "question": "A copper wire has resistance R. If its length is doubled while keeping the same thickness, what is the new resistance?",
+    "options": [
+      "R",
+      "2R",
+      "R/2",
+      "4R"
+    ],
+    "answer": "2R",
+    "time": 40,
+    "explanation": "Resistance is directly proportional to length (R ∝ L). Doubling the length doubles the resistance."
+  },
+  {
+    "id": 11,
+    "question": "A copper wire has resistance R. If its cross-sectional area is doubled while keeping the same length, what is the new resistance?",
+    "options": [
+      "R",
+      "2R",
+      "R/2",
+      "4R"
+    ],
+    "answer": "R/2",
+    "time": 40,
+    "explanation": "Resistance is inversely proportional to cross-sectional area (R ∝ 1/A). Doubling the area halves the resistance."
+  },
+  {
+    "id": 12,
+    "question": "What happens to the resistance of a metallic conductor when its temperature increases?",
+    "options": [
+      "It decreases",
+      "It remains constant",
+      "It increases",
+      "It becomes zero"
+    ],
+    "answer": "It increases",
+    "time": 35,
+    "explanation": "For metallic conductors, resistance increases with temperature because the metal ions vibrate more vigorously, causing more collisions with electrons."
+  },
+  {
+    "id": 13,
+    "question": "Which graph represents a metallic conductor with fixed resistance at constant temperature?",
+    "options": [
+      "A curved line through the origin",
+      "A straight line through the origin",
+      "A horizontal line",
+      "A vertical line"
+    ],
+    "answer": "A straight line through the origin",
+    "time": 40,
+    "explanation": "For a metallic conductor with fixed resistance at constant temperature, V ∝ I, so the I-V graph is a straight line through the origin with constant gradient."
+  },
+  {
+    "id": 14,
+    "question": "How should an ammeter be connected in a circuit to measure current?",
+    "options": [
+      "In parallel with the component",
+      "In series with the component",
+      "Across the battery only",
+      "It does not matter"
+    ],
+    "answer": "In series with the component",
+    "time": 30,
+    "explanation": "Ammeters measure current flowing through a point and must be connected in series so the same current flows through the meter."
+  },
+  {
+    "id": 15,
+    "question": "How should a voltmeter be connected to measure potential difference across a component?",
+    "options": [
+      "In series with the component",
+      "In parallel across the component",
+      "Across the battery only",
+      "It does not matter"
+    ],
+    "answer": "In parallel across the component",
+    "time": 30,
+    "explanation": "Voltmeters measure potential difference between two points and must be connected in parallel across the component."
+  }
+]

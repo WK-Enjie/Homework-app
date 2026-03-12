@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A spring is stretched by hanging a mass on it. In which direction does the elastic spring force act?",
+    "options": [
+      "In the same direction as the stretch",
+      "In the opposite direction to the stretch",
+      "Downwards towards the ground",
+      "In a circular motion"
+    ],
+    "answer": "In the opposite direction to the stretch",
+    "time": 60,
+    "explanation": "Elastic spring force is a restoring force. It always acts in the opposite direction to the stretch or compression, trying to return the spring to its original length."
+  },
+  {
+    "id": 2,
+    "question": "Two springs, A and B, are hung with identical 100g masses. Spring A extends 5cm. Spring B extends 10cm. Which spring is stiffer?",
+    "options": [
+      "Spring A",
+      "Spring B",
+      "Both are equally stiff",
+      "Cannot be determined"
+    ],
+    "answer": "Spring A",
+    "time": 90,
+    "explanation": "A stiffer spring is harder to stretch. For the same mass (force), Spring A extended less (5cm) compared to Spring B (10cm). Therefore, Spring A is stiffer."
+  },
+  {
+    "id": 3,
+    "question": "A magnet is placed near a steel ball. The ball moves towards the magnet. What happens to the magnetic force if the gap between them is increased?",
+    "options": [
+      "The magnetic force increases",
+      "The magnetic force decreases",
+      "The magnetic force stays the same",
+      "The magnetic force becomes zero immediately"
+    ],
+    "answer": "The magnetic force decreases",
+    "time": 60,
+    "explanation": "Magnetic force acts at a distance. The strength of the magnetic force decreases as the distance (gap) between the magnet and the magnetic object increases."
+  },
+  {
+    "id": 4,
+    "question": "In an experiment to compare the stiffness of two springs, what is the changed variable?",
+    "options": [
+      "The length of the spring",
+      "The type of spring used",
+      "The mass hung on the spring",
+      "The ruler used to measure"
+    ],
+    "answer": "The type of spring used",
+    "time": 90,
+    "explanation": "To compare stiffness, the type of spring is the changed variable. The mass (force) applied should be kept unchanged to ensure a fair test."
+  },
+  {
+    "id": 5,
+    "question": "A spring balance is used to measure the weight of an object. What property of the spring allows it to work?",
+    "options": [
+      "The spring changes colour when stretched",
+      "The extension of the spring increases with more weight",
+      "The spring becomes magnetic when stretched",
+      "The spring gets hotter when stretched"
+    ],
+    "answer": "The extension of the spring increases with more weight",
+    "time": 60,
+    "explanation": "A spring balance works because the extension of the spring is proportional to the weight (force) applied. More weight causes a longer extension."
+  },
+  {
+    "id": 6,
+    "question": "Two magnets, P and Q, are tested to see which is stronger. Magnet P attracts a paperclip from 10cm away. Magnet Q attracts it from 5cm away. Which magnet is stronger?",
+    "options": [
+      "Magnet P",
+      "Magnet Q",
+      "Both are equally strong",
+      "Cannot be determined"
+    ],
+    "answer": "Magnet P",
+    "time": 90,
+    "explanation": "A stronger magnet can exert magnetic force over a larger distance. Since Magnet P attracted the paperclip from further away (10cm), it is stronger than Magnet Q."
+  },
+  {
+    "id": 7,
+    "question": "A student hangs a 50g mass on a spring. The spring extends 2cm. What happens if a 100g mass is hung on the same spring?",
+    "options": [
+      "The spring extends less than 2cm",
+      "The spring extends exactly 2cm",
+      "The spring extends more than 2cm",
+      "The spring breaks immediately"
+    ],
+    "answer": "The spring extends more than 2cm",
+    "time": 60,
+    "explanation": "A heavier mass exerts a greater downward force (weight). This causes the spring to stretch further, resulting in a greater extension."
+  },
+  {
+    "id": 8,
+    "question": "Why is there a small gap between a magnetic door catch and the metal plate when the door is closed?",
+    "options": [
+      "To make the door look nicer",
+      "Because magnetic force can act across a small gap",
+      "To prevent the door from locking",
+      "Because the magnet is too weak to touch"
+    ],
+    "answer": "Because magnetic force can act across a small gap",
+    "time": 60,
+    "explanation": "Magnetic force is a non-contact force. It can act over a distance (gap), allowing the magnet to hold the door closed without direct contact."
+  },
+  {
+    "id": 9,
+    "question": "In an experiment to find how the gap affects magnetic force, what is the measured variable?",
+    "options": [
+      "The size of the gap",
+      "The strength of the magnetic force",
+      "The type of magnet used",
+      "The colour of the magnet"
+    ],
+    "answer": "The strength of the magnetic force",
+    "time": 90,
+    "explanation": "The measured variable is what we observe or measure in response to the change. Here, we measure the strength of the force (e.g., number of paperclips) as the gap changes."
+  },
+  {
+    "id": 10,
+    "question": "Which of the following objects relies mainly on elastic spring force to function?",
+    "options": [
+      "A wooden ruler",
+      "A mechanical pencil",
+      "A glass cup",
+      "A plastic bag"
+    ],
+    "answer": "A mechanical pencil",
+    "time": 60,
+    "explanation": "A mechanical pencil uses a spring to push the lead out. When the button is pressed, the spring is compressed and exerts elastic spring force to move the lead."
+  },
+  {
+    "id": 11,
+    "question": "A spring is stretched beyond its limit. What happens when the mass is removed?",
+    "options": [
+      "It returns to its original length",
+      "It becomes permanently longer",
+      "It becomes shorter than before",
+      "It turns into a magnet"
+    ],
+    "answer": "It becomes permanently longer",
+    "time": 60,
+    "explanation": "If a spring is stretched beyond its elastic limit, it loses its ability to return to its original shape. It becomes permanently deformed."
+  },
+  {
+    "id": 12,
+    "question": "Two identical springs are hung with different masses. Spring X has a 200g mass. Spring Y has a 500g mass. Which statement is true?",
+    "options": [
+      "Spring X is longer than Spring Y",
+      "Spring Y is longer than Spring X",
+      "Both springs are the same length",
+      "Spring X exerts more elastic spring force"
+    ],
+    "answer": "Spring Y is longer than Spring X",
+    "time": 90,
+    "explanation": "Since the springs are identical, the one with the heavier mass (Spring Y) will stretch more. Therefore, Spring Y will have a greater total length."
+  },
+  {
+    "id": 13,
+    "question": "A magnet is placed on a table. A steel ball is placed 15cm away. The ball does not move. What should be done to make the ball move?",
+    "options": [
+      "Use a weaker magnet",
+      "Move the magnet closer to the ball",
+      "Move the magnet further away",
+      "Paint the steel ball"
+    ],
+    "answer": "Move the magnet closer to the ball",
+    "time": 60,
+    "explanation": "Magnetic force is stronger at shorter distances. Moving the magnet closer reduces the gap, increasing the force enough to overcome friction and move the ball."
+  },
+  {
+    "id": 14,
+    "question": "Which variable must be kept unchanged when comparing the stiffness of two springs?",
+    "options": [
+      "The type of spring",
+      "The mass hung on the springs",
+      "The extension of the springs",
+      "The colour of the springs"
+    ],
+    "answer": "The mass hung on the springs",
+    "time": 90,
+    "explanation": "For a fair test, only the changed variable (type of spring) should differ. The mass (force) applied must be kept unchanged to compare stiffness accurately."
+  },
+  {
+    "id": 15,
+    "question": "A car suspension system uses springs. What is the main benefit of using springs in this system?",
+    "options": [
+      "To make the car move faster",
+      "To absorb shocks and provide a smoother ride",
+      "To increase the weight of the car",
+      "To reduce the fuel consumption"
+    ],
+    "answer": "To absorb shocks and provide a smoother ride",
+    "time": 60,
+    "explanation": "Springs in suspension compress and extend to absorb bumps from the road. The elastic spring force helps to cushion the car and passengers from sudden jolts."
+  }
+]

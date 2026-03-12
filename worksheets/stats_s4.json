@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "The marks obtained by 7 students in a test are: 12, 15, 18, 15, 20, 15, 22. What is the mode of the data?",
+    "options": [
+      "15",
+      "18",
+      "20",
+      "12"
+    ],
+    "answer": "15",
+    "time": 45,
+    "explanation": "The mode is the value that appears most frequently. 15 appears 3 times, which is more than any other value (Syllabus 20a)."
+  },
+  {
+    "id": 2,
+    "question": "The heights (in cm) of 5 plants are: 10, 12, 14, 16, 18. What is the median height?",
+    "options": [
+      "12 cm",
+      "14 cm",
+      "16 cm",
+      "10 cm"
+    ],
+    "answer": "14 cm",
+    "time": 45,
+    "explanation": "The data is already in order. With 5 values, the median is the 3rd value: 14 cm (Syllabus 20a)."
+  },
+  {
+    "id": 3,
+    "question": "The scores of 6 students are: 8, 10, 12, 14, 16, 18. What is the mean score?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "answer": "13",
+    "time": 60,
+    "explanation": "Mean = Sum of values ÷ Number of values = (8+10+12+14+16+18) ÷ 6 = 78 ÷ 6 = 13 (Syllabus 20a)."
+  },
+  {
+    "id": 4,
+    "question": "A data set has a lower quartile (Q1) of 25 and an upper quartile (Q3) of 45. What is the interquartile range (IQR)?",
+    "options": [
+      "10",
+      "20",
+      "35",
+      "70"
+    ],
+    "answer": "20",
+    "time": 45,
+    "explanation": "IQR = Q3 - Q1 = 45 - 25 = 20. The IQR measures the spread of the middle 50% of data (Syllabus 20b)."
+  },
+  {
+    "id": 5,
+    "question": "Two classes took the same test. Class A has a mean of 75 and standard deviation of 5. Class B has a mean of 75 and standard deviation of 12. Which statement is correct?",
+    "options": [
+      "Class A has more consistent scores",
+      "Class B has more consistent scores",
+      "Both classes have the same spread",
+      "Class A has a higher median"
+    ],
+    "answer": "Class A has more consistent scores",
+    "time": 60,
+    "explanation": "Both classes have the same mean (central tendency), but Class A has a smaller standard deviation (5 < 12), meaning its scores are more tightly clustered around the mean (more consistent) (Syllabus 20c)."
+  },
+  {
+    "id": 6,
+    "question": "The ages of 8 children are: 5, 6, 6, 7, 8, 9, 10, 12. What is the lower quartile (Q1)?",
+    "options": [
+      "6",
+      "6.5",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "time": 75,
+    "explanation": "With n=8, Q1 is at position (n+1)/4 = 2.25. Interpolate between 2nd value (6) and 3rd value (6): Q1 = 6 (Syllabus 20b)."
+  },
+  {
+    "id": 7,
+    "question": "The prices of 5 items are: $10, $15, $20, $25, $100. Which measure of central tendency is most affected by the extreme value ($100)?",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "All are equally affected"
+    ],
+    "answer": "Mean",
+    "time": 60,
+    "explanation": "The mean uses all values in its calculation, so extreme values (outliers) pull it significantly. The median (middle value) and mode (most frequent) are resistant to outliers (Syllabus 20c)."
+  },
+  {
+    "id": 8,
+    "question": "A data set has a range of 30 and a standard deviation of 8. If every value in the data set is multiplied by 2, what is the new standard deviation?",
+    "options": [
+      "8",
+      "16",
+      "30",
+      "60"
+    ],
+    "answer": "16",
+    "time": 75,
+    "explanation": "When all data values are multiplied by a constant k, the standard deviation is also multiplied by |k|. New SD = 2 × 8 = 16 (Syllabus 20b)."
+  },
+  {
+    "id": 9,
+    "question": "The test scores of two groups are summarized: Group X: Mean=60, IQR=10; Group Y: Mean=60, IQR=25. Which group has more variable scores?",
+    "options": [
+      "Group X",
+      "Group Y",
+      "Both have the same variability",
+      "Cannot be determined"
+    ],
+    "answer": "Group Y",
+    "time": 60,
+    "explanation": "Both groups have the same mean (central tendency), but Group Y has a larger IQR (25 > 10), indicating greater spread/variability in the middle 50% of scores (Syllabus 20c)."
+  },
+  {
+    "id": 10,
+    "question": "The number of books read by 9 students: 2, 3, 3, 4, 5, 5, 5, 6, 7. What is the median?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "5",
+    "time": 45,
+    "explanation": "With n=9 (odd), the median is the 5th value in ordered data: 2, 3, 3, 4, [5], 5, 5, 6, 7. Median = 5 (Syllabus 20a)."
+  },
+  {
+    "id": 11,
+    "question": "A frequency table shows: Score 1-5: 2 students, 6-10: 5 students, 11-15: 8 students, 16-20: 3 students. Which class interval contains the median?",
+    "options": [
+      "1-5",
+      "6-10",
+      "11-15",
+      "16-20"
+    ],
+    "answer": "11-15",
+    "time": 90,
+    "explanation": "Total students = 2+5+8+3 = 18. Median position = (18+1)/2 = 9.5th value. Cumulative frequencies: 2, 7, 15, 18. The 9.5th value falls in the 11-15 interval (Syllabus 20a)."
+  },
+  {
+    "id": 12,
+    "question": "Two data sets have the same mean. Data Set P has standard deviation 3, Data Set Q has standard deviation 7. Which statement about the spread is correct?",
+    "options": [
+      "Data Set P is more spread out",
+      "Data Set Q is more spread out",
+      "Both have the same spread",
+      "Standard deviation does not measure spread"
+    ],
+    "answer": "Data Set Q is more spread out",
+    "time": 60,
+    "explanation": "Standard deviation measures spread/dispersion. A larger standard deviation (7 > 3) indicates Data Set Q has values more spread out from the mean (Syllabus 20b, 20c)."
+  },
+  {
+    "id": 13,
+    "question": "The weights (kg) of 7 boxes: 10, 12, 12, 14, 16, 18, 20. What is the upper quartile (Q3)?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "answer": "18",
+    "time": 75,
+    "explanation": "With n=7, Q3 is at position 3(n+1)/4 = 6th value. Ordered data: 10, 12, 12, 14, 16, [18], 20. Q3 = 18 (Syllabus 20b)."
+  },
+  {
+    "id": 14,
+    "question": "A teacher compares two tests. Test 1: Mean=70, Range=40. Test 2: Mean=70, Range=20. Which test had more consistent student performance?",
+    "options": [
+      "Test 1",
+      "Test 2",
+      "Both equally consistent",
+      "Cannot compare with given information"
+    ],
+    "answer": "Test 2",
+    "time": 60,
+    "explanation": "Both tests have the same mean, but Test 2 has a smaller range (20 < 40), indicating scores were closer together (more consistent performance) (Syllabus 20c)."
+  },
+  {
+    "id": 15,
+    "question": "The daily temperatures (°C) for a week: 22, 24, 24, 25, 26, 28, 30. If the temperature 30°C was recorded incorrectly and should be 27°C, which measure would change the MOST?",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "All change equally"
+    ],
+    "answer": "Mean",
+    "time": 75,
+    "explanation": "Changing an extreme value affects the mean most because it uses all values. Original mean = 179/7 ≈ 25.57; New mean = 176/7 ≈ 25.14. Median (25) and mode (24) remain unchanged (Syllabus 20c)."
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+   "id ": 1,
+   "question ":  "A set of data has a mean of 50 and a standard deviation of 5. If 10 is added to every value in the data set, what are the new mean and standard deviation? ",
+   "options ": [
+   "Mean = 60, SD = 5 ",
+   "Mean = 60, SD = 15 ",
+   "Mean = 50, SD = 15 ",
+   "Mean = 50, SD = 5 "
+  ],
+   "answer ":  "Mean = 60, SD = 5 ",
+   "time ": 60,
+   "explanation ":  "Adding a constant shifts the central tendency (mean increases by 10) but does not change the spread (standard deviation remains unchanged) (Concept: Data Transformation). "
+  },
+  {
+   "id ": 2,
+   "question ":  "Two cumulative frequency curves represent Class A and Class B. Class A's curve is much steeper than Class B's curve around the median. What does this indicate? ",
+   "options ": [
+   "Class A has a larger interquartile range ",
+   "Class A has a smaller interquartile range ",
+   "Class A has a higher median ",
+   "Class A has a lower mean "
+  ],
+   "answer ":  "Class A has a smaller interquartile range ",
+   "time ": 75,
+   "explanation ":  "A steeper gradient in a cumulative frequency curve indicates that data values are clustered closely together, implying a smaller spread (smaller IQR) (Concept: CF Curve Interpretation). "
+  },
+  {
+   "id ": 3,
+   "question ":  "A data set consists of 10 values. If every value is multiplied by 3, how does the interquartile range (IQR) change? ",
+   "options ": [
+   "IQR remains the same ",
+   "IQR is multiplied by 3 ",
+   "IQR is multiplied by 9 ",
+   "IQR is divided by 3 "
+  ],
+   "answer ":  "IQR is multiplied by 3 ",
+   "time ": 60,
+   "explanation ":  "Multiplying all data by a constant scale factor k multiplies all measures of spread (IQR, SD, Range) by |k|. Here k=3 (Concept: Data Transformation). "
+  },
+  {
+   "id ": 4,
+   "question ":  "Which measure of central tendency is most resistant to the effect of an extreme outlier? ",
+   "options ": [
+   "Mean ",
+   "Median ",
+   "Mode ",
+   "Standard Deviation "
+  ],
+   "answer ":  "Median ",
+   "time ": 45,
+   "explanation ":  "The median depends only on the middle position(s) of ordered data. Extreme values at the ends do not affect the middle position, unlike the mean which uses all values (Concept: Robustness). "
+  },
+  {
+   "id ": 5,
+   "question ":  "If the standard deviation of a data set is 0, what must be true about the data values? ",
+   "options ": [
+   "All values are zero ",
+   "All values are equal ",
+   "The mean is zero ",
+   "There is only one value "
+  ],
+   "answer ":  "All values are equal ",
+   "time ": 60,
+   "explanation ":  "Standard deviation measures spread from the mean. If SD=0, there is no spread, meaning every value in the set is identical to the mean (Concept: Standard Deviation Definition). "
+  },
+  {
+   "id ": 6,
+   "question ":  "A cumulative frequency curve is flatter in the middle section compared to the ends. What does this suggest about the data distribution? ",
+   "options ": [
+   "Data is clustered around the median ",
+   "Data is spread out around the median ",
+   "Data has no outliers ",
+   "Data is symmetric "
+  ],
+   "answer ":  "Data is spread out around the median ",
+   "time ": 75,
+   "explanation ":  "A flat gradient indicates that a large range of values is needed to accumulate frequency, meaning the data is spread out (less consistent) in that region (Concept: CF Curve Gradient). "
+  },
+  {
+   "id ": 7,
+   "question ":  "Two students have the same mean test score. Student X has a standard deviation of 2, Student Y has a standard deviation of 8. Who is more consistent? ",
+   "options ": [
+   "Student X ",
+   "Student Y ",
+   "Both are equally consistent ",
+   "Cannot be determined "
+  ],
+   "answer ":  "Student X ",
+   "time ": 45,
+   "explanation ":  "Consistency is measured by spread. A lower standard deviation indicates scores are closer to the mean, implying higher consistency (Concept: Comparing Spread). "
+  },
+  {
+   "id ": 8,
+   "question ":  "The highest value in a data set is removed. Which measure is guaranteed to change? ",
+   "options ": [
+   "Median ",
+   "Mode ",
+   "Range ",
+   "Interquartile Range "
+  ],
+   "answer ":  "Range ",
+   "time ": 60,
+   "explanation ":  "Range = Max - Min. Removing the maximum value definitely changes the Max, thus changing the Range. Median, Mode, and IQR may remain unchanged depending on the data (Concept: Effect of Removal). "
+  },
+  {
+   "id ": 9,
+   "question ":  "A box-and-whisker plot has a very long right whisker compared to the left whisker. What does this indicate? ",
+   "options ": [
+   "Data is symmetric ",
+   "Data is negatively skewed ",
+   "Data is positively skewed ",
+   "Data has no outliers "
+  ],
+   "answer ":  "Data is positively skewed ",
+   "time ": 60,
+   "explanation ":  "A long right whisker indicates that the upper 25% of data is spread over a wider range than the lower 25%, pulling the tail to the right (positive skew) (Concept: Box Plot Interpretation). "
+  },
+  {
+   "id ": 10,
+   "question ":  "If every value in a data set is decreased by 5, how does the variance change? ",
+   "options ": [
+   "Variance decreases by 5 ",
+   "Variance decreases by 25 ",
+   "Variance remains unchanged ",
+   "Variance increases by 5 "
+  ],
+   "answer ":  "Variance remains unchanged ",
+   "time ": 60,
+   "explanation ":  "Variance (and SD) measures spread. Shifting all data by a constant (translation) does not change the distance between values, so spread remains unchanged (Concept: Data Transformation). "
+  },
+  {
+   "id ": 11,
+   "question ":  "On a cumulative frequency curve, the median is found at the value corresponding to what percentage of the total frequency? ",
+   "options ": [
+   "25% ",
+   "50% ",
+   "75% ",
+   "100% "
+  ],
+   "answer ":  "50% ",
+   "time ": 45,
+   "explanation ":  "The median is the middle value, representing the 50th percentile. On a CF curve, this is found at half the total cumulative frequency (Concept: CF Curve Reading). "
+  },
+  {
+   "id ": 12,
+   "question ":  "A data set has a mean of 100. An error is found where one value was recorded as 10 instead of 100. If corrected, what happens to the mean? ",
+   "options ": [
+   "Mean decreases ",
+   "Mean increases ",
+   "Mean remains the same ",
+   "Mean becomes zero "
+  ],
+   "answer ":  "Mean increases ",
+   "time ": 60,
+   "explanation ":  "Correcting 10 to 100 increases the sum of the data. Since Mean = Sum/n, increasing the sum increases the mean (Concept: Effect of Error Correction). "
+  },
+  {
+   "id ": 13,
+   "question ":  "Which measure of spread is most affected by a single extreme outlier? ",
+   "options ": [
+   "Interquartile Range ",
+   "Range ",
+   "Standard Deviation ",
+   "Both Range and Standard Deviation "
+  ],
+   "answer ":  "Both Range and Standard Deviation ",
+   "time ": 75,
+   "explanation ":  "Range uses the maximum/minimum directly. Standard Deviation uses the squared distance from the mean (which is also affected by outliers). IQR is resistant. Both Range and SD are sensitive (Concept: Sensitivity of Measures). "
+  },
+  {
+   "id ": 14,
+   "question ":  "Two cumulative frequency curves intersect at the 50% cumulative frequency line. What does this imply about the two data sets? ",
+   "options ": [
+   "They have the same mean ",
+   "They have the same median ",
+   "They have the same range ",
+   "They have the same standard deviation "
+  ],
+   "answer ":  "They have the same median ",
+   "time ": 75,
+   "explanation ":  "The intersection at the 50% line means both data sets have the same value at the 50th percentile, which is the definition of the median (Concept: Comparing CF Curves). "
+  },
+  {
+   "id ": 15,
+   "question ":  "If a data set is symmetric, which relationship between mean and median is expected? ",
+   "options ": [
+   "Mean > Median ",
+   "Mean < Median ",
+   "Mean ≈ Median ",
+   "No relationship "
+  ],
+   "answer ":  "Mean ≈ Median ",
+   "time ": 60,
+   "explanation ":  "In a perfectly symmetric distribution, the center of gravity (mean) and the middle value (median) coincide. In skewed distributions, they differ (Concept: Symmetry and Central Tendency). "
+  }
+ ]

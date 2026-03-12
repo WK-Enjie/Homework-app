@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A circuit consists of a 12 V battery connected to a 4 Ω resistor in series with a parallel combination of two 6 Ω resistors. What is the total resistance?",
+    "options": [
+      "7 Ω",
+      "10 Ω",
+      "16 Ω",
+      "3 Ω"
+    ],
+    "answer": "7 Ω",
+    "time": 60,
+    "explanation": "Parallel part: (6×6)/(6+6) = 3 Ω. Total resistance = 4 Ω (series) + 3 Ω (parallel) = 7 Ω."
+  },
+  {
+    "id": 2,
+    "question": "In the circuit from Q1, what is the total current supplied by the battery?",
+    "options": [
+      "1.71 A",
+      "2.0 A",
+      "3.0 A",
+      "1.5 A"
+    ],
+    "answer": "1.71 A",
+    "time": 60,
+    "explanation": "Using Ohm's Law for the whole circuit: I = V/R_total = 12 V ÷ 7 Ω ≈ 1.71 A."
+  },
+  {
+    "id": 3,
+    "question": "A 12 V battery supplies a circuit with two resistors in series: 3 Ω and 9 Ω. What is the potential difference across the 9 Ω resistor?",
+    "options": [
+      "3 V",
+      "9 V",
+      "12 V",
+      "1 V"
+    ],
+    "answer": "9 V",
+    "time": 55,
+    "explanation": "Total R = 12 Ω. Current I = 12 V ÷ 12 Ω = 1 A. Voltage across 9 Ω: V = IR = 1 A × 9 Ω = 9 V."
+  },
+  {
+    "id": 4,
+    "question": "Two resistors, 6 Ω and 3 Ω, are connected in parallel across a 12 V supply. What is the total current from the supply?",
+    "options": [
+      "2 A",
+      "4 A",
+      "6 A",
+      "12 A"
+    ],
+    "answer": "6 A",
+    "time": 55,
+    "explanation": "I₁ = 12/6 = 2 A; I₂ = 12/3 = 4 A; I_total = 2 + 4 = 6 A. Alternatively, R_total = 2 Ω, I = 12/2 = 6 A."
+  },
+  {
+    "id": 5,
+    "question": "A 6 Ω resistor is connected in parallel with a 3 Ω resistor. This combination is then connected in series with a 2 Ω resistor. What is the total resistance?",
+    "options": [
+      "3 Ω",
+      "4 Ω",
+      "5 Ω",
+      "11 Ω"
+    ],
+    "answer": "4 Ω",
+    "time": 60,
+    "explanation": "Parallel part: (6×3)/(6+3) = 2 Ω. Series combination: 2 Ω (parallel) + 2 Ω (series) = 4 Ω."
+  },
+  {
+    "id": 6,
+    "question": "How does connecting lamps in parallel instead of series affect their brightness?",
+    "options": [
+      "Lamps are dimmer in parallel",
+      "Lamps are brighter in parallel",
+      "Brightness remains the same",
+      "Lamps do not light up in parallel"
+    ],
+    "answer": "Lamps are brighter in parallel",
+    "time": 45,
+    "explanation": "In parallel, each lamp receives the full supply voltage. In series, voltage is shared. Higher voltage means higher current and brightness, so they are brighter in parallel."
+  },
+  {
+    "id": 7,
+    "question": "A circuit has a 10 V supply and two resistors in parallel: 5 Ω and 10 Ω. What is the current through the 5 Ω resistor?",
+    "options": [
+      "1 A",
+      "2 A",
+      "3 A",
+      "0.5 A"
+    ],
+    "answer": "2 A",
+    "time": 50,
+    "explanation": "In parallel, each branch has the full supply voltage. Current through 5 Ω: I = V/R = 10 V ÷ 5 Ω = 2 A."
+  },
+  {
+    "id": 8,
+    "question": "Which arrangement transfers more energy per second from the cell to the lamps?",
+    "options": [
+      "Series arrangement",
+      "Parallel arrangement",
+      "Both transfer the same energy",
+      "Energy transfer does not depend on arrangement"
+    ],
+    "answer": "Parallel arrangement",
+    "time": 50,
+    "explanation": "Parallel arrangement has lower total resistance, drawing higher total current. Since more charge flows per second, more energy is transferred per second from the cell."
+  },
+  {
+    "id": 9,
+    "question": "A 4 Ω resistor and an 8 Ω resistor are connected in series. A current of 1.5 A flows through the circuit. What is the potential difference across the 8 Ω resistor?",
+    "options": [
+      "6 V",
+      "8 V",
+      "12 V",
+      "18 V"
+    ],
+    "answer": "12 V",
+    "time": 50,
+    "explanation": "Current is the same in series. Voltage across 8 Ω: V = IR = 1.5 A × 8 Ω = 12 V."
+  },
+  {
+    "id": 10,
+    "question": "In a parallel circuit with two branches of different resistance, which branch has the larger current?",
+    "options": [
+      "The branch with larger resistance",
+      "The branch with smaller resistance",
+      "Both branches have the same current",
+      "Current does not flow in parallel branches"
+    ],
+    "answer": "The branch with smaller resistance",
+    "time": 45,
+    "explanation": "Current divides inversely to resistance in parallel branches. The path of least resistance (smaller resistance) allows more charge to flow per second."
+  },
+  {
+    "id": 11,
+    "question": "A circuit consists of a battery, a switch, and two resistors in series. A voltmeter is connected across one resistor. If the other resistor burns out and becomes an open circuit, what happens to the voltmeter reading?",
+    "options": [
+      "Becomes zero",
+      "Becomes equal to battery e.m.f.",
+      "Remains the same",
+      "Increases but less than e.m.f."
+    ],
+    "answer": "Becomes zero",
+    "time": 55,
+    "explanation": "When the other resistor becomes an open circuit, no current can flow. With zero current, the potential difference across the intact resistor is V = IR = 0. The voltmeter reads zero."
+  },
+  {
+    "id": 12,
+    "question": "A student connects three identical lamps in a circuit. Two are in parallel, and this combination is in series with the third. If one of the parallel lamps blows, what happens to the brightness of the third lamp?",
+    "options": [
+      "It becomes brighter",
+      "It becomes dimmer",
+      "It remains unchanged",
+      "It goes out"
+    ],
+    "answer": "It becomes dimmer",
+    "time": 65,
+    "explanation": "Initially, parallel combination resistance = R/2, total = R + R/2 = 1.5R. After one blows, total = R + R = 2R. Higher total resistance means lower total current. The series lamp receives lower current, so it becomes dimmer."
+  },
+  {
+    "id": 13,
+    "question": "A circuit has a 12 V battery and two resistors in parallel: 4 Ω and 12 Ω. What is the current through the 12 Ω resistor?",
+    "options": [
+      "1 A",
+      "3 A",
+      "4 A",
+      "0.33 A"
+    ],
+    "answer": "1 A",
+    "time": 50,
+    "explanation": "In parallel, each branch has the full supply voltage. Current through 12 Ω: I = V/R = 12 V ÷ 12 Ω = 1 A."
+  },
+  {
+    "id": 14,
+    "question": "Which statement about potential difference in a parallel circuit is correct?",
+    "options": [
+      "Potential difference divides equally across all branches",
+      "Potential difference is the same across all branches",
+      "Potential difference is highest in the branch with largest resistance",
+      "Potential difference depends on the current in each branch"
+    ],
+    "answer": "Potential difference is the same across all branches",
+    "time": 40,
+    "explanation": "In a parallel circuit, the potential difference across each branch is the same and equals the supply voltage. Current divides between branches, not voltage."
+  },
+  {
+    "id": 15,
+    "question": "A 10 Ω resistor and a 20 Ω resistor are connected in series across a 9 V battery. What is the potential difference across the 20 Ω resistor?",
+    "options": [
+      "3 V",
+      "6 V",
+      "9 V",
+      "12 V"
+    ],
+    "answer": "6 V",
+    "time": 55,
+    "explanation": "Total resistance = 30 Ω. Current I = 9 V ÷ 30 Ω = 0.3 A. Voltage across 20 Ω: V = IR = 0.3 A × 20 Ω = 6 V."
+  }
+]

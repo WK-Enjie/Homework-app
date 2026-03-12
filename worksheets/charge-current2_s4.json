@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "Two metal spheres, one positively charged and one negatively charged, are brought close together. What happens?",
+    "options": [
+      "They repel each other",
+      "They attract each other",
+      "Nothing happens",
+      "They become neutral"
+    ],
+    "answer": "They attract each other",
+    "time": 35,
+    "explanation": "Unlike charges attract. The positively charged sphere and negatively charged sphere will attract each other."
+  },
+  {
+    "id": 2,
+    "question": "A current of 0.5 A flows through a circuit for 2 minutes. How much charge passes through the circuit?",
+    "options": [
+      "1 C",
+      "60 C",
+      "0.25 C",
+      "120 C"
+    ],
+    "answer": "60 C",
+    "time": 45,
+    "explanation": "Using Q = It: Time = 2 min = 120 s. Q = 0.5 A × 120 s = 60 C."
+  },
+  {
+    "id": 3,
+    "question": "A battery does 180 J of work to move 30 C of charge around a complete circuit. What is the e.m.f. of the battery?",
+    "options": [
+      "6 V",
+      "5400 V",
+      "0.17 V",
+      "150 V"
+    ],
+    "answer": "6 V",
+    "time": 45,
+    "explanation": "Using E = W/Q: E.m.f. = 180 J ÷ 30 C = 6 V."
+  },
+  {
+    "id": 4,
+    "question": "A resistor has a potential difference of 15 V across it. If 45 J of energy is transferred when charge flows through it, how much charge has passed?",
+    "options": [
+      "3 C",
+      "675 C",
+      "0.33 C",
+      "60 C"
+    ],
+    "answer": "3 C",
+    "time": 45,
+    "explanation": "Using W = QV, rearrange to Q = W/V. Q = 45 J ÷ 15 V = 3 C."
+  },
+  {
+    "id": 5,
+    "question": "A wire of resistance 8 Ω has a current of 1.5 A flowing through it. What is the potential difference across the wire?",
+    "options": [
+      "12 V",
+      "5.33 V",
+      "0.19 V",
+      "9.5 V"
+    ],
+    "answer": "12 V",
+    "time": 40,
+    "explanation": "Using V = IR: V = 1.5 A × 8 Ω = 12 V."
+  },
+  {
+    "id": 6,
+    "question": "A wire has resistance R. Another wire of the same material has twice the length and half the cross-sectional area. What is its resistance?",
+    "options": [
+      "R",
+      "2R",
+      "4R",
+      "R/4"
+    ],
+    "answer": "4R",
+    "time": 50,
+    "explanation": "Resistance R ∝ L/A. New length = 2L, New Area = 0.5A. New Resistance ∝ 2L/0.5A = 4 × (L/A). So new resistance is 4R."
+  },
+  {
+    "id": 7,
+    "question": "A filament lamp does not have a fixed resistance. Why?",
+    "options": [
+      "The filament has zero resistance",
+      "The resistance of the filament changes with temperature",
+      "The current is always constant",
+      "The potential difference is always zero"
+    ],
+    "answer": "The resistance of the filament changes with temperature",
+    "time": 40,
+    "explanation": "As current increases, the filament heats up. For metals, resistance increases with temperature. Therefore, the I-V graph is curved, not a straight line."
+  },
+  {
+    "id": 8,
+    "question": "A semiconductor diode allows current to flow easily in one direction but not the other. What does its I-V graph look like?",
+    "options": [
+      "A straight line through the origin",
+      "A curve that is steep in one direction and flat in the other",
+      "A horizontal line",
+      "A vertical line"
+    ],
+    "answer": "A curve that is steep in one direction and flat in the other",
+    "time": 40,
+    "explanation": "A diode conducts significantly only when forward-biased above a threshold voltage; in reverse bias, only negligible current flows. The I-V graph is highly non-linear."
+  },
+  {
+    "id": 9,
+    "question": "A student measures the resistance of a wire using an ammeter and voltmeter. Which circuit arrangement is correct?",
+    "options": [
+      "Ammeter in parallel with wire; voltmeter in series with wire",
+      "Both meters in series with the wire",
+      "Ammeter in series with wire; voltmeter in parallel across wire",
+      "Both meters in parallel across the wire"
+    ],
+    "answer": "Ammeter in series with wire; voltmeter in parallel across wire",
+    "time": 40,
+    "explanation": "Ammeters must be connected in series to measure current. Voltmeters must be connected in parallel across the component to measure potential difference."
+  },
+  {
+    "id": 10,
+    "question": "A wire of length 2 m and cross-sectional area 0.5 mm² has resistance 4 Ω. What is the resistance of a wire of the same material with length 4 m and area 1.0 mm²?",
+    "options": [
+      "2 Ω",
+      "4 Ω",
+      "8 Ω",
+      "16 Ω"
+    ],
+    "answer": "4 Ω",
+    "time": 50,
+    "explanation": "R ∝ L/A. Original: R ∝ 2/0.5 = 4. New: R ∝ 4/1.0 = 4. Same ratio, so resistance is still 4 Ω."
+  },
+  {
+    "id": 11,
+    "question": "A current of 2 A flows through a resistor for 30 seconds. How much energy is transferred if the potential difference across the resistor is 12 V?",
+    "options": [
+      "720 J",
+      "24 J",
+      "180 J",
+      "60 J"
+    ],
+    "answer": "720 J",
+    "time": 50,
+    "explanation": "Using E = VIt: E = 12 V × 2 A × 30 s = 720 J."
+  },
+  {
+    "id": 12,
+    "question": "A battery of e.m.f. 9 V is connected to a circuit. If 180 C of charge flows around the circuit, how much energy is supplied by the battery?",
+    "options": [
+      "20 J",
+      "1620 J",
+      "0.05 J",
+      "189 J"
+    ],
+    "answer": "1620 J",
+    "time": 50,
+    "explanation": "Using E = EQ (where E is e.m.f.): Energy = 9 V × 180 C = 1620 J."
+  },
+  {
+    "id": 13,
+    "question": "A wire has resistance 10 Ω at 20°C. What happens to its resistance when the temperature rises to 50°C?",
+    "options": [
+      "It decreases",
+      "It remains the same",
+      "It increases",
+      "It becomes zero"
+    ],
+    "answer": "It increases",
+    "time": 35,
+    "explanation": "For metallic conductors, resistance increases with temperature because the metal ions vibrate more vigorously, causing more collisions with electrons."
+  },
+  {
+    "id": 14,
+    "question": "Which statement about the I-V characteristic of a filament lamp is correct?",
+    "options": [
+      "The gradient increases as voltage increases",
+      "The gradient decreases as voltage increases",
+      "The graph is a straight line",
+      "The current is zero at all voltages"
+    ],
+    "answer": "The gradient decreases as voltage increases",
+    "time": 45,
+    "explanation": "As voltage increases, the filament heats up and resistance increases. Therefore, current increases less rapidly than voltage, producing a curve with decreasing gradient."
+  },
+  {
+    "id": 15,
+    "question": "A student plots an I-V graph for a resistor and obtains a straight line through the origin. What can be concluded?",
+    "options": [
+      "The resistor does not have fixed resistance",
+      "The resistor has fixed resistance at constant temperature",
+      "The resistance is zero",
+      "The current is independent of voltage"
+    ],
+    "answer": "The resistor has fixed resistance at constant temperature",
+    "time": 45,
+    "explanation": "A straight line through the origin indicates that V ∝ I, which means the resistor has fixed resistance at constant temperature."
+  }
+]
