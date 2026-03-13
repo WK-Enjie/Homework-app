@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "One solution of the equation $x^2 + kx - 10 = 0$ is $x = 2$. Find the other solution.",
+    "options": ["$-5$", "$5$", "$-2$", "$10$"],
+    "answer": "$-5$",
+    "time": 90
+  },
+  {
+    "id": 2,
+    "question": "A train travels $120$ km. If its speed was $10$ km/h faster, the journey would take $1$ hour less. Find the original speed.",
+    "options": ["$30$ km/h", "$40$ km/h", "$50$ km/h", "$60$ km/h"],
+    "answer": "$30$ km/h",
+    "time": 180
+  },
+  {
+    "id": 3,
+    "question": "Solve the equation: $3x^2 - 27 = 0$",
+    "options": ["$x = 3$", "$x = -3$", "$x = 3, -3$", "$x = 9, -9$"],
+    "answer": "$x = 3, -3$",
+    "time": 60
+  },
+  {
+    "id": 4,
+    "question": "Five years ago, Sarah was twice as old as John. The product of their current ages is $150$. How old is Sarah now?",
+    "options": ["$15$", "$20$", "$25$", "$30$"],
+    "answer": "$15$",
+    "time": 150
+  },
+  {
+    "id": 5,
+    "question": "Solve the equation: $2x^2 - 4x - 6 = 0$",
+    "options": ["$x = 3, -1$", "$x = -3, 1$", "$x = 2, -3$", "$x = -2, 3$"],
+    "answer": "$x = 3, -1$",
+    "time": 75
+  },
+  {
+    "id": 6,
+    "question": "A shop sells pens at $\\$x$ each. A customer buys $\\$60$ worth. If the price was $\\$1$ less, she could buy $3$ more pens. Find $x$.",
+    "options": ["$4$", "$5$", "$6$", "$10$"],
+    "answer": "$5$",
+    "time": 180
+  },
+  {
+    "id": 7,
+    "question": "Solve the equation: $x^2 - 13x + 40 = 0$",
+    "options": ["$x = 5, 8$", "$x = -5, -8$", "$x = 4, 10$", "$x = -4, -10$"],
+    "answer": "$x = 5, 8$",
+    "time": 75
+  },
+  {
+    "id": 8,
+    "question": "A triangle has base $x$ cm and height $(x + 1)$ cm. The area is $10$ cm². Find the base.",
+    "options": ["$3$ cm", "$4$ cm", "$5$ cm", "$6$ cm"],
+    "answer": "$4$ cm",
+    "time": 120
+  },
+  {
+    "id": 9,
+    "question": "Solve the equation: $4x^2 - 36 = 0$",
+    "options": ["$x = 3, -3$", "$x = 6, -6$", "$x = 9, -9$", "$x = 4, -4$"],
+    "answer": "$x = 3, -3$",
+    "time": 60
+  },
+  {
+    "id": 10,
+    "question": "Two consecutive even positive numbers have a product of $168$. What is the larger number?",
+    "options": ["$12$", "$14$", "$16$", "$18$"],
+    "answer": "$14$",
+    "time": 120
+  },
+  {
+    "id": 11,
+    "question": "If $(x - 3)$ is a factor of $2x^2 + kx - 15 = 0$, find the value of $k$.",
+    "options": ["$1$", "$-1$", "$3$", "$-3$"],
+    "answer": "$-1$",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "A rectangle has perimeter $20$ cm and area $24$ cm². Find its length (length > width).",
+    "options": ["$4$ cm", "$6$ cm", "$8$ cm", "$10$ cm"],
+    "answer": "$6$ cm",
+    "time": 120
+  },
+  {
+    "id": 13,
+    "question": "Solve the equation: $2x^2 - 7x + 3 = 0$",
+    "options": ["$x = 3, \\frac{1}{2}$", "$x = -3, \\frac{1}{2}$", "$x = 3, -\\frac{1}{2}$", "$x = -3, -\\frac{1}{2}$"],
+    "answer": "$x = 3, \\frac{1}{2}$",
+    "time": 90
+  },
+  {
+    "id": 14,
+    "question": "A rectangle has length $3$ cm more than width. Area is $40$ cm². Find the width.",
+    "options": ["$4$ cm", "$5$ cm", "$6$ cm", "$8$ cm"],
+    "answer": "$5$ cm",
+    "time": 120
+  },
+  {
+    "id": 15,
+    "question": "Solve the equation: $x^2 + 8x + 15 = 0$",
+    "options": ["$x = -3, -5$", "$x = 3, 5$", "$x = -1, -15$", "$x = 1, 15$"],
+    "answer": "$x = -3, -5$",
+    "time": 75
+  },
+  {
+    "id": 16,
+    "question": "The sum of two positive integers is $25$ and their product is $150$. Find the integers.",
+    "options": ["$10$ and $15$", "$5$ and $20$", "$12$ and $13$", "$8$ and $17$"],
+    "answer": "$10$ and $15$",
+    "time": 120
+  },
+  {
+    "id": 17,
+    "question": "Solve the equation: $3x^2 - 12x - 15 = 0$",
+    "options": ["$x = 5, -1$", "$x = -5, 1$", "$x = 3, -5$", "$x = -3, 5$"],
+    "answer": "$x = 5, -1$",
+    "time": 75
+  },
+  {
+    "id": 18,
+    "question": "Given that $x = -2$ is a solution to $3x^2 + px - 10 = 0$, find the value of $p$.",
+    "options": ["$1$", "$-1$", "$2$", "$-2$"],
+    "answer": "$1$",
+    "time": 90
+  },
+  {
+    "id": 19,
+    "question": "Solve the equation: $x^2 - 14x + 49 = 0$",
+    "options": ["$x = 7$", "$x = -7$", "$x = 7, -7$", "$x = 14$"],
+    "answer": "$x = 7$",
+    "time": 60
+  },
+  {
+    "id": 20,
+    "question": "A number squared minus $4$ times the number equals $12$. Find the positive number.",
+    "options": ["$4$", "$5$", "$6$", "$7$"],
+    "answer": "$6$",
+    "time": 90
+  }
+]

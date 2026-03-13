@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Solve the quadratic equation: $x^2 + 5x + 6 = 0$",
+    "options": ["$x = -2, -3$", "$x = 2, 3$", "$x = -1, -6$", "$x = 1, 6$"],
+    "answer": "$x = -2, -3$",
+    "time": 60
+  },
+  {
+    "id": 2,
+    "question": "Solve the equation: $x^2 - 16 = 0$",
+    "options": ["$x = 4$", "$x = -4$", "$x = 4, -4$", "$x = 8, -8$"],
+    "answer": "$x = 4, -4$",
+    "time": 45
+  },
+  {
+    "id": 3,
+    "question": "Solve the equation: $x^2 - 7x = 0$",
+    "options": ["$x = 7$", "$x = 0$", "$x = 0, 7$", "$x = -7, 0$"],
+    "answer": "$x = 0, 7$",
+    "time": 60
+  },
+  {
+    "id": 4,
+    "question": "A rectangle has length $(x + 3)$ cm and width $x$ cm. Its area is $10$ cm². Find $x$.",
+    "options": ["$2$", "$3$", "$4$", "$5$"],
+    "answer": "$2$",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "question": "Solve the equation: $2x^2 - 8 = 0$",
+    "options": ["$x = 2$", "$x = -2$", "$x = 2, -2$", "$x = 4, -4$"],
+    "answer": "$x = 2, -2$",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "The product of two consecutive positive integers is $12$. What is the smaller integer?",
+    "options": ["$2$", "$3$", "$4$", "$5$"],
+    "answer": "$3$",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "question": "Solve the equation: $x^2 - 10x + 25 = 0$",
+    "options": ["$x = 5$", "$x = -5$", "$x = 5, -5$", "$x = 10$"],
+    "answer": "$x = 5$",
+    "time": 60
+  },
+  {
+    "id": 8,
+    "question": "Solve the equation: $3x^2 - 12x = 0$",
+    "options": ["$x = 4$", "$x = 0$", "$x = 0, 4$", "$x = 3, 4$"],
+    "answer": "$x = 0, 4$",
+    "time": 60
+  },
+  {
+    "id": 9,
+    "question": "The height of a triangle is $(x + 2)$ cm and the base is $x$ cm. The area is $12$ cm². Find the height.",
+    "options": ["$4$ cm", "$5$ cm", "$6$ cm", "$8$ cm"],
+    "answer": "$6$ cm",
+    "time": 120
+  },
+  {
+    "id": 10,
+    "question": "Solve the equation: $x^2 + 3x - 10 = 0$",
+    "options": ["$x = -5, 2$", "$x = 5, -2$", "$x = -1, 10$", "$x = 1, -10$"],
+    "answer": "$x = -5, 2$",
+    "time": 75
+  },
+  {
+    "id": 11,
+    "question": "The sum of a positive number and its square is $12$. Find the number.",
+    "options": ["$2$", "$3$", "$4$", "$5$"],
+    "answer": "$3$",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "Solve the equation: $4x^2 - 1 = 0$",
+    "options": ["$x = \\frac{1}{2}, -\\frac{1}{2}$", "$x = 1, -1$", "$x = \\frac{1}{4}, -\\frac{1}{4}$", "$x = 2, -2$"],
+    "answer": "$x = \\frac{1}{2}, -\\frac{1}{2}$",
+    "time": 75
+  },
+  {
+    "id": 13,
+    "question": "The tens digit of a two-digit number is $2$ more than the units digit. The product of the digits is $24$. What is the number?",
+    "options": ["$46$", "$64$", "$84$", "$48$"],
+    "answer": "$64$",
+    "time": 120
+  },
+  {
+    "id": 14,
+    "question": "Solve the equation: $x^2 - 11x + 30 = 0$",
+    "options": ["$x = 5, 6$", "$x = -5, -6$", "$x = 3, 10$", "$x = -3, -10$"],
+    "answer": "$x = 5, 6$",
+    "time": 75
+  },
+  {
+    "id": 15,
+    "question": "A rectangle has perimeter $34$ cm and area $60$ cm². Find its length (length > width).",
+    "options": ["$10$ cm", "$12$ cm", "$15$ cm", "$20$ cm"],
+    "answer": "$12$ cm",
+    "time": 150
+  },
+  {
+    "id": 16,
+    "question": "Solve the equation: $2x^2 - 5x - 3 = 0$",
+    "options": ["$x = 3, -\\frac{1}{2}$", "$x = -3, \\frac{1}{2}$", "$x = 3, \\frac{1}{2}$", "$x = -3, -\\frac{1}{2}$"],
+    "answer": "$x = 3, -\\frac{1}{2}$",
+    "time": 90
+  },
+  {
+    "id": 17,
+    "question": "Two consecutive odd positive numbers have a product of $143$. What is the larger number?",
+    "options": ["$11$", "$13$", "$15$", "$17$"],
+    "answer": "$13$",
+    "time": 120
+  },
+  {
+    "id": 18,
+    "question": "Solve the equation: $x^2 = 16x$",
+    "options": ["$x = 16$", "$x = 0$", "$x = 0, 16$", "$x = -16, 0$"],
+    "answer": "$x = 0, 16$",
+    "time": 60
+  },
+  {
+    "id": 19,
+    "question": "The sum of two numbers is $12$ and their product is $32$. Find the numbers.",
+    "options": ["$4$ and $8$", "$2$ and $10$", "$6$ and $6$", "$5$ and $7$"],
+    "answer": "$4$ and $8$",
+    "time": 90
+  },
+  {
+    "id": 20,
+    "question": "Solve the equation: $x^2 - 6x + 9 = 0$",
+    "options": ["$x = 3$", "$x = -3$", "$x = 3, -3$", "$x = 6$"],
+    "answer": "$x = 3$",
+    "time": 60
+  }
+]
