@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Simplify: $2x + 3x - x$",
+    "options": ["$4x$", "$5x$", "$6x$", "$3x$"],
+    "answer": "$4x$",
+    "time": 30
+  },
+  {
+    "id": 2,
+    "question": "Simplify: $5y - 8y$",
+    "options": ["$3y$", "$-3y$", "$13y$", "$-13y$"],
+    "answer": "$-3y$",
+    "time": 30
+  },
+  {
+    "id": 3,
+    "question": "Simplify: $3(x + 2)$",
+    "options": ["$3x + 2$", "$3x + 6$", "$x + 6$", "$3x + 5$"],
+    "answer": "$3x + 6$",
+    "time": 45
+  },
+  {
+    "id": 4,
+    "question": "Simplify: $-2(x - 4)$",
+    "options": ["$-2x - 8$", "$-2x + 8$", "$2x - 8$", "$2x + 8$"],
+    "answer": "$-2x + 8$",
+    "time": 60
+  },
+  {
+    "id": 5,
+    "question": "Simplify: $-(x - 3)$",
+    "options": ["$-x - 3$", "$-x + 3$", "$x - 3$", "$x + 3$"],
+    "answer": "$-x + 3$",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "Simplify: $2x + 3(x - 1)$",
+    "options": ["$5x - 1$", "$5x - 3$", "$6x - 3$", "$5x + 3$"],
+    "answer": "$5x - 3$",
+    "time": 60
+  },
+  {
+    "id": 7,
+    "question": "Simplify: $4(a + 2) - 3(a - 1)$",
+    "options": ["$a + 5$", "$a + 11$", "$7a + 5$", "$a + 8$"],
+    "answer": "$a + 11$",
+    "time": 75
+  },
+  {
+    "id": 8,
+    "question": "Simplify: $(-2x)^2$",
+    "options": ["$-4x^2$", "$4x^2$", "$-2x^2$", "$2x^2$"],
+    "answer": "$4x^2$",
+    "time": 60
+  },
+  {
+    "id": 9,
+    "question": "Simplify: $-3x^2 + 5x^2$",
+    "options": ["$-2x^2$", "$2x^2$", "$8x^2$", "$-8x^2$"],
+    "answer": "$2x^2$",
+    "time": 60
+  },
+  {
+    "id": 10,
+    "question": "Simplify: $(-3x)^2 - 9x^2$",
+    "options": ["$0$", "$18x^2$", "$-18x^2$", "$9x^2$"],
+    "answer": "$0$",
+    "time": 75
+  },
+  {
+    "id": 11,
+    "question": "Simplify: $2[3x - 1]$",
+    "options": ["$6x - 1$", "$6x - 2$", "$5x - 2$", "$6x + 2$"],
+    "answer": "$6x - 2$",
+    "time": 60
+  },
+  {
+    "id": 12,
+    "question": "Simplify: $3[2(x + 1) - 4]$",
+    "options": ["$6x - 6$", "$6x - 2$", "$6x + 6$", "$6x - 4$"],
+    "answer": "$6x - 6$",
+    "time": 90
+  },
+  {
+    "id": 13,
+    "question": "Simplify: $5 - 3(x + 2)$",
+    "options": ["$-3x - 1$", "$-3x + 11$", "$-3x + 7$", "$-3x - 6$"],
+    "answer": "$-3x - 1$",
+    "time": 75
+  },
+  {
+    "id": 14,
+    "question": "Simplify: $2x^2 + (-x)^2$",
+    "options": ["$3x^2$", "$x^2$", "$2x^2$", "$x^4$"],
+    "answer": "$3x^2$",
+    "time": 75
+  },
+  {
+    "id": 15,
+    "question": "Simplify: $-4x^2 + (2x)^2$",
+    "options": ["$0$", "$-8x^2$", "$8x^2$", "$4x^2$"],
+    "answer": "$0$",
+    "time": 75
+  },
+  {
+    "id": 16,
+    "question": "Simplify: $3(x - 2) + 2(x + 5) - 4x$",
+    "options": ["$x + 4$", "$x - 4$", "$5x + 4$", "$x + 14$"],
+    "answer": "$x + 4$",
+    "time": 90
+  },
+  {
+    "id": 17,
+    "question": "Simplify: $2[a - 3(a - 1)]$",
+    "options": ["$-4a + 6$", "$-4a - 6$", "$-4a + 2$", "$2a - 6$"],
+    "answer": "$-4a + 6$",
+    "time": 105
+  },
+  {
+    "id": 18,
+    "question": "Simplify: $-(2x - 3) + 2(x - 1)$",
+    "options": ["$1$", "$-1$", "$4x - 5$", "$1 - 4x$"],
+    "answer": "$1$",
+    "time": 90
+  },
+  {
+    "id": 19,
+    "question": "Simplify: $4x^2 - 2x^2 + (-x)^2$",
+    "options": ["$3x^2$", "$5x^2$", "$7x^2$", "$x^2$"],
+    "answer": "$3x^2$",
+    "time": 75
+  },
+  {
+    "id": 20,
+    "question": "Simplify: $5[2(x - 1) + 3] - 4(x + 2)$",
+    "options": ["$6x - 3$", "$6x + 3$", "$14x - 3$", "$6x - 13$"],
+    "answer": "$6x - 3$",
+    "time": 120
+  }
+]
