@@ -99,7 +99,7 @@
   },
   {
     "id": 8,
-    "question": "A bag contains $n$ red and $5$ blue marbles. Two marbles are drawn with replacement. The probability of getting at least one red is $\\frac{21}{25}$. Find $n$.",
+    "question": "A bag contains $n$ red and $5$ blue marbles. Two marbles are drawn with replacement. The probability of getting at least one red is $\\frac{3}{4}$. Find $n$.",
     "options": [
       "$2$",
       "$3$",
@@ -109,7 +109,7 @@
     "answer": "$5$",
     "correct": 3,
     "time": 120,
-    "explanation": "$P(\\text{at least one red}) = 1 - P(\\text{both blue})$. So $1 - [\\frac{5}{n+5}]^2 = \\frac{21}{25}$. $[\\frac{5}{n+5}]^2 = \\frac{4}{25}$. $\\frac{5}{n+5} = \\frac{2}{5}$. $25 = 2n + 10$. $n = 7.5$. Adjusted for integer: $n = 5$ gives $P = \\frac{16}{25}$. Answer $5$ (Syllabus 22b)."
+    "explanation": "$P(\\text{at least one red}) = 1 - P(\\text{both blue})$. So $1 - [\\frac{5}{n+5}]^2 = \\frac{3}{4}$. $[\\frac{5}{n+5}]^2 = \\frac{1}{4}$. $\\frac{5}{n+5} = \\frac{1}{2}$. $10 = n + 5$. $n = 5$ (Syllabus 22b)."
   },
   {
     "id": 9,
@@ -141,7 +141,7 @@
   },
   {
     "id": 11,
-    "question": "Two independent events A and B have $P(A) = x$ and $P(B) = 2x$. If the probability of A or B is $0.7$, find $x$.",
+    "question": "Two independent events A and B have $P(A) = x$ and $P(B) = 2x$. If the probability of A or B is $0.625$, find $x$.",
     "options": [
       "$0.2$",
       "$0.25$",
@@ -151,7 +151,7 @@
     "answer": "$0.25$",
     "correct": 1,
     "time": 120,
-    "explanation": "For independent events: $P(\\text{A and B}) = x \\times 2x = 2x^2$. $P(\\text{A or B}) = P(A) + P(B) - P(\\text{A and B}) = 3x - 2x^2 = 0.7$. Solve $2x^2 - 3x + 0.7 = 0$. $x \\approx 0.25$ (Syllabus 22b)."
+    "explanation": "For independent events: $P(\\text{A and B}) = x \\times 2x = 2x^2$. $P(\\text{A or B}) = P(A) + P(B) - P(\\text{A and B}) = 3x - 2x^2 = 0.625$. Solve $2x^2 - 3x + 0.625 = 0$. $(4x-1)(4x-5)=0$. $x = 0.25$ (Syllabus 22b)."
   },
   {
     "id": 12,
@@ -197,9 +197,9 @@
   },
   {
     "id": 15,
-    "question": "Two events X and Y cannot occur together. $P(X) = 2P(Y)$ and the probability of X or Y is $0.6$. Find the probability of X occurring and Y not occurring.",
+    "question": "In a club, every member plays Tennis (T), Badminton (B), or Both. No one plays neither. $P(T) = 0.7$ and $P(B) = 0.6$. What is the probability a member plays **only** Tennis?",
     "options": [
-      "$0.2$",
+      "$0.1$",
       "$0.3$",
       "$0.4$",
       "$0.6$"
@@ -207,6 +207,6 @@
     "answer": "$0.4$",
     "correct": 2,
     "time": 90,
-    "explanation": "Since X and Y cannot occur together: $P(\\text{X or Y}) = P(X) + P(Y) = 0.6$. Let $P(Y) = p$, then $P(X) = 2p$. So $3p = 0.6$, $p = 0.2$, $P(X) = 0.4$. $P(\\text{X and not Y}) = P(X) = 0.4$ (Syllabus 22c)."
+    "explanation": "Since no one plays neither, $P(T \\cup B) = 1$. $P(T \\cap B) = P(T) + P(B) - P(T \\cup B) = 0.7 + 0.6 - 1 = 0.3$. Only Tennis = $P(T) - P(T \\cap B) = 0.7 - 0.3 = 0.4$ (Syllabus 22c)."
   }
 ]
