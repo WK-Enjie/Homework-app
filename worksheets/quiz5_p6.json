@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "question": "Ada and Lisa had the same amount of money at first. Ada spent \\$35 and Lisa received \\$35. Lisa then had 3 times as much money as Ada. How much money did Ada have at first?",
+    "options": [
+      "\\$60",
+      "\\$70",
+      "\\$80",
+      "\\$90"
+    ],
+    "answer": "\\$70",
+    "time": 90
+  },
+  {
+    "id": 2,
+    "question": "Tom and Jerry had an equal number of marbles. Tom lost 20 marbles and Jerry lost 50 marbles. Tom then had 3 times as many marbles as Jerry. How many marbles did they have altogether at first?",
+    "options": [
+      "100",
+      "130",
+      "150",
+      "160"
+    ],
+    "answer": "130",
+    "time": 90
+  },
+  {
+    "id": 3,
+    "question": "Box A and Box B had an equal number of balls. 10 balls were added to Box A and 40 balls were added to Box B. Box B then had 2 times as many balls as Box A. How many balls were in Box A at first?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "answer": "20",
+    "time": 90
+  },
+  {
+    "id": 4,
+    "question": "John and Mary had the same amount of money. John spent \\$45 and Mary spent \\$15. Mary then had 4 times as much money as John. How much money did Mary have at first?",
+    "options": [
+      "\\$45",
+      "\\$50",
+      "\\$55",
+      "\\$65"
+    ],
+    "answer": "\\$55",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "question": "Mrs. Tan spent $20\\%$ of her money on a bag and $50\\%$ of the REMAINDER on a wallet. What percentage of her original money did she have left?",
+    "options": [
+      "$30\\%$",
+      "$40\\%$",
+      "$50\\%$",
+      "$60\\%$"
+    ],
+    "answer": "$40\\%$",
+    "time": 60
+  },
+  {
+    "id": 6,
+    "question": "$20\\%$ of Jack's savings is equal to $40\\%$ of Pony's savings. What is the ratio of Jack's savings to Pony's savings?",
+    "options": [
+      "$1 : 2$",
+      "$2 : 1$",
+      "$1 : 4$",
+      "$4 : 1$"
+    ],
+    "answer": "$2 : 1$",
+    "time": 60
+  },
+  {
+    "id": 7,
+    "question": "Round off $4.5678$ to 2 decimal places.",
+    "options": [
+      "$4.56$",
+      "$4.57$",
+      "$4.58$",
+      "$4.60$"
+    ],
+    "answer": "$4.57$",
+    "time": 45
+  },
+  {
+    "id": 8,
+    "question": "Express $0.625$ as a fraction in simplest form.",
+    "options": [
+      "$\\frac{3}{5}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{7}{10}$",
+      "$\\frac{1}{2}$"
+    ],
+    "answer": "$\\frac{5}{8}$",
+    "time": 60
+  },
+  {
+    "id": 9,
+    "question": "A shirt was sold at \\$80 after a discount of $20\\%$. What was the original price of the shirt?",
+    "options": [
+      "\\$90",
+      "\\$100",
+      "\\$110",
+      "\\$120"
+    ],
+    "answer": "\\$100",
+    "time": 60
+  },
+  {
+    "id": 10,
+    "question": "Convert $3.75$ km to metres.",
+    "options": [
+      "375 m",
+      "3750 m",
+      "37500 m",
+      "3800 m"
+    ],
+    "answer": "3750 m",
+    "time": 45
+  },
+  {
+    "id": 11,
+    "question": "Mary had some flour. She used $40\\%$ of it for a cake and $\\frac{1}{3}$ of the REMAINDER for cookies. What fraction of the total flour was used for cookies?",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{4}$"
+    ],
+    "answer": "$\\frac{1}{5}$",
+    "time": 75
+  },
+  {
+    "id": 12,
+    "question": "There are $72$ students in a class. At most $20\\%$ of the students are boys. What is the greatest possible number of boys in the class?",
+    "options": [
+      "12",
+      "14",
+      "15",
+      "16"
+    ],
+    "answer": "14",
+    "time": 60
+  }
+]

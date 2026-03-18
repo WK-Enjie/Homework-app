@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "question": "Ada and Lisa had the same amount of money at first. Ada spent $20 and Lisa spent $50. Ada then had 2 times as much money as Lisa. How much money did Ada have at first?",
+    "options": [
+      "$60",
+      "$70",
+      "$80",
+      "$90"
+    ],
+    "answer": "$80",
+    "time": 90
+  },
+  {
+    "id": 2,
+    "question": "Tom and Jerry had an equal number of marbles. Tom spent $30 and Jerry received $30. Jerry then had 4 times as much money as Tom. How much money did Tom have at first?",
+    "options": [
+      "$40",
+      "$50",
+      "$60",
+      "$70"
+    ],
+    "answer": "$50",
+    "time": 90
+  },
+  {
+    "id": 3,
+    "question": "Amy and Ben had the same number of stickers. Amy received 30 more stickers and Ben received 90 more stickers. Ben then had 2 times as many stickers as Amy. How many stickers did Amy have at first?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "answer": "30",
+    "time": 90
+  },
+  {
+    "id": 4,
+    "question": "Box A and Box B had an equal number of balls. 10 balls were removed from Box A and 50 balls were removed from Box B. Box A then had 5 times as many balls as Box B. How many balls were in Box A at first?",
+    "options": [
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
+    "answer": "60",
+    "time": 90
+  },
+  {
+    "id": 5,
+    "question": "John and Mary had the same amount of money. John spent $40 and Mary received $20. Mary then had 3 times as much money as John. How much money did John have at first?",
+    "options": [
+      "$60",
+      "$70",
+      "$80",
+      "$90"
+    ],
+    "answer": "$70",
+    "time": 90
+  },
+  {
+    "id": 6,
+    "question": "Sam and Tim had an equal number of cards. Sam lost 20 cards and Tim lost 80 cards. Sam then had 4 times as many cards as Tim. How many cards were left altogether?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "answer": "100",
+    "time": 90
+  },
+  {
+    "id": 7,
+    "question": "Alice and Bob had the same amount of savings. Alice received $50 and Bob received $150. Bob then had 2 times as much savings as Alice. How much savings did they have altogether at first?",
+    "options": [
+      "$80",
+      "$90",
+      "$100",
+      "$110"
+    ],
+    "answer": "$100",
+    "time": 90
+  },
+  {
+    "id": 8,
+    "question": "Tank A and Tank B contained an equal volume of water. 50 litres were drained from Tank A and 50 litres were added to Tank B. Tank B then had 6 times as much water as Tank A. How much water was in Tank A at first?",
+    "options": [
+      "$60",
+      "$70",
+      "$80",
+      "$90"
+    ],
+    "answer": "$70",
+    "time": 90
+  },
+  {
+    "id": 9,
+    "question": "Peter and Paul had the same amount of money. Peter spent $12 and Paul spent $32. Peter then had 3 times as much money as Paul. How much money did they have altogether at first?",
+    "options": [
+      "$74",
+      "$84",
+      "$94",
+      "$104"
+    ],
+    "answer": "$84",
+    "time": 90
+  },
+  {
+    "id": 10,
+    "question": "Sara and Jane had an equal number of pencils. Sara spent $15 and Jane received $45. Jane then had 4 times as much money as Sara. How much money did Sara have at first?",
+    "options": [
+      "$25",
+      "$35",
+      "$45",
+      "$55"
+    ],
+    "answer": "$35",
+    "time": 90
+  },
+  {
+    "id": 11,
+    "question": "Mark and Luke had the same number of stamps. Mark gave away 30 stamps and Luke gave away 10 stamps. Mark then had 2 times as many stamps as Luke. How many stamps did Mark have at first?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "answer": "30",
+    "time": 90
+  },
+  {
+    "id": 12,
+    "question": "Chris and Dan had the same amount of water. 100 litres were drained from Chris and 40 litres were drained from Dan. Dan then had 3 times as much water as Chris. How much water did Chris have at first?",
+    "options": [
+      "110 L",
+      "120 L",
+      "130 L",
+      "140 L"
+    ],
+    "answer": "130 L",
+    "time": 90
+  }
+]
