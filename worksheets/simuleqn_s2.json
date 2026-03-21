@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Solve the simultaneous equations: $x + y = 5$ and $x - y = 1$",
+    "options": ["$x = 2, y = 3$", "$x = 3, y = 2$", "$x = 4, y = 1$", "$x = 1, y = 4$"],
+    "answer": "$x = 3, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 2,
+    "question": "Solve the simultaneous equations: $2x + y = 7$ and $x + y = 4$",
+    "options": ["$x = 2, y = 2$", "$x = 1, y = 3$", "$x = 3, y = 1$", "$x = 4, y = 0$"],
+    "answer": "$x = 3, y = 1$",
+    "time": 200
+  },
+  {
+    "id": 3,
+    "question": "Solve the simultaneous equations: $x + 2y = 8$ and $x + y = 5$",
+    "options": ["$x = 2, y = 3$", "$x = 4, y = 1$", "$x = 1, y = 4$", "$x = 3, y = 2$"],
+    "answer": "$x = 2, y = 3$",
+    "time": 200
+  },
+  {
+    "id": 4,
+    "question": "Solve the simultaneous equations: $3x + y = 10$ and $x + y = 4$",
+    "options": ["$x = 1, y = 3$", "$x = 3, y = 1$", "$x = 2, y = 2$", "$x = 4, y = 0$"],
+    "answer": "$x = 3, y = 1$",
+    "time": 200
+  },
+  {
+    "id": 5,
+    "question": "Solve the simultaneous equations: $x + y = 10$ and $2x - y = 5$",
+    "options": ["$x = 6, y = 4$", "$x = 4, y = 6$", "$x = 5, y = 5$", "$x = 7, y = 3$"],
+    "answer": "$x = 5, y = 5$",
+    "time": 200
+  },
+  {
+    "id": 6,
+    "question": "Solve the simultaneous equations: $2x + 3y = 13$ and $x + y = 5$",
+    "options": ["$x = 3, y = 2$", "$x = 1, y = 4$", "$x = 2, y = 3$", "$x = 4, y = 1$"],
+    "answer": "$x = 2, y = 3$",
+    "time": 200
+  },
+  {
+    "id": 7,
+    "question": "Solve the simultaneous equations: $x - y = 2$ and $2x + y = 10$",
+    "options": ["$x = 3, y = 1$", "$x = 4, y = 2$", "$x = 5, y = 3$", "$x = 2, y = 0$"],
+    "answer": "$x = 4, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 8,
+    "question": "Solve the simultaneous equations: $3x + 2y = 16$ and $x + y = 6$",
+    "options": ["$x = 2, y = 4$", "$x = 3, y = 3$", "$x = 4, y = 2$", "$x = 5, y = 1$"],
+    "answer": "$x = 4, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 9,
+    "question": "Solve the simultaneous equations: $2x + y = 9$ and $x - y = 3$",
+    "options": ["$x = 5, y = -1$", "$x = 2, y = 5$", "$x = 4, y = 1$", "$x = 3, y = 3$"],
+    "answer": "$x = 4, y = 1$",
+    "time": 200
+  },
+  {
+    "id": 10,
+    "question": "Solve the simultaneous equations: $x + 3y = 11$ and $x + y = 5$",
+    "options": ["$x = 3, y = 2$", "$x = 1, y = 4$", "$x = 2, y = 3$", "$x = 4, y = 1$"],
+    "answer": "$x = 2, y = 3$",
+    "time": 200
+  },
+  {
+    "id": 11,
+    "question": "Solve the simultaneous equations: $4x + y = 14$ and $2x + y = 8$",
+    "options": ["$x = 2, y = 6$", "$x = 4, y = -2$", "$x = 1, y = 10$", "$x = 3, y = 2$"],
+    "answer": "$x = 3, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 12,
+    "question": "Solve the simultaneous equations: $x + y = 7$ and $3x - y = 9$",
+    "options": ["$x = 3, y = 4$", "$x = 5, y = 2$", "$x = 2, y = 5$", "$x = 4, y = 3$"],
+    "answer": "$x = 4, y = 3$",
+    "time": 200
+  },
+  {
+    "id": 13,
+    "question": "Solve the simultaneous equations: $2x + 3y = 12$ and $x + y = 5$",
+    "options": ["$x = 4, y = 1$", "$x = 1, y = 4$", "$x = 3, y = 2$", "$x = 2, y = 3$"],
+    "answer": "$x = 3, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 14,
+    "question": "Solve the simultaneous equations: $5x + 2y = 19$ and $x + y = 5$",
+    "options": ["$x = 2, y = 3$", "$x = 4, y = 1$", "$x = 1, y = 4$", "$x = 3, y = 2$"],
+    "answer": "$x = 3, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 15,
+    "question": "Solve the simultaneous equations: $3x - y = 7$ and $x + y = 5$",
+    "options": ["$x = 2, y = 3$", "$x = 4, y = 1$", "$x = 1, y = 4$", "$x = 3, y = 2$"],
+    "answer": "$x = 3, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 16,
+    "question": "Solve the simultaneous equations: $x + 4y = 10$ and $x + y = 4$",
+    "options": ["$x = 1, y = 3$", "$x = 3, y = 1$", "$x = 2, y = 2$", "$x = 0, y = 4$"],
+    "answer": "$x = 2, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 17,
+    "question": "Solve the simultaneous equations: $2x - y = 5$ and $x + y = 4$",
+    "options": ["$x = 2, y = 2$", "$x = 3, y = 1$", "$x = 1, y = 3$", "$x = 4, y = 0$"],
+    "answer": "$x = 3, y = 1$",
+    "time": 200
+  },
+  {
+    "id": 18,
+    "question": "Solve the simultaneous equations: $3x + 4y = 10$ and $x + y = 3$",
+    "options": ["$x = 1, y = 2$", "$x = 2, y = 1$", "$x = 3, y = 0$", "$x = 0, y = 3$"],
+    "answer": "$x = 2, y = 1$",
+    "time": 200
+  },
+  {
+    "id": 19,
+    "question": "Solve the simultaneous equations: $5x - y = 13$ and $x + y = 5$",
+    "options": ["$x = 2, y = 3$", "$x = 3, y = 2$", "$x = 4, y = 1$", "$x = 1, y = 4$"],
+    "answer": "$x = 3, y = 2$",
+    "time": 200
+  },
+  {
+    "id": 20,
+    "question": "Solve the simultaneous equations: $2x + 5y = 19$ and $x + y = 5$",
+    "options": ["$x = 3, y = 2$", "$x = 2, y = 3$", "$x = 4, y = 1$", "$x = 1, y = 4$"],
+    "answer": "$x = 2, y = 3$",
+    "time": 200
+  }
+]
