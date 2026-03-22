@@ -15,59 +15,59 @@
   },
   {
     "id": 3,
+    "question": "Amy and Alisa have an equal number of sweets at first. After Amy ate 17 sweets and Alisa bought another 33 sweets, Alisa has 3 times as many sweets as Amy. How many sweets do they have altogether at first?",
+    "options": ["72", "80", "84", "90"],
+    "answer": "84",
+    "time": 180
+  },
+  {
+    "id": 4,
     "question": "Pencils are sold in boxes of 8. What is the minimum number of boxes needed to get at least 50 pencils?",
     "options": ["5", "6", "7", "8"],
     "answer": "7",
     "time": 120
   },
   {
-    "id": 4,
-    "question": "Amy has 5 times as many stickers as Ben. After Amy gave 50 stickers to Ben, they had the same number. How many stickers did Amy have at first?",
-    "options": ["100", "120", "125", "150"],
-    "answer": "125",
-    "time": 150
+    "id": 5,
+    "question": "Ben and Chris have an equal number of stickers at first. After Ben gave away 25 stickers and Chris bought another 35 stickers, Chris has 4 times as many stickers as Ben. How many stickers did Ben have at first?",
+    "options": ["35", "40", "45", "50"],
+    "answer": "45",
+    "time": 180
   },
   {
-    "id": 5,
+    "id": 6,
     "question": "Find the next number in the pattern: 3, 6, 12, 24, 48, ...",
     "options": ["72", "84", "96", "108"],
     "answer": "96",
     "time": 120
   },
   {
-    "id": 6,
+    "id": 7,
     "question": "There are 45 students. Each van can carry 7 students. What is the minimum number of vans needed?",
     "options": ["5", "6", "7", "8"],
     "answer": "7",
     "time": 120
   },
   {
-    "id": 7,
-    "question": "John has 4 times as many books as Mary. After John bought 15 more books and Mary bought 3 more books, John had 5 times as many books as Mary. How many books did Mary have at first?",
-    "options": ["2", "3", "4", "5"],
-    "answer": "3",
-    "time": 150
+    "id": 8,
+    "question": "Dan and Eve have an equal number of cards at first. After Dan lost 30 cards and Eve won another 50 cards, Eve has 5 times as many cards as Dan. How many cards did they have altogether at first?",
+    "options": ["140", "150", "160", "170"],
+    "answer": "160",
+    "time": 180
   },
   {
-    "id": 8,
+    "id": 9,
     "question": "Apples are packed in trays of 10. If there are 127 apples, how many apples will be left over after filling as many trays as possible?",
     "options": ["5", "6", "7", "8"],
     "answer": "7",
     "time": 120
   },
   {
-    "id": 9,
+    "id": 10,
     "question": "Find the missing number in the pattern: 5, 10, 17, 26, __, 50",
     "options": ["35", "37", "39", "41"],
     "answer": "37",
     "time": 120
-  },
-  {
-    "id": 10,
-    "question": "Lisa has 3 times as much money as Kate. After Lisa spent $40 and Kate spent $10, they had the same amount. How much money did Lisa have at first?",
-    "options": ["$45", "$60", "$75", "$90"],
-    "answer": "$45",
-    "time": 150
   },
   {
     "id": 11,
@@ -78,10 +78,10 @@
   },
   {
     "id": 12,
-    "question": "There are 2 times as many boys as girls in a class. After 12 boys and 5 girls joined, there were 3 times as many boys as girls. How many girls were there at first?",
-    "options": ["6", "7", "8", "9"],
-    "answer": "7",
-    "time": 150
+    "question": "Fay and Gina have an equal number of stamps at first. After Fay used 20 stamps and Gina received another 40 stamps, Gina has 3 times as many stamps as Fay. How many stamps did Gina have at first?",
+    "options": ["45", "50", "55", "60"],
+    "answer": "50",
+    "time": 180
   },
   {
     "id": 13,
@@ -92,17 +92,17 @@
   },
   {
     "id": 14,
-    "question": "Notebooks cost $4 each. What is the maximum number of notebooks that can be bought with $35?",
+    "question": "Notebooks cost 4 dollars each. What is the maximum number of notebooks that can be bought with 35 dollars?",
     "options": ["7", "8", "9", "10"],
     "answer": "8",
     "time": 120
   },
   {
     "id": 15,
-    "question": "Peter has 6 times as many cards as Paul. After Peter gave 75 cards to Paul, they had the same number. How many cards did Peter have at first?",
-    "options": ["150", "160", "170", "180"],
-    "answer": "180",
-    "time": 150
+    "question": "Harry and Ian have an equal number of toy cars at first. After Harry gave away 15 cars and Ian bought another 45 cars, Ian has 4 times as many cars as Harry. How many toy cars did they have altogether at first?",
+    "options": ["100", "110", "120", "130"],
+    "answer": "120",
+    "time": 180
   },
   {
     "id": 16,
@@ -120,10 +120,10 @@
   },
   {
     "id": 18,
-    "question": "Sam has 4 times as many toy cars as Tim. After Sam bought 20 more cars and Tim bought 5 more cars, Sam had 3 times as many cars as Tim. How many cars did Tim have at first?",
-    "options": ["8", "10", "12", "15"],
-    "answer": "10",
-    "time": 150
+    "question": "Jack and Ken have an equal number of books at first. After Jack read 18 books and Ken bought another 42 books, Ken has 3 times as many books as Jack. How many books did Jack have at first?",
+    "options": ["36", "42", "48", "54"],
+    "answer": "42",
+    "time": 180
   },
   {
     "id": 19,
