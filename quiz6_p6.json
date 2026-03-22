@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "question": "There are 200 boys and girls in a hall. 40% of the pupils are boys. After some boys joined the hall, 50% of the pupils are now boys. How many boys joined the hall?",
+    "options": ["30", "40", "50", "60"],
+    "answer": "40",
+    "time": 120
+  },
+  {
+    "id": 2,
+    "question": "A bag contains red and blue marbles. 60% of the marbles are red. After 30 red marbles are removed, 50% of the marbles are now red. How many marbles were there at first?",
+    "options": ["120", "150", "180", "200"],
+    "answer": "150",
+    "time": 150
+  },
+  {
+    "id": 3,
+    "question": "There are some apples and oranges in a basket. 40% of the fruits are apples. After 20 apples are eaten, 25% of the fruits are now apples. How many fruits were there at first?",
+    "options": ["80", "90", "100", "110"],
+    "answer": "100",
+    "time": 150
+  },
+  {
+    "id": 4,
+    "question": "In a school, 45% of the pupils are boys. After 20 girls left the school, 50% of the pupils are now boys. How many pupils were there at first?",
+    "options": ["180", "200", "220", "240"],
+    "answer": "200",
+    "time": 150
+  },
+  {
+    "id": 5,
+    "question": "There are 400 students in a hall. 60% of the students are boys. After some girls joined the hall, 50% of the students are now boys. How many girls joined the hall?",
+    "options": ["60", "70", "80", "90"],
+    "answer": "80",
+    "time": 120
+  },
+  {
+    "id": 6,
+    "question": "A tank contains oil and water. 70% of the liquid is oil. After 40 litres of oil is removed, 60% of the liquid is now oil. How much oil was there at first?",
+    "options": ["112 litres", "120 litres", "140 litres", "160 litres"],
+    "answer": "112 litres",
+    "time": 180
+  },
+  {
+    "id": 7,
+    "question": "There are some red and blue pens in a box. 3/4 of the pens are red. After 24 red pens are removed, 2/3 of the pens are now red. How many pens were there at first?",
+    "options": ["64", "72", "80", "96"],
+    "answer": "96",
+    "time": 180
+  },
+  {
+    "id": 8,
+    "question": "In a school, 55% of the pupils are girls. After 30 boys joined the school, 50% of the pupils are now girls. How many pupils were there at first?",
+    "options": ["280", "300", "320", "340"],
+    "answer": "300",
+    "time": 180
+  },
+  {
+    "id": 9,
+    "question": "There are 500 students in a hall. 70% of the students are boys. After some boys left the hall, 60% of the students are now boys. How many boys left the hall?",
+    "options": ["100", "110", "120", "125"],
+    "answer": "125",
+    "time": 150
+  },
+  {
+    "id": 10,
+    "question": "A jar contains juice and water. 5/6 of the liquid is juice. After 40 litres of juice is removed, 4/5 of the liquid is now juice. How much juice was there at first?",
+    "options": ["160 litres", "180 litres", "200 litres", "220 litres"],
+    "answer": "200 litres",
+    "time": 180
+  },
+  {
+    "id": 11,
+    "question": "A box contains black and white balls. 2/3 of the balls are black. After 20 black balls are removed and 10 white balls are added, 3/5 of the balls are now black. How many balls were there at first?",
+    "options": ["90", "100", "110", "120"],
+    "answer": "90",
+    "time": 180
+  },
+  {
+    "id": 12,
+    "question": "In a class, 35% of the pupils wear glasses. After 8 pupils who wear glasses left and 12 pupils who do not wear glasses joined, 30% of the pupils now wear glasses. How many pupils were there at first?",
+    "options": ["90", "100", "110", "120"],
+    "answer": "100",
+    "time": 180
+  },
+  {
+    "id": 13,
+    "question": "A tank contains milk and water. 80% of the liquid is milk. After 50 litres of milk is removed, 70% of the liquid is now milk. How much milk was there at first?",
+    "options": ["200 litres", "220 litres", "240 litres", "260 litres"],
+    "answer": "200 litres",
+    "time": 180
+  },
+  {
+    "id": 14,
+    "question": "There are some cats and dogs in a pet shop. 65% of the animals are cats. After 15 cats are sold and 10 dogs are bought, 60% of the animals are now cats. How many animals were there at first?",
+    "options": ["90", "100", "110", "120"],
+    "answer": "100",
+    "time": 180
+  },
+  {
+    "id": 15,
+    "question": "In a school, 3/7 of the pupils are boys. After 25 boys and 35 girls joined, 1/2 of the pupils are now boys. How many pupils were there at first?",
+    "options": ["140", "150", "160", "175"],
+    "answer": "140",
+    "time": 180
+  }
+]

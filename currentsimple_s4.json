@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "question": "A current of 3.0 A flows through a circuit for 2 minutes. What is the total charge that passes through the circuit?",
+    "options": [
+      "6.0 C",
+      "180 C",
+      "360 C",
+      "0.025 C"
+    ],
+    "answer": "360 C",
+    "time": 40,
+    "explanation": "Using Q = It. Time = 2 min = 120 s. Q = 3.0 A × 120 s = 360 C."
+  },
+  {
+    "id": 2,
+    "question": "Which statement correctly defines electric current?",
+    "options": [
+      "The energy transferred per unit charge",
+      "The rate of flow of electric charge",
+      "The opposition to the flow of charge",
+      "The work done by a source per unit charge"
+    ],
+    "answer": "The rate of flow of electric charge",
+    "time": 30,
+    "explanation": "Electric current is defined as the rate of flow of electric charge. It is measured in amperes (A), where 1 A = 1 C/s."
+  },
+  {
+    "id": 3,
+    "question": "Which statement correctly defines potential difference?",
+    "options": [
+      "The rate of flow of charge through a component",
+      "The work done per unit charge in driving charges through a component",
+      "The opposition to the flow of charge",
+      "The total energy supplied by a source"
+    ],
+    "answer": "The work done per unit charge in driving charges through a component",
+    "time": 35,
+    "explanation": "Potential difference (voltage) across a component is the work done per unit charge in driving charges through that component. It is measured in volts (V)."
+  },
+  {
+    "id": 4,
+    "question": "Which statement correctly defines resistance?",
+    "options": [
+      "The rate of flow of charge",
+      "The work done per unit charge",
+      "The ratio of potential difference to current",
+      "The energy transferred per second"
+    ],
+    "answer": "The ratio of potential difference to current",
+    "time": 35,
+    "explanation": "Resistance is defined as the ratio of potential difference across a component to the current flowing through it: R = V/I. It is measured in ohms (Ω)."
+  },
+  {
+    "id": 5,
+    "question": "Which statement correctly defines electromotive force (e.m.f.)?",
+    "options": [
+      "The opposition to charge flow in a circuit",
+      "The work done per unit charge by a source in driving charges around a complete circuit",
+      "The potential difference across a component",
+      "The rate of energy transfer in a circuit"
+    ],
+    "answer": "The work done per unit charge by a source in driving charges around a complete circuit",
+    "time": 40,
+    "explanation": "E.m.f. is the work done per unit charge by a source in driving charges around a complete circuit. It represents the total energy supplied by the source per coulomb."
+  },
+  {
+    "id": 6,
+    "question": "A copper wire has resistance R. If its length is doubled while keeping the same thickness and material, what is the new resistance?",
+    "options": [
+      "R",
+      "2R",
+      "R/2",
+      "4R"
+    ],
+    "answer": "2R",
+    "time": 40,
+    "explanation": "Resistance is directly proportional to length (R ∝ L). Doubling the length doubles the resistance, assuming cross-sectional area and material remain constant."
+  },
+  {
+    "id": 7,
+    "question": "A copper wire has resistance R. If its cross-sectional area is doubled while keeping the same length and material, what is the new resistance?",
+    "options": [
+      "R",
+      "2R",
+      "R/2",
+      "4R"
+    ],
+    "answer": "R/2",
+    "time": 40,
+    "explanation": "Resistance is inversely proportional to cross-sectional area (R ∝ 1/A). Doubling the area halves the resistance, assuming length and material remain constant."
+  },
+  {
+    "id": 8,
+    "question": "What happens to the resistance of a metallic conductor when its temperature increases?",
+    "options": [
+      "It decreases",
+      "It remains constant",
+      "It increases",
+      "It becomes zero"
+    ],
+    "answer": "It increases",
+    "time": 35,
+    "explanation": "For metallic conductors, resistance increases with temperature because the metal ions vibrate more vigorously, causing more collisions with electrons and impeding their flow."
+  },
+  {
+    "id": 9,
+    "question": "A resistor has a potential difference of 12 V across it and a current of 0.5 A flowing through it. What is its resistance?",
+    "options": [
+      "6 Ω",
+      "24 Ω",
+      "0.042 Ω",
+      "12.5 Ω"
+    ],
+    "answer": "24 Ω",
+    "time": 40,
+    "explanation": "Using Ohm's Law: R = V/I = 12 V ÷ 0.5 A = 24 Ω."
+  },
+  {
+    "id": 10,
+    "question": "A 15 Ω resistor has a current of 0.8 A flowing through it. What is the potential difference across it?",
+    "options": [
+      "18.75 V",
+      "12 V",
+      "0.053 V",
+      "15.8 V"
+    ],
+    "answer": "12 V",
+    "time": 40,
+    "explanation": "Using Ohm's Law: V = IR = 0.8 A × 15 Ω = 12 V."
+  },
+  {
+    "id": 11,
+    "question": "A potential difference of 9 V is applied across a resistor, causing a current of 0.3 A to flow. What is the resistance?",
+    "options": [
+      "2.7 Ω",
+      "30 Ω",
+      "0.033 Ω",
+      "9.3 Ω"
+    ],
+    "answer": "30 Ω",
+    "time": 40,
+    "explanation": "Using Ohm's Law: R = V/I = 9 V ÷ 0.3 A = 30 Ω."
+  },
+  {
+    "id": 12,
+    "question": "Three resistors of 2 Ω, 4 Ω, and 6 Ω are connected in series. What is the total resistance?",
+    "options": [
+      "1.1 Ω",
+      "6 Ω",
+      "12 Ω",
+      "48 Ω"
+    ],
+    "answer": "12 Ω",
+    "time": 40,
+    "explanation": "For resistors in series, total resistance R_total = R₁ + R₂ + R₃ = 2 Ω + 4 Ω + 6 Ω = 12 Ω."
+  },
+  {
+    "id": 13,
+    "question": "Two resistors of 6 Ω and 3 Ω are connected in parallel. What is their effective resistance?",
+    "options": [
+      "2 Ω",
+      "4.5 Ω",
+      "9 Ω",
+      "0.5 Ω"
+    ],
+    "answer": "2 Ω",
+    "time": 50,
+    "explanation": "Using the formula for parallel resistors: 1/R = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2. So R = 2 Ω."
+  },
+  {
+    "id": 14,
+    "question": "A circuit has a 12 V battery connected to a 4 Ω resistor in series with a parallel combination of two 6 Ω resistors. What is the total resistance?",
+    "options": [
+      "7 Ω",
+      "10 Ω",
+      "16 Ω",
+      "3 Ω"
+    ],
+    "answer": "7 Ω",
+    "time": 60,
+    "explanation": "Parallel part: (6×6)/(6+6) = 3 Ω. Total resistance = 4 Ω (series) + 3 Ω (parallel) = 7 Ω."
+  },
+  {
+    "id": 15,
+    "question": "In the circuit from Q14, what is the total current supplied by the battery?",
+    "options": [
+      "1.71 A",
+      "2.0 A",
+      "3.0 A",
+      "1.5 A"
+    ],
+    "answer": "1.71 A",
+    "time": 60,
+    "explanation": "Using Ohm's Law for the whole circuit: I = V/R_total = 12 V ÷ 7 Ω ≈ 1.71 A."
+  }
+]
